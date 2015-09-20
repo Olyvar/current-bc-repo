@@ -1,0 +1,121 @@
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
+
+// Import custom Bootstrap variables
+@import "bootstrap-variables";
+
+// Import Bootstrap for Sass
+@import "bootstrap";
+
+// Custom CSS
+
+
+
+.myapps-icon {
+	display: block;
+	background:{
+		repeat: no-repeat;
+		image: url('../images/barclays-sprites.png');
+		position: 0 -58px;
+	}
+	width: 50px;
+	height: 40px;
+}
+
+.dropdown-icon {
+	text-transform: uppercase;
+}
+
+.apps-dropdown {
+	width: 260px;
+	padding: 0;
+	.row {
+		margin: 0;
+	}
+	li{
+		padding: 5px 0 0 0;
+		border: 1px solid transparent;
+		&:hover{
+			border: 1px solid #eee;
+			cursor: pointer;
+			@include transition(all, 0.3s);	
+		}
+	}
+}
+
+
+
+.dropdown-container{
+	padding: 15px;
+}
+
+.dropdown-more {
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	border-top: 1px solid #ddd;
+	color: #999;
+	padding: 5px;
+	display: block;
+	font-size: 12px;
+	cursor: pointer;
+	@include transition(all, 0.3s);
+	&:hover{
+		background: #eee;
+	}
+}
+
+.app-icons{
+	background-image: url('../images/barclays-sprites.png');
+	width: 60px;
+	height: 50px;
+	display: block;
+}
+
+
+.icon-1{
+	background-position:8px -200px;
+}
+
+.icon-2{
+	background-position:8px -247px;
+}
+
+.icon-3{
+	background-position:8px -298px;
+}
+
+.icon-4{
+	background-position:8px -349px;
+}
+
+.icon-5{
+	background-position:8px -400px;
+}
+
+.icon-6{
+	background-position:8px -448px;
+}
+
+.icon-7{
+	background-position:8px -498px;
+}
+
+.icon-8{
+	background-position:8px -546px;
+}
+
+.icon-9{
+	background-position:8px -597px;
+}
+
+.icon-10{
+	background-position:8px -694px;
+}
+
+.icon-11{
+	background-position:8px -643px;
+}
+
+.icon-12{
+	background-position:8px -744px;
+}
