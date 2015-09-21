@@ -262,6 +262,14 @@
 	@include border-radius(4px)
 }
 
+.btn-link-action{
+	&:hover{
+		border: 1px solid $brand-secondary;
+		@include border-radius(4px);
+		text-decoration: none;
+	}
+}
+
 .icon-1{	background-position:8px -200px;}
 .icon-2{	background-position:8px -247px;}
 .icon-3{	background-position:8px -298px;}
