@@ -8616,127 +8616,174 @@ button.close {
   background-image: url("../images/barclays-sprites.png");
   width: 50px;
   height: 40px;
-  margin-bottom: 5px;
 }
 
 /* line 75, ../sass/styles.scss */
-.home-icon {
-  background-position: 0 -102px;
+.fave-icon.icon-1 {
+  background-position: 5px -204px;
 }
 /* line 77, ../sass/styles.scss */
-.home-icon:hover, .open .home-icon {
-  background-position: -61px -102px;
+.fave-icon.icon-1:hover {
+  background-position: -56px -204px;
+}
+/* line 81, ../sass/styles.scss */
+.fave-icon.icon-4 {
+  background-position: 5px -353px;
+}
+/* line 83, ../sass/styles.scss */
+.fave-icon.icon-4:hover {
+  background-position: -56px -353px;
+}
+/* line 87, ../sass/styles.scss */
+.fave-icon.icon-5 {
+  background-position: 4px -403px;
+}
+/* line 89, ../sass/styles.scss */
+.fave-icon.icon-5:hover {
+  background-position: -57px -403px;
 }
 
-/* line 82, ../sass/styles.scss */
+/* line 95, ../sass/styles.scss */
+.fave-divider {
+  border-left: 1px solid #eeeeee;
+}
+
+/* line 99, ../sass/styles.scss */
+.home-icon {
+  background-position: 0 -106px;
+}
+/* line 101, ../sass/styles.scss */
+.home-icon:hover, .open .home-icon {
+  background-position: -61px -106px;
+}
+
+/* line 106, ../sass/styles.scss */
 .myapps-icon {
   background-position: 0 -58px;
 }
-/* line 84, ../sass/styles.scss */
+/* line 108, ../sass/styles.scss */
 .myapps-icon:hover, .open .myapps-icon {
   background-position: -61px -58px;
 }
 
-/* line 89, ../sass/styles.scss */
+/* line 113, ../sass/styles.scss */
 .notifications-icon {
   background-position: 0 -8px;
 }
-/* line 91, ../sass/styles.scss */
+/* line 115, ../sass/styles.scss */
 .notifications-icon:hover, .open .notifications-icon {
   background-position: -61px -8px;
 }
 
-/* line 96, ../sass/styles.scss */
+/* line 120, ../sass/styles.scss */
 .user-icon {
   background-position: 0 -156px;
 }
-/* line 98, ../sass/styles.scss */
+/* line 122, ../sass/styles.scss */
 .user-icon:hover, .open .user-icon {
   background-position: -61px -156px;
 }
 
-/* line 103, ../sass/styles.scss */
+/* line 127, ../sass/styles.scss */
 .navbar-icon {
   padding-top: 7px !important;
   padding-bottom: 5px !important;
 }
 
-/* line 108, ../sass/styles.scss */
+/* line 132, ../sass/styles.scss */
 .apps-dropdown {
   width: 260px;
 }
-/* line 110, ../sass/styles.scss */
+/* line 134, ../sass/styles.scss */
 .apps-dropdown li {
   padding: 5px 0 0 0;
+  border: 1px solid transparent;
+}
+/* line 137, ../sass/styles.scss */
+.apps-dropdown li:hover {
+  border: 1px solid #eeeeee;
+  border: 1px solid rgba(0, 126, 182, 0.3);
+  cursor: pointer;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
 }
 
-/* line 115, ../sass/styles.scss */
+/* line 146, ../sass/styles.scss */
+.app-title {
+  font-size: 12px;
+}
+
+/* line 150, ../sass/styles.scss */
 .notifications-dropdown {
   width: 400px;
 }
-/* line 117, ../sass/styles.scss */
+/* line 152, ../sass/styles.scss */
 .notifications-dropdown .media {
   margin-top: 0;
   padding: 10px 10px 5px 5px;
 }
-/* line 120, ../sass/styles.scss */
+/* line 155, ../sass/styles.scss */
 .notifications-dropdown .media:hover {
-  background: #eeeeee;
+  -webkit-transition: all, 0.2s;
+  -o-transition: all, 0.2s;
+  transition: all, 0.2s;
+  background: #fbfbfb;
   cursor: pointer;
 }
 
-/* line 127, ../sass/styles.scss */
+/* line 163, ../sass/styles.scss */
 .notification-time {
   color: #777777;
   display: block;
 }
 
-/* line 132, ../sass/styles.scss */
-.brandzone-dropdown {
+/* line 168, ../sass/styles.scss */
+.navbar-dropdown {
   padding: 0;
 }
-/* line 134, ../sass/styles.scss */
-.brandzone-dropdown .row {
+/* line 170, ../sass/styles.scss */
+.navbar-dropdown .row {
   margin: 0;
 }
-/* line 137, ../sass/styles.scss */
-.brandzone-dropdown li {
-  border: 1px solid transparent;
-}
-/* line 139, ../sass/styles.scss */
-.brandzone-dropdown li:hover {
-  border: 1px solid #eee;
-  cursor: pointer;
-  -webkit-transition: all, 0.3s;
-  -o-transition: all, 0.3s;
-  transition: all, 0.3s;
-}
 
-/* line 147, ../sass/styles.scss */
+/* line 175, ../sass/styles.scss */
 .dropdown-container {
   padding: 15px;
 }
 
-/* line 151, ../sass/styles.scss */
+/* line 179, ../sass/styles.scss */
 .dropdown-more {
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  border-top: 1px solid #ddd;
-  color: #007eb6;
   padding: 5px;
   display: block;
   font-size: 12px;
   cursor: pointer;
+  color: #007eb6;
   -webkit-transition: all, 0.3s;
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
 }
-/* line 161, ../sass/styles.scss */
+/* line 188, ../sass/styles.scss */
 .dropdown-more:hover {
   background: #eee;
 }
 
-/* line 166, ../sass/styles.scss */
+/* line 193, ../sass/styles.scss */
+.dropdown-top-link {
+  border-bottom: 1px solid #ddd;
+  color: #777777;
+  font-size: 14px;
+  text-transform: none;
+}
+
+/* line 200, ../sass/styles.scss */
+.dropdown-bottom-link {
+  border-top: 1px solid #ddd;
+}
+
+/* line 204, ../sass/styles.scss */
 .app-icons {
   background-image: url("../images/barclays-sprites.png");
   background-repeat: no-repeat;
@@ -8745,67 +8792,114 @@ button.close {
   display: block;
 }
 
-/* line 175, ../sass/styles.scss */
+/* line 212, ../sass/styles.scss */
+.navbar-dropdown {
+  margin-top: 5px !important;
+}
+
+/* line 218, ../sass/styles.scss */
+.navbar-dropdown:after, .navbar-dropdown:before {
+  bottom: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+/* line 228, ../sass/styles.scss */
+.navbar-dropdown:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #fff;
+  border-width: 10px;
+  margin-left: -10px;
+}
+
+/* line 234, ../sass/styles.scss */
+.navbar-dropdown:before {
+  border-color: rgba(204, 204, 204, 0);
+  border-bottom-color: #ccc;
+  border-width: 11px;
+  margin-left: -11px;
+}
+
+/* line 241, ../sass/styles.scss */
+.apps-dropdown:after, .apps-dropdown:before {
+  left: 85%;
+}
+
+/* line 245, ../sass/styles.scss */
+.notifications-dropdown:after, .notifications-dropdown:before {
+  left: 89.75%;
+}
+
+/* line 249, ../sass/styles.scss */
+.user-dropdown:after, .user-dropdown:before {
+  left: 75%;
+}
+
+/* line 253, ../sass/styles.scss */
 .icon-1 {
   background-position: 8px -200px;
 }
 
-/* line 179, ../sass/styles.scss */
+/* line 254, ../sass/styles.scss */
 .icon-2 {
   background-position: 8px -247px;
 }
 
-/* line 183, ../sass/styles.scss */
+/* line 255, ../sass/styles.scss */
 .icon-3 {
   background-position: 8px -298px;
 }
 
-/* line 187, ../sass/styles.scss */
+/* line 256, ../sass/styles.scss */
 .icon-4 {
   background-position: 8px -349px;
 }
 
-/* line 191, ../sass/styles.scss */
+/* line 257, ../sass/styles.scss */
 .icon-5 {
   background-position: 8px -400px;
 }
 
-/* line 195, ../sass/styles.scss */
+/* line 258, ../sass/styles.scss */
 .icon-6 {
   background-position: 8px -448px;
 }
 
-/* line 199, ../sass/styles.scss */
+/* line 259, ../sass/styles.scss */
 .icon-7 {
   background-position: 8px -498px;
 }
 
-/* line 203, ../sass/styles.scss */
+/* line 260, ../sass/styles.scss */
 .icon-8 {
   background-position: 8px -546px;
 }
 
-/* line 207, ../sass/styles.scss */
+/* line 261, ../sass/styles.scss */
 .icon-9 {
   background-position: 8px -597px;
 }
 
-/* line 211, ../sass/styles.scss */
+/* line 262, ../sass/styles.scss */
 .icon-10 {
   background-position: 8px -694px;
 }
 
-/* line 215, ../sass/styles.scss */
+/* line 263, ../sass/styles.scss */
 .icon-11 {
   background-position: 8px -643px;
 }
 
-/* line 219, ../sass/styles.scss */
+/* line 264, ../sass/styles.scss */
 .icon-12 {
   background-position: 8px -744px;
 }
 
-/* line 223, ../sass/styles.scss */
+/* line 265, ../sass/styles.scss */
 .icon-13 {
   background-position: 8px -790px;
 }

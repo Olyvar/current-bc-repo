@@ -1,0 +1,9 @@
+{
+  "firebase": "barclays-brandzone",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

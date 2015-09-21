@@ -34,74 +34,91 @@
         <button type="submit" class="btn btn-primary"><span class="icon-search feather-icon-inverse"></span></button>
       </form>
 
+     <div class="navbar-header">
+      <a class="navbar-brand" href="#">Barclays Brandzone</a>
+    </div>
+
+
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
 
-         <li class="dropdown">
+          <li>
+          <a href="#" class="dropdown-toggle navbar-icon" data-toggle="dropdown">
+          <span class="icon-1 fave-icon nav-icon center-block"></span></a>
+          </li>
+          <li>
+          <a href="#" class="dropdown-toggle navbar-icon" data-toggle="dropdown">
+          <span class="icon-4 fave-icon nav-icon center-block"></span></a>
+          </li>
+          <li>
+          <a href="#" class="dropdown-toggle navbar-icon" data-toggle="dropdown">
+          <span class="icon-5 fave-icon nav-icon center-block"></span></a>
+          </li>
+         <li class="dropdown fave-divider">
           <a href="#" class="dropdown-toggle navbar-icon" data-toggle="dropdown">
           <span class="myapps-icon nav-icon center-block"></span>
           <span class="sr-only">My Apps</span></a>
-	          <ul class="dropdown-menu apps-dropdown brandzone-dropdown">
+	          <ul class="dropdown-menu apps-dropdown navbar-dropdown">
 		          <div class="dropdown-container">
 			          	<div class="row">
 				            <li class="col-xs-4">
 				            	<span class="app-icons icon-1"></span>
-				            	<p class="app-title text-center">App 1</p>
+				            	<p class="app-title text-center">Image Library</p>
 				            </li>
 				            <li class="col-xs-4">
 				            	<span class="app-icons icon-2"></span>
-				            	<p class="app-title text-center">App 2</p>
+				            	<p class="app-title text-center">Best Practice</p>
 				            </li>
 				            <li class="col-xs-4">
 				            	<span class="app-icons icon-3"></span>
-				            	<p class="app-title text-center">App 3</p>
+				            	<p class="app-title text-center">News</p>
 				            </li>
 			           	</div>
 			          	<div class="row">
 				            <li class="col-xs-4">
 				            	<span class="app-icons icon-4"></span>
-				            	<p class="app-title text-center">App 4</p>
+				            	<p class="app-title text-center">Activity Manager</p>
 				            </li>
 				            <li class="col-xs-4">
 				            	<span class="app-icons icon-5"></span>
-				            	<p class="app-title text-center">App 5</p>
+				            	<p class="app-title text-center">Showcase</p>
 				            </li>
 				            <li class="col-xs-4">
 				            	<span class="app-icons icon-6"></span>
-				            	<p class="app-title text-center">App 6</p>
+				            	<p class="app-title text-center">Reports</p>
 				            </li>
 			            </div>
 			           	<div class="row">
 				            <li class="col-xs-4">
 				            	<span class="app-icons icon-7"></span>
-				            	<p class="app-title text-center">App 7</p>
+				            	<p class="app-title text-center">My Share</p>
 				            </li>
 				            <li class="col-xs-4">
 				            	<span class="app-icons icon-8"></span>
-				            	<p class="app-title text-center">App 8</p>
+				            	<p class="app-title text-center">MEA</p>
 				            </li>
 				            <li class="col-xs-4">
 				            	<span class="app-icons icon-9"></span>
-				            	<p class="app-title text-center">App 9</p>
+				            	<p class="app-title text-center">Sponsorship</p>
 				            </li>
 			            </div>
 			            <div class="row">
 				            <li class="col-xs-4">
 				            	<span class="app-icons icon-10"></span>
-				            	<p class="app-title text-center">App 10</p>
+				            	<p class="app-title text-center">CCR</p>
 				            </li>
 				            <li class="col-xs-4">
 				            	<span class="app-icons icon-11"></span>
-				            	<p class="app-title text-center">App 11</p>
+				            	<p class="app-title text-center">Creative Review</p>
 				            </li>
 				            <li class="col-xs-4">
 				            	<span class="app-icons icon-12"></span>
-				            	<p class="app-title text-center">App 12</p>
+				            	<p class="app-title text-center">Helpdesk</p>
 				            </li>
 			            </div>
 		             </div>
-	            		<span class="dropdown-more text-center">More Apps</span>
+	            		<span class="dropdown-more dropdown-bottom-link text-center">More Apps</span>
 		</ul>
 	</li>
 
@@ -109,7 +126,9 @@
              <a href="#" class="dropdown-toggle navbar-icon" data-toggle="dropdown">
              <span class="notifications-icon nav-icon center-block"></span>
              <span class="sr-only">Notifications</span></a>
-	          <ul class="dropdown-menu notifications-dropdown brandzone-dropdown">
+             <div class="arrow"></div>
+	          <ul class="dropdown-menu notifications-dropdown navbar-dropdown">
+	          		<span class="dropdown-top-link dropdown-more text-center"><span class="icon-cog feather-icon"></span> Notification Settings</span>
 			          	<div class="row">
 				          	<div class="media">
 						<div class="media-left">
@@ -148,7 +167,7 @@
 						</div>
 					</div>
 			           	</div>
-	            		<span class="dropdown-more text-center">View All</span>
+	            		<span class="dropdown-bottom-link dropdown-more text-center">View All</span>
 		</ul>
 	</li>
 
@@ -156,11 +175,11 @@
              <a href="#" class="dropdown-toggle navbar-icon" data-toggle="dropdown">
              <span class="user-icon nav-icon center-block"></span>
               <span class="sr-only">John Doe</span></a>
-	             <ul class="dropdown-menu brandzone-dropdown">
+	             <ul class="dropdown-menu navbar-dropdown user-dropdown">
 			<li><a href="#">My Profile</a></li>
 		    	<li><a href="#">Help</a></li>
 		    	<li><a href="#">Language</a></li>
-		            	<span class="dropdown-more text-center"><span class="icon-power"></span> Sign out</span>
+		            	<span class="dropdown-more dropdown-bottom-link text-center"><span class="icon-power"></span> Sign out</span>
 		</ul>
 	</li>
 
@@ -170,7 +189,16 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-
+<div class="container-fluid">
+<div class="row">
+	<div class="col-md-8">
+	<h1>News and Updates</h1>
+	</div>
+	<div class="col-md-4">
+	<h1>Widgets</h1>
+	</div>
+</div>
+</div>
 
 
 </body>
