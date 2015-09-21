@@ -31,9 +31,9 @@ $brand-primary:        #007eb6; // #337ab7
 // $text-color:            $gray-dark
 
 //* Global textual link color.
-$link-color:            #58595b;
+$link-color:            #007eb6;
 //* Link hover color set via `darken()` function.
-// $link-hover-color:      darken($link-color, 15%)
+ $link-hover-color:      darken($link-color, 10%);
 //* Link hover decoration.
 // $link-hover-decoration: underline
 
@@ -67,7 +67,7 @@ $font-family-sans-serif:  "Expert-Sans-Light", Helvetica, Arial, sans-serif;
 // $headings-font-family:    inherit
 // $headings-font-weight:    500
 // $headings-line-height:    1.1
-// $headings-color:          inherit
+$headings-color:          #00395d;
 
 //== Iconography
 //
@@ -356,7 +356,7 @@ $navbar-default-bg:                white;
 // $navbar-default-link-hover-color:          #333
 // $navbar-default-link-hover-bg:             transparent
 // $navbar-default-link-active-color:         #555
-$navbar-default-link-active-bg:            white;
+$navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%);
 // $navbar-default-link-disabled-color:       #ccc
 // $navbar-default-link-disabled-bg:          transparent
 
@@ -401,7 +401,7 @@ $navbar-default-link-active-bg:            white;
 
 //=== Shared nav styles
 // $nav-link-padding:                          10px 15px
-$nav-link-hover-bg:                         white;
+$nav-link-hover-bg:     white;
 
 // $nav-disabled-link-color:                   $gray-light
 // $nav-disabled-link-hover-color:             $gray-light
@@ -463,9 +463,9 @@ $nav-link-hover-bg:                         white;
 //##
 
 // $jumbotron-padding:              30px
-// $jumbotron-color:                inherit
+$jumbotron-color:                #666;
 // $jumbotron-bg:                   $gray-lighter
-// $jumbotron-heading-color:        inherit
+$jumbotron-heading-color:        #00395d;
 // $jumbotron-font-size:            ceil(($font-size-base * 1.5))
 
 //== Form states and alerts

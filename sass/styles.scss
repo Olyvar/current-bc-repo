@@ -1,5 +1,6 @@
 // Import Bootstrap Compass integration
 @import "bootstrap-compass";
+@import "compass";
 
 // Import custom Bootstrap variables
 @import "bootstrap-variables";
@@ -248,6 +249,17 @@
 
 .user-dropdown:after, .user-dropdown:before{
 	left: 75%;
+}
+
+.jumbotron-photobg{
+	background-image:url("../images/news-photo.jpg");
+	@include background-size(cover);
+}
+
+.white-hero{
+	background: white;
+	padding: 10px 30px;
+	@include border-radius(4px)
 }
 
 .icon-1{	background-position:8px -200px;}
