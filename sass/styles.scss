@@ -9,25 +9,46 @@
 
 // Custom CSS
 
+.feather-icon{
+	color: $brand-primary;
+}
 
-
-.myapps-icon {
-	display: block;
+.nav-icon{
 	background:{
 		repeat: no-repeat;
 		image: url('../images/barclays-sprites.png');
-		position: 0 -58px;
 	}
 	width: 50px;
 	height: 40px;
+	margin-bottom: 5px;
+}
+
+.myapps-icon {
+	background-position: 0 -58px;
+}
+
+.notifications-icon{
+	background-position: 0 -8px;
 }
 
 .dropdown-icon {
 	text-transform: uppercase;
 }
 
-.apps-dropdown {
+.apps-dropdown{
 	width: 260px;
+}
+
+.notifications-dropdown{
+	width: 400px;
+}
+
+.notification-time{
+	color: $gray-light;
+	display: block;
+}
+
+.brandzone-dropdown {
 	padding: 0;
 	.row {
 		margin: 0;
@@ -38,7 +59,7 @@
 		&:hover{
 			border: 1px solid #eee;
 			cursor: pointer;
-			@include transition(all, 0.3s);	
+			@include transition(all, 0.3s);
 		}
 	}
 }
@@ -53,7 +74,7 @@
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
 	border-top: 1px solid #ddd;
-	color: #999;
+	color: $brand-primary;
 	padding: 5px;
 	display: block;
 	font-size: 12px;

@@ -3,88 +3,148 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Barclays Components</title>
+	<link rel="stylesheet" href="fonts/feather-webfont/feather.css">
 	<link rel="stylesheet" href="stylesheets/styles.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="javascripts/bootstrap.min.js"></script>
 </head>
 <body>
-	<div class="container">
-		<div class="row">
 
-			<div class="btn-group">
-			  <ul class="nav pull-right">
-			      <li class="dropdown">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Barclays Brandzone</a>
+    </div>
+    <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default"><span class="icon-search feather-icon"></span></button>
+      </form>
 
-			          <a href="#" class="dropdown-toggle dropdown-icon" data-toggle="dropdown">
-			          <span class="myapps-icon"></span> My Apps</a>
-			          <ul class="dropdown-menu apps-dropdown">
-			          	<div class="dropdown-container">
-				          	<div class="row">
-					            <li class="col-xs-4">
-					            	<span class="app-icons icon-1"></span>
-					            	<p class="app-title text-center">App 1</p>
-					            </li>
-					            <li class="col-xs-4">
-					            	<span class="app-icons icon-2"></span>
-					            	<p class="app-title text-center">App 2</p>
-					            </li>
-					            <li class="col-xs-4">
-					            	<span class="app-icons icon-3"></span>
-					            	<p class="app-title text-center">App 3</p>
-					            </li>
-				           	</div>
-				          	<div class="row">
-					            <li class="col-xs-4">
-					            	<span class="app-icons icon-4"></span>
-					            	<p class="app-title text-center">App 4</p>
-					            </li>
-					            <li class="col-xs-4">
-					            	<span class="app-icons icon-5"></span>
-					            	<p class="app-title text-center">App 5</p>
-					            </li>
-					            <li class="col-xs-4">
-					            	<span class="app-icons icon-6"></span>
-					            	<p class="app-title text-center">App 6</p>
-					            </li>
-				            </div>
-				           	<div class="row">
-					            <li class="col-xs-4">
-					            	<span class="app-icons icon-7"></span>
-					            	<p class="app-title text-center">App 7</p>
-					            </li>
-					            <li class="col-xs-4">
-					            	<span class="app-icons icon-8"></span>
-					            	<p class="app-title text-center">App 8</p>
-					            </li>
-					            <li class="col-xs-4">
-					            	<span class="app-icons icon-9"></span>
-					            	<p class="app-title text-center">App 9</p>
-					            </li>
-				            </div>
-				            <div class="row">
-					            <li class="col-xs-4">
-					            	<span class="app-icons icon-10"></span>
-					            	<p class="app-title text-center">App 10</p>
-					            </li>			
-					            <li class="col-xs-4">
-					            	<span class="app-icons icon-11"></span>
-					            	<p class="app-title text-center">App 11</p>
-					            </li>		
-					            <li class="col-xs-4">
-					            	<span class="app-icons icon-12"></span>
-					            	<p class="app-title text-center">App 12</p>
-					            </li>
-				            </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+         <li class="dropdown">
+          <a href="#" class="dropdown-toggle dropdown-icon" data-toggle="dropdown">
+          <span class="myapps-icon nav-icon center-block"></span>
+          My Apps</a>
+	          <ul class="dropdown-menu apps-dropdown">
+		          <div class="dropdown-container">
+			          	<div class="row">
+				            <li class="col-xs-4">
+				            	<span class="app-icons icon-1"></span>
+				            	<p class="app-title text-center">App 1</p>
+				            </li>
+				            <li class="col-xs-4">
+				            	<span class="app-icons icon-2"></span>
+				            	<p class="app-title text-center">App 2</p>
+				            </li>
+				            <li class="col-xs-4">
+				            	<span class="app-icons icon-3"></span>
+				            	<p class="app-title text-center">App 3</p>
+				            </li>
+			           	</div>
+			          	<div class="row">
+				            <li class="col-xs-4">
+				            	<span class="app-icons icon-4"></span>
+				            	<p class="app-title text-center">App 4</p>
+				            </li>
+				            <li class="col-xs-4">
+				            	<span class="app-icons icon-5"></span>
+				            	<p class="app-title text-center">App 5</p>
+				            </li>
+				            <li class="col-xs-4">
+				            	<span class="app-icons icon-6"></span>
+				            	<p class="app-title text-center">App 6</p>
+				            </li>
 			            </div>
-			            <span class="dropdown-more text-center">More Apps</span>
-			          </ul>
-			      </li>
-			  </ul>
-			</div>
+			           	<div class="row">
+				            <li class="col-xs-4">
+				            	<span class="app-icons icon-7"></span>
+				            	<p class="app-title text-center">App 7</p>
+				            </li>
+				            <li class="col-xs-4">
+				            	<span class="app-icons icon-8"></span>
+				            	<p class="app-title text-center">App 8</p>
+				            </li>
+				            <li class="col-xs-4">
+				            	<span class="app-icons icon-9"></span>
+				            	<p class="app-title text-center">App 9</p>
+				            </li>
+			            </div>
+			            <div class="row">
+				            <li class="col-xs-4">
+				            	<span class="app-icons icon-10"></span>
+				            	<p class="app-title text-center">App 10</p>
+				            </li>
+				            <li class="col-xs-4">
+				            	<span class="app-icons icon-11"></span>
+				            	<p class="app-title text-center">App 11</p>
+				            </li>
+				            <li class="col-xs-4">
+				            	<span class="app-icons icon-12"></span>
+				            	<p class="app-title text-center">App 12</p>
+				            </li>
+			            </div>
+		             </div>
+	            		<span class="dropdown-more text-center">More Apps</span>
+		</ul>
+	</li>
+	<li class="dropdown">
+             <a href="#" class="dropdown-toggle dropdown-icon" data-toggle="dropdown">
+             <span class="notifications-icon nav-icon center-block"></span>
+             Notifications</a>
+	          <ul class="dropdown-menu notifications-dropdown brandzone-dropdown">
+		          <div class="dropdown-container">
+			          	<div class="row">
+			          	<div class="media">
+				  <div class="media-left">
+				    <a href="#">
+				      <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=64%C3%9764&w=64&h=64" alt="">
+				    </a>
+				  </div>
+				  <div class="media-body">
+				    <h4 class="media-heading">Your task ‘Proof-read Poster’ is due</h4>
+				    <span class="notification-time">2 hours ago</span>
+				  </div>
+				</div>
+			           	</div>
+		             </div>
+	            		<span class="dropdown-more text-center">View All</span>
+		</ul>
+	</li>
 
-		</div>
 
-	</div>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Notifications <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
 
 
 </body>
