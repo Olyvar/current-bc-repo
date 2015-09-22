@@ -51,6 +51,14 @@
 
 // Custom CSS
 
+.bg-primary{
+	background-color: $brand-primary;
+}
+
+.bg-secondary{
+	background-color: $brand-secondary;
+}
+
 .feather-icon{
 	color: $brand-primary;
 }
@@ -283,3 +291,25 @@
 .icon-11{background-position:8px -643px;}
 .icon-12{background-position:8px -744px;}
 .icon-13{background-position:8px -790px;}
+.widget-icons{
+	background:{
+		repeat: no-repeat;
+		image: url('../images/barclays-sprites.png');
+	}
+	width: 28px;
+	height: 22px;
+	display: inline-block;
+	margin-right: 2px;
+	cursor: pointer;
+}
+
+.widget-icon-group{
+	position:absolute;
+	right: 0;
+	background: rgba(255,255,255,0.8);
+	padding-left: 15px;
+}
+.icon-participants{ background-position:-8px -889px; &:hover{ background-position: -68px -889px; }  }
+.icon-newfiles{ background-position:-8px -863px; &:hover{ background-position: -68px -863px; } }
+.icon-newcomments{ background-position:-8px -839px; &:hover{ background-position: -68px -839px; } }
+.icon-moreactions{ background-position:-7px -908px; &:hover{ background-position: -68px -908px; } }

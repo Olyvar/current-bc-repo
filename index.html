@@ -259,11 +259,31 @@
 	</div>
 
 	<div class="col-md-4">
-	<h1>Widgets</h1>
+
+	<ul class="list-group">
+	  <li class="list-group-item">
+	    <h3 class="list-group-item-heading">My Workspaces</h4>
+	  </li>
+	  <li class="list-group-item clearfix">
+	    <h4 class="list-group-item-heading pull-left">Barclays theme park concepts</h4>
+	    <div class="pull-right widget-icon-group">
+		    <span class="widget-icons icon-participants" data-trigger="hover" data-toggle="popover" data-html="true" data-placement="bottom" data-content="<span class='badge bg-secondary'>LW</span> <span class='badge'>OB</span> <span class='badge bg-primary'>MG</span>"></span>
+		    <span class="widget-icons icon-newfiles"></span>
+		    <span class="widget-icons icon-newcomments"></span>
+		    <span class="widget-icons icon-moreactions" data-trigger="click" data-toggle="popover" data-html="true" data-placement="bottom" data-content="<a class='btn-link btn'>More actions</a>"></span>
+	    </div>
+	  </li>
+	</ul>
+
 	</div>
 </div>
 </div>
 
+<script>
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+</script>
 
 </body>
 </html>

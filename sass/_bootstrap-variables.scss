@@ -78,7 +78,7 @@ $headings-color:          $brand-secondary;
 
 // [converter] If $bootstrap-sass-asset-helper if used, provide path relative to the assets load path.
 // [converter] This is because some asset helpers, such as Sprockets, do not work with file-relative paths.
-// $icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "../fonts/bootstrap/")
+//$icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "../fonts/bootstrap/");
 
 //* File name for all font files.
 // $icon-font-name:          "glyphicons-halflings-regular"
@@ -357,7 +357,7 @@ $navbar-default-bg:                white;
 // $navbar-default-link-hover-color:          #333
 // $navbar-default-link-hover-bg:             transparent
 // $navbar-default-link-active-color:         #555
-$navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%);
+$navbar-default-link-active-bg:            white;
 // $navbar-default-link-disabled-color:       #ccc
 // $navbar-default-link-disabled-bg:          transparent
 
