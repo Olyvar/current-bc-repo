@@ -339,7 +339,7 @@
 .icon-completetask{ background-position:-7px -1038px; &:hover{ background-position: -67px -1038px; } }
 .icon-edittask{ background-position:-7px -1010px; &:hover{ background-position: -67px -1010px; } }
 .icon-approvers{ background-position:-9px -1088px; &:hover{ background-position: -69px -1088px; } }
-
+.icon-downloadshare{ position:absolute; right: 5px; background-position:-7px -1117px; &:hover{ background-position: -67px -1117px; } }
 
 h3.list-group-item-heading, .workspaces .list-group-item-heading, .project-heading .list-group-item-heading{ margin-bottom: 0;}
 
@@ -377,4 +377,26 @@ h3.list-group-item-heading, .workspaces .list-group-item-heading, .project-headi
   		margin-right:0;
   	}
   }
+}
+.nav-tabs{
+	margin-bottom: 15px;
+}
+
+.form-inline{
+	.form-group{
+		margin-left: 15px;
+	}
+}
+
+.panel{
+	.list-group-item{
+		.badge{
+			float: left;
+			margin-right: 10px;
+		}
+	}
+}
+
+.panel-heading{
+	position:relative;
 }

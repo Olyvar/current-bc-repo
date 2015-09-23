@@ -177,7 +177,7 @@ $btn-primary-border:           $brand-primary;
 //* `<input>` background color
 // $input-bg:                       #fff
 //* `<input disabled>` background color
-// $input-bg-disabled:              $gray-lighter
+$input-bg-disabled:              #f3f3f3;
 
 //* Text color for `<input>`s
 // $input-color:                    $gray
@@ -679,15 +679,15 @@ $popover-title-bg:                   white;
 
 //* Border color for elements within panels
 // $panel-inner-border:          #ddd
-// $panel-footer-bg:             #f5f5f5
+$panel-footer-bg:          rgba($brand-primary, 0.04);
 
-// $panel-default-text:          $gray-dark
+ $panel-default-text:          $brand-secondary;
 // $panel-default-border:        #ddd
-// $panel-default-heading-bg:    #f5f5f5
+$panel-default-heading-bg:    rgba($brand-primary, 0.04);
 
-// $panel-primary-text:          #fff
-// $panel-primary-border:        $brand-primary
-// $panel-primary-heading-bg:    $brand-primary
+//$panel-primary-text:          $brand-primary;
+//$panel-primary-border:        $brand-primary;
+//$panel-primary-heading-bg:    #fff;
 
 // $panel-success-text:          $state-success-text
 // $panel-success-border:        $state-success-border
