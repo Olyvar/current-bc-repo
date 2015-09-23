@@ -1,13 +1,3 @@
-// Import Bootstrap Compass integration
-@import "bootstrap-compass";
-@import "compass";
-
-// Import custom Bootstrap variables
-@import "bootstrap-variables";
-
-// Import Bootstrap for Sass
-@import "bootstrap";
-
 @font-face {
     font-family: "Expert-Sans-Regular";
     src: url("../fonts/expert-sans/font-eot/expertsans-regular-webfont.eot");
@@ -49,6 +39,16 @@
     font-style: normal;
 }
 
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
+@import "compass";
+
+// Import custom Bootstrap variables
+@import "bootstrap-variables";
+
+// Import Bootstrap for Sass
+@import "bootstrap";
+
 // Custom CSS
 
 .bg-primary{
@@ -71,11 +71,13 @@
 	font-size: 1.3em;
 }
 
+%sprite {
+	background-repeat: no-repeat;
+	background-image: url('../images/barclays-sprites-01.png');
+}
+
 .nav-icon{
-	background:{
-		repeat: no-repeat;
-		image: url('../images/barclays-sprites.png');
-	}
+	@extend %sprite;
 	width: 50px;
 	height: 40px;
 }
@@ -211,8 +213,7 @@
 }
 
 .app-icons{
-	background-image: url('../images/barclays-sprites.png');
-	background-repeat: no-repeat;
+	@extend %sprite;
 	width: 60px;
 	height: 50px;
 	display: block;
@@ -260,7 +261,7 @@
 }
 
 .jumbotron-photobg{
-	background-image:url("../images/news-photo.jpg");
+	background-image:url("https://barclays-brandzone.firebaseapp.com/images/news-photo.jpg");
 	@include background-size(cover);
 }
 
@@ -290,12 +291,9 @@
 .icon-10{background-position:8px -694px;}
 .icon-11{background-position:8px -643px;}
 .icon-12{background-position:8px -744px;}
-.icon-13{background-position:8px -790px;}
+.icon-13{background-position:8px -789px;}
 .widget-icons{
-	background:{
-		repeat: no-repeat;
-		image: url('../images/barclays-sprites.png');
-	}
+	@extend %sprite;
 	width: 28px;
 	height: 22px;
 	display: inline-block;
@@ -309,7 +307,74 @@
 	background: rgba(255,255,255,0.8);
 	padding-left: 15px;
 }
+
+.tasks-icon-group{
+	top: 10px;
+}
+
+.respond-button {
+	@extend .tasks-icon-group;
+	@extend .widget-icon-group;
+	right: 10px;
+}
+.icon-add{
+	@extend %sprite;
+	position: absolute;
+	right: 15px;
+	width: 25px;
+	height: 25px;
+	background-position: -8px -979px;
+	cursor: pointer;
+	&:hover{
+		background-position: -69px -979px;
+	}
+}
 .icon-participants{ background-position:-8px -889px; &:hover{ background-position: -68px -889px; }  }
 .icon-newfiles{ background-position:-8px -863px; &:hover{ background-position: -68px -863px; } }
 .icon-newcomments{ background-position:-8px -839px; &:hover{ background-position: -68px -839px; } }
 .icon-moreactions{ background-position:-7px -908px; &:hover{ background-position: -68px -908px; } }
+.icon-remove{ background-position:-7px -931px; &:hover{ background-position: -67px -931px; } }
+.icon-fileupload{ background-position:-7px -954px; &:hover{ background-position: -67px -954px; } }
+.icon-starttask{ background-position:-7px -1063px; &:hover{ background-position: -67px -1063px; } }
+.icon-completetask{ background-position:-7px -1038px; &:hover{ background-position: -67px -1038px; } }
+.icon-edittask{ background-position:-7px -1010px; &:hover{ background-position: -67px -1010px; } }
+.icon-approvers{ background-position:-9px -1088px; &:hover{ background-position: -69px -1088px; } }
+
+
+h3.list-group-item-heading, .workspaces .list-group-item-heading, .project-heading .list-group-item-heading{ margin-bottom: 0;}
+
+
+.popover-title{
+	text-align: center;
+	font-family: 'Expert-Sans-Regular', Arial, sans-serif;
+	border-bottom: 1px solid $gray-lighter;
+	border-bottom: 1px solid rgba($brand-secondary, 0.3);
+}
+
+.project-heading{
+	font-family: 'Expert-Sans-Regular', Arial, sans-serif;
+	border-left: 2px solid $brand-primary;
+	background: rgba($brand-primary, 0.04);
+	cursor: pointer;
+	em{
+	font-family: 'Expert-Sans-Light', Arial, sans-serif;
+	color: $gray-light;
+	font-style: normal;
+	}
+}
+
+.approval-images{
+	cursor: pointer;
+}
+
+.center-images {
+  display: table;
+  margin: auto;
+  margin-top: 10px;
+  img{
+  	margin-right: 3px;
+  	&:last-child{
+  		margin-right:0;
+  	}
+  }
+}
