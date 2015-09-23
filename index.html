@@ -22,7 +22,7 @@
       </button>
     <ul class="nav navbar-nav">
     <li>
-    <a class="navbar-icon" href="#"><span class="home-icon nav-icon center-block"></span></a>
+    <a class="navbar-icon" href="index.html"><span class="home-icon nav-icon center-block"></span></a>
     </li>
     </ul>
     </div>
@@ -90,8 +90,9 @@
 			            </div>
 			           	<div class="row">
 				            <li class="col-xs-4">
-				            	<span class="app-icons icon-7"></span>
-				            	<p class="app-title text-center">My Share</p>
+				            <a class="link-unstyled" href="shares.html">
+				            <span class="app-icons icon-7"></span>
+				            	<p class="app-title text-center">My Share</p></a>
 				            </li>
 				            <li class="col-xs-4">
 				            	<span class="app-icons icon-8"></span>
@@ -198,7 +199,8 @@
 			  	<div class="col-md-8 white-hero">
 			  	<h1>News from Barclays</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam esse ea consectetur, non commodi, aliquam omnis maxime impedit distinctio nisi est nobis. Distinctio quidem dolores animi optio repellendus, voluptatum reprehenderit!</p>
-				<p><a class="btn btn-primary btn-lg" href="#" role="button">Read more</a></p>
+
+				<p><a class="btn btn-primary btn-lg" href="#" role="button">Read more</a> <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#shareModal"><span class="icon-share"></span></button></p>
 				</div>
 
 			</div>
@@ -368,7 +370,7 @@
 			    <img class="approval-images" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=64%C3%9764&w=64&h=64">
 		    </div>
 		    <div class="pull-right respond-button">
-		    	<a class="btn btn-link btn-link-action js-view-files" href="#">View file(s) &nbsp;<span class="icon-file"></span></a>
+		    	<a class="btn btn-link btn-link-action js-view-files">View file(s) &nbsp;<span class="icon-file"></span></a>
 			<a class="btn btn-primary"> Approve files &nbsp;<span class="feather-inverse icon-circle-check"></span></a>
 		    </div>
 		  </li>
@@ -385,7 +387,7 @@
 			    <img class="approval-images" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=64%C3%9764&w=64&h=64">
 		    </div>
 		    <div class="pull-right respond-button">
-		    	<a class="btn btn-link btn-link-action js-view-files" href="#">View file(s) &nbsp;<span class="icon-file"></span></a>
+		    	<a class="btn btn-link btn-link-action js-view-files">View file(s) &nbsp;<span class="icon-file"></span></a>
 			<a class="btn btn-primary"> Approve file(s) &nbsp;<span class="feather-inverse icon-circle-check"></span></a>
 		    </div>
 		  </li>
@@ -416,6 +418,47 @@ $(".js-toggle-images").hide();
 
 })
 </script>
+
+
+
+<div class="modal fade share-modal" id="shareModal" role="dialog" aria-labelledby="gridSystemModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="gridSystemModalLabel">Share File(s) with <input type="email" class="share-with" placeholder="Start typing"></h4>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+	  <textarea class="share-comment" rows="3" placeholder="Add comment..."></textarea>
+          </div>
+          <div class="row share-file-preview">
+          <img src="images/share-p7.jpg" class="img-responsive img-solo" alt="">
+          </div>
+          <div class="row">
+	<form class="form-horizontal">
+	    <label for="inputEmail3" class="col-sm-6 control-label">Why are you sharing?</label>
+	    <div class="col-sm-6">
+	      <select class="form-control">
+	      <option>For download</option>
+	      <option>For comments/feedback</option>
+	      <option>For approval</option>
+	      </select>
+	    </div>
+	 </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-default btn btn-sm pull-left"><span class="icon-cog"></span> Share settings</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Share <span class="icon-share"></span></button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 
 </body>
 </html>

@@ -6286,7 +6286,7 @@ button.close {
 /* line 79, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_modals.scss */
 .modal-header {
   padding: 15px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid rgba(0, 126, 182, 0.3);
   min-height: 16.42857143px; }
 
 /* line 85, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_modals.scss */
@@ -6307,7 +6307,7 @@ button.close {
 .modal-footer {
   padding: 15px;
   text-align: right;
-  border-top: 1px solid #e5e5e5; }
+  border-top: 1px solid rgba(0, 126, 182, 0.3); }
   /* line 14, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
   .modal-footer:before, .modal-footer:after {
     content: " ";
@@ -6337,7 +6337,7 @@ button.close {
 @media (min-width: 768px) {
   /* line 136, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_modals.scss */
   .modal-dialog {
-    width: 600px;
+    width: 500px;
     margin: 30px auto; }
 
   /* line 140, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_modals.scss */
@@ -7206,7 +7206,7 @@ button.close {
       -webkit-transition: all, 0.2s;
       -o-transition: all, 0.2s;
       transition: all, 0.2s;
-      background: #fbfbfb;
+      background: #f9f9f9;
       cursor: pointer; }
 
 /* line 174, ../sass/styles.scss */
@@ -7481,8 +7481,6 @@ button.close {
 
 /* line 342, ../sass/styles.scss */
 .icon-downloadshare {
-  position: absolute;
-  right: 5px;
   background-position: -7px -1117px; }
   /* line 342, ../sass/styles.scss */
   .icon-downloadshare:hover {
@@ -7535,11 +7533,53 @@ h3.list-group-item-heading, .workspaces .list-group-item-heading, .project-headi
 .form-inline .form-group {
   margin-left: 15px; }
 
-/* line 393, ../sass/styles.scss */
+/* line 394, ../sass/styles.scss */
 .panel .list-group-item .badge {
   float: left;
   margin-right: 10px; }
+/* line 398, ../sass/styles.scss */
+.panel-footer .badge {
+  font-weight: normal; }
 
-/* line 400, ../sass/styles.scss */
+/* line 403, ../sass/styles.scss */
 .panel-heading {
   position: relative; }
+
+/* line 407, ../sass/styles.scss */
+.share-image-border {
+  border: 1px solid #eeeeee;
+  margin-bottom: 12px; }
+
+/* line 412, ../sass/styles.scss */
+.link-unstyled {
+  color: #333; }
+  /* line 414, ../sass/styles.scss */
+  .link-unstyled:hover {
+    color: #333;
+    text-decoration: none; }
+
+/* line 420, ../sass/styles.scss */
+.share-comment {
+  width: 100%;
+  border: none;
+  outline: none;
+  margin-bottom: 10px; }
+
+/* line 428, ../sass/styles.scss */
+.share-modal .img-solo {
+  width: 100%; }
+
+/* line 433, ../sass/styles.scss */
+.share-with {
+  border: 1px solid #eeeeee;
+  width: 250px;
+  font-size: 16px;
+  padding: 5px; }
+
+/* line 440, ../sass/styles.scss */
+.share-file-preview {
+  margin-bottom: 10px; }
+
+/* line 444, ../sass/styles.scss */
+.modal-header, .modal-footer {
+  background: rgba(0, 126, 182, 0.04); }

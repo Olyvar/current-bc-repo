@@ -165,7 +165,7 @@
 		padding: 10px 10px 5px 5px;
 		&:hover{
 			@include transition(all, 0.2s);
-			background: lighten($gray-lighter, 5%);
+			background: lighten($gray-lighter, 4%);
 			cursor: pointer;
 		}
 	}
@@ -339,7 +339,7 @@
 .icon-completetask{ background-position:-7px -1038px; &:hover{ background-position: -67px -1038px; } }
 .icon-edittask{ background-position:-7px -1010px; &:hover{ background-position: -67px -1010px; } }
 .icon-approvers{ background-position:-9px -1088px; &:hover{ background-position: -69px -1088px; } }
-.icon-downloadshare{ position:absolute; right: 5px; background-position:-7px -1117px; &:hover{ background-position: -67px -1117px; } }
+.icon-downloadshare{ background-position:-7px -1117px; &:hover{ background-position: -67px -1117px; } }
 
 h3.list-group-item-heading, .workspaces .list-group-item-heading, .project-heading .list-group-item-heading{ margin-bottom: 0;}
 
@@ -388,15 +388,59 @@ h3.list-group-item-heading, .workspaces .list-group-item-heading, .project-headi
 	}
 }
 
-.panel{
-	.list-group-item{
-		.badge{
-			float: left;
-			margin-right: 10px;
-		}
+
+
+.badge{
+	.panel .list-group-item &{
+		float: left;
+		margin-right: 10px;
+	}
+	.panel-footer &{
+		font-weight: normal
 	}
 }
 
 .panel-heading{
 	position:relative;
+}
+
+.share-image-border{
+	border: 1px solid $gray-lighter;
+	margin-bottom: 12px;
+}
+
+.link-unstyled{
+	color: #333;
+	&:hover{
+		color: #333;
+		text-decoration: none;
+	}
+}
+
+.share-comment{
+	width: 100%;
+	border: none;
+	outline: none;
+	margin-bottom:10px;
+}
+
+.share-modal{
+	.img-solo{
+		width:100%;
+	}
+}
+
+.share-with{
+	border: 1px solid $gray-lighter;
+	width: 250px;
+	font-size: 16px;
+	padding: 5px;
+}
+
+.share-file-preview{
+	margin-bottom: 10px;
+}
+
+.modal-header, .modal-footer{
+	background: rgba($brand-primary, 0.04);
 }
