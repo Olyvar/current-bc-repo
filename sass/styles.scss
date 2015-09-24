@@ -441,6 +441,27 @@ h3.list-group-item-heading, .workspaces .list-group-item-heading, .project-headi
 	margin-bottom: 10px;
 }
 
+.share-relative{
+	position: absolute;
+	right: 5px;
+	bottom: 4px;
+}
+
 .modal-header, .modal-footer{
 	background: rgba($brand-primary, 0.04);
 }
+
+.text-left{
+	text-align: left !important;
+}
+
+.brandzone-heading{
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.image-library-container{
+	margin-top: 20px;
+}
+
+@import "brand-center";
