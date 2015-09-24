@@ -66,6 +66,12 @@ $(".js-toggle-images").hide();
 
 });
 
-
+$(".share-new-text").hide();
+$(".share-new").hover( function(){
+$(".share-new-text").show('slow');
+},
+function(){
+$(".share-new-text").hide();
+});
 
 });
