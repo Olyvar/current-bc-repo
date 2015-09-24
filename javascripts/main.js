@@ -62,6 +62,10 @@ $(".js-toggle-images").hide();
     $(this).next(".js-tasks").next(".js-tasks").toggle();
   });
 
+    $(".sortable").sortable();
+
 });
+
+
 
 });
