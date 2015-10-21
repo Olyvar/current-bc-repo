@@ -50,6 +50,8 @@
 @import "bootstrap";
 
 
+
+
 // Custom CSS
 
 .bg-primary{
@@ -293,6 +295,7 @@
 .icon-11{background-position:8px -643px;}
 .icon-12{background-position:8px -744px;}
 .icon-13{background-position:8px -789px;}
+
 .widget-icons{
 	@extend %sprite;
 	width: 28px;
@@ -307,6 +310,10 @@
 	right: 0;
 	background: rgba(255,255,255,0.8);
 	padding-left: 15px;
+}
+
+.widget-toolbar {
+	margin-bottom: 10px;
 }
 
 .tasks-icon-group{
@@ -342,8 +349,25 @@
 .icon-approvers{ background-position:-9px -1088px; &:hover{ background-position: -69px -1088px; } }
 .icon-downloadshare{ background-position:-7px -1117px; &:hover{ background-position: -67px -1117px; } }
 
+.icon-fast-forward, .icon-rewind{
+	font-size: x-large;
+}
+
 h3.list-group-item-heading, .workspaces .list-group-item-heading, .project-heading .list-group-item-heading{ margin-bottom: 0;}
 
+.widget-heading-tab{
+	cursor: move;
+	color: white;
+	background-color: $brand-primary;
+	border: 1px solid $brand-primary;
+	h3{
+		color: white;
+	}
+}
+
+.popover {
+	border: none;
+}
 
 .popover-title{
 	text-align: center;
@@ -355,13 +379,19 @@ h3.list-group-item-heading, .workspaces .list-group-item-heading, .project-headi
 .project-heading{
 	font-family: 'Expert-Sans-Regular', Arial, sans-serif;
 	border-left: 2px solid $brand-primary;
-	background: rgba($brand-primary, 0.04);
+	background: $brand-primary-x-light;
 	cursor: pointer;
 	em{
 	font-family: 'Expert-Sans-Light', Arial, sans-serif;
 	color: $gray-light;
 	font-style: normal;
 	}
+}
+
+.tour-center-start{
+	position: absolute;
+	top: 200px;
+	left:50%;
 }
 
 .approval-images{
@@ -388,8 +418,6 @@ h3.list-group-item-heading, .workspaces .list-group-item-heading, .project-headi
 		margin-left: 15px;
 	}
 }
-
-
 
 .badge{
 	.panel .list-group-item &{
@@ -449,7 +477,7 @@ h3.list-group-item-heading, .workspaces .list-group-item-heading, .project-headi
 }
 
 .modal-header, .modal-footer{
-	background: rgba($brand-primary, 0.04);
+	background: $brand-primary-x-light;
 }
 
 .text-left{
@@ -465,5 +493,26 @@ h3.list-group-item-heading, .workspaces .list-group-item-heading, .project-headi
 	margin-top: 20px;
 }
 
-
 @import "brand-center";
+
+.tour-backdrop{
+	background-color: #002b3e;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+
+#quick-access-sortable > li.col-xs-4.apps-dropdown-unique{
+	width: auto !important;
+	padding-left: 0;
+	padding-right: 0;
+	float: left;
+	position: relative;
+	display: block;
+	.link-unstyled{
+		padding-top:0;
+		padding-bottom: 0;
+	}
+	.app-title{
+		display: none;
+	}
+}

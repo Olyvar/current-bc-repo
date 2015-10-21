@@ -4,10 +4,12 @@
 	<meta charset="UTF-8">
 	<title>Barclays Components</title>
 	<link rel="stylesheet" href="fonts/feather-webfont/feather.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap-tour.min.css">
 	<link rel="stylesheet" href="stylesheets/styles.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="javascripts/bootstrap.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+	<script src="javascripts/bootstrap-tour.min.js"></script>
 </head>
 <body>
 
@@ -23,7 +25,7 @@
       </button>
     <ul class="nav navbar-nav">
     <li>
-    <a class="navbar-icon" href="index.html"><span class="home-icon nav-icon center-block"></span></a>
+    <a class="navbar-icon" href="index.html"><span class="home-icon tour-home nav-icon center-block"></span></a>
     </li>
     </ul>
     </div>
@@ -36,86 +38,78 @@
       </form>
 
      <div class="navbar-header">
-      <a class="navbar-brand" href="#">Barclays Brandzone</a>
+
     </div>
 
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
+    <div class="collapse navbar-collapse">
+      <ul id="quick-access-sortable" class="nav navbar-nav navbar-right connectedSortable">
 
-          <li>
-          <a href="image-library.html" class="dropdown-toggle navbar-icon">
-          <span class="icon-1 fave-icon nav-icon center-block"></span></a>
-          </li>
-          <li>
-          <a href="#" class="dropdown-toggle navbar-icon" data-toggle="dropdown">
-          <span class="icon-4 fave-icon nav-icon center-block"></span></a>
-          </li>
           <li>
           <a href="#" class="dropdown-toggle navbar-icon" data-toggle="dropdown">
           <span class="icon-5 fave-icon nav-icon center-block"></span></a>
           </li>
-         <li class="dropdown fave-divider">
+         <li class="dropdown fave-divider js-myapps">
           <a href="image-library.html" class="dropdown-toggle navbar-icon" data-toggle="dropdown">
-          <span class="myapps-icon nav-icon center-block"></span>
+          <span class="myapps-icon tour-myapps nav-icon center-block"></span>
           <span class="sr-only">My Apps</span></a>
 	          <ul class="dropdown-menu apps-dropdown navbar-dropdown">
 		          <div class="dropdown-container">
-			          	<div class="row">
-				            <li class="col-xs-4">
+			          	<div class="apps-sortable" class="row">
+				            <li class="col-xs-4 apps-dropdown-unique">
 				            <a class="link-unstyled" href="image-library.html">
 				            	<span class="app-icons icon-1"></span>
 				            	<p class="app-title text-center">Image Library</p>
 				            	</a>
 				            </li>
-				            <li class="col-xs-4">
+				            <li class="col-xs-4 apps-dropdown-unique">
 				            	<span class="app-icons icon-2"></span>
 				            	<p class="app-title text-center">Best Practice</p>
 				            </li>
-				            <li class="col-xs-4">
+				            <li class="col-xs-4 apps-dropdown-unique">
 				            	<span class="app-icons icon-3"></span>
 				            	<p class="app-title text-center">News</p>
 				            </li>
 			           	</div>
-			          	<div class="row">
-				            <li class="col-xs-4">
+			          	<div class="apps-sortable row">
+				            <li class="col-xs-4 apps-dropdown-unique">
 				            	<span class="app-icons icon-4"></span>
 				            	<p class="app-title text-center">Activity Manager</p>
 				            </li>
-				            <li class="col-xs-4">
+				            <li class="col-xs-4 apps-dropdown-unique">
 				            	<span class="app-icons icon-5"></span>
 				            	<p class="app-title text-center">Showcase</p>
 				            </li>
-				            <li class="col-xs-4">
+				            <li class="col-xs-4 apps-dropdown-unique">
 				            	<span class="app-icons icon-6"></span>
 				            	<p class="app-title text-center">Reports</p>
 				            </li>
 			            </div>
-			           	<div class="row">
-				            <li class="col-xs-4">
+			           	<div class="apps-sortable row">
+				            <li class="col-xs-4 apps-dropdown-unique">
 				            <a class="link-unstyled" href="shares.html">
 				            <span class="app-icons icon-7"></span>
 				            	<p class="app-title text-center">Sharezone</p></a>
 				            </li>
-				            <li class="col-xs-4">
+				            <li class="col-xs-4 apps-dropdown-unique">
 				            	<span class="app-icons icon-8"></span>
 				            	<p class="app-title text-center">MEA</p>
 				            </li>
-				            <li class="col-xs-4">
+				            <li class="col-xs-4 apps-dropdown-unique">
 				            	<span class="app-icons icon-9"></span>
 				            	<p class="app-title text-center">Sponsorship</p>
 				            </li>
 			            </div>
-			            <div class="row">
-				            <li class="col-xs-4">
+			            <div class="apps-sortable row">
+				            <li class="col-xs-4 apps-dropdown-unique">
 				            	<span class="app-icons icon-10"></span>
 				            	<p class="app-title text-center">CCR</p>
 				            </li>
-				            <li class="col-xs-4">
+				            <li class="col-xs-4 apps-dropdown-unique">
 				            	<span class="app-icons icon-11"></span>
 				            	<p class="app-title text-center">Creative Review</p>
 				            </li>
-				            <li class="col-xs-4">
+				            <li class="col-xs-4 apps-dropdown-unique">
 				            	<span class="app-icons icon-12"></span>
 				            	<p class="app-title text-center">Helpdesk</p>
 				            </li>
@@ -181,6 +175,7 @@
 	             <ul class="dropdown-menu navbar-dropdown user-dropdown">
 			<li><a href="#">My Profile</a></li>
 		    	<li><a href="#">Help</a></li>
+		    	<li><a class="js-start-tour" href="#">Start tour</a></li>
 		    	<li><a href="#">Language</a></li>
 		            	<span class="dropdown-more dropdown-bottom-link text-center"><span class="icon-power"></span> Sign out</span>
 		</ul>
@@ -194,7 +189,7 @@
 
 <div class="container-fluid">
 <div class="row">
-	<div class="col-md-8">
+	<div class="col-md-8 js-main-content">
 		<div class="jumbotron jumbotron-photobg">
 
 			<div class="row">
@@ -203,7 +198,7 @@
 			  	<h1>News from Barclays</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam esse ea consectetur, non commodi, aliquam omnis maxime impedit distinctio nisi est nobis. Distinctio quidem dolores animi optio repellendus, voluptatum reprehenderit!</p>
 
-				<p><a class="btn btn-primary btn-lg" href="#" role="button">Read more</a> <button type="button" class="btn btn-link btn-link-action btn-lg" data-toggle="modal" data-target="#shareModal"><span class="icon-share"></span></button></p>
+				<p><a class="btn btn-primary btn-lg" href="#" role="button">Read more</a> <button type="button" class="btn btn-link btn-link-action btn-lg tour-share" data-toggle="modal" data-target="#shareModal"><span class="icon-share"></span></button></p>
 				</div>
 
 			</div>
@@ -262,10 +257,15 @@
 		</div>
 	</div>
 
-	<div class="col-md-4 sortable">
+	<div class="col-md-4 sortable js-widget-column">
 
-		<ul class="list-group workspaces">
-		  <li class="list-group-item  clearfix workspace-hook">
+		<div class="widget-toolbar clearfix">
+			 <!-- <span class="widget-icons icon-remove pull-right"></span> -->
+			 <a class="btn-link pull-right js-close-widgets" href="#"><span class="icon-fast-forward"></span></a>
+		</div>
+
+		<ul class="list-group workspaces js-widget">
+		  <li class="list-group-item widget-heading-tab  clearfix workspace-hook">
 		    <h3 class="list-group-item-heading pull-left">My Workspaces</h3> <span class="icon-add"></span>
 		  </li>
 		  <li class="list-group-item clearfix">
@@ -306,8 +306,8 @@
 		  </li>
 		</ul>
 
-		<ul class="list-group">
-		  <li class="list-group-item clearfix">
+		<ul class="list-group js-widget my-tasks">
+		  <li class="list-group-item widget-heading-tab  clearfix">
 		    <h3 class="list-group-item-heading pull-left">My Tasks</h3>
 		  </li>
 		  <li class="list-group-item clearfix">
@@ -345,8 +345,8 @@
 		  </li>
 		</ul>
 
-		<ul class="list-group">
-		  <li class="list-group-item clearfix">
+		<ul class="list-group js-widget my-approvals">
+		  <li class="list-group-item widget-heading-tab  clearfix">
 		    <h3 class="list-group-item-heading pull-left">My Approvals</h3>
 		  </li>
 		  <li class="list-group-item clearfix project-heading">
@@ -399,6 +399,7 @@
 	</div>
 </div>
 </div>
+
 
 <script src="javascripts/main.js"></script>
 
