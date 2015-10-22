@@ -35,86 +35,76 @@
         <button type="submit" class="btn btn-primary"><span class="icon-search feather-icon-inverse"></span></button>
       </form>
 
-     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Barclays Brandzone</a>
-    </div>
 
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
+   <div class="collapse navbar-collapse">
+      <ul id="quick-access-sortable" class="nav navbar-nav navbar-right connectedSortable">
 
           <li>
-          <a href="image-library.html" class="dropdown-toggle navbar-icon">
-          <span class="icon-1 fave-icon nav-icon center-block"></span></a>
-          </li>
-          <li>
-          <a href="#" class="dropdown-toggle navbar-icon">
-          <span class="icon-4 fave-icon nav-icon center-block"></span></a>
-          </li>
-          <li>
-          <a href="#" class="dropdown-toggle navbar-icon">
+          <a href="#" class="dropdown-toggle navbar-icon" data-toggle="dropdown">
           <span class="icon-5 fave-icon nav-icon center-block"></span></a>
           </li>
-         <li class="dropdown fave-divider">
-          <a href="#" class="dropdown-toggle navbar-icon" data-toggle="dropdown">
-          <span class="myapps-icon nav-icon center-block"></span>
+         <li class="dropdown fave-divider js-myapps">
+          <a href="image-library.html" class="dropdown-toggle navbar-icon" data-toggle="dropdown">
+          <span class="myapps-icon tour-myapps nav-icon center-block"></span>
           <span class="sr-only">My Apps</span></a>
 	          <ul class="dropdown-menu apps-dropdown navbar-dropdown">
 		          <div class="dropdown-container">
-			          	<div class="row">
-				            <li class="col-xs-4">
+			          	<div class="apps-sortable" class="row">
+				            <li class="col-xs-4 apps-dropdown-unique">
 				            <a class="link-unstyled" href="image-library.html">
 				            	<span class="app-icons icon-1"></span>
 				            	<p class="app-title text-center">Image Library</p>
 				            	</a>
 				            </li>
-				            <li class="col-xs-4">
+				            <li class="col-xs-4 apps-dropdown-unique">
 				            	<span class="app-icons icon-2"></span>
 				            	<p class="app-title text-center">Best Practice</p>
 				            </li>
-				            <li class="col-xs-4">
+				            <li class="col-xs-4 apps-dropdown-unique">
 				            	<span class="app-icons icon-3"></span>
 				            	<p class="app-title text-center">News</p>
 				            </li>
 			           	</div>
-			          	<div class="row">
-				            <li class="col-xs-4">
+			          	<div class="apps-sortable row">
+				            <li class="col-xs-4 apps-dropdown-unique">
 				            	<span class="app-icons icon-4"></span>
 				            	<p class="app-title text-center">Activity Manager</p>
 				            </li>
-				            <li class="col-xs-4">
+				            <li class="col-xs-4 apps-dropdown-unique">
 				            	<span class="app-icons icon-5"></span>
 				            	<p class="app-title text-center">Showcase</p>
 				            </li>
-				            <li class="col-xs-4">
+				            <li class="col-xs-4 apps-dropdown-unique">
 				            	<span class="app-icons icon-6"></span>
 				            	<p class="app-title text-center">Reports</p>
 				            </li>
 			            </div>
-			           	<div class="row">
-				            <li class="col-xs-4">
-				            	<span class="app-icons icon-7"></span>
-				            	<p class="app-title text-center">Sharezone</p>
+			           	<div class="apps-sortable row">
+				            <li class="col-xs-4 apps-dropdown-unique">
+				            <a class="link-unstyled" href="shares.html">
+				            <span class="app-icons icon-7"></span>
+				            	<p class="app-title text-center">Sharezone</p></a>
 				            </li>
-				            <li class="col-xs-4">
+				            <li class="col-xs-4 apps-dropdown-unique">
 				            	<span class="app-icons icon-8"></span>
 				            	<p class="app-title text-center">MEA</p>
 				            </li>
-				            <li class="col-xs-4">
+				            <li class="col-xs-4 apps-dropdown-unique">
 				            	<span class="app-icons icon-9"></span>
 				            	<p class="app-title text-center">Sponsorship</p>
 				            </li>
 			            </div>
-			            <div class="row">
-				            <li class="col-xs-4">
+			            <div class="apps-sortable row">
+				            <li class="col-xs-4 apps-dropdown-unique">
 				            	<span class="app-icons icon-10"></span>
 				            	<p class="app-title text-center">CCR</p>
 				            </li>
-				            <li class="col-xs-4">
+				            <li class="col-xs-4 apps-dropdown-unique">
 				            	<span class="app-icons icon-11"></span>
 				            	<p class="app-title text-center">Creative Review</p>
 				            </li>
-				            <li class="col-xs-4">
+				            <li class="col-xs-4 apps-dropdown-unique">
 				            	<span class="app-icons icon-12"></span>
 				            	<p class="app-title text-center">Helpdesk</p>
 				            </li>
@@ -193,7 +183,7 @@
 
 <div class="container-fluid">
 <div class="row">
-	<div class="col-md-8">
+	<div class="col-md-8 js-main-content">
 		<div class="row">
 			<div class="col-md-12">
 				<ul class="nav nav-tabs">
@@ -352,10 +342,24 @@
 
 	</div>
 
-	<div class="col-md-4 sortable">
+	<div class="col-md-4 sortable js-widget-column">
 
-		<ul class="list-group workspaces">
-		  <li class="list-group-item  clearfix workspace-hook">
+		<div class="widget-toolbar clearfix">
+			 <a class="btn-link pull-right js-close-widgets" href="#"><span class="icon-fast-forward"></span></a>
+		</div>
+
+		<div class="clearfix pull-right js-widget-icons">
+			<ul class="widget-main-icons">
+			<li class="workspaces-icon" data-trigger="hover" data-toggle="popover" data-html="true" data-placement="left" data-content="Workspaces"></li>
+			<li class="mytasks-icon" data-trigger="hover" data-toggle="popover" data-html="true" data-placement="left" data-content="My Tasks"></li>
+			<li class="myapprovals-icon" data-trigger="hover" data-toggle="popover" data-html="true" data-placement="left" data-content="My Approvals"></li>
+			<li class="uploadfile-icon" data-trigger="hover" data-toggle="popover" data-html="true" data-placement="left" data-content="Quick uploader"></li>
+			</ul>
+		</div>
+
+
+		<ul class="list-group workspaces js-widget">
+		  <li class="list-group-item widget-heading-tab  clearfix workspace-hook">
 		    <h3 class="list-group-item-heading pull-left">My Workspaces</h3> <span class="icon-add"></span>
 		  </li>
 		  <li class="list-group-item clearfix">
@@ -396,8 +400,8 @@
 		  </li>
 		</ul>
 
-		<ul class="list-group">
-		  <li class="list-group-item clearfix">
+		<ul class="list-group js-widget my-tasks">
+		  <li class="list-group-item widget-heading-tab  clearfix">
 		    <h3 class="list-group-item-heading pull-left">My Tasks</h3>
 		  </li>
 		  <li class="list-group-item clearfix">
@@ -435,8 +439,8 @@
 		  </li>
 		</ul>
 
-		<ul class="list-group">
-		  <li class="list-group-item clearfix">
+		<ul class="list-group js-widget my-approvals">
+		  <li class="list-group-item widget-heading-tab  clearfix">
 		    <h3 class="list-group-item-heading pull-left">My Approvals</h3>
 		  </li>
 		  <li class="list-group-item clearfix project-heading">

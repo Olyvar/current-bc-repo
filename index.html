@@ -260,9 +260,18 @@
 	<div class="col-md-4 sortable js-widget-column">
 
 		<div class="widget-toolbar clearfix">
-			 <!-- <span class="widget-icons icon-remove pull-right"></span> -->
 			 <a class="btn-link pull-right js-close-widgets" href="#"><span class="icon-fast-forward"></span></a>
 		</div>
+
+		<div class="clearfix pull-right js-widget-icons">
+			<ul class="widget-main-icons">
+			<li class="workspaces-icon" data-trigger="hover" data-toggle="popover" data-html="true" data-placement="left" data-content="Workspaces"></li>
+			<li class="mytasks-icon" data-trigger="hover" data-toggle="popover" data-html="true" data-placement="left" data-content="My Tasks"></li>
+			<li class="myapprovals-icon" data-trigger="hover" data-toggle="popover" data-html="true" data-placement="left" data-content="My Approvals"></li>
+			<li class="uploadfile-icon" data-trigger="hover" data-toggle="popover" data-html="true" data-placement="left" data-content="Quick uploader"></li>
+			</ul>
+		</div>
+
 
 		<ul class="list-group workspaces js-widget">
 		  <li class="list-group-item widget-heading-tab  clearfix workspace-hook">
@@ -410,10 +419,13 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="gridSystemModalLabel">Share File(s) with <input type="email" class="share-with" placeholder="Start typing"></h4>
+        <h4 class="modal-title" id="gridSystemModalLabel">Share File</h4>
       </div>
       <div class="modal-body">
         <div class="container-fluid">
+        <div class="row">
+        <input type="email" class="share-with" placeholder="Add recipients...">
+        </div>
           <div class="row">
 	  <textarea class="share-comment" rows="3" placeholder="Add comment..."></textarea>
           </div>

@@ -88,8 +88,11 @@ $('#shareModal').on('show.bs.modal', function (event) {
 });
 
 // Close widget sidebar
+var widgetIcons = $(".js-widget-icons");
+widgetIcons.hide();
 $(".js-close-widgets").on("click", function(){
   var self = $(this);
+  widgetIcons.toggle();
   $(".js-widget").toggle();
   self.find("span").toggleClass("icon-fast-forward").toggleClass("icon-rewind");
   $(".js-widget-column").toggleClass("col-md-4").toggleClass("col-md-2");

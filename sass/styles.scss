@@ -294,7 +294,7 @@
 .icon-10{background-position:8px -694px;}
 .icon-11{background-position:8px -643px;}
 .icon-12{background-position:8px -744px;}
-.icon-13{background-position:8px -789px;}
+.icon-13{background-position:4px -789px;}
 
 .widget-icons{
 	@extend %sprite;
@@ -314,6 +314,47 @@
 
 .widget-toolbar {
 	margin-bottom: 10px;
+}
+
+.widget-main-icons{
+	list-style-type: none;
+	li{
+		cursor: pointer;
+		margin-bottom: 20px;
+		@extend %sprite;
+		width: 50px;
+		height: 45px;
+		&.workspaces-icon{
+			background-position: -9px -1143px;
+		}
+		&.mytasks-icon{
+			background-position: -8px -1236px;
+		}
+		&.myapprovals-icon{
+			background-position: -9px -1190px;
+		}
+		&.uploadfile-icon{
+			background-position: -5px -791px;
+		}
+	}
+}
+
+.popover{
+	border: 1px solid $brand-primary !important;
+	//box-shadow: none;
+	border: $brand-primary;
+	&.left > .arrow{
+		border-left-color: $brand-primary;
+	}
+	&.bottom > .arrow{
+		border-bottom-color: $brand-primary;
+	}
+	&.top > .arrow{
+		border-top-color: $brand-primary;
+	}
+	&.right > .arrow{
+		border-top-color: $brand-primary;
+	}
 }
 
 .tasks-icon-group{
@@ -453,18 +494,18 @@ h3.list-group-item-heading, .workspaces .list-group-item-heading, .project-headi
 	margin-bottom:10px;
 }
 
+.share-with{
+	@extend .share-comment;
+	padding-bottom: 10px;
+	border-bottom: #eeeeee 1px solid;
+}
+
 .share-modal{
 	.img-solo{
 		width:100%;
 	}
 }
 
-.share-with{
-	border: 1px solid $gray-lighter;
-	width: 250px;
-	font-size: 16px;
-	padding: 5px;
-}
 
 .share-file-preview{
 	margin-bottom: 10px;
