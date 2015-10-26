@@ -54,6 +54,10 @@
 
 // Custom CSS
 
+body{
+	background-color: #f4f4f4;
+}
+
 .bg-primary{
 	background-color: $brand-primary;
 }
@@ -74,6 +78,10 @@
 	font-size: 1.3em;
 }
 
+%shadow{
+	box-shadow: 0 0 6px 0px rgba(0,0,0,.25);
+}
+
 %sprite {
 	background-repeat: no-repeat;
 	background-image: url('../images/barclays-sprites-01.png');
@@ -83,6 +91,21 @@
 	@extend %sprite;
 	width: 50px;
 	height: 40px;
+}
+
+.spotlight-text{
+	margin-top: 0;
+	margin-bottom: 30px;
+	color: white;
+	font-family: "Expert-Sans-Regular", sans-serif;
+}
+
+
+.fake-carousel{
+	color: white;
+	position: absolute;
+	right: 40px;
+	font-size: 20px;
 }
 
 .fave-icon{
@@ -106,8 +129,18 @@
 	}
 }
 
+.read-more{
+	margin-top: 20px;
+
+}
+
+.top-search{
+	background-color: #00395d;
+	border: 1px solid #007eb6;
+}
+
 .fave-divider{
-	border-left: 1px solid $gray-lighter;
+	border-left: 1px solid #007eb6;
 }
 
 .home-icon{
@@ -222,8 +255,18 @@
 	display: block;
 }
 
+.apps-dropdown-unique{
+	background-color: white;
+}
+
 .navbar-dropdown {
 	margin-top: 5px !important;
+}
+
+.main-headers{
+	color: black;
+	font-family: "Expert-Sans-Regular", sans-serif;
+	margin-top: 5px;
 }
 
 // Dropdown arrows
@@ -251,6 +294,13 @@
 	margin-left: -11px;
 }
 
+.navbar-default{
+	@extend %shadow;
+	border-radius: 0;
+	background-color: #00395d;
+	border: 1px solid #00395d;
+}
+
 .apps-dropdown:after, .apps-dropdown:before{
 	left: 85%;
 }
@@ -264,8 +314,10 @@
 }
 
 .jumbotron-photobg{
-	background-image:url("https://barclays-brandzone.firebaseapp.com/images/news-photo.jpg");
+	background-image:url("../images/three.jpg");
 	@include background-size(cover);
+	@extend %shadow;
+	margin-bottom: 15px;
 }
 
 .white-hero{
@@ -273,6 +325,8 @@
 	padding: 10px 30px;
 	@include border-radius(4px)
 }
+
+
 
 .btn-link-action{
 	&:hover{
@@ -293,8 +347,9 @@
 .icon-9{	background-position:8px -597px;}
 .icon-10{background-position:8px -694px;}
 .icon-11{background-position:8px -643px;}
-.icon-12{background-position:8px -744px;}
+.icon-12{background-position:8px -742px;}
 .icon-13{background-position:4px -789px;}
+.icon-showcase{background-position: 8px -1281px;}
 
 .widget-icons{
 	@extend %sprite;
@@ -338,6 +393,26 @@
 		}
 	}
 }
+
+.js-widget{
+	@extend %shadow;
+	h4{
+		color: black;
+		a{
+			color: black;
+		}
+	}
+}
+
+.js-main-content {
+	.media{
+		padding: 20px;
+		background-color: white;
+		border-radius: 4px;
+		@extend %shadow;
+	}
+}
+
 
 .popover{
 	border: 1px solid $brand-primary !important;
