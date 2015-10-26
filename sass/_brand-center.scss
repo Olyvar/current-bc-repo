@@ -53,6 +53,7 @@ $asset-icon-distance: 13px;
   @include transition-duration($default-transition-timing);
   @include transition-property(border);
   position: relative;
+  box-shadow: 0 0 3px 0px rgba(0,0,0,.15);
 
     .asset-checkbox-icon, .asset-icon-right{
       top: $asset-icon-distance;

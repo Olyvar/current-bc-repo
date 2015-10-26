@@ -592,7 +592,19 @@ h3.list-group-item-heading, .workspaces .list-group-item-heading, .project-headi
 	bottom: 4px;
 }
 
-.modal-header, .modal-footer{
+.modal-header{
+	background: $brand-primary;
+	h4.modal-title{
+		color: white;
+	}
+	.close{
+		color: white;
+		font-size: 20px;
+		opacity: 1;
+	}
+}
+
+.modal-footer{
 	background: $brand-primary-x-light;
 }
 
