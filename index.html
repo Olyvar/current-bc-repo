@@ -10,6 +10,7 @@
 	<script src="javascripts/bootstrap.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 	<script src="javascripts/bootstrap-tour.min.js"></script>
+	<script src="javascripts/jquery.jscroll.min.js"></script>
 </head>
 <body>
 
@@ -50,66 +51,60 @@
           <span class="myapps-icon tour-myapps nav-icon center-block"></span>
           <span class="sr-only">My Apps</span></a>
 	          <ul class="dropdown-menu apps-dropdown navbar-dropdown">
-		          <div class="dropdown-container">
-			          	<div class="apps-sortable" class="row">
-				            <li class="col-xs-4 apps-dropdown-unique">
-				            <a class="link-unstyled" href="image-library.html">
-				            	<span class="app-icons icon-1"></span>
-				            	<p class="app-title text-center">Image Library</p>
-				            	</a>
-				            </li>
-				            <li class="col-xs-4 apps-dropdown-unique">
-				            	<span class="app-icons icon-2"></span>
-				            	<p class="app-title text-center">Best Practice</p>
-				            </li>
-				            <li class="col-xs-4 apps-dropdown-unique">
-				            	<span class="app-icons icon-3"></span>
-				            	<p class="app-title text-center">News</p>
-				            </li>
-			           	</div>
-			          	<div class="apps-sortable row">
-				            <li class="col-xs-4 apps-dropdown-unique">
-				            	<span class="app-icons icon-4"></span>
-				            	<p class="app-title text-center">Activity Manager</p>
-				            </li>
-				            <li class="col-xs-4 apps-dropdown-unique">
-				            	<span class="app-icons icon-showcase"></span>
-				            	<p class="app-title text-center">Showcase</p>
-				            </li>
-				            <li class="col-xs-4 apps-dropdown-unique">
-				            	<span class="app-icons icon-6"></span>
-				            	<p class="app-title text-center">Reports</p>
-				            </li>
-			            </div>
-			           	<div class="apps-sortable row">
-				            <li class="col-xs-4 apps-dropdown-unique">
-				            <a class="link-unstyled" href="shares.html">
-				            <span class="app-icons icon-7"></span>
-				            	<p class="app-title text-center">Sharezone</p></a>
-				            </li>
-				            <li class="col-xs-4 apps-dropdown-unique">
-				            	<span class="app-icons icon-8"></span>
-				            	<p class="app-title text-center">MEA</p>
-				            </li>
-				            <li class="col-xs-4 apps-dropdown-unique">
-				            	<span class="app-icons icon-9"></span>
-				            	<p class="app-title text-center">Sponsorship</p>
-				            </li>
-			            </div>
-			            <div class="apps-sortable row">
-				            <li class="col-xs-4 apps-dropdown-unique">
-				            	<span class="app-icons icon-10"></span>
-				            	<p class="app-title text-center">CCR</p>
-				            </li>
-				            <li class="col-xs-4 apps-dropdown-unique">
-				            	<span class="app-icons icon-11"></span>
-				            	<p class="app-title text-center">Creative Review</p>
-				            </li>
-				            <li class="col-xs-4 apps-dropdown-unique">
-				            	<span class="app-icons icon-12"></span>
-				            	<p class="app-title text-center">Helpdesk</p>
-				            </li>
-			            </div>
+		          <div class="dropdown-container apps-sortable clearfix">
+
+			            <li class="col-xs-4 apps-dropdown-unique">
+			            <a class="link-unstyled" href="image-library.html">
+			            	<span class="app-icons icon-1"></span>
+			            	<p class="app-title text-center">Image Library</p>
+			            	</a>
+			            </li>
+			            <li class="col-xs-4 apps-dropdown-unique">
+			            	<span class="app-icons icon-2"></span>
+			            	<p class="app-title text-center">Best Practice</p>
+			            </li>
+			            <li class="col-xs-4 apps-dropdown-unique">
+			            	<span class="app-icons icon-3"></span>
+			            	<p class="app-title text-center">News</p>
+			            </li>
+			            <li class="col-xs-4 apps-dropdown-unique">
+			            	<span class="app-icons icon-4"></span>
+			            	<p class="app-title text-center">Activity Manager</p>
+			            </li>
+			            <li class="col-xs-4 apps-dropdown-unique">
+			            	<span class="app-icons icon-showcase"></span>
+			            	<p class="app-title text-center">Showcase</p>
+			            </li>
+			            <li class="col-xs-4 apps-dropdown-unique">
+			            	<span class="app-icons icon-6"></span>
+			            	<p class="app-title text-center">Reports</p>
+			            </li>
+			            <li class="col-xs-4 apps-dropdown-unique">
+			            <a class="link-unstyled" href="shares.html">
+			            <span class="app-icons icon-7"></span>
+			            	<p class="app-title text-center">Sharezone</p></a>
+			            </li>
+			            <li class="col-xs-4 apps-dropdown-unique">
+			            	<span class="app-icons icon-8"></span>
+			            	<p class="app-title text-center">MEA</p>
+			            </li>
+			            <li class="col-xs-4 apps-dropdown-unique">
+			            	<span class="app-icons icon-9"></span>
+			            	<p class="app-title text-center">Sponsorship</p>
+			            </li>
+			            <li class="col-xs-4 apps-dropdown-unique">
+			            	<span class="app-icons icon-10"></span>
+			            	<p class="app-title text-center">CCR</p>
+			            </li>
+			            <li class="col-xs-4 apps-dropdown-unique">
+			            	<span class="app-icons icon-11"></span>
+			            	<p class="app-title text-center">Creative Review</p>
+			            </li>
+			            <li class="col-xs-4 apps-dropdown-unique">
+			            	<span class="app-icons icon-12"></span>
+			            	<p class="app-title text-center">Helpdesk</p>
+			            </li>
+
 		             </div>
 	            		<span class="dropdown-more dropdown-bottom-link text-center">More Apps</span>
 		</ul>
@@ -129,7 +124,7 @@
 						</div>
 						<div class="media-body">
 						    <h4 class="media-heading">Your task ‘Proof-read Campaign Poster’ is due today</h4>
-						    <span class="notification-time">2 hours ago</span>
+						    <span class="time-aside">2 hours ago</span>
 						</div>
 					</div>
 				          	<div class="media">
@@ -138,7 +133,7 @@
 						</div>
 						<div class="media-body">
 						    <h4 class="media-heading">Joe Bloggs has uploaded a new image</h4>
-						    <span class="notification-time">6 hours ago</span>
+						    <span class="time-aside">6 hours ago</span>
 						</div>
 					</div>
 				          	<div class="media">
@@ -147,7 +142,7 @@
 						</div>
 						<div class="media-body">
 						    <h4 class="media-heading">Jane Doe has shared a report</h4>
-						    <span class="notification-time">1 day ago</span>
+						    <span class="time-aside">1 day ago</span>
 						</div>
 					</div>
 				          	<div class="media">
@@ -156,7 +151,7 @@
 						</div>
 						<div class="media-body">
 						    <h4 class="media-heading">There is a new post on the blogosphere</h4>
-						    <span class="notification-time">2 days ago</span>
+						    <span class="time-aside">2 days ago</span>
 						</div>
 					</div>
 			           	</div>
@@ -210,16 +205,17 @@
 		</div>
 		<div class="row">
 			<div class="col-md-12">
-				<ul class="media-list">
+				<ul class="media-list infinite-scroll">
 
-				  <li class="media">
+				  <li class="media featured">
 				    <div class="media-left">
+				    <span class="featured-label ">Featured Post</span>
 				      <a href="#">
 				        <img class="media-object" src="images/media-1.jpg" alt="...">
 				      </a>
 				    </div>
 				    <div class="media-body">
-				      <h4 class="media-heading">LifeSkills - Helping young people bridge the gap from school to work <button type="button" class="btn btn-link btn-link-action" data-toggle="modal" data-target="#shareModal"><span class="icon-share"></span></button></h4>
+				      <h2 class="media-heading">LifeSkills - Helping young people bridge the gap from school to work <button type="button" class="btn btn-link btn-link-action" data-toggle="modal" data-target="#shareModal"><span class="icon-share"></span></button></h2>
 				     Necessitatibus reprehenderit laborum nobis totam libero numquam accusantium quo quibusdam ipsum sed aliquid corporis explicabo Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure repudiandae error unde autem voluptatibus ex nesciunt nulla eius, sunt culpa...
 				     <a class="btn btn-link btn-link-action pull-right read-more" href="#">Keep reading <span class="icon-arrow-right"></span></a>
 				    </div>
@@ -232,7 +228,7 @@
 				      </a>
 				    </div>
 				    <div class="media-body">
-				      <h4 class="media-heading">Showcase Nominations announced <button type="button" class="btn btn-link btn-link-action" data-toggle="modal" data-target="#shareModal"><span class="icon-share"></span></button></h4>
+				      <h2 class="media-heading">Showcase Nominations announced <button type="button" class="btn btn-link btn-link-action" data-toggle="modal" data-target="#shareModal"><span class="icon-share"></span></button></h2>
 				     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, reiciendis. Non totam sequi eius. Tempore rem dignissimos maxime odio repudiandae a minima itaque suscipit ut sit expedita eos quibusdam, recusandae iusto perspiciatis sequi qui, accusamus ea, earum dicta perferendis. At nam, et rerum voluptates porro maiores recusandae...
 				     <a class="btn btn-link btn-link-action pull-right read-more" href="#">Keep reading <span class="icon-arrow-right"></span></a>
 				    </div>
@@ -245,11 +241,33 @@
 				      </a>
 				    </div>
 				    <div class="media-body">
-				      <h4 class="media-heading">Barclays wants to help blockchain startups understand investment banking requirements <button type="button" class="btn btn-link btn-link-action" data-toggle="modal" data-target="#shareModal"><span class="icon-share"></span></button></h4>
+				      <h2 class="media-heading">Barclays wants to help blockchain startups understand investment banking requirements <button type="button" class="btn btn-link btn-link-action" data-toggle="modal" data-target="#shareModal"><span class="icon-share"></span></button></h2>
 				     Necessitatibus reprehenderit laborum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam cumque nulla aliquid dolorum veniam quas similique, et assumenda nisi vero illum possimus pariatur repellat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, iure consectetur optio animi, aliquid distinctio ea enim tempore harum et. Reiciendis tenetur, ullam reprehenderit assumenda...
 				     <a class="btn btn-link btn-link-action pull-right read-more" href="#">Keep reading <span class="icon-arrow-right"></span></a>
 				    </div>
 				  </li>
+
+				  <li class="media">
+				    <div class="media-left">
+				      <a href="#">
+				        <img class="media-object" src="images/media-4.jpg" alt="...">
+				      </a>
+				    </div>
+				    <div class="media-body">
+				      <h2 class="media-heading">Lorem ipsum dolor sit amet, consectetur adipisicing. <button type="button" class="btn btn-link btn-link-action" data-toggle="modal" data-target="#shareModal"><span class="icon-share"></span></button></h2>
+				     Necessitatibus reprehenderit laborum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam cumque nulla aliquid dolorum veniam quas similique, et assumenda nisi vero illum possimus pariatur repellat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, iure consectetur optio animi, aliquid distinctio ea enim tempore harum et. Reiciendis tenetur, ullam reprehenderit assumenda...
+				     <a class="btn btn-link btn-link-action pull-right read-more" href="#">Keep reading <span class="icon-arrow-right"></span></a>
+				    </div>
+				  </li>
+
+
+				     <a class="more-news" href="more-news.html">
+				     <span class="list-group-item dropdown-more dropdown-bottom-link text-center">View More News</span>
+				     </a>
+
+
+
+
 
 				</ul>
 			</div>
@@ -260,10 +278,6 @@
 
 		<div class="widget-toolbar clearfix">
 			 <a class="btn-link pull-right js-close-widgets" href="#"><span class="icon-fast-forward"></span></a>
-		</div>
-
-		<div class="widget-toolbar clearfix">
-			 <h2 class="text-right main-headers"><span class="icon-box"></span> My Zone</h2>
 		</div>
 
 		<div class="clearfix pull-right js-widget-icons">
@@ -278,7 +292,10 @@
 
 		<ul class="list-group workspaces js-widget">
 		  <li class="list-group-item widget-heading-tab  clearfix workspace-hook">
-		    <h3 class="list-group-item-heading pull-left">My Workspaces</h3> <span class="icon-add"></span>
+		    <h3 class="list-group-item-heading pull-left">My Shares</h3>
+		    <div class="pull-right widget-button-group">
+		    <span class="icon-move pull-right"></span> <span class="icon-circle-plus pull-right"></span>
+		    </div>
 		  </li>
 		  <li class="list-group-item clearfix">
 		    <h4 class="list-group-item-heading pull-left"><a href="#">Sunrise</a></h4>
@@ -316,15 +333,16 @@
 			    <span class="widget-icons icon-moreactions" data-trigger="click" data-toggle="popover" data-html="true" data-placement="left" data-content="<span class='widget-icons icon-fileupload'></span> <span class='widget-icons icon-remove'></span>"></span>
 		    </div>
 		  </li>
+		<span class="list-group-item dropdown-more dropdown-bottom-link text-center">View More</span>
 		</ul>
 
 		<ul class="list-group js-widget my-tasks">
 		  <li class="list-group-item widget-heading-tab  clearfix">
-		    <h3 class="list-group-item-heading pull-left">My Tasks</h3>
+		    <h3 class="list-group-item-heading pull-left">My Tasks</h3> <span class="icon-move pull-right"></span>
 		  </li>
 		  <li class="list-group-item clearfix">
 		    <h4 class="list-group-item-heading"><a href="#">Write brief for Autumn campaign</a></h4>
-		    <span class="notification-time">Due on 30/09/15</span>
+		    <span class="time-aside">Due on 30/09/15</span>
 		    <div class="pull-right widget-icon-group tasks-icon-group">
 			    <span class="widget-icons icon-participants" data-title="Assigned to" data-trigger="hover" data-toggle="popover" data-html="true" data-placement="bottom" data-content="<span class='badge bg-secondary'>EB</span> <span class='badge'>OB</span> <span class='badge bg-primary'>MG</span>"></span>
 			    <span class="widget-icons icon-approvers" data-title="Approvers" data-trigger="hover" data-toggle="popover" data-html="true" data-placement="bottom" data-content="<span class='badge bg-secondary'>GG</span> <span class='badge bg-primary'>MG</span>"></span>
@@ -335,7 +353,7 @@
 		  </li>
 		  <li class="list-group-item clearfix">
 		    <h4 class="list-group-item-heading"><a href="#">Collate reports on X and Y</a></h4>
-		    <span class="notification-time">Due on 02/10/15</span>
+		    <span class="time-aside">Due on 02/10/15</span>
 		    <div class="pull-right widget-icon-group tasks-icon-group">
 			    <span class="widget-icons icon-participants" data-title="Assigned to" data-trigger="hover" data-toggle="popover" data-html="true" data-placement="bottom" data-content="<span class='badge bg-secondary'>EB</span> <span class='badge'>OB</span> <span class='badge bg-primary'>MG</span>"></span>
 			    <span class="widget-icons icon-approvers" data-title="Approvers" data-trigger="hover" data-toggle="popover" data-html="true" data-placement="bottom" data-content="<span class='badge bg-secondary'>GG</span> <span class='badge bg-primary'>MG</span>"></span>
@@ -346,7 +364,7 @@
 		  </li>
 		  <li class="list-group-item clearfix">
 		    <h4 class="list-group-item-heading"><a href="#">Prepare notes for important meeting</a></h4>
-		    <span class="notification-time">Due on 03/10/15</span>
+		    <span class="time-aside">Due on 03/10/15</span>
 		    <div class="pull-right widget-icon-group tasks-icon-group">
 			    <span class="widget-icons icon-participants" data-title="Assigned to" data-trigger="hover" data-toggle="popover" data-html="true" data-placement="bottom" data-content="<span class='badge bg-secondary'>EB</span> <span class='badge'>OB</span> <span class='badge bg-primary'>MG</span>"></span>
 			    <span class="widget-icons icon-approvers" data-title="Approvers" data-trigger="hover" data-toggle="popover" data-html="true" data-placement="bottom" data-content="<span class='badge bg-secondary'>GG</span> <span class='badge bg-primary'>MG</span>"></span>
@@ -355,18 +373,19 @@
 			    <span class="widget-icons icon-completetask" data-trigger="click" data-toggle="popover" data-html="true" data-placement="left" data-content="<span class='widget-icons icon-fileupload'></span> <span class='widget-icons icon-remove'></span>"></span>
 		    </div>
 		  </li>
+		<span class="list-group-item dropdown-more dropdown-bottom-link text-center">View More</span>
 		</ul>
 
 		<ul class="list-group js-widget my-approvals">
 		  <li class="list-group-item widget-heading-tab  clearfix">
-		    <h3 class="list-group-item-heading pull-left">My Approvals</h3>
+		    <h3 class="list-group-item-heading pull-left">My Approvals</h3> <span class="icon-move pull-right"></span>
 		  </li>
 		  <li class="list-group-item clearfix project-heading">
 		    <h4 class="list-group-item-heading pull-left">Project: <em>Little Book of Wonders</em></h4>
 		  </li>
 		  <li class="list-group-item clearfix js-tasks">
 		    <h4 class="list-group-item-heading">Produce new guidelines</h4>
-		    <span class="notification-time">Assigned on 08/12/15</span>
+		    <span class="time-aside">Assigned on 08/12/15</span>
 		    <div class="pull-right respond-button">
 		    	<a class="btn btn-link btn-link-action" href="#">View brief &nbsp;<span class="icon-paper"></span></a>
 			<a class="btn btn-primary"> Approve brief &nbsp;<span class="feather-inverse icon-circle-check"></span></a>
@@ -374,7 +393,7 @@
 		  </li>
 		  <li class="list-group-item clearfix js-tasks">
 		    <h4 class="list-group-item-heading">Produce new brand designs</h4>
-		    <span class="notification-time">Assigned on 07/10/15</span>
+		    <span class="time-aside">Assigned on 07/10/15</span>
  		    <div class="center-images js-toggle-images">
 			    <img class="approval-images" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=64%C3%9764&w=64&h=64">
 			    <img class="approval-images" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=64%C3%9764&w=64&h=64">
@@ -394,7 +413,7 @@
 		  </li>
 		  <li class="list-group-item clearfix js-tasks">
 		    <h4 class="list-group-item-heading">First drafts of posters</h4>
-		    <span class="notification-time">Assigned on 07/10/15</span>
+		    <span class="time-aside">Assigned on 07/10/15</span>
 		    <div class="center-images js-toggle-images">
 			    <img class="approval-images" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=64%C3%9764&w=64&h=64">
 			    <img class="approval-images" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=64%C3%9764&w=64&h=64">
@@ -406,6 +425,136 @@
 			<a class="btn btn-primary"> Approve file(s) &nbsp;<span class="feather-inverse icon-circle-check"></span></a>
 		    </div>
 		  </li>
+		<span class="list-group-item dropdown-more dropdown-bottom-link text-center">View More</span>
+		</ul>
+
+		<ul class="list-group downloads js-widget">
+		  <li class="list-group-item widget-heading-tab  clearfix workspace-hook">
+		    <h3 class="list-group-item-heading pull-left">My Recent Downloads</h3> <span class="icon-move pull-right"></span>
+		  </li>
+		  <li class="list-group-item clearfix">
+		  <div class="media">
+			  <div class="media-left">
+			  <a href="#">
+			  <img src="images/download-thumb.jpg">
+			  </a>
+			  </div>
+			  <div class="media-body">
+			  <h4 class="list-group-item-heading pull-left"><a href="#">Primary-Barclays-logo-RGB.jpg</a></h4>
+			  <span class="time-aside">Downloaded on 08/12/15</span>
+			  </div>
+		  </div>
+		  </li>
+		  <li class="list-group-item clearfix">
+		  <div class="media">
+			  <div class="media-left">
+			  <a href="#">
+			  <img src="images/download-thumb-xls.jpg">
+			  </a>
+			  </div>
+			  <div class="media-body">
+			  <h4 class="list-group-item-heading pull-left"><a href="#">Winter-2016-New-Numbers-Report.xls</a></h4>
+			  <span class="time-aside">Downloaded on 09/12/15</span>
+			  </div>
+		  </div>
+		  </li>
+		  <li class="list-group-item clearfix">
+		  <div class="media">
+			  <div class="media-left">
+			  <a href="#">
+			  <img src="images/download-thumb-brand.jpg">
+			  </a>
+			  </div>
+			  <div class="media-body">
+			  <h4 class="list-group-item-heading pull-left"><a href="#">Brand Book.pdf</a></h4>
+			  <span class="time-aside">Downloaded on 11/12/15</span>
+			  </div>
+		  </div>
+		  </li>
+		  <li class="list-group-item clearfix">
+		  <div class="media">
+			  <div class="media-left">
+			  <a href="#">
+			  <img src="images/download-thumb-ppt.jpg">
+			  </a>
+			  </div>
+			  <div class="media-body">
+			  <h4 class="list-group-item-heading pull-left"><a href="#">Barclays-2015-Powerpoint Template.ppt</a></h4>
+			  <span class="time-aside">Downloaded on 14/12/15</span>
+			  </div>
+		  </div>
+		  </li>
+		  <li class="list-group-item clearfix">
+		  <div class="media">
+			  <div class="media-left">
+			  <a href="#">
+			  <img src="images/download-thumb-fonts.jpg">
+			  </a>
+			  </div>
+			  <div class="media-body">
+			  <h4 class="list-group-item-heading pull-left"><a href="#">Expert Sans Font Family for Macs</a></h4>
+			  <span class="time-aside">Downloaded on 16/12/15</span>
+			  </div>
+		  </div>
+		  </li>
+		  <span class="list-group-item dropdown-more dropdown-bottom-link text-center">View More</span>
+		</ul>
+
+		<ul class="list-group baskets js-widget">
+		  <li class="list-group-item widget-heading-tab  clearfix workspace-hook">
+		    <h3 class="list-group-item-heading pull-left">My Baskets</h3> <span class="icon-move pull-right"></span>
+		  </li>
+		  <li class="list-group-item clearfix">
+		  <div class="media">
+			  <div class="media-left media-middle">
+			  <span class="counter">11</span>
+			  </div>
+			  <div class="media-body media-middle">
+			  <h4 class="list-group-item-heading pull-left"><a href="#">Project Serengeti Files</a></h4>
+			  </div>
+		  </div>
+		  </li>
+		  <li class="list-group-item clearfix">
+		  <div class="media">
+			  <div class="media-left media-middle">
+			  <span class="counter">07</span>
+			  </div>
+			  <div class="media-body media-middle">
+			  <h4 class="list-group-item-heading pull-left"><a href="#">Digital eagles imagery</a></h4>
+			  </div>
+		  </div>
+		  </li>
+		  <li class="list-group-item clearfix">
+		  <div class="media">
+			  <div class="media-left media-middle">
+			  <span class="counter">22</span>
+			  </div>
+			  <div class="media-body media-middle">
+			  <h4 class="list-group-item-heading pull-left"><a href="#">Icons for LifeSkills project</a></h4>
+			  </div>
+		  </div>
+		  </li>
+		  <li class="list-group-item clearfix">
+		  <div class="media">
+			  <div class="media-left media-middle">
+			  <span class="counter">04</span>
+			  </div>
+			  <div class="media-body media-middle">
+			  <h4 class="list-group-item-heading pull-left"><a href="#">MEA 2016 files</a></h4>
+			  </div>
+		  </div>
+		  </li>
+		  <li class="list-group-item clearfix">
+		  <div class="media">
+			  <div class="media-left media-middle">
+			  <span class="counter">13</span>
+			  </div>
+			  <div class="media-body media-middle">
+			  <h4 class="list-group-item-heading pull-left"><a href="#">Strategic transformation documents</a></h4>
+			  </div>
+		  </div>
+		  </li>
+		  <span class="list-group-item dropdown-more dropdown-bottom-link text-center">View More</span>
 		</ul>
 
 	</div>

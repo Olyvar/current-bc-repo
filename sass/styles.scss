@@ -134,13 +134,21 @@ body{
 
 }
 
-.top-search{
-	background-color: #00395d;
-	border: 1px solid #007eb6;
+.navbar-form{
+	.top-search{
+		background-color: rgba(white, 0.95);
+		border: 1px solid $brand-primary;
+		width: 300px;
+		@include single-transition(background-color, 0.3s, ease);
+		&:focus{
+			background-color: rgba(white, 1);
+		}
+	}
 }
 
+
 .fave-divider{
-	border-left: 1px solid #007eb6;
+	border-left: 1px solid $brand-primary;
 }
 
 .home-icon{
@@ -181,6 +189,7 @@ body{
 	li{
 		padding: 5px 0 0 0;
 		border: 1px solid transparent;
+		height: 90px;
 		&:hover{
 			border: 1px solid $gray-lighter;
 			border: 1px solid rgba($brand-primary, 0.3);
@@ -207,9 +216,10 @@ body{
 	}
 }
 
-.notification-time{
+.time-aside{
 	color: $gray-light;
 	display: block;
+	clear: both;
 }
 
 .navbar-dropdown {
@@ -255,7 +265,7 @@ body{
 	display: block;
 }
 
-.apps-dropdown-unique{
+.apps-dropdown-unique.fave-divider{
 	background-color: white;
 }
 
@@ -395,6 +405,8 @@ body{
 }
 
 .js-widget{
+	@include filter(grayscale(1));
+	@include single-transition(all,0.3s,ease);
 	@extend %shadow;
 	h4{
 		color: black;
@@ -402,7 +414,18 @@ body{
 			color: black;
 		}
 	}
+	&:hover{
+		@include filter(grayscale(0));
+	}
 }
+
+.sticky-widgets{
+	.js-widget-column{
+		right:0;
+	}
+}
+
+
 
 .js-main-content {
 	.media{
@@ -441,18 +464,7 @@ body{
 	@extend .widget-icon-group;
 	right: 10px;
 }
-.icon-add{
-	@extend %sprite;
-	position: absolute;
-	right: 15px;
-	width: 25px;
-	height: 25px;
-	background-position: -8px -979px;
-	cursor: pointer;
-	&:hover{
-		background-position: -69px -979px;
-	}
-}
+
 .icon-participants{ background-position:-8px -889px; &:hover{ background-position: -68px -889px; }  }
 .icon-newfiles{ background-position:-8px -863px; &:hover{ background-position: -68px -863px; } }
 .icon-newcomments{ background-position:-8px -839px; &:hover{ background-position: -68px -839px; } }
@@ -469,10 +481,38 @@ body{
 	font-size: x-large;
 }
 
+.icon-move{
+	font-size: larger;
+	cursor: move;
+}
+
+.icon-circle-plus{
+	cursor: pointer;
+	font-size: large;
+	margin-right: 10px;
+}
+
+.widget-button-group{
+	max-height: 10px;
+}
+
+/*
+.icon-add{
+	@extend %sprite;
+	margin-right: 10px;
+	width: 25px;
+	height: 25px;
+	background-position: -8px -979px;
+	cursor: pointer;
+	&:hover{
+		background-position: -69px -979px;
+	}
+}
+*/
+
 h3.list-group-item-heading, .workspaces .list-group-item-heading, .project-heading .list-group-item-heading{ margin-bottom: 0;}
 
 .widget-heading-tab{
-	cursor: move;
 	color: white;
 	background-color: $brand-primary;
 	border: 1px solid $brand-primary;
@@ -643,4 +683,49 @@ h3.list-group-item-heading, .workspaces .list-group-item-heading, .project-headi
 	.app-title{
 		display: none;
 	}
+}
+
+
+.downloads{
+	.media-body{
+		padding-top: 5px;
+	}
+}
+
+.featured{
+	position: relative;
+	.featured-label{
+		position: absolute;
+		padding: 3px 10px;
+		background-color: $brand-primary;
+		color: white;
+	}
+}
+
+.infinite-scroll{
+	height: 500px;
+	overflow: scroll-y;
+}
+
+.more-news{
+	&:hover{
+		text-decoration: none;
+	}
+	.dropdown-more{
+		margin: 15px auto;
+		width: 25%;
+	}
+}
+
+.jscroll-added{
+	margin-top: 15px;
+}
+
+.counter{
+	background-color: $brand-primary;
+	padding: 5px 8px;
+	display: inline-block;
+	font-family: 'Expert-Sans-Regular', sans-serif;
+	color: white;
+	@include border-radius(50%);
 }

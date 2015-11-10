@@ -47,7 +47,7 @@ $(document).ready(function () {
 
   $('[data-toggle="popover"]').popover()
 
-  $(".icon-add").on("click", function(){
+  $(".icon-circle-plus").on("click", function(){
     $(".workspace-hook").after("<li class='list-group-item clearfix'><h4 class='list-group-item-heading pull-left'><a href='#''>New Task</a></h4><div class='pull-right widget-icon-group'><span class='widget-icons icon-participants'></span> <span class='widget-icons icon-newfiles'></span> <span class='widget-icons icon-newcomments'></span> <span class='widget-icons icon-moreactions'></span></div></li>");
 
   });
@@ -183,7 +183,9 @@ e.preventDefault();
 tour.start();
 });
 
-
+$('.infinite-scroll').jscroll({
+   autoTrigger: false
+ });
 
 
 });
