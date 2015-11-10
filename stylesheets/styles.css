@@ -10621,3 +10621,8 @@ dl.asset-details {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%; }
+
+/* line 736, ../sass/styles.scss */
+.status {
+  font-weight: bold;
+  font-size: xx-large; }
