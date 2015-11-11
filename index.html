@@ -35,7 +35,7 @@
         <div class="form-group">
           <input type="text" class="form-control top-search" placeholder="Search">
         </div>
-        <button type="submit" class="btn btn-primary"><span class="icon-search feather-icon-inverse"></span></button>
+        <button type="submit" class="btn btn-default btn-search"><span class="icon-search text-primary"></span></button>
       </form>
 
 
@@ -69,7 +69,7 @@
 			            </li>
 			            <li class="col-xs-4 apps-dropdown-unique">
 			            	<span class="app-icons icon-4"></span>
-			            	<p class="app-title text-center">Activity Manager</p>
+			            	<p class="app-title text-center">Campaign Management</p>
 			            </li>
 			            <li class="col-xs-4 apps-dropdown-unique">
 			            	<span class="app-icons icon-showcase"></span>
@@ -277,7 +277,17 @@
 	<div class="col-md-4 sortable js-widget-column">
 
 		<div class="widget-toolbar clearfix">
-			 <a class="btn-link pull-right js-close-widgets" href="#"><span class="icon-fast-forward"></span></a>
+
+			<div class="pull-right js-close-widgets" >
+				<div class="circle">
+					<span class="icon-fast-forward"></span>
+				</div>
+			</div>
+
+			<div class="circle pull-right">
+				<span class="icon-plus" data-toggle="modal" data-target="#widgetModal"></span>
+			</div>
+
 		</div>
 
 		<div class="clearfix pull-right js-widget-icons">
@@ -289,148 +299,118 @@
 			</ul>
 		</div>
 
+		<ul id="quick-access-widget" class="list-group quick-access js-widget clearfix">
+		  <li class="list-group-item widget-heading-tab  clearfix workspace-hook">
+		    <h3 class="list-group-item-heading pull-left">Quick Access Menu</h3>
+		   <div class="pull-right widget-button-group">
+		    <span class="icon-ellipsis rotate90 pull-right dropdown-toggle" data-toggle="dropdown"></span>
+		             <ul class="dropdown-menu widget-dropdown">
+				<li><a class="js-remove-widget"  href="#"><span class="text-danger">Remove Widget</span></a></li>
+			</ul>
+		    </div>
+		  </li>
+		  <li class="list-group-item col-sm-2 clearfix">
+	  		<a class="link-unstyled" href="image-library.html">
+		            	<span class="app-icons icon-1"></span>
+		            	</a>
+		  </li>
+		  <li class="list-group-item col-sm-2 clearfix">
+	  		<a class="link-unstyled" href="image-library.html">
+		            	<span class="app-icons icon-2"></span>
+		            	</a>
+		  </li>
+		  <li class="list-group-item col-sm-2 clearfix">
+	  		<a class="link-unstyled" href="image-library.html">
+		            	<span class="app-icons icon-3"></span>
+		            	</a>
+		  </li>
+		  <li class="list-group-item col-sm-2 clearfix">
+	  		<a class="link-unstyled" href="image-library.html">
+		            	<span class="app-icons icon-4"></span>
+		            	</a>
+		  </li>
+		  <li class="list-group-item col-sm-2 clearfix">
+	  		<a class="link-unstyled" href="image-library.html">
+		            	<span class="app-icons icon-showcase"></span>
+		            	</a>
+		  </li>
+		  <li class="list-group-item col-sm-2 clearfix">
+	  		<a class="link-unstyled" href="image-library.html">
+		            	<span class="app-icons icon-6"></span>
+		            	</a>
+		  </li>
+		  <li class="list-group-item col-sm-2 clearfix">
+	  		<a class="link-unstyled" href="image-library.html">
+		            	<span class="app-icons icon-7"></span>
+		            	</a>
+		  </li>
+		  <li class="list-group-item col-sm-2 clearfix">
+	  		<a class="link-unstyled" href="image-library.html">
+		            	<span class="app-icons icon-8"></span>
+		            	</a>
+		  </li>
+		  <li class="list-group-item col-sm-2 clearfix">
+	  		<a class="link-unstyled" href="image-library.html">
+		            	<span class="app-icons icon-9"></span>
+		            	</a>
+		  </li>
+		  <li class="list-group-item col-sm-2 clearfix">
+	  		<a class="link-unstyled" href="image-library.html">
+		            	<span class="app-icons icon-10"></span>
+		            	</a>
+		  </li>
+		  <li class="list-group-item col-sm-2 clearfix">
+	  		<a class="link-unstyled" href="image-library.html">
+		            	<span class="app-icons icon-11"></span>
+		            	</a>
+		  </li>
+		  <li class="list-group-item col-sm-2 clearfix">
+	  		<a class="link-unstyled" href="image-library.html">
+		            	<span class="app-icons icon-12"></span>
+		            	</a>
+		  </li>
+		</ul>
 
 		<ul class="list-group workspaces js-widget">
 		  <li class="list-group-item widget-heading-tab  clearfix workspace-hook">
 		    <h3 class="list-group-item-heading pull-left">My Shares</h3>
 		    <div class="pull-right widget-button-group">
-		    <span class="icon-move pull-right"></span> <span class="icon-circle-plus pull-right"></span>
+		    <span class="icon-ellipsis rotate90 pull-right dropdown-toggle" data-toggle="dropdown"></span>
+		             <ul class="dropdown-menu widget-dropdown">
+				<li><a class="js-remove-widget"  href="#" class="js-remove-widget"><span class="text-danger">Remove Widget</span></a></li>
+			</ul>
+		    <span class="icon-move pull-right"></span>
 		    </div>
 		  </li>
 		  <li class="list-group-item clearfix">
 		    <h4 class="list-group-item-heading pull-left"><a href="#">Sunrise</a></h4>
-		    <div class="pull-right widget-icon-group">
-			    <span class="widget-icons icon-participants" data-title="Participants" data-trigger="hover" data-toggle="popover" data-html="true" data-placement="bottom" data-content="<span class='badge bg-secondary'>LW</span> <span class='badge'>OB</span> <span class='badge bg-primary'>MG</span>"></span>
-			    <span class="widget-icons icon-newfiles"></span>
-			    <span class="widget-icons icon-newcomments"></span>
-			    <span class="widget-icons icon-moreactions" data-trigger="click" data-toggle="popover" data-html="true" data-placement="left" data-content="<span class='widget-icons icon-fileupload'></span> <span class='widget-icons icon-remove'></span>"></span>
-		    </div>
 		  </li>
 		  <li class="list-group-item clearfix">
 		    <h4 class="list-group-item-heading pull-left"><a href="#">Strategic Transformation</a></h4>
-		    <div class="pull-right widget-icon-group">
-			    <span class="widget-icons icon-participants" data-title="Participants" data-trigger="hover" data-toggle="popover" data-html="true" data-placement="bottom" data-content="<span class='badge bg-secondary'>LW</span> <span class='badge'>GB</span>"></span>
-			    <span class="widget-icons icon-newfiles"></span>
-			    <span class="widget-icons icon-newcomments"></span>
-			    <span class="widget-icons icon-moreactions" data-trigger="click" data-toggle="popover" data-html="true" data-placement="left" data-content="<span class='widget-icons icon-fileupload'></span> <span class='widget-icons icon-remove'></span>"></span>
-		    </div>
 		  </li>
 		  <li class="list-group-item clearfix">
 		    <h4 class="list-group-item-heading pull-left"><a href="#">Grow Features Store</a></h4>
-		    <div class="pull-right widget-icon-group">
-			    <span class="widget-icons icon-participants" data-title="Participants" data-trigger="hover" data-toggle="popover" data-html="true" data-placement="bottom" data-content="<span class='badge bg-secondary'>LW</span> <span class='badge'>CB</span> <span class='badge bg-primary'>OG</span>"></span>
-			    <span class="widget-icons icon-newfiles"></span>
-			    <span class="widget-icons icon-newcomments"></span>
-			    <span class="widget-icons icon-moreactions" data-trigger="click" data-toggle="popover" data-html="true" data-placement="left" data-content="<span class='widget-icons icon-fileupload'></span> <span class='widget-icons icon-remove'></span>"></span>
-		    </div>
 		  </li>
 		  <li class="list-group-item clearfix">
 		    <h4 class="list-group-item-heading pull-left"><a href="#">SmartSend</a></h4>
-		    <div class="pull-right widget-icon-group">
-			    <span class="widget-icons icon-participants" data-title="Participants" data-trigger="hover" data-toggle="popover" data-html="true" data-placement="bottom" data-content="<span class='badge bg-secondary'>DD</span> <span class='badge'>OB</span> <span class='badge bg-primary'>MG</span> <span class='badge bg-primary'>RM</span>"></span>
-			    <span class="widget-icons icon-newfiles"></span>
-			    <span class="widget-icons icon-newcomments"></span>
-			    <span class="widget-icons icon-moreactions" data-trigger="click" data-toggle="popover" data-html="true" data-placement="left" data-content="<span class='widget-icons icon-fileupload'></span> <span class='widget-icons icon-remove'></span>"></span>
-		    </div>
 		  </li>
 		<span class="list-group-item dropdown-more dropdown-bottom-link text-center">View More</span>
 		</ul>
 
-		<ul class="list-group js-widget my-tasks">
-		  <li class="list-group-item widget-heading-tab  clearfix">
-		    <h3 class="list-group-item-heading pull-left">My Tasks</h3> <span class="icon-move pull-right"></span>
-		  </li>
-		  <li class="list-group-item clearfix">
-		    <h4 class="list-group-item-heading"><a href="#">Write brief for Autumn campaign</a></h4>
-		    <span class="time-aside">Due on 30/09/15</span>
-		    <div class="pull-right widget-icon-group tasks-icon-group">
-			    <span class="widget-icons icon-participants" data-title="Assigned to" data-trigger="hover" data-toggle="popover" data-html="true" data-placement="bottom" data-content="<span class='badge bg-secondary'>EB</span> <span class='badge'>OB</span> <span class='badge bg-primary'>MG</span>"></span>
-			    <span class="widget-icons icon-approvers" data-title="Approvers" data-trigger="hover" data-toggle="popover" data-html="true" data-placement="bottom" data-content="<span class='badge bg-secondary'>GG</span> <span class='badge bg-primary'>MG</span>"></span>
-			    <span class="widget-icons icon-edittask"></span>
-			    <span class="widget-icons icon-starttask"></span>
-			    <span class="widget-icons icon-completetask" data-trigger="click" data-toggle="popover" data-html="true" data-placement="left" data-content="<span class='widget-icons icon-fileupload'></span> <span class='widget-icons icon-remove'></span>"></span>
-		    </div>
-		  </li>
-		  <li class="list-group-item clearfix">
-		    <h4 class="list-group-item-heading"><a href="#">Collate reports on X and Y</a></h4>
-		    <span class="time-aside">Due on 02/10/15</span>
-		    <div class="pull-right widget-icon-group tasks-icon-group">
-			    <span class="widget-icons icon-participants" data-title="Assigned to" data-trigger="hover" data-toggle="popover" data-html="true" data-placement="bottom" data-content="<span class='badge bg-secondary'>EB</span> <span class='badge'>OB</span> <span class='badge bg-primary'>MG</span>"></span>
-			    <span class="widget-icons icon-approvers" data-title="Approvers" data-trigger="hover" data-toggle="popover" data-html="true" data-placement="bottom" data-content="<span class='badge bg-secondary'>GG</span> <span class='badge bg-primary'>MG</span>"></span>
-			    <span class="widget-icons icon-edittask"></span>
-			    <span class="widget-icons icon-starttask"></span>
-			    <span class="widget-icons icon-completetask" data-trigger="click" data-toggle="popover" data-html="true" data-placement="left" data-content="<span class='widget-icons icon-fileupload'></span> <span class='widget-icons icon-remove'></span>"></span>
-		    </div>
-		  </li>
-		  <li class="list-group-item clearfix">
-		    <h4 class="list-group-item-heading"><a href="#">Prepare notes for important meeting</a></h4>
-		    <span class="time-aside">Due on 03/10/15</span>
-		    <div class="pull-right widget-icon-group tasks-icon-group">
-			    <span class="widget-icons icon-participants" data-title="Assigned to" data-trigger="hover" data-toggle="popover" data-html="true" data-placement="bottom" data-content="<span class='badge bg-secondary'>EB</span> <span class='badge'>OB</span> <span class='badge bg-primary'>MG</span>"></span>
-			    <span class="widget-icons icon-approvers" data-title="Approvers" data-trigger="hover" data-toggle="popover" data-html="true" data-placement="bottom" data-content="<span class='badge bg-secondary'>GG</span> <span class='badge bg-primary'>MG</span>"></span>
-			    <span class="widget-icons icon-edittask"></span>
-			    <span class="widget-icons icon-starttask"></span>
-			    <span class="widget-icons icon-completetask" data-trigger="click" data-toggle="popover" data-html="true" data-placement="left" data-content="<span class='widget-icons icon-fileupload'></span> <span class='widget-icons icon-remove'></span>"></span>
-		    </div>
-		  </li>
-		<span class="list-group-item dropdown-more dropdown-bottom-link text-center">View More</span>
-		</ul>
 
-		<ul class="list-group js-widget my-approvals">
-		  <li class="list-group-item widget-heading-tab  clearfix">
-		    <h3 class="list-group-item-heading pull-left">My Approvals</h3> <span class="icon-move pull-right"></span>
-		  </li>
-		  <li class="list-group-item clearfix project-heading">
-		    <h4 class="list-group-item-heading pull-left">Project: <em>Little Book of Wonders</em></h4>
-		  </li>
-		  <li class="list-group-item clearfix js-tasks">
-		    <h4 class="list-group-item-heading">Produce new guidelines</h4>
-		    <span class="time-aside">Assigned on 08/12/15</span>
-		    <div class="pull-right respond-button">
-		    	<a class="btn btn-link btn-link-action" href="#">View brief &nbsp;<span class="icon-paper"></span></a>
-			<a class="btn btn-primary"> Approve brief &nbsp;<span class="feather-inverse icon-circle-check"></span></a>
-		    </div>
-		  </li>
-		  <li class="list-group-item clearfix js-tasks">
-		    <h4 class="list-group-item-heading">Produce new brand designs</h4>
-		    <span class="time-aside">Assigned on 07/10/15</span>
- 		    <div class="center-images js-toggle-images">
-			    <img class="approval-images" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=64%C3%9764&w=64&h=64">
-			    <img class="approval-images" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=64%C3%9764&w=64&h=64">
-			    <img class="approval-images" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=64%C3%9764&w=64&h=64">
-			    <img class="approval-images" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=64%C3%9764&w=64&h=64">
-			    <img class="approval-images" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=64%C3%9764&w=64&h=64">
-			    <img class="approval-images" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=64%C3%9764&w=64&h=64">
-			    <img class="approval-images" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=64%C3%9764&w=64&h=64">
-		    </div>
-		    <div class="pull-right respond-button">
-		    	<a class="btn btn-link btn-link-action js-view-files">View file(s) &nbsp;<span class="icon-file"></span></a>
-			<a class="btn btn-primary"> Approve files &nbsp;<span class="feather-inverse icon-circle-check"></span></a>
-		    </div>
-		  </li>
-		   <li class="list-group-item clearfix project-heading">
-		    <h4 class="list-group-item-heading pull-left">Project: <em>New DFD Direction</em></h4>
-		  </li>
-		  <li class="list-group-item clearfix js-tasks">
-		    <h4 class="list-group-item-heading">First drafts of posters</h4>
-		    <span class="time-aside">Assigned on 07/10/15</span>
-		    <div class="center-images js-toggle-images">
-			    <img class="approval-images" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=64%C3%9764&w=64&h=64">
-			    <img class="approval-images" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=64%C3%9764&w=64&h=64">
-			    <img class="approval-images" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=64%C3%9764&w=64&h=64">
-			    <img class="approval-images" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=64%C3%9764&w=64&h=64">
-		    </div>
-		    <div class="pull-right respond-button">
-		    	<a class="btn btn-link btn-link-action js-view-files">View file(s) &nbsp;<span class="icon-file"></span></a>
-			<a class="btn btn-primary"> Approve file(s) &nbsp;<span class="feather-inverse icon-circle-check"></span></a>
-		    </div>
-		  </li>
-		<span class="list-group-item dropdown-more dropdown-bottom-link text-center">View More</span>
-		</ul>
+
+
 
 		<ul class="list-group downloads js-widget">
 		  <li class="list-group-item widget-heading-tab  clearfix workspace-hook">
-		    <h3 class="list-group-item-heading pull-left">My Recent Downloads</h3> <span class="icon-move pull-right"></span>
+		    <h3 class="list-group-item-heading pull-left">My Recent Downloads</h3>
+		    <div class="pull-right widget-button-group">
+		    <span class="icon-ellipsis rotate90 pull-right dropdown-toggle" data-toggle="dropdown"></span>
+		             <ul class="dropdown-menu widget-dropdown">
+				<li><a class="js-remove-widget"  href="#"><span class="text-danger">Remove Widget</span></a></li>
+			</ul>
+		    <span class="icon-move pull-right"></span>
+		    </div>
 		  </li>
 		  <li class="list-group-item clearfix">
 		  <div class="media">
@@ -502,13 +482,20 @@
 
 		<ul class="list-group baskets js-widget">
 		  <li class="list-group-item widget-heading-tab  clearfix workspace-hook">
-		    <h3 class="list-group-item-heading pull-left">My Baskets</h3> <span class="icon-move pull-right"></span>
+		    <h3 class="list-group-item-heading pull-left">My Baskets</h3>
+		    <div class="pull-right widget-button-group">
+		    <span class="icon-ellipsis rotate90 pull-right dropdown-toggle" data-toggle="dropdown"></span>
+		             <ul class="dropdown-menu widget-dropdown">
+				<li><a class="js-remove-widget"  href="#"><span class="text-danger">Remove Widget</span></a></li>
+			</ul>
+		    <span class="icon-move pull-right"></span>
+		    </div>
 		  </li>
 		  <li class="list-group-item clearfix">
 		  <div class="media">
 			  <div class="media-left media-middle">
 			  <a href="#">
-			  <span class="counter">11</span>
+			  <span class="circle">11</span>
 			  </a>
 			  </div>
 			  <div class="media-body media-middle">
@@ -519,7 +506,7 @@
 		  <li class="list-group-item clearfix">
 		  <div class="media">
 			  <div class="media-left media-middle">
-			  <span class="counter">07</span>
+			  <span class="circle">07</span>
 			  </div>
 			  <div class="media-body media-middle">
 			  <h4 class="list-group-item-heading pull-left"><a href="#">Digital eagles imagery</a></h4>
@@ -529,7 +516,7 @@
 		  <li class="list-group-item clearfix">
 		  <div class="media">
 			  <div class="media-left media-middle">
-			  <span class="counter">22</span>
+			  <span class="circle">22</span>
 			  </div>
 			  <div class="media-body media-middle">
 			  <h4 class="list-group-item-heading pull-left"><a href="#">Icons for LifeSkills project</a></h4>
@@ -539,7 +526,7 @@
 		  <li class="list-group-item clearfix">
 		  <div class="media">
 			  <div class="media-left media-middle">
-			  <span class="counter">04</span>
+			  <span class="circle">04</span>
 			  </div>
 			  <div class="media-body media-middle">
 			  <h4 class="list-group-item-heading pull-left"><a href="#">MEA 2016 files</a></h4>
@@ -549,7 +536,7 @@
 		  <li class="list-group-item clearfix">
 		  <div class="media">
 			  <div class="media-left media-middle">
-			  <span class="counter">13</span>
+			  <span class="circle">13</span>
 			  </div>
 			  <div class="media-body media-middle">
 			  <h4 class="list-group-item-heading pull-left"><a href="#">Strategic transformation documents</a></h4>
@@ -559,83 +546,7 @@
 		  <span class="list-group-item dropdown-more dropdown-bottom-link text-center">View More</span>
 		</ul>
 
-		<ul class="list-group orders js-widget">
-		  <li class="list-group-item widget-heading-tab  clearfix workspace-hook">
-		    <h3 class="list-group-item-heading pull-left">My Orders</h3> <span class="icon-move pull-right"></span>
-		  </li>
-		  <li class="list-group-item clearfix">
-		  <div class="media">
-		  	<span class="status icon-circle-check text-success pull-right"></span>
 
-			  <div class="media-left media-middle">
-			  <a href="#">
-			  <img src="images/order-thumb.jpg">
-			  </a>
-			  </div>
-			  <div class="media-body media-middle">
-			  <h4 class="list-group-item-heading pull-left"><a href="#">BAR_UK_Corbis_42-15541303</a></h4>
-			  <span class="time-aside">Ordered on 09/12/15</span>
-			  </div>
-		  </div>
-		  </li>
-		  <li class="list-group-item clearfix">
-		  <div class="media">
-		  	  <span class="status icon-repeat text-info pull-right"></span>
-			  <div class="media-left media-middle">
-			  <a href="#">
-			  <img src="images/order-thumb-2.jpg">
-			  </a>
-			  </div>
-			  <div class="media-body media-middle">
-			  <h4 class="list-group-item-heading pull-left"><a href="#">BAR_UK_offfset_158585</a></h4>
-			  <span class="time-aside">Ordered on 09/12/15</span>
-			  </div>
-		  </div>
-		  </li>
-		  <li class="list-group-item clearfix">
-		  <div class="media">
-		  	  <span class="status icon-circle-cross text-danger pull-right"></span>
-			  <div class="media-left media-middle">
-			  <a href="#">
-			  <img src="images/order-thumb-3.jpg">
-			  </a>
-			  </div>
-			  <div class="media-body media-middle">
-			  <h4 class="list-group-item-heading pull-left"><a href="#">BAR_UK_NGS_1767551</a></h4>
-			  <span class="time-aside">Ordered on 09/12/15</span>
-			  </div>
-		  </div>
-		  </li>
-		  <li class="list-group-item clearfix">
-		  <div class="media">
-		  	  <span class="status icon-circle-check text-success pull-right"></span>
-			  <div class="media-left media-middle">
-			  <a href="#">
-			  <img src="images/order-thumb-4.jpg">
-			  </a>
-			  </div>
-			  <div class="media-body media-middle">
-			  <h4 class="list-group-item-heading pull-left"><a href="#">BAR_UK_OFFSET_56132</a></h4>
-			  <span class="time-aside">Ordered on 09/12/15</span>
-			  </div>
-		  </div>
-		  </li>
-		  <li class="list-group-item clearfix">
-		  <div class="media">
-		  	  <span class="status icon-repeat text-info pull-right"></span>
-			  <div class="media-left media-middle">
-			  <a href="#">
-			  <img src="images/order-thumb-5.jpg">
-			  </a>
-			  </div>
-			  <div class="media-body media-middle">
-			  <h4 class="list-group-item-heading pull-left"><a href="#">BAR_UK_Volleyball_40</a></h4>
-			  <span class="time-aside">Ordered on 09/12/15</span>
-			  </div>
-		  </div>
-		  </li>
-		  <span class="list-group-item dropdown-more dropdown-bottom-link text-center">View More</span>
-		</ul>
 
 	</div>
 </div>
@@ -682,6 +593,33 @@
         <button class="btn-default btn btn-sm pull-left"><span class="icon-cog"></span> Share settings</button>
         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
         <button type="button" class="btn btn-primary">Share <span class="icon-share"></span></button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal fade" id="widgetModal" role="dialog" aria-labelledby="gridSystemModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="gridSystemModalLabel">Add Widget</h4>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+	    <select name="" id="widget-select" class="form-control input-lg">
+	        	<option value="tasks-widget">My Tasks</option>
+	        	<option value="approvals-widget">My Approvals</option>
+	        	<option value="orders-widget">My Orders</option>
+	    </select>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary js-add-widget">Add</button>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->

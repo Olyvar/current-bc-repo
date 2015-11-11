@@ -47,10 +47,10 @@ $(document).ready(function () {
 
   $('[data-toggle="popover"]').popover()
 
-  $(".icon-circle-plus").on("click", function(){
-    $(".workspace-hook").after("<li class='list-group-item clearfix'><h4 class='list-group-item-heading pull-left'><a href='#''>New Task</a></h4><div class='pull-right widget-icon-group'><span class='widget-icons icon-participants'></span> <span class='widget-icons icon-newfiles'></span> <span class='widget-icons icon-newcomments'></span> <span class='widget-icons icon-moreactions'></span></div></li>");
+  // $(".icon-circle-plus").on("click", function(){
+  //   $(".workspace-hook").after("<li class='list-group-item clearfix'><h4 class='list-group-item-heading pull-left'><a href='#''>New Task</a></h4><div class='pull-right widget-icon-group'><span class='widget-icons icon-participants'></span> <span class='widget-icons icon-newfiles'></span> <span class='widget-icons icon-newcomments'></span> <span class='widget-icons icon-moreactions'></span></div></li>");
 
-  });
+  // });
 
 $(".js-toggle-images").hide();
   $(".js-view-files").on("click", function(){
@@ -97,6 +97,15 @@ $(".js-close-widgets").on("click", function(){
   self.find("span").toggleClass("icon-fast-forward").toggleClass("icon-rewind");
   $(".js-widget-column").toggleClass("col-md-4").toggleClass("col-md-2");
   $(".js-main-content").toggleClass("col-md-offset-2");
+});
+
+// Remove widget button
+
+var removeWidgetBtn = $(".js-remove-widget");
+
+removeWidgetBtn.on("click", function(e){
+  e.preventDefault();
+  $(this).closest(".js-widget").remove();
 });
 
 
@@ -187,5 +196,23 @@ $('.infinite-scroll').jscroll({
    autoTrigger: false
  });
 
+
+// Adding Widgets
+
+
+var widgetSelect = $("#widget-select"),
+      addWidgetBtn = $(".js-add-widget"),
+      quickAccessEl = $("#quick-access-widget"),
+      widgetModal = $("#widgetModal");
+
+addWidgetBtn.on("click", function(){
+
+  $.get("/" + widgetSelect.val() + ".html", function(data) {
+    quickAccessEl.after(data);
+  });
+
+widgetModal.modal('hide');
+
+});
 
 });

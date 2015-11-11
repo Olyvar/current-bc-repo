@@ -190,11 +190,13 @@ body{
 		padding: 5px 0 0 0;
 		border: 1px solid transparent;
 		height: 90px;
+		@include transition(all, 0.3s, ease);
 		&:hover{
 			border: 1px solid $gray-lighter;
 			border: 1px solid rgba($brand-primary, 0.3);
+			background-color: $brand-primary-x-light;
 			cursor: pointer;
-			@include transition(all, 0.3s);
+			@include transition(all, 0.3s, ease);
 		}
 	}
 }
@@ -210,10 +212,14 @@ body{
 		padding: 10px 10px 5px 5px;
 		&:hover{
 			@include transition(all, 0.2s);
-			background: lighten($gray-lighter, 4%);
+			background: $brand-primary-x-light;
 			cursor: pointer;
 		}
 	}
+}
+
+.rotate90{
+	transform: rotate(90deg);
 }
 
 .time-aside{
@@ -323,6 +329,27 @@ body{
 	left: 75%;
 }
 
+.widget-dropdown:after, .widget-dropdown:before{
+	left:-100%;
+}
+
+.widget-dropdown{
+	margin-top: 0;
+	box-shadow: none;
+	border-radius: 0;
+	background-color: #f5f5f5;
+	min-width: 60px;
+	padding: 0 0;
+	> li {
+		> a {
+		padding: 5px 20px;
+			&:hover{
+				background-color: rgba($brand-danger, 0.2);
+			}
+		}
+	}
+}
+
 .jumbotron-photobg{
 	background-image:url("../images/three.jpg");
 	@include background-size(cover);
@@ -346,20 +373,37 @@ body{
 	}
 }
 
-.icon-1{	background-position:8px -200px;}
-.icon-2{	background-position:8px -247px;}
-.icon-3{	background-position:8px -298px;}
-.icon-4{	background-position:8px -349px;}
-.icon-5{	background-position:8px -400px;}
-.icon-6{	background-position:8px -448px;}
-.icon-7{	background-position:8px -498px;}
-.icon-8{	background-position:8px -546px;}
-.icon-9{	background-position:8px -597px;}
-.icon-10{background-position:8px -694px;}
-.icon-11{background-position:8px -643px;}
-.icon-12{background-position:8px -742px;}
-.icon-13{background-position:4px -789px;}
-.icon-showcase{background-position: 8px -1281px;}
+.btn-search{
+	background-color: #f0f0f0;
+}
+
+.icon-1{	background-position:8px -200px;  .quick-access &{ background-position: 0 -200px; }}
+.icon-2{	background-position:8px -247px;  .quick-access &{ background-position: 0 -247px; }}
+.icon-3{	background-position:8px -298px;  .quick-access &{ background-position: 0 -298px; }}
+.icon-4{	background-position:8px -349px;  .quick-access &{ background-position: 0 -349px; }}
+.icon-5{	background-position:8px -400px;  .quick-access &{ background-position: 0 -400px; }}
+.icon-6{	background-position:8px -448px;  .quick-access &{ background-position: 0 -448px; }}
+.icon-7{	background-position:8px -498px;  .quick-access &{ background-position: 0 -498px; }}
+.icon-8{	background-position:8px -546px;  .quick-access &{ background-position: 0 -546px; }}
+.icon-9{	background-position:8px -597px;  .quick-access &{ background-position: 0 -597px; }}
+.icon-10{background-position:8px -694px; .quick-access &{ background-position: 0 -694px; }}
+.icon-11{background-position:8px -643px; .quick-access &{ background-position: 0 -643px; }}
+.icon-12{background-position:8px -742px; .quick-access &{ background-position: 0 -742px; }}
+.icon-13{background-position:4px -789px; .quick-access &{ background-position: 0 -789px; }}
+.icon-showcase{background-position: 8px -1281px; .quick-access &{ background-position: 0 -1281px; }}
+.icon-search{font-weight: bold;}
+
+
+.quick-access{
+	.list-group-item.col-sm-2{
+		cursor: pointer;
+		@include transition(all, 0.3s, ease);
+		&:hover{
+			background-color: $brand-primary-x-light;
+
+		}
+	}
+}
 
 .widget-icons{
 	@extend %sprite;
@@ -379,6 +423,26 @@ body{
 
 .widget-toolbar {
 	margin-bottom: 10px;
+	.circle{
+		cursor: pointer;
+		margin-left: 10px;
+		height: 35px;
+		width: 35px;
+		position: relative;
+		@include transition(background-color, 0.4s, ease);
+		&:hover{
+			background-color: darken($brand-primary, 10%);
+		}
+		.icon-plus, .icon-fast-forward, .icon-rewind{
+			position: absolute;
+			font-size: large;
+			top: 7px;
+			left: 8px;
+		}
+		.icon-fast-forward{
+			left: 9px;
+		}
+	}
 }
 
 .widget-main-icons{
@@ -406,8 +470,11 @@ body{
 
 .js-widget{
 	@include filter(grayscale(1));
-	@include single-transition(all,0.3s,ease);
+	@include single-transition(filter,0.3s,ease);
+	@include transition-property(filter, -webkit-filter, -moz-filter);
+	@include border-radius(5px);
 	@extend %shadow;
+	-webkit-backface-visibility: hidden;
 	h4{
 		color: black;
 		a{
@@ -477,13 +544,19 @@ body{
 .icon-approvers{ background-position:-9px -1088px; &:hover{ background-position: -69px -1088px; } }
 .icon-downloadshare{ background-position:-7px -1117px; &:hover{ background-position: -67px -1117px; } }
 
-.icon-fast-forward, .icon-rewind{
+.icon-fast-forward, .icon-rewind {
 	font-size: x-large;
 }
 
 .icon-move{
 	font-size: larger;
 	cursor: move;
+	margin-right: 10px;
+}
+
+.icon-ellipsis{
+	font-size:large;
+	cursor: pointer;
 }
 
 .icon-circle-plus{
@@ -496,21 +569,13 @@ body{
 	max-height: 10px;
 }
 
-/*
-.icon-add{
-	@extend %sprite;
-	margin-right: 10px;
-	width: 25px;
-	height: 25px;
-	background-position: -8px -979px;
-	cursor: pointer;
-	&:hover{
-		background-position: -69px -979px;
-	}
+h3.list-group-item-heading,
+.workspaces .list-group-item-heading,
+.project-heading .list-group-item-heading,
+.my-approvals .list-group-item-heading,
+.my-tasks .list-group-item-heading {
+	margin-bottom: 0;
 }
-*/
-
-h3.list-group-item-heading, .workspaces .list-group-item-heading, .project-heading .list-group-item-heading{ margin-bottom: 0;}
 
 .widget-heading-tab{
 	color: white;
@@ -538,8 +603,8 @@ h3.list-group-item-heading, .workspaces .list-group-item-heading, .project-headi
 	background: $brand-primary-x-light;
 	cursor: pointer;
 	em{
-	font-family: 'Expert-Sans-Light', Arial, sans-serif;
-	color: $gray-light;
+	font-family: 'Expert-Sans-Regular', Arial, sans-serif;
+	color: $gray;
 	font-style: normal;
 	}
 }
@@ -669,6 +734,7 @@ h3.list-group-item-heading, .workspaces .list-group-item-heading, .project-headi
 	filter: alpha(opacity=70);
 }
 
+// For dragging into bar
 #quick-access-sortable > li.col-xs-4.apps-dropdown-unique{
 	width: auto !important;
 	padding-left: 0;
@@ -683,6 +749,21 @@ h3.list-group-item-heading, .workspaces .list-group-item-heading, .project-headi
 	.app-title{
 		display: none;
 	}
+
+	.icon-1{	background-position:-104px -200px; }
+	.icon-2{	background-position:-104px -247px; }
+	.icon-3{	background-position:-104px -298px; }
+	.icon-4{	background-position:-104px -349px; }
+	.icon-5{	background-position:-104px -400px; }
+	.icon-6{	background-position:-104px -448px; }
+	.icon-7{	background-position:-104px -498px; }
+	.icon-8{	background-position:-104px -546px; }
+	.icon-9{	background-position:-104px -597px; }
+	.icon-10{background-position:-104px -694px; }
+	.icon-11{background-position:-104px -643px; }
+	.icon-12{background-position:-104px -742px; }
+	.icon-13{background-position:-104px -789px; }
+
 }
 
 
@@ -721,16 +802,13 @@ h3.list-group-item-heading, .workspaces .list-group-item-heading, .project-headi
 	margin-top: 15px;
 }
 
-.counter{
+.circle{
 	background-color: $brand-primary;
 	padding: 5px 8px;
 	display: inline-block;
 	font-family: 'Expert-Sans-Regular', sans-serif;
 	color: white;
 	@include border-radius(50%);
-}
-
-.media-middle{
 }
 
 .status{
