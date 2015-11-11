@@ -87,17 +87,7 @@ $('#shareModal').on('show.bs.modal', function (event) {
   modal.find('.img-solo').attr('src', image);
 });
 
-// Close widget sidebar
-var widgetIcons = $(".js-widget-icons");
-widgetIcons.hide();
-$(".js-close-widgets").on("click", function(){
-  var self = $(this);
-  widgetIcons.toggle();
-  $(".js-widget").toggle();
-  self.find("span").toggleClass("icon-fast-forward").toggleClass("icon-rewind");
-  $(".js-widget-column").toggleClass("col-md-4").toggleClass("col-md-2");
-  $(".js-main-content").toggleClass("col-md-offset-2");
-});
+
 
 // Remove widget button
 
@@ -199,20 +189,33 @@ $('.infinite-scroll').jscroll({
 
 // Adding Widgets
 
-
 var widgetSelect = $("#widget-select"),
       addWidgetBtn = $(".js-add-widget"),
       quickAccessEl = $("#quick-access-widget"),
       widgetModal = $("#widgetModal");
 
-addWidgetBtn.on("click", function(){
-
-  $.get("/" + widgetSelect.val() + ".html", function(data) {
-    quickAccessEl.after(data);
-  });
-
-widgetModal.modal('hide');
+addWidgetBtn.on("click", function(e){
+    e.stopPropagation();
+    $.get("/" + widgetSelect.val() + ".html", function(data) {
+      quickAccessEl.after(data);
+    });
+  widgetModal.modal('hide');
 
 });
+
+
+// Hide  widget sidebar
+var widgetIcons = $(".js-widget-icons");
+widgetIcons.hide();
+
+$(".js-close-widgets").on("click", function(e) {
+  var self = $(this);
+  widgetIcons.toggle();
+  $(".js-widget").toggle();
+  self.find("span").toggleClass("icon-fast-forward").toggleClass("icon-rewind");
+  $(".js-widget-column").toggleClass("col-md-4").toggleClass("col-md-2");
+  $(".js-main-content").toggleClass("col-md-offset-2");
+});
+
 
 });
