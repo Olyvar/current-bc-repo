@@ -124,7 +124,7 @@ body{
 	&.icon-5{
 		background-position: 4px -403px;
 		&:hover{
-			background-position: -57px -403px;
+			//background-position: -57px -403px;
 		}
 	}
 }
@@ -154,28 +154,28 @@ body{
 .home-icon{
 	background-position: 0 -106px;
 	&:hover, .open &{
-		background-position: -61px -106px;
+		//background-position: -61px -106px;
 	}
 }
 
 .myapps-icon {
 	background-position: 0 -58px;
 	&:hover, .open &{
-		background-position: -61px -58px;
+		//background-position: -61px -58px;
 	}
 }
 
 .notifications-icon{
 	background-position: 0 -8px;
 	&:hover, .open &{
-		background-position: -61px -8px;
+		//background-position: -61px -8px;
 	}
 }
 
 .user-icon{
 	background-position: 0 -156px;
 	&:hover, .open &{
-		background-position: -61px -156px;
+		//background-position: -61px -156px;
 	}
 }
 
@@ -226,6 +226,9 @@ body{
 	color: $gray-light;
 	display: block;
 	clear: both;
+	span{
+		color: $gray-darker;
+	}
 }
 
 .navbar-dropdown {
@@ -814,4 +817,37 @@ h3.list-group-item-heading,
 .status{
 	font-weight: bold;
 	font-size: xx-large;
+}
+
+.shares-container{
+	padding: 2px 15px 10px 15px;
+}
+
+.bz-tabs{
+	text-decoration: none;
+	list-style-type: none;
+	font-size: larger;
+	font-family: Expert-Sans-Regular, sans-serif;
+	padding: 10px 0px;
+
+	li{
+		display: inline-block;
+		margin-right: 10px;
+	}
+	a{
+		@transition(color, 0.3s, ease);
+		color: lighten($gray-light, 10%);
+
+		&:hover{
+			color: darken($gray-light, 20%);
+			text-decoration: none;
+		}
+	}
+
+	.active{
+		a{
+			color: black;
+			font-family: Expert-Sans-Regular, sans-serif;
+		}
+	}
 }

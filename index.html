@@ -371,7 +371,7 @@
 		  </li>
 		</ul>
 
-		<ul class="list-group workspaces js-widget">
+ 		<ul class="list-group my-shares js-widget">
 		  <li class="list-group-item widget-heading-tab  clearfix workspace-hook">
 		    <h3 class="list-group-item-heading pull-left">My Shares</h3>
 		    <div class="pull-right widget-button-group">
@@ -382,19 +382,159 @@
 		    <span class="icon-move pull-right"></span>
 		    </div>
 		  </li>
-		  <li class="list-group-item clearfix">
-		    <h4 class="list-group-item-heading pull-left"><a href="#">Sunrise</a></h4>
-		  </li>
-		  <li class="list-group-item clearfix">
-		    <h4 class="list-group-item-heading pull-left"><a href="#">Strategic Transformation</a></h4>
-		  </li>
-		  <li class="list-group-item clearfix">
-		    <h4 class="list-group-item-heading pull-left"><a href="#">Grow Features Store</a></h4>
-		  </li>
-		  <li class="list-group-item clearfix">
-		    <h4 class="list-group-item-heading pull-left"><a href="#">SmartSend</a></h4>
-		  </li>
-		<span class="list-group-item dropdown-more dropdown-bottom-link text-center">View More</span>
+
+		<li class="list-group-item shares-container">
+			<!-- Nav tabs -->
+			  <ul class="bz-tabs" role="tablist">
+			    <li role="presentation" class="active"><a href="#received" aria-controls="received" role="tab" data-toggle="tab">Files Received</a></li>
+			    <li role="presentation"><a href="#sent" aria-controls="sent" role="tab" data-toggle="tab">Files Sent</a></li>
+			  </ul>
+
+			  <!-- Tab panes -->
+			  <div class="tab-content">
+				    <div role="tabpanel" class="tab-pane active" id="received">
+
+
+				      <div class="media">
+				        <span class="status icon-circle-check text-success pull-right"></span>
+
+				        <div class="media-left media-middle">
+				        <a href="#">
+				        <img src="images/order-thumb.jpg">
+				        </a>
+				        </div>
+				        <div class="media-body media-middle">
+				        <h4 class="list-group-item-heading pull-left"><a href="#">File One</a></h4>
+				        <span class="time-aside">Sent by <span>Laura Wellard</span></span>
+				        </div>
+				      </div>
+
+				      <div class="media">
+				          <span class="status icon-clock text-danger pull-right"></span>
+				        <div class="media-left media-middle">
+				        <a href="#">
+				        <img src="images/order-thumb-2.jpg">
+				        </a>
+				        </div>
+				        <div class="media-body media-middle">
+				        <h4 class="list-group-item-heading pull-left"><a href="#">File Two</a></h4>
+				        <span class="time-aside">Sent by <span>James Brown</span></span>
+				        </div>
+				      </div>
+
+				      <div class="media">
+				          <span class="status icon-clock text-danger pull-right"></span>
+				        <div class="media-left media-middle">
+				        <a href="#">
+				        <img src="images/order-thumb-3.jpg">
+				        </a>
+				        </div>
+				        <div class="media-body media-middle">
+				        <h4 class="list-group-item-heading pull-left"><a href="#">File Three</a></h4>
+				        <span class="time-aside">Sent by <span>Jason Martin</span></span>
+				        </div>
+				      </div>
+
+				      <div class="media">
+				         <span class="status icon-circle-check text-success pull-right"></span>
+				        <div class="media-left media-middle">
+				        <a href="#">
+				        <img src="images/order-thumb-4.jpg">
+				        </a>
+				        </div>
+				        <div class="media-body media-middle">
+				        <h4 class="list-group-item-heading pull-left"><a href="#">File Four</a></h4>
+				        <span class="time-aside">Sent by <span>Olly Banham</span></span>
+				        </div>
+				      </div>
+
+				      <div class="media">
+				          <span class="status icon-circle-check text-success pull-right"></span>
+				        <div class="media-left media-middle">
+				        <a href="#">
+				        <img src="images/order-thumb-5.jpg">
+				        </a>
+				        </div>
+				        <div class="media-body media-middle">
+				        <h4 class="list-group-item-heading pull-left"><a href="#">File Five</a></h4>
+				        <span class="time-aside">Sent by <span>Rosie Smith</span></span>
+				        </div>
+				      </div>
+
+				    </div>
+
+			    	<div role="tabpanel" class="tab-pane" id="sent">
+
+			    <div class="media">
+			        <span class="status icon-circle-check text-success pull-right"></span>
+
+			        <div class="media-left media-middle">
+			        <a href="#">
+			        <img src="images/order-thumb.jpg">
+			        </a>
+			        </div>
+			        <div class="media-body media-middle">
+			        <h4 class="list-group-item-heading pull-left"><a href="#">File Six</a></h4>
+			        <span class="time-aside">Sent to <span class="badge">LW</span> <span class="badge">BD</span></span>
+			        </div>
+			      </div>
+
+			      <div class="media">
+			          <span class="status icon-circle-check text-success  pull-right"></span>
+			        <div class="media-left media-middle">
+			        <a href="#">
+			        <img src="images/order-thumb-2.jpg">
+			        </a>
+			        </div>
+			        <div class="media-body media-middle">
+			        <h4 class="list-group-item-heading pull-left"><a href="#">File Seven</a></h4>
+			        <span class="time-aside">Sent to <span class="badge">GG</span> <span class="badge">DH</span></span>
+			        </div>
+			      </div>
+
+			      <div class="media">
+			          <span class="status icon-circle-check text-success pull-right"></span>
+			        <div class="media-left media-middle">
+			        <a href="#">
+			        <img src="images/order-thumb-3.jpg">
+			        </a>
+			        </div>
+			        <div class="media-body media-middle">
+			        <h4 class="list-group-item-heading pull-left"><a href="#">File Eight</a></h4>
+			        <span class="time-aside">Sent to <span class="badge">VD</span></span>
+			        </div>
+			      </div>
+
+			      <div class="media">
+			         <span class="status icon-circle-check text-success pull-right"></span>
+			        <div class="media-left media-middle">
+			        <a href="#">
+			        <img src="images/order-thumb-4.jpg">
+			        </a>
+			        </div>
+			        <div class="media-body media-middle">
+			        <h4 class="list-group-item-heading pull-left"><a href="#">File Nine</a></h4>
+			        <span class="time-aside">Sent to <span class="badge">KL</span></span>
+			        </div>
+			      </div>
+
+			      <div class="media">
+			          <span class="status  icon-clock text-danger pull-right"></span>
+			        <div class="media-left media-middle">
+			        <a href="#">
+			        <img src="images/order-thumb-5.jpg">
+			        </a>
+			        </div>
+			        <div class="media-body media-middle">
+			        <h4 class="list-group-item-heading pull-left"><a href="#">File Ten</a></h4>
+			        <span class="time-aside">Sent to <span class="badge">NB</span> <span class="badge">EL</span> <span class="badge">JG</span></span>
+			        </div>
+			      </div>
+
+			    	</div>
+
+		  	</div>
+		</li>
 		</ul>
 
 
