@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Barclays Components</title>
+	<title>Barclays</title>
 	<link rel="stylesheet" href="fonts/feather-webfont/feather.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap-tour.min.css">
 	<link rel="stylesheet" href="stylesheets/styles.css">
@@ -279,14 +279,21 @@
 		<div class="widget-toolbar clearfix">
 
 			<div class="pull-right js-close-widgets" >
-				<div class="circle">
-					<span class="icon-fast-forward"></span>
+				<div class="circles-container">
+					<div class="circle js-ellipsis main-ellipsis">
+						<span class="icon-ellipsis rotate90"></span>
+					</div>
+					<div class="inverse-circle fast-forward-anim">
+						<span class="icon-fast-forward"></span>
+					</div>
+					<div class="inverse-circle add-anim">
+						<span class="icon-plus" data-toggle="modal" data-target="#widgetModal"></span>
+					</div>
 				</div>
+
 			</div>
 
-			<div class="circle pull-right">
-				<span class="icon-plus" data-toggle="modal" data-target="#widgetModal"></span>
-			</div>
+
 
 		</div>
 
@@ -413,7 +420,7 @@
 				          <span class="status icon-clock text-danger pull-right"></span>
 				        <div class="media-left media-middle">
 				        <a href="#">
-				        <img src="images/order-thumb-2.jpg">
+				        <img src="images/order-thumb-4.jpg">
 				        </a>
 				        </div>
 				        <div class="media-body media-middle">
@@ -439,7 +446,7 @@
 				         <span class="status icon-circle-check text-success pull-right"></span>
 				        <div class="media-left media-middle">
 				        <a href="#">
-				        <img src="images/order-thumb-4.jpg">
+				        <img src="images/order-thumb-2.jpg">
 				        </a>
 				        </div>
 				        <div class="media-body media-middle">
@@ -470,7 +477,7 @@
 
 			        <div class="media-left media-middle">
 			        <a href="#">
-			        <img src="images/order-thumb.jpg">
+			        <img src="images/order-thumb-5.jpg">
 			        </a>
 			        </div>
 			        <div class="media-body media-middle">
@@ -483,7 +490,7 @@
 			          <span class="status icon-circle-check text-success  pull-right"></span>
 			        <div class="media-left media-middle">
 			        <a href="#">
-			        <img src="images/order-thumb-2.jpg">
+			        <img src="images/order-thumb-3.jpg">
 			        </a>
 			        </div>
 			        <div class="media-body media-middle">
@@ -496,7 +503,7 @@
 			          <span class="status icon-circle-check text-success pull-right"></span>
 			        <div class="media-left media-middle">
 			        <a href="#">
-			        <img src="images/order-thumb-3.jpg">
+			        <img src="images/order-thumb-2.jpg">
 			        </a>
 			        </div>
 			        <div class="media-body media-middle">
@@ -522,7 +529,7 @@
 			          <span class="status  icon-clock text-danger pull-right"></span>
 			        <div class="media-left media-middle">
 			        <a href="#">
-			        <img src="images/order-thumb-5.jpg">
+			        <img src="images/order-thumb.jpg">
 			        </a>
 			        </div>
 			        <div class="media-body media-middle">
@@ -632,14 +639,19 @@
 		    </div>
 		  </li>
 		  <li class="list-group-item clearfix">
+
 		  <div class="media">
 			  <div class="media-left media-middle">
 			  <a href="#">
 			  <span class="circle">11</span>
 			  </a>
 			  </div>
-			  <div class="media-body media-middle">
-			  <h4 class="list-group-item-heading pull-left"><a href="#">Project Serengeti Files</a></h4>
+			  <div class="media-body">
+				 <h4 class="list-group-item-heading pull-left"><a href="#">Project Serengeti Files</a></h4>
+				 <div class="list-group-item-button-bar">
+				 <a class="btn btn-link btn-link-action btn-sm" href="#"><span class="icon-mail"></span></a>
+			  	 <a class="btn btn-link btn-link-action btn-sm" href="#"><span class="icon-download"></span></a>
+			  	 </div>
 			  </div>
 		  </div>
 		  </li>
@@ -648,8 +660,12 @@
 			  <div class="media-left media-middle">
 			  <span class="circle">07</span>
 			  </div>
-			  <div class="media-body media-middle">
+			  <div class="media-body">
 			  <h4 class="list-group-item-heading pull-left"><a href="#">Digital eagles imagery</a></h4>
+				<div class="list-group-item-button-bar">
+				<a class="btn btn-link btn-link-action btn-sm" href="#"><span class="icon-mail"></span></a>
+			  	<a class="btn btn-link btn-link-action btn-sm" href="#"><span class="icon-download"></span></a>
+			  	</div>
 			  </div>
 		  </div>
 		  </li>
@@ -658,8 +674,12 @@
 			  <div class="media-left media-middle">
 			  <span class="circle">22</span>
 			  </div>
-			  <div class="media-body media-middle">
+			  <div class="media-body">
 			  <h4 class="list-group-item-heading pull-left"><a href="#">Icons for LifeSkills project</a></h4>
+				<div class="list-group-item-button-bar">
+				<a class="btn btn-link btn-link-action btn-sm" href="#"><span class="icon-mail"></span></a>
+			  	<a class="btn btn-link btn-link-action btn-sm" href="#"><span class="icon-download"></span></a>
+			  	</div>
 			  </div>
 		  </div>
 		  </li>
@@ -668,8 +688,12 @@
 			  <div class="media-left media-middle">
 			  <span class="circle">04</span>
 			  </div>
-			  <div class="media-body media-middle">
+			  <div class="media-body">
 			  <h4 class="list-group-item-heading pull-left"><a href="#">MEA 2016 files</a></h4>
+				<div class="list-group-item-button-bar">
+				<a class="btn btn-link btn-link-action btn-sm" href="#"><span class="icon-mail"></span></a>
+			  	<a class="btn btn-link btn-link-action btn-sm" href="#"><span class="icon-download"></span></a>
+			  	</div>
 			  </div>
 		  </div>
 		  </li>
@@ -678,8 +702,12 @@
 			  <div class="media-left media-middle">
 			  <span class="circle">13</span>
 			  </div>
-			  <div class="media-body media-middle">
+			  <div class="media-body">
 			  <h4 class="list-group-item-heading pull-left"><a href="#">Strategic transformation documents</a></h4>
+				<div class="list-group-item-button-bar">
+				<a class="btn btn-link btn-link-action btn-sm" href="#"><span class="icon-mail"></span></a>
+			  	<a class="btn btn-link btn-link-action btn-sm" href="#"><span class="icon-download"></span></a>
+			  	</div>
 			  </div>
 		  </div>
 		  </li>

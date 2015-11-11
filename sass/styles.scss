@@ -428,15 +428,10 @@ body{
 	margin-bottom: 10px;
 	.circle{
 		cursor: pointer;
-		margin-left: 10px;
 		height: 35px;
 		width: 35px;
-		position: relative;
-		@include transition(background-color, 0.4s, ease);
-		&:hover{
-			background-color: darken($brand-primary, 10%);
-		}
-		.icon-plus, .icon-fast-forward, .icon-rewind{
+		//position: relative;
+		.icon-plus, .icon-fast-forward, .icon-rewind, .icon-ellipsis{
 			position: absolute;
 			font-size: large;
 			top: 7px;
@@ -506,6 +501,12 @@ body{
 	}
 }
 
+.js-tasks{
+	em{
+	color: $gray-light;
+	}
+}
+
 
 .popover{
 	border: 1px solid $brand-primary !important;
@@ -560,6 +561,11 @@ body{
 .icon-ellipsis{
 	font-size:large;
 	cursor: pointer;
+	.circle & {
+		position: absolute;
+		left: 9px;
+		top: 8px;
+	}
 }
 
 .icon-circle-plus{
@@ -812,6 +818,52 @@ h3.list-group-item-heading,
 	font-family: 'Expert-Sans-Regular', sans-serif;
 	color: white;
 	@include border-radius(50%);
+	@include transition(background-color, 0.4s, ease);
+	&:hover{
+		background-color: darken($brand-primary, 10%);
+	}
+}
+
+.inverse-circle{
+	@extend .circle;
+	background-color: white;
+	color: $brand-primary;
+	border: 1px solid transparent;
+	&:hover{
+		background-color: white;
+		border-color: $brand-primary;
+	}
+}
+
+.circles-container{
+	position: relative;
+	&:hover{
+		.fast-forward-anim{
+			right: 45px;
+		}
+		.add-anim{
+			right: 90px;
+		}
+	}
+}
+
+.main-ellipsis{
+	position: relative;
+	z-index: 100;
+}
+
+.fast-forward-anim, .add-anim{
+	position: absolute;
+	top:0;
+	right: 0;
+}
+
+.fast-forward-anim{
+	z-index: 11;
+}
+
+.add-anim{
+	z-index: 12;
 }
 
 .status{
@@ -829,7 +881,6 @@ h3.list-group-item-heading,
 	font-size: larger;
 	font-family: Expert-Sans-Regular, sans-serif;
 	padding: 10px 0px;
-
 	li{
 		display: inline-block;
 		margin-right: 10px;
@@ -843,11 +894,26 @@ h3.list-group-item-heading,
 			text-decoration: none;
 		}
 	}
-
 	.active{
 		a{
 			color: black;
 			font-family: Expert-Sans-Regular, sans-serif;
 		}
+	}
+}
+
+.media-body{
+	position: relative;
+}
+
+.list-group-item-button-bar{
+	position: absolute;
+	right: 0;
+	background-color: rgba(white, 0.6);
+}
+
+.baskets{
+	h4{
+		padding-top: 6px;
 	}
 }
