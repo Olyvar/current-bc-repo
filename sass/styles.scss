@@ -854,7 +854,7 @@ h3.list-group-item-heading,
 	font-family: 'Expert-Sans-Regular', sans-serif;
 	color: white;
 	@include border-radius(50%);
-	@include transition(background-color, 0.4s, ease);
+	@include transition(background-color, 0.4s, ease, transform, 0.4s, ease);
 	&:hover{
 		background-color: darken($brand-primary, 10%);
 	}
@@ -876,9 +876,11 @@ h3.list-group-item-heading,
 	&:hover{
 		.fast-forward-anim{
 			right: 45px;
+			@include transform(rotate(-360deg));
 		}
 		.add-anim{
 			right: 90px;
+			@include transform(rotate(-360deg));
 		}
 	}
 }

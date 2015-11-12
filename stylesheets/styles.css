@@ -10798,9 +10798,9 @@ dl.asset-details {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  -webkit-transition: background-color, 0.4s, ease;
-  -o-transition: background-color, 0.4s, ease;
-  transition: background-color, 0.4s, ease; }
+  -webkit-transition: background-color, 0.4s, ease, transform, 0.4s, ease;
+  -o-transition: background-color, 0.4s, ease, transform, 0.4s, ease;
+  transition: background-color, 0.4s, ease, transform, 0.4s, ease; }
   /* line 858, ../sass/styles.scss */
   .circle:hover, .inverse-circle:hover {
     background-color: #005b83; }
@@ -10820,73 +10820,81 @@ dl.asset-details {
   position: relative; }
   /* line 877, ../sass/styles.scss */
   .circles-container:hover .fast-forward-anim {
-    right: 45px; }
-  /* line 880, ../sass/styles.scss */
+    right: 45px;
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg); }
+  /* line 881, ../sass/styles.scss */
   .circles-container:hover .add-anim {
-    right: 90px; }
+    right: 90px;
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg); }
 
-/* line 886, ../sass/styles.scss */
+/* line 888, ../sass/styles.scss */
 .main-ellipsis {
   position: relative;
   z-index: 100; }
 
-/* line 891, ../sass/styles.scss */
+/* line 893, ../sass/styles.scss */
 .fast-forward-anim, .add-anim {
   position: absolute;
   top: 0;
   right: 0; }
 
-/* line 897, ../sass/styles.scss */
+/* line 899, ../sass/styles.scss */
 .fast-forward-anim {
   z-index: 11; }
 
-/* line 901, ../sass/styles.scss */
+/* line 903, ../sass/styles.scss */
 .add-anim {
   z-index: 12; }
 
-/* line 905, ../sass/styles.scss */
+/* line 907, ../sass/styles.scss */
 .status {
   font-weight: bold;
   font-size: xx-large; }
 
-/* line 910, ../sass/styles.scss */
+/* line 912, ../sass/styles.scss */
 .shares-container {
   padding: 2px 15px 10px 15px; }
 
-/* line 914, ../sass/styles.scss */
+/* line 916, ../sass/styles.scss */
 .bz-tabs {
   text-decoration: none;
   list-style-type: none;
   font-size: larger;
   font-family: Expert-Sans-Regular, sans-serif;
   padding: 10px 0px; }
-  /* line 920, ../sass/styles.scss */
+  /* line 922, ../sass/styles.scss */
   .bz-tabs li {
     display: inline-block;
     margin-right: 10px; }
-  /* line 924, ../sass/styles.scss */
+  /* line 926, ../sass/styles.scss */
   .bz-tabs a {
     @transition (color, 0.3s, ease);
     color: #919191; }
-    /* line 928, ../sass/styles.scss */
+    /* line 930, ../sass/styles.scss */
     .bz-tabs a:hover {
       color: #444444;
       text-decoration: none; }
-  /* line 934, ../sass/styles.scss */
+  /* line 936, ../sass/styles.scss */
   .bz-tabs .active a {
     color: black;
     font-family: Expert-Sans-Regular, sans-serif; }
 
-/* line 941, ../sass/styles.scss */
+/* line 943, ../sass/styles.scss */
 .media-body {
   position: relative; }
 
-/* line 945, ../sass/styles.scss */
+/* line 947, ../sass/styles.scss */
 .list-group-item-button-bar {
   position: absolute;
   right: 0;
   background-color: rgba(255, 255, 255, 0.6); }
 
-/* line 952, ../sass/styles.scss */
+/* line 954, ../sass/styles.scss */
 .baskets h4 {
   padding-top: 6px; }
