@@ -267,11 +267,49 @@ body{
 	border-top: 1px solid #ddd;
 }
 
+
+.quick-access{
+	.list-group-item.col-sm-2{
+		cursor: pointer;
+		@include transition(background-color, 0.2s, ease);
+		&:hover{
+			background-color: $brand-primary-x-light;
+			.app-icons{
+				opacity: 0;
+				@include transition(opacity, 0.2s, ease);
+			}
+			.app-title-hidden{
+				top: 15px;
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+}
+
 .app-icons{
 	@extend %sprite;
+	@include transition(opacity, 0.2s, ease);
 	width: 60px;
 	height: 50px;
 	display: block;
+	position: relative;
+	z-index:50;
+	opacity: 1;
+}
+
+.app-title-hidden{
+	@include transition(all, 0.3s, ease);
+	position: absolute;
+	font-family: Expert-Sans-Regular, sans-serif;
+	color: $brand-primary;
+	z-index: 1;
+	top: 30px;
+	opacity: 0;
+	text-align:center;
+	width: 70px;
+	left: 6px;
+	visibility: hidden;
 }
 
 .apps-dropdown-unique.fave-divider{
@@ -397,16 +435,7 @@ body{
 .icon-search{font-weight: bold;}
 
 
-.quick-access{
-	.list-group-item.col-sm-2{
-		cursor: pointer;
-		@include transition(all, 0.3s, ease);
-		&:hover{
-			background-color: $brand-primary-x-light;
 
-		}
-	}
-}
 
 .widget-icons{
 	@extend %sprite;
@@ -598,6 +627,9 @@ h3.list-group-item-heading,
 		color: white;
 	}
 }
+
+
+
 
 .popover {
 	border: none;
