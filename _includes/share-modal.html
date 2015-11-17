@@ -1,0 +1,40 @@
+<div class="modal fade share-modal" id="shareModal" role="dialog" aria-labelledby="gridSystemModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="gridSystemModalLabel">Share File</h4>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+        <div class="row">
+        <input type="email" class="share-with" placeholder="Add recipients...">
+        </div>
+          <div class="row">
+      <textarea class="share-comment" rows="3" placeholder="Add comment..."></textarea>
+          </div>
+          <div class="row share-file-preview">
+          <img src="images/share-p7.jpg" class="img-responsive img-solo" alt="">
+          </div>
+          <div class="row">
+    <form class="form-horizontal">
+        <label for="inputEmail3" class="col-sm-6 control-label">Why are you sharing?</label>
+        <div class="col-sm-6">
+          <select class="form-control">
+          <option>For download</option>
+          <option>For comments/feedback</option>
+          <option>For approval</option>
+          </select>
+        </div>
+     </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-default btn btn-sm pull-left"><span class="icon-cog"></span> Share settings</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Share <span class="icon-share"></span></button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

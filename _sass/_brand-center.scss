@@ -1,0 +1,215 @@
+// *********************************************
+//                                    ********
+// NEW ADGISTICS VARIABLES            ******
+//                                    ****
+// *************************************
+$asset-grid-image-space: 184.375px;
+$bulk-edit-image-space: 100px;
+// TRANSITION TIMINGS
+
+$default-transition-timing: 0.3s;
+
+// ASSETS - This affects thumbnail backgrounds, as well as the standard 'asset detail' image
+
+$asset-bg: #f6f6f6;
+$asset-border: darken($asset-bg, 5%);
+// Variable of the distance from the edges of thumbnails
+$asset-icon-distance: 13px;
+
+@import "bower_components/font-awesome/scss/font-awesome";
+
+// Alternative Checkboxes
+.alt-checkbox{
+    @extend .fa;
+    @extend .fa-square-o;
+    @extend .fa-lg;
+    width: 15px; //because the fa-check-square-o icon a bit wider than the default
+    input{
+        display: none;
+    }
+    &.checked{
+        @extend .fa-check-square-o;
+    }
+}
+
+
+.checkbox .alt-checkbox{
+    top: 2px;
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 4px \9;
+}
+
+
+/*******************************
+    ASSET GRID COMPONENTS
+
+ *******************************/
+
+// Grid Thumbnail
+
+.grid-thumbnail{
+  @include border-radius(0);
+  @include transition-duration($default-transition-timing);
+  @include transition-property(border);
+  position: relative;
+  box-shadow: 0 0 3px 0px rgba(0,0,0,.15);
+
+    .asset-checkbox-icon, .asset-icon-right{
+      top: $asset-icon-distance;
+      right: $asset-icon-distance;
+    }
+    .asset-checkbox-icon{
+        &:hover{
+            color: $brand-primary;
+        }
+        .checked{
+            color: $brand-primary;
+        }
+    }
+    .asset-download-icon{
+        right: $asset-icon-distance;
+        bottom: 50px;
+        &:hover{
+            color: $brand-primary;
+        }
+    }
+    .asset-preview-icon, .asset-icon-left{
+        top: $asset-icon-distance;
+        left: $asset-icon-distance;
+    }
+    .label-container{
+        position: absolute;
+        bottom: 45px;
+        left: $asset-icon-distance;
+    }
+    // Text below thumbnail
+    a{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    // Main background area of thumbnail
+    .center-aspect{
+        height: $asset-grid-image-space;
+        overflow: hidden;
+        background: $asset-bg;
+        position: relative;
+        display: table;
+        width: 100%;
+        // Reduce height on the bulk edit display
+        #bulk_edit_wrapper & {
+            height: $bulk-edit-image-space;
+            @media screen and (max-width: 700px){
+                height: ($bulk-edit-image-space / 2);
+            }
+        }
+    }
+
+    // The part that centers the image within the thumbnail
+    .inner-square{
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        img{
+            // Stop wide images from breaking into thumbnail border
+            max-width: 100%;
+        }
+    }
+}
+
+// Grid labels
+.label{
+  @include border-radius(0);
+}
+
+// Re-use bootstrap labels for our own asset statuses
+$labels-list: public protected archived unapproved orderable-standard unapproved rejected order-declined order-approved orderable-privileged approved order-in-progress in-progress awaiting-approval;
+
+@each $current-label in $labels-list {
+    .label-#{$current-label} {
+        @if ($current-label == public) {
+            @extend .label-primary;
+        }
+        @if ($current-label == protected) {
+            @extend .label-warning;
+        }
+        @if ($current-label == archived) or ($current-label == orderable-standard) {
+            @extend .label-default;
+        }
+        @if ($current-label == unapproved) or ($current-label == rejected) or ($current-label == order-declined) {
+            @extend .label-danger;
+        }
+        @if ($current-label == approved) or ($current-label == orderable-privileged) or ($current-label == order-approved) {
+            @extend .label-success;
+        }
+        @if ($current-label == order-in-progress) or ($current-label == in-progress) or ($current-label == awaiting-approval) {
+            @extend .label-info;
+        }
+    }
+}
+
+// Asset Grid Specific Class. Add to grid-thumbnail element to enable hover/select effect
+.asset-grid{
+    &:hover{
+      // Subtle hover on thumbnail
+      @include transition-duration($default-transition-timing);
+      @include transition-property(border);
+      border: darken($thumbnail-border, 15%) 1px solid;
+    }
+    &.selected{
+      border: $brand-primary 1px solid;
+    }
+}
+
+// Icons on thumbnails
+.asset-icon{
+    color: lighten($gray-light, 10%);
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+}
+
+dl.asset-details{
+  padding: 15px;
+  margin: 0;
+  dd{
+    padding-left: 5px;
+    padding-bottom: 3px;
+  }
+}
+
+// Asset Details Image
+.panel{
+  &.asset-image{
+    @include border-radius(0);
+    background-color: $asset-bg;
+    border: 1px solid $asset-border;
+  }
+}
+
+// Fix checkbox size, when stacked only
+.alt-checkbox.fa-stack-1x{
+    width: 100%;
+    font-size: 1em;
+    &.checked{
+        margin-left: 1px;
+    }
+}
+
+// Color of circle behind icons on thumbnail
+.fa-inverse{
+    // color: $asset-bg;
+}
+
+// Proper centering within circle for preview icon
+.fa-search-plus.fa-stack-1x{
+    top: -1px;
+}
+
+// To avoid the close boxes from clipping with bootstrap's overflow: hidden, when collapsing
+#latest_basket_table{
+    padding-top: 7px;
+    padding-right: 7px;
+}
+

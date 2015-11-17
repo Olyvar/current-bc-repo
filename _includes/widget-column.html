@@ -1,0 +1,444 @@
+<div class="widget-toolbar clearfix">
+
+  <div class="pull-right" >
+    <div class="circles-container">
+      <div class="circle js-ellipsis main-ellipsis">
+        <span class="icon-ellipsis rotate90"></span>
+      </div>
+      <div class="inverse-circle fast-forward-anim js-close-widgets">
+        <span class="icon-fast-forward"></span>
+      </div>
+      <div class="inverse-circle add-anim">
+        <span class="icon-plus" data-toggle="modal" data-target="#widgetModal"></span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="clearfix pull-right js-widget-icons">
+    <ul class="widget-main-icons">
+    <li class="workspaces-icon" data-trigger="hover" data-toggle="popover" data-html="true" data-placement="left" data-content="Workspaces"></li>
+    <li class="mytasks-icon" data-trigger="hover" data-toggle="popover" data-html="true" data-placement="left" data-content="My Tasks"></li>
+    <li class="myapprovals-icon" data-trigger="hover" data-toggle="popover" data-html="true" data-placement="left" data-content="My Approvals"></li>
+    <li class="uploadfile-icon" data-trigger="hover" data-toggle="popover" data-html="true" data-placement="left" data-content="Quick uploader"></li>
+    </ul>
+</div>
+
+<ul id="quick-access-widget" class="list-group quick-access js-widget clearfix">
+  <li class="list-group-item widget-heading-tab  clearfix workspace-hook">
+    <h3 class="list-group-item-heading pull-left">Quick Access Menu</h3>
+
+   <div class="pull-right widget-button-group">
+    <span class="icon-ellipsis rotate90 pull-right dropdown-toggle" data-toggle="dropdown"></span>
+             <ul class="dropdown-menu widget-dropdown">
+        <li><a class="js-remove-widget"  href="#"><span class="text-danger">Remove Widget</span></a></li>
+    </ul>
+    </div>
+  </li>
+  <li class="list-group-item col-sm-2 clearfix">
+    <a class="link-unstyled" href="image-library.html">
+                <span class="app-icons icon-1"></span>
+             <span class="app-title-hidden">Image Library</span>
+                </a>
+  </li>
+  <li class="list-group-item col-sm-2 clearfix">
+    <a class="link-unstyled" href="">
+                <span class="app-icons icon-2"></span>
+             <span class="app-title-hidden">Best Practice</span>
+                </a>
+  </li>
+  <li class="list-group-item col-sm-2 clearfix">
+    <a class="link-unstyled" href="#">
+                <span class="app-icons icon-3"></span>
+             <span class="app-title-hidden">News</span>
+                </a>
+  </li>
+  <li class="list-group-item col-sm-2 clearfix">
+    <a class="link-unstyled" href="#">
+                <span class="app-icons icon-4"></span>
+             <span class="app-title-hidden">Showcase</span>
+                </a>
+  </li>
+  <li class="list-group-item col-sm-2 clearfix">
+    <a class="link-unstyled" href="#">
+                <span class="app-icons icon-showcase"></span>
+             <span class="app-title-hidden">Reports</span>
+                </a>
+  </li>
+  <li class="list-group-item col-sm-2 clearfix">
+    <a class="link-unstyled" href="#">
+                <span class="app-icons icon-6"></span>
+             <span class="app-title-hidden">Sharezone</span>
+                </a>
+  </li>
+  <li class="list-group-item col-sm-2 clearfix">
+    <a class="link-unstyled" href="#">
+                <span class="app-icons icon-7"></span>
+             <span class="app-title-hidden">MEA</span>
+                </a>
+  </li>
+  <li class="list-group-item col-sm-2 clearfix">
+    <a class="link-unstyled" href="#">
+                <span class="app-icons icon-8"></span>
+             <span class="app-title-hidden">Sponsorship</span>
+                </a>
+  </li>
+  <li class="list-group-item col-sm-2 clearfix">
+    <a class="link-unstyled" href="#">
+                <span class="app-icons icon-9"></span>
+             <span class="app-title-hidden">CCR</span>
+                </a>
+  </li>
+  <li class="list-group-item col-sm-2 clearfix">
+    <a class="link-unstyled" href="#">
+                <span class="app-icons icon-10"></span>
+             <span class="app-title-hidden">Creative Review</span>
+                </a>
+  </li>
+  <li class="list-group-item col-sm-2 clearfix">
+    <a class="link-unstyled" href="#">
+                <span class="app-icons icon-11"></span>
+             <span class="app-title-hidden">Helpdesk</span>
+                </a>
+  </li>
+  <li class="list-group-item col-sm-2 clearfix">
+    <a class="link-unstyled" href="#">
+                <span class="app-icons icon-12"></span>
+             <span class="app-title-hidden">Image Library</span>
+                </a>
+  </li>
+</ul>
+
+<ul class="list-group my-shares js-widget">
+  <li class="list-group-item widget-heading-tab  clearfix workspace-hook">
+    <h3 class="list-group-item-heading pull-left">My Shares</h3>
+    <div class="pull-right widget-button-group">
+    <span class="icon-ellipsis rotate90 pull-right dropdown-toggle" data-toggle="dropdown"></span>
+             <ul class="dropdown-menu widget-dropdown">
+        <li><a class="js-remove-widget"  href="#" class="js-remove-widget"><span class="text-danger">Remove Widget</span></a></li>
+    </ul>
+    <span class="icon-move pull-right"></span>
+    </div>
+  </li>
+
+<li class="list-group-item shares-container">
+    <!-- Nav tabs -->
+      <ul class="bz-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#received" aria-controls="received" role="tab" data-toggle="tab">Files Received</a></li>
+        <li role="presentation"><a href="#sent" aria-controls="sent" role="tab" data-toggle="tab">Files Sent</a></li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="received">
+
+
+              <div class="media">
+                <span class="status icon-circle-check text-success pull-right"></span>
+
+                <div class="media-left media-middle">
+                <a href="#">
+                <img src="images/order-thumb.jpg">
+                </a>
+                </div>
+                <div class="media-body media-middle">
+                <h4 class="list-group-item-heading pull-left"><a href="#">File One</a></h4>
+                <span class="time-aside">Sent by <span>Laura Wellard</span></span>
+                </div>
+              </div>
+
+              <div class="media">
+                  <span class="status icon-clock text-danger pull-right"></span>
+                <div class="media-left media-middle">
+                <a href="#">
+                <img src="images/order-thumb-4.jpg">
+                </a>
+                </div>
+                <div class="media-body media-middle">
+                <h4 class="list-group-item-heading pull-left"><a href="#">File Two</a></h4>
+                <span class="time-aside">Sent by <span>James Brown</span></span>
+                </div>
+              </div>
+
+              <div class="media">
+                  <span class="status icon-clock text-danger pull-right"></span>
+                <div class="media-left media-middle">
+                <a href="#">
+                <img src="images/order-thumb-3.jpg">
+                </a>
+                </div>
+                <div class="media-body media-middle">
+                <h4 class="list-group-item-heading pull-left"><a href="#">File Three</a></h4>
+                <span class="time-aside">Sent by <span>Jason Martin</span></span>
+                </div>
+              </div>
+
+              <div class="media">
+                 <span class="status icon-circle-check text-success pull-right"></span>
+                <div class="media-left media-middle">
+                <a href="#">
+                <img src="images/order-thumb-2.jpg">
+                </a>
+                </div>
+                <div class="media-body media-middle">
+                <h4 class="list-group-item-heading pull-left"><a href="#">File Four</a></h4>
+                <span class="time-aside">Sent by <span>Olly Banham</span></span>
+                </div>
+              </div>
+
+              <div class="media">
+                  <span class="status icon-circle-check text-success pull-right"></span>
+                <div class="media-left media-middle">
+                <a href="#">
+                <img src="images/order-thumb-5.jpg">
+                </a>
+                </div>
+                <div class="media-body media-middle">
+                <h4 class="list-group-item-heading pull-left"><a href="#">File Five</a></h4>
+                <span class="time-aside">Sent by <span>Rosie Smith</span></span>
+                </div>
+              </div>
+
+            </div>
+
+            <div role="tabpanel" class="tab-pane" id="sent">
+
+        <div class="media">
+            <span class="status icon-circle-check text-success pull-right"></span>
+
+            <div class="media-left media-middle">
+            <a href="#">
+            <img src="images/order-thumb-5.jpg">
+            </a>
+            </div>
+            <div class="media-body media-middle">
+            <h4 class="list-group-item-heading pull-left"><a href="#">File Six</a></h4>
+            <span class="time-aside">Sent to <span class="badge">LW</span> <span class="badge">BD</span></span>
+            </div>
+          </div>
+
+          <div class="media">
+              <span class="status icon-circle-check text-success  pull-right"></span>
+            <div class="media-left media-middle">
+            <a href="#">
+            <img src="images/order-thumb-3.jpg">
+            </a>
+            </div>
+            <div class="media-body media-middle">
+            <h4 class="list-group-item-heading pull-left"><a href="#">File Seven</a></h4>
+            <span class="time-aside">Sent to <span class="badge">GG</span> <span class="badge">DH</span></span>
+            </div>
+          </div>
+
+          <div class="media">
+              <span class="status icon-circle-check text-success pull-right"></span>
+            <div class="media-left media-middle">
+            <a href="#">
+            <img src="images/order-thumb-2.jpg">
+            </a>
+            </div>
+            <div class="media-body media-middle">
+            <h4 class="list-group-item-heading pull-left"><a href="#">File Eight</a></h4>
+            <span class="time-aside">Sent to <span class="badge">VD</span></span>
+            </div>
+          </div>
+
+          <div class="media">
+             <span class="status icon-circle-check text-success pull-right"></span>
+            <div class="media-left media-middle">
+            <a href="#">
+            <img src="images/order-thumb-4.jpg">
+            </a>
+            </div>
+            <div class="media-body media-middle">
+            <h4 class="list-group-item-heading pull-left"><a href="#">File Nine</a></h4>
+            <span class="time-aside">Sent to <span class="badge">KL</span></span>
+            </div>
+          </div>
+
+          <div class="media">
+              <span class="status  icon-clock text-danger pull-right"></span>
+            <div class="media-left media-middle">
+            <a href="#">
+            <img src="images/order-thumb.jpg">
+            </a>
+            </div>
+            <div class="media-body media-middle">
+            <h4 class="list-group-item-heading pull-left"><a href="#">File Ten</a></h4>
+            <span class="time-aside">Sent to <span class="badge">NB</span> <span class="badge">EL</span> <span class="badge">JG</span></span>
+            </div>
+          </div>
+
+            </div>
+
+    </div>
+</li>
+</ul>
+
+
+<ul class="list-group downloads js-widget">
+  <li class="list-group-item widget-heading-tab  clearfix workspace-hook">
+    <h3 class="list-group-item-heading pull-left">My Recent Downloads</h3>
+    <div class="pull-right widget-button-group">
+    <span class="icon-ellipsis rotate90 pull-right dropdown-toggle" data-toggle="dropdown"></span>
+             <ul class="dropdown-menu widget-dropdown">
+        <li><a class="js-remove-widget"  href="#"><span class="text-danger">Remove Widget</span></a></li>
+    </ul>
+    <span class="icon-move pull-right"></span>
+    </div>
+  </li>
+  <li class="list-group-item clearfix">
+  <div class="media">
+      <div class="media-left">
+      <a href="#">
+      <img src="images/download-thumb.jpg">
+      </a>
+      </div>
+      <div class="media-body">
+      <h4 class="list-group-item-heading pull-left"><a href="#">Primary-Barclays-logo-RGB.jpg</a></h4>
+      <span class="time-aside">Downloaded on 08/12/15</span>
+      </div>
+  </div>
+  </li>
+  <li class="list-group-item clearfix">
+  <div class="media">
+      <div class="media-left">
+      <a href="#">
+      <img src="images/download-thumb-xls.jpg">
+      </a>
+      </div>
+      <div class="media-body">
+      <h4 class="list-group-item-heading pull-left"><a href="#">Winter-2016-New-Numbers-Report.xls</a></h4>
+      <span class="time-aside">Downloaded on 09/12/15</span>
+      </div>
+  </div>
+  </li>
+  <li class="list-group-item clearfix">
+  <div class="media">
+      <div class="media-left">
+      <a href="#">
+      <img src="images/download-thumb-brand.jpg">
+      </a>
+      </div>
+      <div class="media-body">
+      <h4 class="list-group-item-heading pull-left"><a href="#">Brand Book.pdf</a></h4>
+      <span class="time-aside">Downloaded on 11/12/15</span>
+      </div>
+  </div>
+  </li>
+  <li class="list-group-item clearfix">
+  <div class="media">
+      <div class="media-left">
+      <a href="#">
+      <img src="images/download-thumb-ppt.jpg">
+      </a>
+      </div>
+      <div class="media-body">
+      <h4 class="list-group-item-heading pull-left"><a href="#">Barclays-2015-Powerpoint Template.ppt</a></h4>
+      <span class="time-aside">Downloaded on 14/12/15</span>
+      </div>
+  </div>
+  </li>
+  <li class="list-group-item clearfix">
+  <div class="media">
+      <div class="media-left">
+      <a href="#">
+      <img src="images/download-thumb-fonts.jpg">
+      </a>
+      </div>
+      <div class="media-body">
+      <h4 class="list-group-item-heading pull-left"><a href="#">Expert Sans Font Family for Macs</a></h4>
+      <span class="time-aside">Downloaded on 16/12/15</span>
+      </div>
+  </div>
+  </li>
+  <span class="list-group-item dropdown-more dropdown-bottom-link text-center">View More</span>
+</ul>
+
+<ul class="list-group baskets js-widget">
+  <li class="list-group-item widget-heading-tab  clearfix workspace-hook">
+    <h3 class="list-group-item-heading pull-left">My Baskets</h3>
+    <div class="pull-right widget-button-group">
+    <span class="icon-ellipsis rotate90 pull-right dropdown-toggle" data-toggle="dropdown"></span>
+             <ul class="dropdown-menu widget-dropdown">
+        <li><a class="js-remove-widget"  href="#"><span class="text-danger">Remove Widget</span></a></li>
+    </ul>
+    <span class="icon-move pull-right"></span>
+    </div>
+  </li>
+  <li class="list-group-item clearfix">
+
+  <div class="media">
+      <div class="media-left media-middle">
+      <a href="#">
+      <span class="circle">11</span>
+      </a>
+      </div>
+      <div class="media-body">
+         <h4 class="list-group-item-heading pull-left"><a href="#">Project Serengeti Files</a></h4>
+         <div class="list-group-item-button-bar">
+         <a class="btn btn-link btn-link-action btn-sm" href="#"><span class="icon-mail"></span></a>
+         <a class="btn btn-link btn-link-action btn-sm" href="#"><span class="icon-download"></span></a>
+         </div>
+      </div>
+  </div>
+  </li>
+  <li class="list-group-item clearfix">
+  <div class="media">
+      <div class="media-left media-middle">
+      <span class="circle">07</span>
+      </div>
+      <div class="media-body">
+      <h4 class="list-group-item-heading pull-left"><a href="#">Digital eagles imagery</a></h4>
+        <div class="list-group-item-button-bar">
+        <a class="btn btn-link btn-link-action btn-sm" href="#"><span class="icon-mail"></span></a>
+        <a class="btn btn-link btn-link-action btn-sm" href="#"><span class="icon-download"></span></a>
+        </div>
+      </div>
+  </div>
+  </li>
+  <li class="list-group-item clearfix">
+  <div class="media">
+      <div class="media-left media-middle">
+      <span class="circle">22</span>
+      </div>
+      <div class="media-body">
+      <h4 class="list-group-item-heading pull-left"><a href="#">Icons for LifeSkills project</a></h4>
+        <div class="list-group-item-button-bar">
+        <a class="btn btn-link btn-link-action btn-sm" href="#"><span class="icon-mail"></span></a>
+        <a class="btn btn-link btn-link-action btn-sm" href="#"><span class="icon-download"></span></a>
+        </div>
+      </div>
+  </div>
+  </li>
+  <li class="list-group-item clearfix">
+  <div class="media">
+      <div class="media-left media-middle">
+      <span class="circle">04</span>
+      </div>
+      <div class="media-body">
+      <h4 class="list-group-item-heading pull-left"><a href="#">MEA 2016 files</a></h4>
+        <div class="list-group-item-button-bar">
+        <a class="btn btn-link btn-link-action btn-sm" href="#"><span class="icon-mail"></span></a>
+        <a class="btn btn-link btn-link-action btn-sm" href="#"><span class="icon-download"></span></a>
+        </div>
+      </div>
+  </div>
+  </li>
+  <li class="list-group-item clearfix">
+  <div class="media">
+      <div class="media-left media-middle">
+      <span class="circle">13</span>
+      </div>
+      <div class="media-body">
+      <h4 class="list-group-item-heading pull-left"><a href="#">Strategic transformation documents</a></h4>
+        <div class="list-group-item-button-bar">
+        <a class="btn btn-link btn-link-action btn-sm" href="#"><span class="icon-mail"></span></a>
+        <a class="btn btn-link btn-link-action btn-sm" href="#"><span class="icon-download"></span></a>
+        </div>
+      </div>
+  </div>
+  </li>
+  <span class="list-group-item dropdown-more dropdown-bottom-link text-center">View More</span>
+</ul>
