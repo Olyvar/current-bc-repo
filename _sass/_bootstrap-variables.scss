@@ -8,35 +8,35 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 
-$gray-base:              #000;
+$gray-base:              #000 !default;
 // $gray-darker:            lighten($gray-base, 13.5%) // #222
 // $gray-dark:              lighten($gray-base, 20%)   // #333
 // $gray:                   lighten($gray-base, 33.5%) // #555
 $gray-light:             lighten($gray-base, 46.7%);// #777
 // $gray-lighter:           lighten($gray-base, 93.5%) // #eee
 
-$brand-primary:        #007eb6;
-$brand-secondary:   #00395d;
-$brand-primary-x-light: #f5fafc;
-$brand-primary-light: #7fb9d2;
+$brand-primary:        #007eb6 !default;
+$brand-secondary:   #00395d !default;
+$brand-primary-x-light: #f5fafc !default;
+$brand-primary-light: #7fb9d2 !default;
 // $brand-success:         #5cb85c
 // $brand-info:            #5bc0de
 // $brand-warning:         #f0ad4e
- $brand-danger:          #d9534f;
+ $brand-danger:          #d9534f !default;
 
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
 
 //* Background color for `<body>`.
-// $body-bg:               #fff
+$body-bg:               #f4f4f4 !default;
 //* Global text color on `<body>`.
 // $text-color:            $gray-dark
 
 //* Global textual link color.
-$link-color:            #007eb6;
+$link-color:            #007eb6 !default;
 //* Link hover color set via `darken()` function.
- $link-hover-color:      darken($link-color, 10%);
+ $link-hover-color:      darken($link-color, 10%) !default;
 //* Link hover decoration.
 // $link-hover-decoration: underline
 
@@ -44,13 +44,15 @@ $link-color:            #007eb6;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  "Expert-Sans-Light", Helvetica, Arial, sans-serif;
+$font-family-sans-serif:  "Expert-Sans-Light", Helvetica, Arial, sans-serif !default;
+$font-family-headings: "Expert-Sans-Regular", Helvetica, Arial, sans-serif !default;
+$font-family-lead: $font-family-sans-serif !default;
 // $font-family-serif:       Georgia, "Times New Roman", Times, serif
 //* Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 // $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace
 // $font-family-base:        $font-family-sans-serif
 
-$font-size-base:          14px;
+$font-size-base:          14px !default;
 // $font-size-large:         ceil(($font-size-base * 1.25)) // ~18px
 // $font-size-small:         ceil(($font-size-base * 0.85)) // ~12px
 
@@ -70,7 +72,7 @@ $font-size-h4:            ceil(($font-size-base * 1.1));// ~15px
 // $headings-font-family:    inherit
 // $headings-font-weight:    500
 // $headings-line-height:    1.1
-$headings-color:          $brand-secondary;
+$headings-color:          $brand-secondary !default;
 
 //== Iconography
 //
@@ -86,6 +88,9 @@ $headings-color:          $brand-secondary;
 // $icon-font-name:          "glyphicons-halflings-regular"
 //* Element ID within SVG icon file.
 // $icon-font-svg-id:        "glyphicons_halflingsregular"
+
+$logo-path: "../images/logo.png" !default;
+$sprite-path: "../images/barclays-sprites-01.png" !default;
 
 //== Components
 //
@@ -151,8 +156,8 @@ $headings-color:          $brand-secondary;
 // $btn-default-border:             #ccc
 
 // $btn-primary-color:              #fff
-$btn-primary-bg:                 $brand-primary;
-$btn-primary-border:           $brand-primary;
+$btn-primary-bg:                 $brand-primary !default;
+$btn-primary-border:           $brand-primary !default;
 
 // $btn-success-color:              #fff
 // $btn-success-bg:                 $brand-success
@@ -179,7 +184,7 @@ $btn-primary-border:           $brand-primary;
 //* `<input>` background color
 // $input-bg:                       #fff
 //* `<input disabled>` background color
-$input-bg-disabled:              #f3f3f3;
+$input-bg-disabled:              #f3f3f3 !default;
 
 //* Text color for `<input>`s
 // $input-color:                    $gray
@@ -233,7 +238,7 @@ $input-bg-disabled:              #f3f3f3;
 // $dropdown-divider-bg:            #e5e5e5
 
 //* Dropdown link text color.
-$dropdown-link-color:            #58595b;
+$dropdown-link-color:            #58595b !default;
 //* Hover color for dropdown links.
 // $dropdown-link-hover-color:      darken($gray-dark, 5%)
 //* Hover background for dropdown links.
@@ -351,7 +356,7 @@ $dropdown-link-color:            #58595b;
 // $navbar-collapse-max-height:       340px
 
 // $navbar-default-color:             #777
-$navbar-default-bg:                #00395d;
+$navbar-default-bg:                #00395d !default;
 // $navbar-default-border:            darken($navbar-default-bg, 6.5%)
 
 // Navbar links
@@ -359,7 +364,7 @@ $navbar-default-bg:                #00395d;
 // $navbar-default-link-hover-color:          #333
 // $navbar-default-link-hover-bg:             transparent
 // $navbar-default-link-active-color:         #555
-$navbar-default-link-active-bg:            inherit;
+$navbar-default-link-active-bg:            inherit !default;
 // $navbar-default-link-disabled-color:       #ccc
 // $navbar-default-link-disabled-bg:          transparent
 
@@ -404,13 +409,13 @@ $navbar-default-link-active-bg:            inherit;
 
 //=== Shared nav styles
 // $nav-link-padding:                          10px 15px
-$nav-link-hover-bg:     white;
+$nav-link-hover-bg:     white !default;
 
 // $nav-disabled-link-color:                   $gray-light
 // $nav-disabled-link-hover-color:             $gray-light
 
 //== Tabs
-$nav-tabs-border-color:                     $brand-primary;
+$nav-tabs-border-color:                     $brand-primary !default;
 
 // $nav-tabs-link-hover-border-color:          $gray-lighter
 
@@ -466,9 +471,9 @@ $nav-tabs-border-color:                     $brand-primary;
 //##
 
 // $jumbotron-padding:              30px
-$jumbotron-color:                #666;
+$jumbotron-color:                #666 !default;
 // $jumbotron-bg:                   $gray-lighter
-$jumbotron-heading-color:        $brand-secondary;
+$jumbotron-heading-color:        $brand-secondary !default;
 // $jumbotron-font-size:            ceil(($font-size-base * 1.5))
 
 //== Form states and alerts
@@ -522,7 +527,7 @@ $jumbotron-heading-color:        $brand-secondary;
 // $popover-fallback-border-color:       #ccc
 
 //* Popover title background color
-$popover-title-bg:                   white;
+$popover-title-bg:                   white !default;
 
 //* Popover arrow width
 // $popover-arrow-width:                 10px
@@ -582,12 +587,12 @@ $popover-title-bg:                   white;
 //* Modal backdrop opacity
 // $modal-backdrop-opacity:      .5
 //* Modal header border color
-$modal-header-border-color:   rgba($brand-primary, 0.3);
+$modal-header-border-color:   rgba($brand-primary, 0.3) !default;
 //* Modal footer border color
 // $modal-footer-border-color:   $modal-header-border-color
 
 // $modal-lg:                    900px
-$modal-md:                   500px;
+$modal-md:                   500px !default;
 // $modal-sm:                    300px
 
 //== Alerts
@@ -681,11 +686,11 @@ $modal-md:                   500px;
 
 //* Border color for elements within panels
 // $panel-inner-border:          #ddd
-$panel-footer-bg:          rgba($brand-primary, 0.04);
+$panel-footer-bg:          rgba($brand-primary, 0.04) !default;
 
  $panel-default-text:          $brand-secondary;
 // $panel-default-border:        #ddd
-$panel-default-heading-bg:    rgba($brand-primary, 0.04);
+$panel-default-heading-bg:    rgba($brand-primary, 0.04) !default;
 
 //$panel-primary-text:          $brand-primary;
 //$panel-primary-border:        $brand-primary;
@@ -736,13 +741,13 @@ $panel-default-heading-bg:    rgba($brand-primary, 0.04);
 //
 //##
 
-$badge-color:                 $brand-primary;
+$badge-color:                 $brand-primary !default;
 //* Linked badge text color on hover
-$badge-link-hover-color:     $gray-light;
-$badge-bg:                    $brand-primary-x-light;
+$badge-link-hover-color:     $gray-light !default;
+$badge-bg:                    $brand-primary-x-light !default;
 
 //* Badge text color in active nav link
-$badge-active-color:          $gray-light;
+$badge-active-color:          $gray-light !default;
 //* Badge background color in active nav link
 // $badge-active-bg:             #fff
 

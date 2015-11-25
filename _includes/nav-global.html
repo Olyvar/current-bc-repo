@@ -13,8 +13,8 @@
     </div>
 
     <div class="navbar-left site-switcher" >
-        <a class="site-switcher-links current" href="#">Barclays</a>
-        <a class="site-switcher-links" href="#">Barclaycard</a>
+        <a class="site-switcher-links {% if page.Barclays %}current{% endif %}" href="/">Barclays</a>
+        <a class="site-switcher-links {% if page.Barclaycard %}current{% endif %}" href="index-bc.html">Barclaycard</a>
         <a class="site-switcher-links" href="#">PCB</a>
       </div>
 

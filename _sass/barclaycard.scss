@@ -1,0 +1,132 @@
+ @font-face {
+    font-family: "bc-regular";
+    src: url("../fonts/barclaycardco_rg-webfont.eot");
+    src: url("../fonts/barclaycardco_rg-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/barclaycardco_rg-webfont.woff") format("woff"),
+    url("../fonts/barclaycardco_rg-webfont.ttf") format("truetype"),
+    url("../fonts/barclaycardco_rg-webfont.svg#webfont") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+    @font-face {
+    font-family: "bc-light";
+    src: url("../fonts/barclaycardco_lt-webfont.eot");
+    src: url("../fonts/barclaycardco_lt-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/barclaycardco_lt-webfont.woff") format("woff"),
+    url("../fonts/barclaycardco_lt-webfont.ttf") format("truetype"),
+    url("../fonts/barclaycardco_lt-webfont.svg#webfont") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+$body-bg: #ffffff;
+
+$logo-path: "../images/logo-bc.png";
+$sprite-path: "../images/barclaycard-sprites-01.png";
+
+$gray-base:              #000;
+$gray-light:             lighten($gray-base, 46.7%);
+
+$brand-primary:        #00a1e4;
+$brand-secondary:   #5223a0;
+$brand-primary-x-light: #f5fafc;
+$brand-primary-light: #7fb9d2;
+$brand-danger:          #d9534f;
+
+
+$link-color:            #5223a0;
+ $link-hover-color:      darken($link-color, 10%);
+
+$font-family-sans-serif:  Tahoma, Arial, sans-serif;
+$font-family-headings: "bc-regular", Helvetica, Arial, sans-serif;
+$font-family-lead: "bc-light", Helvetica, Arial, sans-serif;
+
+$font-size-base:          14px;
+$font-size-h2:            floor(($font-size-base * 1.75));
+$font-size-h3:            ceil(($font-size-base * 1.2));
+$font-size-h4:            ceil(($font-size-base * 1.1));
+$headings-color:          $brand-primary;
+
+$btn-primary-bg:                 $brand-primary;
+$btn-primary-border:           $brand-primary;
+
+$input-bg-disabled:              #f3f3f3;
+$dropdown-link-color:            #58595b;
+$navbar-default-bg:                #00395d;
+
+$navbar-default-link-active-bg:            inherit;
+
+$nav-link-hover-bg:     white;
+
+$nav-tabs-border-color:                     $brand-primary;
+
+$jumbotron-color:                #666;
+
+$jumbotron-heading-color:        $brand-primary;
+
+$popover-title-bg:                   white;
+
+$modal-header-border-color:   rgba($brand-primary, 0.3);
+
+$modal-md:                   500px;
+
+$panel-footer-bg:          rgba($brand-primary, 0.04);
+
+$panel-default-text:          $brand-secondary;
+
+$panel-default-heading-bg:    rgba($brand-primary, 0.04);
+
+$badge-color:                 $brand-primary;
+
+$badge-link-hover-color:     $gray-light;
+$badge-bg:                    $brand-primary-x-light;
+
+$badge-active-color:          $gray-light;
+
+@import 'styles.scss';
+
+.logo{
+    height: 32px;
+    margin: 10px 11px 8px;
+}
+
+.btn-primary{
+    box-shadow: inset 0px 1px 1px 0.5px rgba(255,255,255,0.5);
+    @include background-image(linear-gradient( #00a0e3, #007eb3));
+    @include border-radius(5px);
+    &:hover{
+        background: #00a0e3;
+    }
+}
+
+.jumbotron-photobg{
+    background-image:url("../images/bc/hero.jpg");
+}
+
+.image-news-1{
+    background-image: url("../images/bc/topshop.jpg");
+}
+
+.image-news-2{
+    background-image: linear-gradient(to bottom, rgba(darken($brand-primary, 10%), 0) 50%, rgba(darken($brand-primary, 10%), 1) 100%),
+    url("../images/bc/friday.jpg");
+}
+
+.image-news-3{
+    background-image: linear-gradient(to bottom, rgba(darken($brand-primary, 10%), 0) 50%, rgba(darken($brand-primary, 10%), 1) 100%),
+    url("../images/bc/credit-score.jpg");
+}
+
+.image-news-4{
+    background-image: url("../images/bc/spending.jpg");
+}
+
+.image-news-5{
+    background-image: linear-gradient(to bottom, rgba(darken($brand-primary, 10%), 0) 50%, rgba(darken($brand-primary, 10%), 1) 100%),
+    url("../images/bc/mobile-app.jpg");
+}
+
+.navbar-local{
+    @include background-image(linear-gradient(#ffffff, #f2f2f2));
+}

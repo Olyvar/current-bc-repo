@@ -1,8 +1,16 @@
 <meta charset="UTF-8">
-<title>Barclays - {{ page.title }}</title>
+<title>{{ page.brand }} - {{ page.title }}</title>
 <link rel="stylesheet" href="fonts/feather-webfont/feather.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap-tour.min.css">
+
+{% if page.Barclays %}
 <link rel="stylesheet" href="css/styles.css">
+{% endif %}
+
+{% if page.Barclaycard %}
+<link rel="stylesheet" href="css/barclaycard.css">
+{% endif %}
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="javascripts/bootstrap.min.js"></script>
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>

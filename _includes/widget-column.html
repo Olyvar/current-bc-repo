@@ -36,73 +36,73 @@
     </ul>
     </div>
   </li>
-  <li class="list-group-item col-sm-2 clearfix">
+  <li class="list-group-item col-sm-2 col-md-3 col-lg-2 clearfix">
     <a class="link-unstyled" href="image-library.html">
                 <span class="app-icons icon-1"></span>
              <span class="app-title-hidden">Image Library</span>
                 </a>
   </li>
-  <li class="list-group-item col-sm-2 clearfix">
+  <li class="list-group-item col-sm-2 col-md-3 col-lg-2 clearfix">
     <a class="link-unstyled" href="">
                 <span class="app-icons icon-2"></span>
              <span class="app-title-hidden">Best Practice</span>
                 </a>
   </li>
-  <li class="list-group-item col-sm-2 clearfix">
+  <li class="list-group-item col-sm-2 col-md-3 col-lg-2 clearfix">
     <a class="link-unstyled" href="#">
                 <span class="app-icons icon-3"></span>
              <span class="app-title-hidden">News</span>
                 </a>
   </li>
-  <li class="list-group-item col-sm-2 clearfix">
+  <li class="list-group-item col-sm-2 col-md-3 col-lg-2 clearfix">
     <a class="link-unstyled" href="#">
                 <span class="app-icons icon-4"></span>
              <span class="app-title-hidden">Showcase</span>
                 </a>
   </li>
-  <li class="list-group-item col-sm-2 clearfix">
+  <li class="list-group-item col-sm-2 col-md-3 col-lg-2 clearfix">
     <a class="link-unstyled" href="#">
                 <span class="app-icons icon-showcase"></span>
              <span class="app-title-hidden">Reports</span>
                 </a>
   </li>
-  <li class="list-group-item col-sm-2 clearfix">
+  <li class="list-group-item col-sm-2 col-md-3 col-lg-2 clearfix">
     <a class="link-unstyled" href="#">
                 <span class="app-icons icon-6"></span>
              <span class="app-title-hidden">Sharezone</span>
                 </a>
   </li>
-  <li class="list-group-item col-sm-2 clearfix">
+  <li class="list-group-item col-sm-2 col-md-3 col-lg-2 clearfix">
     <a class="link-unstyled" href="#">
                 <span class="app-icons icon-7"></span>
              <span class="app-title-hidden">MEA</span>
                 </a>
   </li>
-  <li class="list-group-item col-sm-2 clearfix">
+  <li class="list-group-item col-sm-2 col-md-3 col-lg-2 clearfix">
     <a class="link-unstyled" href="#">
                 <span class="app-icons icon-8"></span>
              <span class="app-title-hidden">Sponsorship</span>
                 </a>
   </li>
-  <li class="list-group-item col-sm-2 clearfix">
+  <li class="list-group-item col-sm-2 col-md-3 col-lg-2 clearfix">
     <a class="link-unstyled" href="#">
                 <span class="app-icons icon-9"></span>
              <span class="app-title-hidden">CCR</span>
                 </a>
   </li>
-  <li class="list-group-item col-sm-2 clearfix">
+  <li class="list-group-item col-sm-2 col-md-3 col-lg-2 clearfix">
     <a class="link-unstyled" href="#">
                 <span class="app-icons icon-10"></span>
              <span class="app-title-hidden">Creative Review</span>
                 </a>
   </li>
-  <li class="list-group-item col-sm-2 clearfix">
+  <li class="list-group-item col-sm-2 col-md-3 col-lg-2 clearfix">
     <a class="link-unstyled" href="#">
                 <span class="app-icons icon-11"></span>
              <span class="app-title-hidden">Helpdesk</span>
                 </a>
   </li>
-  <li class="list-group-item col-sm-2 clearfix">
+  <li class="list-group-item col-sm-2 col-md-3 col-lg-2 clearfix">
     <a class="link-unstyled" href="#">
                 <span class="app-icons icon-12"></span>
              <span class="app-title-hidden">Image Library</span>
@@ -292,11 +292,11 @@
   <div class="media">
       <div class="media-left">
       <a href="#">
-      <img src="images/download-thumb.jpg">
+      <img src="images/{% if page.Barclaycard %}bc/{% endif %}download-thumb.jpg">
       </a>
       </div>
       <div class="media-body">
-      <h4 class="list-group-item-heading pull-left"><a href="#">Primary-Barclays-logo-RGB.jpg</a></h4>
+      <h4 class="list-group-item-heading pull-left"><a href="#">{{page.downloads-file-one}}</a></h4>
       <span class="time-aside">Downloaded on 08/12/15</span>
       </div>
   </div>
@@ -305,11 +305,11 @@
   <div class="media">
       <div class="media-left">
       <a href="#">
-      <img src="images/download-thumb-xls.jpg">
+      <img src="images/{% if page.Barclaycard %}bc/{% endif %}download-thumb-xls.jpg">
       </a>
       </div>
       <div class="media-body">
-      <h4 class="list-group-item-heading pull-left"><a href="#">Winter-2016-New-Numbers-Report.xls</a></h4>
+      <h4 class="list-group-item-heading pull-left"><a href="#">{{page.downloads-file-two}}</a></h4>
       <span class="time-aside">Downloaded on 09/12/15</span>
       </div>
   </div>
@@ -318,11 +318,11 @@
   <div class="media">
       <div class="media-left">
       <a href="#">
-      <img src="images/download-thumb-brand.jpg">
+      <img src="images/{% if page.Barclaycard %}bc/{% endif %}download-thumb-brand.jpg">
       </a>
       </div>
       <div class="media-body">
-      <h4 class="list-group-item-heading pull-left"><a href="#">Brand Book.pdf</a></h4>
+      <h4 class="list-group-item-heading pull-left"><a href="#">{{page.downloads-file-three}}</a></h4>
       <span class="time-aside">Downloaded on 11/12/15</span>
       </div>
   </div>
@@ -331,11 +331,11 @@
   <div class="media">
       <div class="media-left">
       <a href="#">
-      <img src="images/download-thumb-ppt.jpg">
+      <img src="images/{% if page.Barclaycard %}bc/{% endif %}download-thumb-ppt.jpg">
       </a>
       </div>
       <div class="media-body">
-      <h4 class="list-group-item-heading pull-left"><a href="#">Barclays-2015-Powerpoint Template.ppt</a></h4>
+      <h4 class="list-group-item-heading pull-left"><a href="#">{{page.downloads-file-four}}</a></h4>
       <span class="time-aside">Downloaded on 14/12/15</span>
       </div>
   </div>
@@ -344,11 +344,11 @@
   <div class="media">
       <div class="media-left">
       <a href="#">
-      <img src="images/download-thumb-fonts.jpg">
+      <img src="images/{% if page.Barclaycard %}bc/{% endif %}download-thumb-fonts.jpg">
       </a>
       </div>
       <div class="media-body">
-      <h4 class="list-group-item-heading pull-left"><a href="#">Expert Sans Font Family for Macs</a></h4>
+      <h4 class="list-group-item-heading pull-left"><a href="#">{{page.downloads-file-five}}</a></h4>
       <span class="time-aside">Downloaded on 16/12/15</span>
       </div>
   </div>
@@ -376,7 +376,7 @@
       </a>
       </div>
       <div class="media-body">
-         <h4 class="list-group-item-heading pull-left"><a href="#">Project Serengeti Files</a></h4>
+         <h4 class="list-group-item-heading pull-left"><a href="#">{{ page.baskets-one }}</a></h4>
          <div class="list-group-item-button-bar">
          <a class="btn btn-link btn-link-action btn-sm" href="#"><span class="icon-mail"></span></a>
          <a class="btn btn-link btn-link-action btn-sm" href="#"><span class="icon-download"></span></a>
@@ -390,7 +390,7 @@
       <span class="circle">07</span>
       </div>
       <div class="media-body">
-      <h4 class="list-group-item-heading pull-left"><a href="#">Digital eagles imagery</a></h4>
+      <h4 class="list-group-item-heading pull-left"><a href="#">{{ page.baskets-two }}</a></h4>
         <div class="list-group-item-button-bar">
         <a class="btn btn-link btn-link-action btn-sm" href="#"><span class="icon-mail"></span></a>
         <a class="btn btn-link btn-link-action btn-sm" href="#"><span class="icon-download"></span></a>
@@ -404,7 +404,7 @@
       <span class="circle">22</span>
       </div>
       <div class="media-body">
-      <h4 class="list-group-item-heading pull-left"><a href="#">Icons for LifeSkills project</a></h4>
+      <h4 class="list-group-item-heading pull-left"><a href="#">{{ page.baskets-three }}</a></h4>
         <div class="list-group-item-button-bar">
         <a class="btn btn-link btn-link-action btn-sm" href="#"><span class="icon-mail"></span></a>
         <a class="btn btn-link btn-link-action btn-sm" href="#"><span class="icon-download"></span></a>
@@ -418,7 +418,7 @@
       <span class="circle">04</span>
       </div>
       <div class="media-body">
-      <h4 class="list-group-item-heading pull-left"><a href="#">MEA 2016 files</a></h4>
+      <h4 class="list-group-item-heading pull-left"><a href="#">{{ page.baskets-four }}</a></h4>
         <div class="list-group-item-button-bar">
         <a class="btn btn-link btn-link-action btn-sm" href="#"><span class="icon-mail"></span></a>
         <a class="btn btn-link btn-link-action btn-sm" href="#"><span class="icon-download"></span></a>
@@ -432,7 +432,7 @@
       <span class="circle">13</span>
       </div>
       <div class="media-body">
-      <h4 class="list-group-item-heading pull-left"><a href="#">Strategic transformation documents</a></h4>
+      <h4 class="list-group-item-heading pull-left"><a href="#">{{ page.baskets-five }}</a></h4>
         <div class="list-group-item-button-bar">
         <a class="btn btn-link btn-link-action btn-sm" href="#"><span class="icon-mail"></span></a>
         <a class="btn btn-link btn-link-action btn-sm" href="#"><span class="icon-download"></span></a>

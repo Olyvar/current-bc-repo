@@ -1,6 +1,6 @@
 {
   "firebase": "barclays-brandzone",
-  "public": ".",
+  "public": "_site",
   "ignore": [
     "firebase.json",
     "**/.*",
