@@ -1,17 +1,5 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "bc-regular";
-  src: url("../fonts/barclaycardco_rg-webfont.eot");
-  src: url("../fonts/barclaycardco_rg-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/barclaycardco_rg-webfont.woff") format("woff"), url("../fonts/barclaycardco_rg-webfont.ttf") format("truetype"), url("../fonts/barclaycardco_rg-webfont.svg#webfont") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: "bc-light";
-  src: url("../fonts/barclaycardco_lt-webfont.eot");
-  src: url("../fonts/barclaycardco_lt-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/barclaycardco_lt-webfont.woff") format("woff"), url("../fonts/barclaycardco_lt-webfont.ttf") format("truetype"), url("../fonts/barclaycardco_lt-webfont.svg#webfont") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
   font-family: "Expert-Sans-Regular";
   src: url("../fonts/expert-sans/font-eot/expertsans-regular-webfont.eot");
   src: url("../fonts/expert-sans/font-eot/expertsans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/expert-sans/font-woff/expertsans-regular-webfont.woff") format("woff"), url("../fonts/expert-sans/font-ttf/expertsans-regular-webfont.ttf") format("truetype"), url("../fonts/expert-sans/font-svg/expertsans-regular-webfont.svg#webfont") format("svg");
@@ -1430,7 +1418,7 @@ html {
 
 /* line 27, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_scaffolding.scss */
 body {
-  font-family: Tahoma, Arial, sans-serif;
+  font-family: "Expert-Sans-Light", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
@@ -1447,11 +1435,11 @@ textarea {
 
 /* line 48, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_scaffolding.scss */
 a {
-  color: #777777;
+  color: #941612;
   text-decoration: none; }
   /* line 52, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_scaffolding.scss */
   a:hover, a:focus {
-    color: #5e5e5e;
+    color: #670f0c;
     text-decoration: underline; }
   /* line 58, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_scaffolding.scss */
   a:focus {
@@ -1532,7 +1520,7 @@ h1, h2, h3, h4, h5, h6,
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
-  color: #00a1e4; }
+  color: #941612; }
   /* line 16, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_type.scss */
   h1 small,
   h1 .small, h2 small,
@@ -1676,11 +1664,11 @@ mark,
 
 /* line 5, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
 .text-primary {
-  color: #00a1e4; }
+  color: #ed1c24; }
 
 /* line 8, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
 a.text-primary:hover {
-  color: #007db1; }
+  color: #c61017; }
 
 /* line 5, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
 .text-success {
@@ -1720,11 +1708,11 @@ a.text-danger:hover {
 
 /* line 5, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
 .bg-primary {
-  background-color: #00a1e4; }
+  background-color: #ed1c24; }
 
 /* line 8, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
 a.bg-primary:hover {
-  background-color: #007db1; }
+  background-color: #c61017; }
 
 /* line 5, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
 .bg-success {
@@ -3722,23 +3710,23 @@ select[multiple].input-lg,
 /* line 63, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-primary {
   color: #fff;
-  background-color: #00a1e4;
-  border-color: #00a1e4; }
+  background-color: #941612;
+  border-color: #941612; }
   /* line 11, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_buttons.scss */
   .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #007db1;
-    border-color: #0076a7; }
+    background-color: #670f0c;
+    border-color: #5d0e0b; }
   /* line 21, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_buttons.scss */
   .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
     background-image: none; }
   /* line 29, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_buttons.scss */
   .btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
-    background-color: #00a1e4;
-    border-color: #00a1e4; }
+    background-color: #941612;
+    border-color: #941612; }
   /* line 40, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_buttons.scss */
   .btn-primary .badge {
-    color: #00a1e4;
+    color: #941612;
     background-color: #fff; }
 
 /* line 67, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_buttons.scss */
@@ -3831,7 +3819,7 @@ select[multiple].input-lg,
 
 /* line 88, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-link {
-  color: #777777;
+  color: #941612;
   font-weight: normal;
   border-radius: 0; }
   /* line 93, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_buttons.scss */
@@ -3844,7 +3832,7 @@ select[multiple].input-lg,
     border-color: transparent; }
   /* line 107, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_buttons.scss */
   .btn-link:hover, .btn-link:focus {
-    color: #5e5e5e;
+    color: #670f0c;
     text-decoration: underline;
     background-color: transparent; }
   /* line 115, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_buttons.scss */
@@ -3997,7 +3985,7 @@ tbody.collapse.in {
   color: #fff;
   text-decoration: none;
   outline: 0;
-  background-color: #00a1e4; }
+  background-color: #ed1c24; }
 
 /* line 102, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_dropdowns.scss */
 .dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
@@ -4431,7 +4419,7 @@ tbody.collapse.in {
   /* line 46, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_navs.scss */
   .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background-color: white;
-    border-color: #777777; }
+    border-color: #941612; }
   /* line 59, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_navs.scss */
   .nav .nav-divider {
     height: 1px;
@@ -4444,7 +4432,7 @@ tbody.collapse.in {
 
 /* line 76, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_navs.scss */
 .nav-tabs {
-  border-bottom: 1px solid #00a1e4; }
+  border-bottom: 1px solid #ed1c24; }
   /* line 78, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_navs.scss */
   .nav-tabs > li {
     float: left;
@@ -4457,7 +4445,7 @@ tbody.collapse.in {
       border-radius: 4px 4px 0 0; }
       /* line 89, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_navs.scss */
       .nav-tabs > li > a:hover {
-        border-color: #eeeeee #eeeeee #00a1e4; }
+        border-color: #eeeeee #eeeeee #ed1c24; }
     /* line 96, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_navs.scss */
     .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
       color: #555555;
@@ -4478,7 +4466,7 @@ tbody.collapse.in {
   /* line 131, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_navs.scss */
   .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
     color: #fff;
-    background-color: #00a1e4; }
+    background-color: #ed1c24; }
 
 /* line 144, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_navs.scss */
 .nav-stacked > li {
@@ -4897,8 +4885,8 @@ tbody.collapse.in {
       margin-right: 0; } }
 /* line 397, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default {
-  background-color: #00395d;
-  border-color: #00253c; }
+  background-color: #941612;
+  border-color: #76120e; }
   /* line 401, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-brand {
     color: #777; }
@@ -4936,7 +4924,7 @@ tbody.collapse.in {
   /* line 453, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-collapse,
   .navbar-default .navbar-form {
-    border-color: #00253c; }
+    border-color: #76120e; }
   /* line 462, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     background-color: inherit;
@@ -5093,7 +5081,7 @@ tbody.collapse.in {
       padding: 6px 12px;
       line-height: 1.42857143;
       text-decoration: none;
-      color: #777777;
+      color: #941612;
       background-color: #fff;
       border: 1px solid #ddd;
       margin-left: -1px; }
@@ -5112,7 +5100,7 @@ tbody.collapse.in {
   .pagination > li > a:hover, .pagination > li > a:focus,
   .pagination > li > span:hover,
   .pagination > li > span:focus {
-    color: #5e5e5e;
+    color: #670f0c;
     background-color: #eeeeee;
     border-color: #ddd; }
   /* line 51, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_pagination.scss */
@@ -5122,8 +5110,8 @@ tbody.collapse.in {
   .pagination > .active > span:focus {
     z-index: 2;
     color: #fff;
-    background-color: #00a1e4;
-    border-color: #00a1e4;
+    background-color: #ed1c24;
+    border-color: #ed1c24;
     cursor: default; }
   /* line 63, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_pagination.scss */
   .pagination > .disabled > span,
@@ -5250,10 +5238,10 @@ a.label:hover, a.label:focus {
 
 /* line 48, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_labels.scss */
 .label-primary, .label-public {
-  background-color: #00a1e4; }
+  background-color: #ed1c24; }
   /* line 7, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_labels.scss */
   .label-primary[href]:hover, [href].label-public:hover, .label-primary[href]:focus, [href].label-public:focus {
-    background-color: #007db1; }
+    background-color: #c61017; }
 
 /* line 52, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_labels.scss */
 .label-success, .label-order-approved, .label-orderable-privileged, .label-approved {
@@ -5290,12 +5278,12 @@ a.label:hover, a.label:focus {
   padding: 3px 7px;
   font-size: 12px;
   font-weight: bold;
-  color: #00a1e4;
+  color: #ed1c24;
   line-height: 1;
   vertical-align: baseline;
   white-space: nowrap;
   text-align: center;
-  background-color: #f5fafc;
+  background-color: rgba(237, 28, 36, 0.05);
   border-radius: 10px; }
   /* line 22, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_badges.scss */
   .badge:empty {
@@ -5337,7 +5325,7 @@ a.badge:hover, a.badge:focus {
   /* line 12, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_jumbotron.scss */
   .jumbotron h1,
   .jumbotron .h1 {
-    color: #00a1e4; }
+    color: #941612; }
   /* line 17, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_jumbotron.scss */
   .jumbotron p {
     margin-bottom: 15px;
@@ -5394,7 +5382,7 @@ a.badge:hover, a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #777777; }
+  border-color: #941612; }
 
 /* line 9, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_alerts.scss */
 .alert {
@@ -5506,7 +5494,7 @@ a.thumbnail.active {
   line-height: 20px;
   color: #fff;
   text-align: center;
-  background-color: #00a1e4;
+  background-color: #ed1c24;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   -webkit-transition: width 0.6s ease;
@@ -5670,8 +5658,8 @@ a.list-group-item {
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
   z-index: 2;
   color: #fff;
-  background-color: #00a1e4;
-  border-color: #00a1e4; }
+  background-color: #ed1c24;
+  border-color: #ed1c24; }
   /* line 90, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_list-group.scss */
   .list-group-item.active .list-group-item-heading,
   .list-group-item.active .list-group-item-heading > small,
@@ -5683,7 +5671,7 @@ a.list-group-item {
     color: inherit; }
   /* line 95, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_list-group.scss */
   .list-group-item.active .list-group-item-text, .list-group-item.active:hover .list-group-item-text, .list-group-item.active:focus .list-group-item-text {
-    color: #b1e8ff; }
+    color: #fcd9da; }
 
 /* line 4, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_list-group.scss */
 .list-group-item-success {
@@ -5826,7 +5814,7 @@ a.list-group-item-danger {
 /* line 49, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_panels.scss */
 .panel-footer {
   padding: 10px 15px;
-  background-color: rgba(0, 161, 228, 0.04);
+  background-color: rgba(237, 28, 36, 0.04);
   border-top: 1px solid #ddd;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px; }
@@ -6032,38 +6020,38 @@ a.list-group-item-danger {
   border-color: #ddd; }
   /* line 6, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_panels.scss */
   .panel-default > .panel-heading {
-    color: #777777;
-    background-color: rgba(0, 161, 228, 0.04);
+    color: #941612;
+    background-color: rgba(237, 28, 36, 0.04);
     border-color: #ddd; }
     /* line 11, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_panels.scss */
     .panel-default > .panel-heading + .panel-collapse > .panel-body {
       border-top-color: #ddd; }
     /* line 14, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_panels.scss */
     .panel-default > .panel-heading .badge {
-      color: rgba(0, 161, 228, 0.04);
-      background-color: #777777; }
+      color: rgba(237, 28, 36, 0.04);
+      background-color: #941612; }
   /* line 20, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_panels.scss */
   .panel-default > .panel-footer + .panel-collapse > .panel-body {
     border-bottom-color: #ddd; }
 
 /* line 251, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_panels.scss */
 .panel-primary {
-  border-color: #00a1e4; }
+  border-color: #ed1c24; }
   /* line 6, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_panels.scss */
   .panel-primary > .panel-heading {
     color: #fff;
-    background-color: #00a1e4;
-    border-color: #00a1e4; }
+    background-color: #ed1c24;
+    border-color: #ed1c24; }
     /* line 11, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_panels.scss */
     .panel-primary > .panel-heading + .panel-collapse > .panel-body {
-      border-top-color: #00a1e4; }
+      border-top-color: #ed1c24; }
     /* line 14, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_panels.scss */
     .panel-primary > .panel-heading .badge {
-      color: #00a1e4;
+      color: #ed1c24;
       background-color: #fff; }
   /* line 20, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_panels.scss */
   .panel-primary > .panel-footer + .panel-collapse > .panel-body {
-    border-bottom-color: #00a1e4; }
+    border-bottom-color: #ed1c24; }
 
 /* line 254, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_panels.scss */
 .panel-success {
@@ -6298,7 +6286,7 @@ button.close {
 /* line 79, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_modals.scss */
 .modal-header {
   padding: 15px;
-  border-bottom: 1px solid rgba(0, 161, 228, 0.3);
+  border-bottom: 1px solid rgba(237, 28, 36, 0.3);
   min-height: 16.42857143px; }
 
 /* line 85, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_modals.scss */
@@ -6319,7 +6307,7 @@ button.close {
 .modal-footer {
   padding: 15px;
   text-align: right;
-  border-top: 1px solid rgba(0, 161, 228, 0.3); }
+  border-top: 1px solid rgba(237, 28, 36, 0.3); }
   /* line 14, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
   .modal-footer:before, .modal-footer:after {
     content: " ";
@@ -6369,7 +6357,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: Tahoma, Arial, sans-serif;
+  font-family: "Expert-Sans-Light", Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: normal;
   line-height: 1.4;
@@ -6480,7 +6468,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: Tahoma, Arial, sans-serif;
+  font-family: "Expert-Sans-Light", Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.42857143;
@@ -7102,15 +7090,15 @@ button.close {
     display: none !important; } }
 /* line 55, ../_sass/styles.scss */
 .bg-primary {
-  background-color: #00a1e4; }
+  background-color: #ed1c24; }
 
 /* line 59, ../_sass/styles.scss */
 .bg-secondary {
-  background-color: #777777; }
+  background-color: #941612; }
 
 /* line 63, ../_sass/styles.scss */
 .feather-icon {
-  color: #00a1e4; }
+  color: #ed1c24; }
 
 /* line 67, ../_sass/styles.scss */
 .feather-icon-inverse {
@@ -7127,7 +7115,7 @@ button.close {
 /* line 79, ../_sass/styles.scss */
 .nav-icon, .global-nav-icon, .app-icons, .widget-icons, .widget-main-icons li {
   background-repeat: no-repeat;
-  background-image: url("../images/barclaycard-sprites-01.png"); }
+  background-image: url("../images/absa-sprites-01.png"); }
 
 /* line 84, ../_sass/styles.scss */
 .nav-icon {
@@ -7144,16 +7132,16 @@ button.close {
   margin-top: 0;
   margin-bottom: 30px;
   color: white;
-  font-family: "bc-regular", Helvetica, Arial, sans-serif;
-  text-shadow: 0 0 10px rgba(0, 161, 228, 0.7); }
+  font-family: "Expert-Sans-Regular", Helvetica, Arial, sans-serif;
+  text-shadow: 0 0 10px rgba(237, 28, 36, 0.7); }
 
 /* line 104, ../_sass/styles.scss */
 h1, h2, h3, h4, h5 {
-  font-family: "bc-regular", Helvetica, Arial, sans-serif; }
+  font-family: "Expert-Sans-Regular", Helvetica, Arial, sans-serif; }
 
 /* line 108, ../_sass/styles.scss */
 .lead {
-  font-family: "bc-light", Helvetica, Arial, sans-serif; }
+  font-family: "Expert-Sans-Light", Helvetica, Arial, sans-serif; }
 
 /* line 112, ../_sass/styles.scss */
 .fake-carousel {
@@ -7248,8 +7236,8 @@ h1, h2, h3, h4, h5 {
     /* line 215, ../_sass/styles.scss */
     .apps-dropdown li:hover {
       border: 1px solid #eeeeee;
-      border: 1px solid rgba(0, 161, 228, 0.3);
-      background-color: #f5fafc;
+      border: 1px solid rgba(237, 28, 36, 0.3);
+      background-color: rgba(237, 28, 36, 0.05);
       cursor: pointer;
       -webkit-transition: all, 0.3s, ease;
       -o-transition: all, 0.3s, ease;
@@ -7271,7 +7259,7 @@ h1, h2, h3, h4, h5 {
       -webkit-transition: all, 0.2s;
       -o-transition: all, 0.2s;
       transition: all, 0.2s;
-      background: #f5fafc;
+      background: rgba(237, 28, 36, 0.05);
       cursor: pointer; }
 
 /* line 242, ../_sass/styles.scss */
@@ -7303,7 +7291,7 @@ h1, h2, h3, h4, h5 {
   display: block;
   font-size: 12px;
   cursor: pointer;
-  color: #00a1e4;
+  color: #ed1c24;
   -webkit-transition: all, 0.3s;
   -o-transition: all, 0.3s;
   transition: all, 0.3s; }
@@ -7330,7 +7318,7 @@ h1, h2, h3, h4, h5 {
   transition: background-color, 0.2s, ease; }
   /* line 294, ../_sass/styles.scss */
   .quick-access .list-group-item.col-sm-2:hover {
-    background-color: #f5fafc; }
+    background-color: rgba(237, 28, 36, 0.05); }
     /* line 296, ../_sass/styles.scss */
     .quick-access .list-group-item.col-sm-2:hover .app-icons {
       opacity: 0;
@@ -7345,7 +7333,7 @@ h1, h2, h3, h4, h5 {
 
 /* line 309, ../_sass/styles.scss */
 .logo {
-  background-image: url("../images/logo-bc.png");
+  background-image: url("../images/logo-absa.png");
   background-repeat: no-repeat;
   width: 146px;
   height: 24px;
@@ -7370,8 +7358,8 @@ h1, h2, h3, h4, h5 {
   -o-transition: all, 0.3s, ease;
   transition: all, 0.3s, ease;
   position: absolute;
-  font-family: "bc-regular", Helvetica, Arial, sans-serif;
-  color: #00a1e4;
+  font-family: "Expert-Sans-Regular", Helvetica, Arial, sans-serif;
+  color: #ed1c24;
   z-index: 1;
   top: 30px;
   opacity: 0;
@@ -7411,12 +7399,12 @@ h1, h2, h3, h4, h5 {
 
 /* line 371, ../_sass/styles.scss */
 .site-switcher-links {
-  color: #7fb9d2;
+  color: white;
   margin-right: 40px;
   position: relative; }
   /* line 375, ../_sass/styles.scss */
   .site-switcher-links:hover {
-    color: #7fb9d2; }
+    color: #f14b52; }
   /* line 378, ../_sass/styles.scss */
   .site-switcher-links.current:after {
     border-color: transparent transparent #fff;
@@ -7434,7 +7422,7 @@ h1, h2, h3, h4, h5 {
 /* line 393, ../_sass/styles.scss */
 .main-headers {
   color: black;
-  font-family: "bc-regular", Helvetica, Arial, sans-serif;
+  font-family: "Expert-Sans-Regular", Helvetica, Arial, sans-serif;
   margin-top: 5px; }
 
 /* line 401, ../_sass/styles.scss */
@@ -7518,7 +7506,7 @@ h1, h2, h3, h4, h5 {
 
 /* line 481, ../_sass/styles.scss */
 .btn-link-action:hover {
-  border: 1px solid #777777;
+  border: 1px solid #941612;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
@@ -7747,7 +7735,7 @@ h1, h2, h3, h4, h5 {
 /* line 636, ../_sass/styles.scss */
 .news-aside {
   color: #777777;
-  font-family: "bc-regular", Helvetica, Arial, sans-serif;
+  font-family: "Expert-Sans-Regular", Helvetica, Arial, sans-serif;
   text-transform: uppercase; }
   /* line 640, ../_sass/styles.scss */
   .news-aside span {
@@ -7760,7 +7748,7 @@ h1, h2, h3, h4, h5 {
   top: 0;
   left: 0;
   font-size: x-large;
-  text-shadow: 0 0 10px rgba(0, 161, 228, 0.7);
+  text-shadow: 0 0 10px rgba(237, 28, 36, 0.7);
   color: white;
   padding: 10px;
   -moz-border-radius-topleft: 4px;
@@ -7808,11 +7796,11 @@ h1, h2, h3, h4, h5 {
 
 /* line 696, ../_sass/styles.scss */
 .image-news-2 {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, #00597e 100%), url("../images/media-2.jpg"); }
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, #970c11 100%), url("../images/media-2.jpg"); }
 
 /* line 701, ../_sass/styles.scss */
 .image-news-3 {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, #00597e 100%), url("../images/media-3.jpg"); }
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, #970c11 100%), url("../images/media-3.jpg"); }
 
 /* line 706, ../_sass/styles.scss */
 .image-news-4 {
@@ -7820,11 +7808,11 @@ h1, h2, h3, h4, h5 {
 
 /* line 710, ../_sass/styles.scss */
 .image-news-5 {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, #00597e 100%), url("../images/news-photo.jpg"); }
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, #970c11 100%), url("../images/news-photo.jpg"); }
 
 /* line 715, ../_sass/styles.scss */
 .play {
-  background-image: url("../images/play.png");
+  background-image: url("../images/play-absa.png");
   position: absolute;
   top: 125px;
   left: 50%;
@@ -7837,20 +7825,20 @@ h1, h2, h3, h4, h5 {
 
 /* line 731, ../_sass/styles.scss */
 .popover {
-  border: 1px solid #00a1e4 !important;
-  border: #00a1e4; }
+  border: 1px solid #ed1c24 !important;
+  border: #ed1c24; }
   /* line 735, ../_sass/styles.scss */
   .popover.left > .arrow {
-    border-left-color: #00a1e4; }
+    border-left-color: #ed1c24; }
   /* line 738, ../_sass/styles.scss */
   .popover.bottom > .arrow {
-    border-bottom-color: #00a1e4; }
+    border-bottom-color: #ed1c24; }
   /* line 741, ../_sass/styles.scss */
   .popover.top > .arrow {
-    border-top-color: #00a1e4; }
+    border-top-color: #ed1c24; }
   /* line 744, ../_sass/styles.scss */
   .popover.right > .arrow {
-    border-top-color: #00a1e4; }
+    border-top-color: #ed1c24; }
 
 /* line 749, ../_sass/styles.scss */
 .tasks-icon-group, .respond-button {
@@ -7982,8 +7970,8 @@ h3.list-group-item-heading,
 /* line 813, ../_sass/styles.scss */
 .widget-heading-tab {
   color: white;
-  background-color: #00a1e4;
-  border: 1px solid #00a1e4; }
+  background-color: #941612;
+  border: 1px solid #941612; }
   /* line 817, ../_sass/styles.scss */
   .widget-heading-tab h3 {
     color: white; }
@@ -8005,19 +7993,19 @@ h3.list-group-item-heading,
 /* line 837, ../_sass/styles.scss */
 .popover-title {
   text-align: center;
-  font-family: "bc-regular", Helvetica, Arial, sans-serif;
+  font-family: "Expert-Sans-Regular", Helvetica, Arial, sans-serif;
   border-bottom: 1px solid #eeeeee;
-  border-bottom: 1px solid rgba(119, 119, 119, 0.3); }
+  border-bottom: 1px solid rgba(148, 22, 18, 0.3); }
 
 /* line 844, ../_sass/styles.scss */
 .project-heading {
-  font-family: "bc-regular", Helvetica, Arial, sans-serif;
-  border-left: 2px solid #00a1e4;
-  background: #f5fafc;
+  font-family: "Expert-Sans-Regular", Helvetica, Arial, sans-serif;
+  border-left: 2px solid #ed1c24;
+  background: rgba(237, 28, 36, 0.05);
   cursor: pointer; }
   /* line 849, ../_sass/styles.scss */
   .project-heading em {
-    font-family: "bc-regular", Helvetica, Arial, sans-serif;
+    font-family: "Expert-Sans-Regular", Helvetica, Arial, sans-serif;
     color: #555555;
     font-style: normal; }
 
@@ -8104,7 +8092,7 @@ h3.list-group-item-heading,
 
 /* line 944, ../_sass/styles.scss */
 .modal-header {
-  background: #00a1e4; }
+  background: #ed1c24; }
   /* line 946, ../_sass/styles.scss */
   .modal-header h4.modal-title {
     color: white; }
@@ -8116,7 +8104,7 @@ h3.list-group-item-heading,
 
 /* line 956, ../_sass/styles.scss */
 .modal-footer {
-  background: #f5fafc; }
+  background: rgba(237, 28, 36, 0.05); }
 
 /* line 960, ../_sass/styles.scss */
 .text-left {
@@ -10799,17 +10787,17 @@ h3.list-group-item-heading,
     right: 13px; }
   /* line 63, ../_sass/_brand-center.scss */
   .grid-thumbnail .asset-checkbox-icon:hover {
-    color: #00a1e4; }
+    color: #ed1c24; }
   /* line 66, ../_sass/_brand-center.scss */
   .grid-thumbnail .asset-checkbox-icon .checked {
-    color: #00a1e4; }
+    color: #ed1c24; }
   /* line 70, ../_sass/_brand-center.scss */
   .grid-thumbnail .asset-download-icon {
     right: 13px;
     bottom: 50px; }
     /* line 73, ../_sass/_brand-center.scss */
     .grid-thumbnail .asset-download-icon:hover {
-      color: #00a1e4; }
+      color: #ed1c24; }
   /* line 77, ../_sass/_brand-center.scss */
   .grid-thumbnail .asset-preview-icon, .grid-thumbnail .asset-icon-left {
     top: 13px;
@@ -10863,7 +10851,7 @@ h3.list-group-item-heading,
   border: #b7b7b7 1px solid; }
 /* line 160, ../_sass/_brand-center.scss */
 .asset-grid.selected {
-  border: #00a1e4 1px solid; }
+  border: #ed1c24 1px solid; }
 
 /* line 166, ../_sass/_brand-center.scss */
 .asset-icon {
@@ -10939,7 +10927,7 @@ dl.asset-details {
   .featured .featured-label {
     position: absolute;
     padding: 3px 10px;
-    background-color: #00a1e4;
+    background-color: #ed1c24;
     color: white; }
 
 /* line 1030, ../_sass/styles.scss */
@@ -10952,10 +10940,10 @@ dl.asset-details {
 
 /* line 1039, ../_sass/styles.scss */
 .circle, .inverse-circle {
-  background-color: #00a1e4;
+  background-color: #941612;
   padding: 5px 8px;
   display: inline-block;
-  font-family: "bc-regular", Helvetica, Arial, sans-serif;
+  font-family: "Expert-Sans-Regular", Helvetica, Arial, sans-serif;
   color: white;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -10965,17 +10953,17 @@ dl.asset-details {
   transition: background-color, 0.4s, ease, transform, 0.4s, ease; }
   /* line 1047, ../_sass/styles.scss */
   .circle:hover, .inverse-circle:hover {
-    background-color: #007db1; }
+    background-color: #670f0c; }
 
 /* line 1052, ../_sass/styles.scss */
 .inverse-circle {
   background-color: white;
-  color: #00a1e4;
+  color: #941612;
   border: 1px solid transparent; }
   /* line 1057, ../_sass/styles.scss */
   .inverse-circle:hover {
     background-color: white;
-    border-color: #00a1e4; }
+    border-color: #941612; }
 
 /* line 1066, ../_sass/styles.scss */
 .circles-container {
@@ -11028,7 +11016,7 @@ dl.asset-details {
   text-decoration: none;
   list-style-type: none;
   font-size: larger;
-  font-family: "bc-regular", Helvetica, Arial, sans-serif;
+  font-family: "Expert-Sans-Regular", Helvetica, Arial, sans-serif;
   padding: 10px 0px; }
   /* line 1114, ../_sass/styles.scss */
   .bz-tabs li {
@@ -11045,7 +11033,7 @@ dl.asset-details {
   /* line 1128, ../_sass/styles.scss */
   .bz-tabs .active a {
     color: black;
-    font-family: "bc-regular", Helvetica, Arial, sans-serif; }
+    font-family: "Expert-Sans-Regular", Helvetica, Arial, sans-serif; }
 
 /* line 1135, ../_sass/styles.scss */
 .media-body {
@@ -11061,162 +11049,6 @@ dl.asset-details {
 .baskets h4 {
   padding-top: 6px; }
 
-/* line 89, ../_sass/barclaycard.scss */
+/* line 71, ../_sass/absa.scss */
 .logo {
-  height: 32px;
-  margin: 10px 11px 8px; }
-
-/* line 94, ../_sass/barclaycard.scss */
-.btn-primary {
-  box-shadow: inset 0px 1px 1px 0.5px rgba(255, 255, 255, 0.5);
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwYTBlMyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwN2ViMyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00a0e3), color-stop(100%, #007eb3));
-  background-image: -moz-linear-gradient(#00a0e3, #007eb3);
-  background-image: -webkit-linear-gradient(#00a0e3, #007eb3);
-  background-image: linear-gradient(#00a0e3, #007eb3);
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px; }
-  /* line 98, ../_sass/barclaycard.scss */
-  .btn-primary:hover {
-    background: #00a0e3; }
-
-/* line 103, ../_sass/barclaycard.scss */
-.jumbotron-photobg {
-  background-image: url("../images/bc/hero.jpg"); }
-
-/* line 107, ../_sass/barclaycard.scss */
-.image-news-1 {
-  background-image: url("../images/bc/topshop.jpg"); }
-
-/* line 111, ../_sass/barclaycard.scss */
-.image-news-2 {
-  background-image: linear-gradient(to bottom, rgba(0, 125, 177, 0) 50%, #007db1 100%), url("../images/bc/friday.jpg"); }
-
-/* line 116, ../_sass/barclaycard.scss */
-.image-news-3 {
-  background-image: linear-gradient(to bottom, rgba(0, 125, 177, 0) 50%, #007db1 100%), url("../images/bc/credit-score.jpg"); }
-
-/* line 121, ../_sass/barclaycard.scss */
-.image-news-4 {
-  background-image: url("../images/bc/spending.jpg"); }
-
-/* line 125, ../_sass/barclaycard.scss */
-.image-news-5 {
-  background-image: linear-gradient(to bottom, rgba(0, 125, 177, 0) 50%, #007db1 100%), url("../images/bc/mobile-app.jpg"); }
-
-/* line 130, ../_sass/barclaycard.scss */
-.navbar-local {
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2YyZjJmMiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f2f2f2));
-  background-image: -moz-linear-gradient(#ffffff, #f2f2f2);
-  background-image: -webkit-linear-gradient(#ffffff, #f2f2f2);
-  background-image: linear-gradient(#ffffff, #f2f2f2); }
-
-/****************** NEW BARCLAYCARD HOMEPAGE ****************/
-/* line 138, ../_sass/barclaycard.scss */
-h1.double-chevs {
-  color: white;
-  font-size: 48px;
-  line-height: 52px;
-  margin-bottom: 36px; }
-
-/* line 145, ../_sass/barclaycard.scss */
-.double-chevs:before {
-  content: "";
-  background: url("../images/bc/bc-double-chevrons.png") no-repeat left center;
-  display: inline-block;
-  width: 36px;
-  height: 32px;
-  margin-right: 8px; }
-
-/* line 154, ../_sass/barclaycard.scss */
-.building-blocks-homepage {
-  margin-top: 45px; }
-
-/* line 158, ../_sass/barclaycard.scss */
-.building-block {
-  float: left;
-  width: 90%;
-  border: 4px solid white;
-  padding: 15px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  margin-left: 50px;
-  height: 250px;
-  border-radius: 15px;
-  position: relative;
-  transition: all 0.7s;
-  -webkit-transition: all 0.7s; }
-
-/* line 174, ../_sass/barclaycard.scss */
-.building-block:hover {
-  background-color: white;
-  cursor: pointer;
-  transition: all 0.7s;
-  -webkit-transition: all 0.7s; }
-
-/* line 181, ../_sass/barclaycard.scss */
-.building-block:hover .building-block-h2 {
-  color: #00a1e4 !important;
-  transition: all 0.7s;
-  -webkit-transition: all 0.7s; }
-
-/* line 187, ../_sass/barclaycard.scss */
-.building-block:hover .building-block-description {
-  color: #939698;
-  transition: all 0.7s;
-  -webkit-transition: all 0.7s; }
-
-/* line 193, ../_sass/barclaycard.scss */
-.building-block:hover a.hidden-link {
-  color: #00a1e4 !important; }
-
-/* line 197, ../_sass/barclaycard.scss */
-.building-block-h2 {
-  font-size: 36px;
-  font-family: 'bc-regular', verdana, arial, sans-serif;
-  color: white;
-  display: block;
-  transition: all 0.7s;
-  -webkit-transition: all 0.7s; }
-
-/* line 206, ../_sass/barclaycard.scss */
-.building-block-description {
-  position: absolute;
-  top: 180px;
-  color: white;
-  display: block;
-  font-size: 16px;
-  padding-right: 10px;
-  font-family: 'bc-regular', verdana, arial, sans-serif;
-  transition: all 0.7s;
-  -webkit-transition: all 0.7s; }
-
-/* line 218, ../_sass/barclaycard.scss */
-.building-block:first-child {
-  margin-left: 0; }
-
-/* line 222, ../_sass/barclaycard.scss */
-.bc-home {
-  background-image: url("../images/bc/bc-home-bg.jpg");
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover; }
-
-/* line 228, ../_sass/barclaycard.scss */
-.bc-home .js-widget-column {
-  background-color: white;
-  margin-top: -20px;
-  padding-top: 20px; }
-  @media screen and (max-width: 992px) {
-    /* line 228, ../_sass/barclaycard.scss */
-    .bc-home .js-widget-column {
-      background-color: transparent; } }
-  /* line 237, ../_sass/barclaycard.scss */
-  .bc-home .js-widget-column.hidden-widget-column {
-    background-color: transparent; }
+  margin: 14px 11px 8px; }

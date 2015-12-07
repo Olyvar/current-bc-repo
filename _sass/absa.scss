@@ -1,0 +1,73 @@
+$body-bg: #ffffff;
+
+$logo-path: "../images/logo-absa.png";
+$sprite-path: "../images/absa-sprites-01.png";
+$play-image-path: "../images/play-absa.png";
+
+$gray-base:              #000;
+$gray-light:             lighten($gray-base, 46.7%);
+
+$brand-primary:        #ed1c24;
+$brand-secondary:   #941612;
+$brand-primary-light: lighten($brand-primary, 10%);
+$brand-primary-x-light: rgba($brand-primary, 0.05);
+$brand-danger:          #d9534f;
+
+$link-color:            $brand-secondary;
+
+$link-hover-color:      darken($link-color, 10%);
+
+
+
+
+$font-size-base:          14px;
+$font-size-h2:            floor(($font-size-base * 1.75));
+$font-size-h3:            ceil(($font-size-base * 1.2));
+$font-size-h4:            ceil(($font-size-base * 1.1));
+$headings-color:          $brand-secondary;
+
+$btn-primary-bg:                 $brand-secondary;
+$btn-primary-border:           $brand-secondary;
+$circle-bg:     $brand-secondary;
+$input-bg-disabled:              #f3f3f3;
+$dropdown-link-color:            #58595b;
+$navbar-default-bg:                $brand-secondary;
+
+$navbar-default-link-active-bg:            inherit;
+
+$nav-link-hover-bg:     white;
+
+$nav-tabs-border-color:                     $brand-primary;
+$site-switcher-links: white;
+
+$jumbotron-color:                #666;
+
+$jumbotron-heading-color:        $brand-secondary;
+
+$popover-title-bg:                   white;
+
+$modal-header-border-color:   rgba($brand-primary, 0.3);
+
+$modal-md:                   500px;
+
+$panel-footer-bg:          rgba($brand-primary, 0.04);
+
+$panel-default-text:          $brand-secondary;
+
+$panel-default-heading-bg:    rgba($brand-primary, 0.04);
+
+$badge-color:                 $brand-primary;
+
+$badge-link-hover-color:     $gray-light;
+$badge-bg:                    $brand-primary-x-light;
+
+$badge-active-color:          $gray-light;
+
+$widget-heading-tab-bg: $brand-secondary;
+$widget-heading-tab-border: $brand-secondary;
+
+@import 'styles.scss';
+
+.logo{
+    margin: 14px 11px 8px;
+}

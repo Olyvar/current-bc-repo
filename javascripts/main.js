@@ -91,6 +91,11 @@ removeWidgetBtn.on("click", function(e){
   $(this).closest(".js-widget").remove();
 });
 
+$(".list-group-item-heading").on("click", function(e){
+  e.stopPropagation();
+  $(this).parents(".js-widget").find(".js-minimize").slideToggle(200);
+  $(this).parent(".widget-heading-tab").toggleClass("no-border-radius");
+});
 
 // The Tour!
 var tour = new Tour({
@@ -207,8 +212,10 @@ $(".js-close-widgets").on("click", function(e) {
   $(".js-widget").toggle();
   self.find("span").toggleClass("icon-fast-forward").toggleClass("icon-rewind");
   $(".js-widget-column").toggleClass("col-md-4").toggleClass("col-md-2");
+  $(".js-widget-column").toggleClass("hidden-widget-column");
   $(".js-main-content").toggleClass("col-md-offset-2");
 });
 
+//$(".js-widget-column").height($(window).height());
 
 });

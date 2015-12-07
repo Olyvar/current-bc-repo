@@ -369,7 +369,7 @@ h1,h2,h3,h4,h5{
 }
 
 .site-switcher-links{
-	color: $brand-primary-light;
+	color: $site-switcher-links;
 	margin-right: 40px;
 	position: relative;
 	&:hover{
@@ -449,15 +449,11 @@ h1,h2,h3,h4,h5{
 	margin-top: 0;
 	box-shadow: none;
 	border-radius: 0;
-	background-color: #f5f5f5;
 	min-width: 60px;
 	padding: 0 0;
 	> li {
 		> a {
 		padding: 5px 20px;
-			&:hover{
-				background-color: rgba($brand-danger, 0.2);
-			}
 		}
 	}
 }
@@ -573,9 +569,9 @@ h1,h2,h3,h4,h5{
 }
 
 .js-widget{
-	@include filter(grayscale(1));
-	@include single-transition(filter,0.3s,ease);
-	@include transition-property(filter, -webkit-filter, -moz-filter);
+	//@include filter(grayscale(1));
+	//@include single-transition(filter,0.3s,ease);
+	//@include transition-property(filter, -webkit-filter, -moz-filter);
 	@include border-radius(5px);
 	@extend %shadow;
 	-webkit-backface-visibility: hidden;
@@ -651,7 +647,7 @@ h1,h2,h3,h4,h5{
 	position: absolute;
 	top: 0;
 	left: 0;
-	font-size: large;
+	font-size: x-large;
 	@include text-shadow( 0 0 10px rgba($brand-primary, 0.7) );
 	color: white;
 	padding: 10px;
@@ -717,7 +713,7 @@ h1,h2,h3,h4,h5{
 }
 
 .play{
-	background-image: url("../images/play.png");
+	background-image: url($play-image-path);
 	position: absolute;
 	top: 125px;
 	left: 50%;
@@ -802,6 +798,10 @@ h1,h2,h3,h4,h5{
 	max-height: 10px;
 }
 
+h3.list-group-item-heading{
+	cursor:pointer;
+}
+
 h3.list-group-item-heading,
 .workspaces .list-group-item-heading,
 .project-heading .list-group-item-heading,
@@ -812,15 +812,23 @@ h3.list-group-item-heading,
 
 .widget-heading-tab{
 	color: white;
-	background-color: $brand-primary;
-	border: 1px solid $brand-primary;
+	background-color: $widget-heading-tab-bg;
+	border: 1px solid $widget-heading-tab-border;
 	h3{
 		color: white;
 	}
 }
 
 
+.js-minimize{
+	.list-group-item:first-child{
+		@include border-radius(0);
+	}
+}
 
+.no-border-radius{
+	border-radius: 4px !important;
+}
 
 .popover {
 	border: none;
@@ -1029,7 +1037,7 @@ h3.list-group-item-heading,
 }
 
 .circle{
-	background-color: $brand-primary;
+	background-color: $circle-bg;
 	padding: 5px 8px;
 	display: inline-block;
 	font-family: $font-family-headings;
@@ -1037,18 +1045,18 @@ h3.list-group-item-heading,
 	@include border-radius(50%);
 	@include transition(background-color, 0.4s, ease, transform, 0.4s, ease);
 	&:hover{
-		background-color: darken($brand-primary, 10%);
+		background-color: darken($circle-bg, 10%);
 	}
 }
 
 .inverse-circle{
 	@extend .circle;
 	background-color: white;
-	color: $brand-primary;
+	color: $circle-bg;
 	border: 1px solid transparent;
 	&:hover{
 		background-color: white;
-		border-color: $brand-primary;
+		border-color: $circle-bg;
 	}
 }
 

@@ -17,7 +17,7 @@
     </ul>
     </div>
 
-    {% if page.Barclays %}
+    {% if page.Barclays or page.Absa %}
     <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
           <input type="text" class="form-control top-search" placeholder="Search">
@@ -35,14 +35,14 @@
           <span class="icon-5 fave-icon nav-icon center-block"></span></a>
           </li>
          <li class="dropdown fave-divider js-myapps">
-          <a href="image-library{{page.bc}}.html" class="dropdown-toggle navbar-icon" data-toggle="dropdown">
+          <a href="" class="dropdown-toggle navbar-icon" data-toggle="dropdown">
           <span class="myapps-icon tour-myapps nav-icon center-block"></span>
           <span class="sr-only">My Apps</span></a>
               <ul class="dropdown-menu apps-dropdown navbar-dropdown">
                   <div class="dropdown-container apps-sortable clearfix">
 
                         <li class="col-xs-4 apps-dropdown-unique">
-                        <a class="link-unstyled" href="image-library{{page.bc}}.html">
+                        <a class="link-unstyled" href="">
                             <span class="app-icons icon-1"></span>
                             <p class="app-title text-center">Image Library</p>
                             </a>
@@ -68,7 +68,7 @@
                             <p class="app-title text-center">Reports</p>
                         </li>
                         <li class="col-xs-4 apps-dropdown-unique">
-                        <a class="link-unstyled" href="shares.html">
+                        <a class="link-unstyled" href="">
                         <span class="app-icons icon-7"></span>
                             <p class="app-title text-center">Sharezone</p></a>
                         </li>

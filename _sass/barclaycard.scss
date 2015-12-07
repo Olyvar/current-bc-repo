@@ -1,4 +1,4 @@
- @font-face {
+@font-face {
     font-family: "bc-regular";
     src: url("../fonts/barclaycardco_rg-webfont.eot");
     src: url("../fonts/barclaycardco_rg-webfont.eot?#iefix") format("embedded-opentype"),
@@ -9,7 +9,7 @@
     font-style: normal;
 }
 
-    @font-face {
+@font-face {
     font-family: "bc-light";
     src: url("../fonts/barclaycardco_lt-webfont.eot");
     src: url("../fonts/barclaycardco_lt-webfont.eot?#iefix") format("embedded-opentype"),
@@ -29,14 +29,14 @@ $gray-base:              #000;
 $gray-light:             lighten($gray-base, 46.7%);
 
 $brand-primary:        #00a1e4;
-$brand-secondary:   #5223a0;
+$brand-secondary:   #777777;
 $brand-primary-x-light: #f5fafc;
 $brand-primary-light: #7fb9d2;
 $brand-danger:          #d9534f;
 
+$link-color:            $brand-secondary;
 
-$link-color:            #5223a0;
- $link-hover-color:      darken($link-color, 10%);
+$link-hover-color:      darken($link-color, 10%);
 
 $font-family-sans-serif:  Tahoma, Arial, sans-serif;
 $font-family-headings: "bc-regular", Helvetica, Arial, sans-serif;
@@ -129,4 +129,113 @@ $badge-active-color:          $gray-light;
 
 .navbar-local{
     @include background-image(linear-gradient(#ffffff, #f2f2f2));
+}
+
+// Borrowing from homepage
+
+/****************** NEW BARCLAYCARD HOMEPAGE ****************/
+
+h1.double-chevs {
+    color: white;
+    font-size: 48px;
+    line-height: 52px;
+    margin-bottom: 36px;
+}
+
+.double-chevs:before {
+    content: "";
+    background: url('../images/bc/bc-double-chevrons.png') no-repeat left center;
+    display: inline-block;
+    width: 36px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+.building-blocks-homepage {
+    margin-top: 45px;
+}
+
+.building-block {
+    float: left;
+    width: 90%;
+    border: 4px solid white;
+    padding: 15px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin-left: 50px;
+    height: 250px;
+    border-radius: 15px;
+    position: relative;
+    transition: all 0.7s;
+    -webkit-transition: all 0.7s;
+}
+
+.building-block:hover {
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.7s;
+    -webkit-transition: all 0.7s;
+}
+
+.building-block:hover .building-block-h2 {
+    color: #00a1e4 !important;
+    transition: all 0.7s;
+    -webkit-transition: all 0.7s;
+}
+
+.building-block:hover .building-block-description {
+    color: rgb(147,150,152);
+    transition: all 0.7s;
+    -webkit-transition: all 0.7s;
+}
+
+.building-block:hover a.hidden-link {
+    color: #00a1e4 !important;
+}
+
+.building-block-h2 {
+    font-size: 36px;
+    font-family: 'bc-regular', verdana, arial, sans-serif;
+    color: white;
+    display: block;
+    transition: all 0.7s;
+    -webkit-transition: all 0.7s;
+}
+
+.building-block-description {
+    position: absolute;
+    top: 180px;
+    color: white;
+    display: block;
+    font-size: 16px;
+    padding-right: 10px;
+    font-family: 'bc-regular', verdana, arial, sans-serif;
+    transition: all 0.7s;
+    -webkit-transition: all 0.7s;
+}
+
+.building-block:first-child {
+    margin-left: 0;
+}
+
+.bc-home {
+        background-image: url("../images/bc/bc-home-bg.jpg");
+        @include background-size(cover);
+}
+
+.bc-home {
+    .js-widget-column{
+        background-color: white;
+        //@include transition(background-color, 0.5s, ease);
+        margin-top: -20px;
+        padding-top: 20px;
+        //height: 100vh;
+        @media screen and (max-width: 992px){
+            background-color: transparent;
+        }
+        &.hidden-widget-column{
+            background-color: transparent;
+        }
+    }
 }
