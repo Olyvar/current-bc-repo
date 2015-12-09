@@ -81,6 +81,7 @@
 	background-image: url($sprite-path);
 }
 
+
 .nav-icon{
 	@extend %sprite;
 	width: 50px;
@@ -156,6 +157,10 @@ h1,h2,h3,h4,h5{
 	}
 }
 
+.btn{
+	@include border-radius(4px);
+}
+
 .btn-search{
 	background-color: #f0f0f0;
 	margin-left: -10px;
@@ -206,11 +211,15 @@ h1,h2,h3,h4,h5{
 }
 
 .apps-dropdown{
-	width: 260px;
+	width: 335px;
 	li{
-		padding: 5px 0 0 0;
+		padding: 0;
 		border: 1px solid transparent;
-		height: 90px;
+		height: 100px;
+		width: 90px;
+		.app-icons{
+			left: 10px;
+		}
 		@include transition(all, 0.3s, ease);
 		&:hover{
 			border: 1px solid $gray-lighter;
@@ -258,7 +267,7 @@ h1,h2,h3,h4,h5{
 
 
 .dropdown-container{
-	padding: 15px;
+	padding: 30px 30px 15px 30px;
 }
 
 .dropdown-more{
@@ -287,24 +296,7 @@ h1,h2,h3,h4,h5{
 }
 
 
-.quick-access{
-	.list-group-item.col-sm-2{
-		cursor: pointer;
-		@include transition(background-color, 0.2s, ease);
-		&:hover{
-			background-color: $brand-primary-x-light;
-			.app-icons{
-				opacity: 0;
-				@include transition(opacity, 0.2s, ease);
-			}
-			.app-title-hidden{
-				top: 15px;
-				opacity: 1;
-				visibility: visible;
-			}
-		}
-	}
-}
+
 
 .logo{
 	background-image: url( $logo-path );
@@ -321,6 +313,7 @@ h1,h2,h3,h4,h5{
 	width: 60px;
 	height: 50px;
 	display: block;
+	margin-bottom: 5px;
 	position: relative;
 	z-index:50;
 	opacity: 1;
@@ -423,14 +416,13 @@ h1,h2,h3,h4,h5{
 
 .navbar-default{
 	@extend %shadow;
-	border-radius: 0;
 	&.navbar-local{
 		background-color: white;
 	}
 }
 
 .apps-dropdown:after, .apps-dropdown:before{
-	left: 85%;
+	left: 88%;
 }
 
 .notifications-dropdown:after, .notifications-dropdown:before{
@@ -448,7 +440,6 @@ h1,h2,h3,h4,h5{
 .widget-dropdown{
 	margin-top: 0;
 	box-shadow: none;
-	border-radius: 0;
 	min-width: 60px;
 	padding: 0 0;
 	> li {
@@ -461,7 +452,6 @@ h1,h2,h3,h4,h5{
 .jumbotron-photobg{
 	background-image:url("../images/three.jpg");
 	@include background-size(cover);
-	@extend %shadow;
 	margin-bottom: 15px;
 }
 
@@ -569,20 +559,12 @@ h1,h2,h3,h4,h5{
 }
 
 .js-widget{
-	//@include filter(grayscale(1));
-	//@include single-transition(filter,0.3s,ease);
-	//@include transition-property(filter, -webkit-filter, -moz-filter);
-	@include border-radius(5px);
-	@extend %shadow;
 	-webkit-backface-visibility: hidden;
 	h4{
 		color: black;
 		a{
 			color: black;
 		}
-	}
-	&:hover{
-		@include filter(grayscale(0));
 	}
 }
 
@@ -592,14 +574,16 @@ h1,h2,h3,h4,h5{
 	}
 }
 
-
+.widget-column--heading{
+	margin-top: 8px;
+	margin-bottom: 0;
+}
 
 .js-main-content {
 	.media{
 		padding: 15px;
 		background-color: white;
-		border-radius: 4px;
-		@extend %shadow;
+		border-radius: 0;
 	}
 }
 
@@ -611,10 +595,9 @@ h1,h2,h3,h4,h5{
 
 .panel{
 	border: none;
-	@extend %shadow;
-	@include transition(box-shadow, 0.2s, ease);
+	@include transition(box-shadow, 0.3s, ease);
 	&:hover{
-		box-shadow: 0 0 6px 1px rgba(0,0,0,.25);
+		box-shadow: 0 0 5px 1px rgba(0,0,0,.25);
 	}
 }
 
@@ -730,7 +713,6 @@ h1,h2,h3,h4,h5{
 
 .popover{
 	border: 1px solid $brand-primary !important;
-	//box-shadow: none;
 	border: $brand-primary;
 	&.left > .arrow{
 		border-left-color: $brand-primary;
@@ -798,6 +780,16 @@ h1,h2,h3,h4,h5{
 	max-height: 10px;
 }
 
+.list-group-item{
+	@include border-radius(0);
+	&:first-child{
+		@include border-radius(0);
+	}
+	.media, .media-body{
+		overflow: visible;
+	}
+}
+
 h3.list-group-item-heading{
 	cursor:pointer;
 }
@@ -824,10 +816,6 @@ h3.list-group-item-heading,
 	.list-group-item:first-child{
 		@include border-radius(0);
 	}
-}
-
-.no-border-radius{
-	border-radius: 4px !important;
 }
 
 .popover {
