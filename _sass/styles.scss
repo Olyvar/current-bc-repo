@@ -215,7 +215,7 @@ h1,h2,h3,h4,h5{
 	li{
 		padding: 0;
 		border: 1px solid transparent;
-		height: 100px;
+		height: 90px;
 		width: 90px;
 		.app-icons{
 			left: 10px;
@@ -267,7 +267,7 @@ h1,h2,h3,h4,h5{
 
 
 .dropdown-container{
-	padding: 30px 30px 15px 30px;
+	padding: 35px 30px 15px 30px;
 }
 
 .dropdown-more{
@@ -626,15 +626,15 @@ h1,h2,h3,h4,h5{
 	}
 }
 
+
 .news-cat{
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 10px;
 	font-size: x-large;
-	@include text-shadow( 0 0 10px rgba($brand-primary, 0.7) );
 	color: white;
-	padding: 10px;
-	@include border-top-left-radius(4px);
+	padding: 5px 7px 8px 5px;
+	background-color: $brand-primary;
 }
 
 .news-text-content{
@@ -677,12 +677,12 @@ h1,h2,h3,h4,h5{
 }
 
 .image-news-2{
-	background-image: linear-gradient(to bottom, rgba(255,255,255, 0) 50%, rgba(darken($brand-primary, 20%), 1) 100%),
+	background-image: linear-gradient(to bottom, rgba(white, 0) 72%, rgba(black, 0.3) 72%),
 	url("../images/media-2.jpg");
 }
 
 .image-news-3{
-	background-image: linear-gradient(to bottom, rgba(255,255,255, 0) 50%, rgba(darken($brand-primary, 20%), 1) 100%),
+	background-image: linear-gradient(to bottom, rgba(white, 0) 72%, rgba(black, 0.3) 72%),
 	url("../images/media-3.jpg");
 }
 
@@ -691,7 +691,7 @@ h1,h2,h3,h4,h5{
 }
 
 .image-news-5{
-	background-image: linear-gradient(to bottom, rgba(255,255,255, 0) 50%, rgba(darken($brand-primary, 20%), 1) 100%),
+	background-image: linear-gradient(to bottom, rgba(white, 0) 72%, rgba(black, 0.3) 72%),
 	url("../images/news-photo.jpg");
 }
 
@@ -1086,7 +1086,10 @@ h3.list-group-item-heading,
 
 .status{
 	font-weight: bold;
-	font-size: xx-large;
+	font-size: x-large;
+	.media &{
+		padding-top: 10px;
+	}
 }
 
 .shares-container{

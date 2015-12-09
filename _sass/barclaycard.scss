@@ -219,23 +219,23 @@ h1.double-chevs {
     margin-left: 0;
 }
 
-.bc-home {
-        background-image: url("../images/bc/bc-home-bg.jpg");
-        @include background-size(cover);
-}
+// .bc-home {
+//         background-image: url("../images/bc/bc-home-bg.jpg");
+//         @include background-size(cover);
+// }
 
-.bc-home {
-    .js-widget-column{
-        background-color: white;
-        //@include transition(background-color, 0.5s, ease);
-        margin-top: -20px;
-        padding-top: 20px;
-        //height: 100vh;
-        @media screen and (max-width: 992px){
-            background-color: transparent;
-        }
-        &.hidden-widget-column{
-            background-color: transparent;
-        }
-    }
-}
+// .bc-home {
+//     .js-widget-column{
+//         background-color: white;
+//         //@include transition(background-color, 0.5s, ease);
+//         margin-top: -20px;
+//         padding-top: 20px;
+//         //height: 100vh;
+//         @media screen and (max-width: 992px){
+//             background-color: transparent;
+//         }
+//         &.hidden-widget-column{
+//             background-color: transparent;
+//         }
+//     }
+// }
