@@ -101,7 +101,7 @@ $badge-active-color:          $gray-light;
 }
 
 .jumbotron-photobg{
-    background-image:url("../images/bc/hero.jpg");
+    background-image:url("../images/bc/bc-home-bg.jpg");
 }
 
 .image-news-1{
@@ -109,37 +109,35 @@ $badge-active-color:          $gray-light;
 }
 
 .image-news-2{
-    background-image: linear-gradient(to bottom, rgba(darken($brand-primary, 10%), 0) 50%, rgba(darken($brand-primary, 10%), 1) 100%),
-    url("../images/bc/friday.jpg");
+    background-image: url("../images/bc/topshop.jpg");
 }
 
 .image-news-3{
-    background-image: linear-gradient(to bottom, rgba(darken($brand-primary, 10%), 0) 50%, rgba(darken($brand-primary, 10%), 1) 100%),
-    url("../images/bc/credit-score.jpg");
+    background-image: url("../images/bc/credit-score.jpg");
 }
 
 .image-news-4{
-    background-image: url("../images/bc/spending.jpg");
+    background-image: url("../images/five.jpg");
 }
 
-.image-news-5{
-    background-image: linear-gradient(to bottom, rgba(darken($brand-primary, 10%), 0) 50%, rgba(darken($brand-primary, 10%), 1) 100%),
-    url("../images/bc/mobile-app.jpg");
+.image-news-6{
+    background-image: url("../images/bc/hero.jpg");
 }
 
 .navbar-local{
     @include background-image(linear-gradient(#ffffff, #f2f2f2));
 }
 
+
 // Borrowing from homepage
 
 /****************** NEW BARCLAYCARD HOMEPAGE ****************/
 
 h1.double-chevs {
-    color: white;
+    color: $brand-primary;
     font-size: 48px;
-    line-height: 52px;
-    margin-bottom: 36px;
+    // line-height: 52px;
+    // margin-bottom: 36px;
 }
 
 .double-chevs:before {
@@ -150,92 +148,3 @@ h1.double-chevs {
     height: 32px;
     margin-right: 8px;
 }
-
-.building-blocks-homepage {
-    margin-top: 45px;
-}
-
-.building-block {
-    float: left;
-    width: 90%;
-    border: 4px solid white;
-    padding: 15px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    margin-left: 50px;
-    height: 250px;
-    border-radius: 15px;
-    position: relative;
-    transition: all 0.7s;
-    -webkit-transition: all 0.7s;
-}
-
-.building-block:hover {
-    background-color: white;
-    cursor: pointer;
-    transition: all 0.7s;
-    -webkit-transition: all 0.7s;
-}
-
-.building-block:hover .building-block-h2 {
-    color: #00a1e4 !important;
-    transition: all 0.7s;
-    -webkit-transition: all 0.7s;
-}
-
-.building-block:hover .building-block-description {
-    color: rgb(147,150,152);
-    transition: all 0.7s;
-    -webkit-transition: all 0.7s;
-}
-
-.building-block:hover a.hidden-link {
-    color: #00a1e4 !important;
-}
-
-.building-block-h2 {
-    font-size: 36px;
-    font-family: 'bc-regular', verdana, arial, sans-serif;
-    color: white;
-    display: block;
-    transition: all 0.7s;
-    -webkit-transition: all 0.7s;
-}
-
-.building-block-description {
-    position: absolute;
-    top: 180px;
-    color: white;
-    display: block;
-    font-size: 16px;
-    padding-right: 10px;
-    font-family: 'bc-regular', verdana, arial, sans-serif;
-    transition: all 0.7s;
-    -webkit-transition: all 0.7s;
-}
-
-.building-block:first-child {
-    margin-left: 0;
-}
-
-// .bc-home {
-//         background-image: url("../images/bc/bc-home-bg.jpg");
-//         @include background-size(cover);
-// }
-
-// .bc-home {
-//     .js-widget-column{
-//         background-color: white;
-//         //@include transition(background-color, 0.5s, ease);
-//         margin-top: -20px;
-//         padding-top: 20px;
-//         //height: 100vh;
-//         @media screen and (max-width: 992px){
-//             background-color: transparent;
-//         }
-//         &.hidden-widget-column{
-//             background-color: transparent;
-//         }
-//     }
-// }

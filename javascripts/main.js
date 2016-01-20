@@ -189,13 +189,13 @@ $('.infinite-scroll').jscroll({
 
 var widgetSelect = $("#widget-select"),
       addWidgetBtn = $(".js-add-widget"),
-      quickAccessEl = $("#quick-access-widget"),
+      widgetIcons = $(".js-widget-icons"),
       widgetModal = $("#widgetModal");
 
 addWidgetBtn.on("click", function(e){
     e.stopPropagation();
     $.get("/" + widgetSelect.val() + ".html", function(data) {
-      quickAccessEl.after(data);
+      widgetIcons.after(data);
     });
   widgetModal.modal('hide');
 
