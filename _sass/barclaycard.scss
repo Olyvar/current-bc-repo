@@ -20,7 +20,6 @@
     font-style: normal;
 }
 
-$body-bg: #ffffff;
 
 $logo-path: "../images/logo-bc.png";
 $sprite-path: "../images/barclaycard-sprites-01.png";
@@ -63,7 +62,7 @@ $nav-tabs-border-color:                     $brand-primary;
 
 $jumbotron-color:                #666;
 
-$jumbotron-heading-color:        $brand-primary;
+$jumbotron-heading-color:        #ffffff;
 
 $popover-title-bg:                   white;
 
@@ -100,6 +99,10 @@ $badge-active-color:          $gray-light;
     }
 }
 
+.jumbotron{
+    height: 500px;
+}
+
 .jumbotron-photobg{
     background-image:url("../images/bc/bc-home-bg.jpg");
 }
@@ -125,19 +128,38 @@ $badge-active-color:          $gray-light;
 }
 
 .navbar-local{
-    @include background-image(linear-gradient(#ffffff, #f2f2f2));
+    @include box-shadow(0 4px 6px -4px rgba(black, 0.25));
 }
 
+.navbar-global{
+    background-color: #085da9;
+    font-family: $font-family-lead;
+}
+
+.site-switcher-links{
+    @include border-top-radius(5px);
+    color: white;
+    background-color: #064884;
+    padding: 8px 10px 15px 10px;
+    margin-right: 0;
+    &:hover{
+        color: white;
+    }
+    &.current{
+        background-color: white;
+        color: $brand-primary;
+        &:after{
+            border: none;
+        }
+    }
+}
 
 // Borrowing from homepage
 
 /****************** NEW BARCLAYCARD HOMEPAGE ****************/
 
 h1.double-chevs {
-    color: $brand-primary;
     font-size: 48px;
-    // line-height: 52px;
-    // margin-bottom: 36px;
 }
 
 .double-chevs:before {

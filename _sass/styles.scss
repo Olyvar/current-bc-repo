@@ -449,6 +449,10 @@ h1,h2,h3,h4,h5{
 	}
 }
 
+.jumbotron{
+	position: relative;
+}
+
 .jumbotron-photobg{
 	background-image:url("../images/three.jpg");
 	@include background-size(cover);
@@ -791,6 +795,7 @@ h1,h2,h3,h4,h5{
 	}
 	.media, .media-body{
 		overflow: visible;
+
 	}
 }
 
@@ -1097,7 +1102,7 @@ h3.list-group-item-heading,
 }
 
 .shares-container{
-	padding: 2px 15px 10px 15px;
+	padding: 0;
 }
 
 .bz-tabs{
@@ -1105,7 +1110,7 @@ h3.list-group-item-heading,
 	list-style-type: none;
 	font-size: larger;
 	font-family: $font-family-headings;
-	padding: 10px 0px;
+	padding: 0;
 	li{
 		display: inline-block;
 		margin-right: 10px;
@@ -1134,6 +1139,7 @@ h3.list-group-item-heading,
 .list-group-item-button-bar{
 	position: absolute;
 	right: 0;
+	top: 0;
 	background-color: rgba(white, 0.6);
 }
 
@@ -1141,4 +1147,11 @@ h3.list-group-item-heading,
 	h4{
 		padding-top: 6px;
 	}
+}
+
+.super-center{
+	transform: translate(-50%,-50%);
+	left: 50%;
+	top: 50%;
+	position: absolute;
 }
