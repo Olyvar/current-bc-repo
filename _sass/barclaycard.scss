@@ -99,8 +99,13 @@ $badge-active-color:          $gray-light;
     }
 }
 
+.jumbo-wrapper{
+    position: relative;
+}
+
 .jumbotron{
     height: 500px;
+    background-size: cover;
 }
 
 .jumbotron-photobg{
@@ -160,6 +165,7 @@ $badge-active-color:          $gray-light;
 
 h1.double-chevs {
     font-size: 48px;
+    color: $jumbotron-heading-color;
 }
 
 .double-chevs:before {

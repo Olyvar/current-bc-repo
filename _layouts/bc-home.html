@@ -33,10 +33,21 @@
 <script src="javascripts/main.js"></script>
 <script>
 
-//    var imageClass = "jumbotron-bg-",
-//        jumbotron = $('.jumbotron');
-//
-//    setInterval()
+   var jumbotron = $('.jumbotron');
+   var count = 0;
+   var images = ["images/bc/slider-image-1.jpg","images/bc/slider-image-2.jpg","images/bc/slider-image-3.jpg", "images/bc/slider-image-4.jpg", "images/bc/slider-image-5.jpg", "images/bc/slider-image-6.jpg"];
+   jumbotron.css("background-image", "url(" + images[count++] + ")")
+
+   setInterval(function(){
+       jumbotron.fadeOut(200, function(){
+           jumbotron.css("background-image", "url(" + images[count++] + ")");
+           jumbotron.fadeIn(200);
+       })
+       if (count === images.length) {
+           count = 0;
+       }
+   },5000);
+
 
 
 </script>

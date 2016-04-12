@@ -11095,44 +11095,49 @@ dl.asset-details {
     background: #00a0e3; }
 
 /* line 102, ../_sass/barclaycard.scss */
-.jumbotron {
-  height: 500px; }
+.jumbo-wrapper {
+  position: relative; }
 
 /* line 106, ../_sass/barclaycard.scss */
+.jumbotron {
+  height: 500px;
+  background-size: cover; }
+
+/* line 111, ../_sass/barclaycard.scss */
 .jumbotron-photobg {
   background-image: url("../images/bc/bc-home-bg.jpg"); }
 
-/* line 110, ../_sass/barclaycard.scss */
+/* line 115, ../_sass/barclaycard.scss */
 .image-news-1 {
   background-image: url("../images/bc/topshop.jpg"); }
 
-/* line 114, ../_sass/barclaycard.scss */
+/* line 119, ../_sass/barclaycard.scss */
 .image-news-2 {
   background-image: url("../images/bc/topshop.jpg"); }
 
-/* line 118, ../_sass/barclaycard.scss */
+/* line 123, ../_sass/barclaycard.scss */
 .image-news-3 {
   background-image: url("../images/bc/credit-score.jpg"); }
 
-/* line 122, ../_sass/barclaycard.scss */
+/* line 127, ../_sass/barclaycard.scss */
 .image-news-4 {
   background-image: url("../images/five.jpg"); }
 
-/* line 126, ../_sass/barclaycard.scss */
+/* line 131, ../_sass/barclaycard.scss */
 .image-news-6 {
   background-image: url("../images/bc/hero.jpg"); }
 
-/* line 130, ../_sass/barclaycard.scss */
+/* line 135, ../_sass/barclaycard.scss */
 .navbar-local {
   -webkit-box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.25);
   box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.25); }
 
-/* line 134, ../_sass/barclaycard.scss */
+/* line 139, ../_sass/barclaycard.scss */
 .navbar-global {
   background-color: #085da9;
   font-family: "bc-light", Helvetica, Arial, sans-serif; }
 
-/* line 139, ../_sass/barclaycard.scss */
+/* line 144, ../_sass/barclaycard.scss */
 .site-switcher-links {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -11140,23 +11145,24 @@ dl.asset-details {
   background-color: #064884;
   padding: 8px 10px 15px 10px;
   margin-right: 0; }
-  /* line 145, ../_sass/barclaycard.scss */
+  /* line 150, ../_sass/barclaycard.scss */
   .site-switcher-links:hover {
     color: white; }
-  /* line 148, ../_sass/barclaycard.scss */
+  /* line 153, ../_sass/barclaycard.scss */
   .site-switcher-links.current {
     background-color: white;
     color: #00a1e4; }
-    /* line 151, ../_sass/barclaycard.scss */
+    /* line 156, ../_sass/barclaycard.scss */
     .site-switcher-links.current:after {
       border: none; }
 
 /****************** NEW BARCLAYCARD HOMEPAGE ****************/
-/* line 161, ../_sass/barclaycard.scss */
+/* line 166, ../_sass/barclaycard.scss */
 h1.double-chevs {
-  font-size: 48px; }
+  font-size: 48px;
+  color: #ffffff; }
 
-/* line 165, ../_sass/barclaycard.scss */
+/* line 171, ../_sass/barclaycard.scss */
 .double-chevs:before {
   content: "";
   background: url("../images/bc/bc-double-chevrons.png") no-repeat left center;
