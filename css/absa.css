@@ -5230,45 +5230,45 @@ a.label:hover, a.label:focus {
   cursor: pointer; }
 
 /* line 44, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_labels.scss */
-.label-default, .label-archived, .label-orderable-standard {
+.label-default {
   background-color: #777777; }
   /* line 7, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_labels.scss */
-  .label-default[href]:hover, [href].label-archived:hover, [href].label-orderable-standard:hover, .label-default[href]:focus, [href].label-archived:focus, [href].label-orderable-standard:focus {
+  .label-default[href]:hover, .label-default[href]:focus {
     background-color: #5e5e5e; }
 
 /* line 48, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_labels.scss */
-.label-primary, .label-public {
+.label-primary {
   background-color: #ed1c24; }
   /* line 7, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_labels.scss */
-  .label-primary[href]:hover, [href].label-public:hover, .label-primary[href]:focus, [href].label-public:focus {
+  .label-primary[href]:hover, .label-primary[href]:focus {
     background-color: #c61017; }
 
 /* line 52, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_labels.scss */
-.label-success, .label-order-approved, .label-orderable-privileged, .label-approved {
+.label-success {
   background-color: #5cb85c; }
   /* line 7, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_labels.scss */
-  .label-success[href]:hover, [href].label-order-approved:hover, [href].label-orderable-privileged:hover, [href].label-approved:hover, .label-success[href]:focus, [href].label-order-approved:focus, [href].label-orderable-privileged:focus, [href].label-approved:focus {
+  .label-success[href]:hover, .label-success[href]:focus {
     background-color: #449d44; }
 
 /* line 56, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_labels.scss */
-.label-info, .label-order-in-progress, .label-in-progress, .label-awaiting-approval {
+.label-info {
   background-color: #5bc0de; }
   /* line 7, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_labels.scss */
-  .label-info[href]:hover, [href].label-order-in-progress:hover, [href].label-in-progress:hover, [href].label-awaiting-approval:hover, .label-info[href]:focus, [href].label-order-in-progress:focus, [href].label-in-progress:focus, [href].label-awaiting-approval:focus {
+  .label-info[href]:hover, .label-info[href]:focus {
     background-color: #31b0d5; }
 
 /* line 60, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_labels.scss */
-.label-warning, .label-protected {
+.label-warning {
   background-color: #f0ad4e; }
   /* line 7, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_labels.scss */
-  .label-warning[href]:hover, [href].label-protected:hover, .label-warning[href]:focus, [href].label-protected:focus {
+  .label-warning[href]:hover, .label-warning[href]:focus {
     background-color: #ec971f; }
 
 /* line 64, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_labels.scss */
-.label-danger, .label-unapproved, .label-rejected, .label-order-declined {
+.label-danger {
   background-color: #d9534f; }
   /* line 7, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_labels.scss */
-  .label-danger[href]:hover, [href].label-unapproved:hover, [href].label-rejected:hover, [href].label-order-declined:hover, .label-danger[href]:focus, [href].label-unapproved:focus, [href].label-rejected:focus, [href].label-order-declined:focus {
+  .label-danger[href]:hover, .label-danger[href]:focus {
     background-color: #c9302c; }
 
 /* line 7, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_badges.scss */
@@ -5297,14 +5297,14 @@ a.label:hover, a.label:focus {
     top: 0;
     padding: 1px 5px; }
   /* line 41, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_badges.scss */
-  .list-group-item.active > .badge, .nav-pills > .active > a > .badge {
+  .list-group-item.active > .badge, .active.card-header > .badge, .active.card-group-item > .badge, .nav-pills > .active > a > .badge {
     color: #777777;
     background-color: #fff; }
   /* line 47, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_badges.scss */
-  .list-group-item > .badge {
+  .list-group-item > .badge, .card-header > .badge, .card-group-item > .badge {
     float: right; }
   /* line 51, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_badges.scss */
-  .list-group-item > .badge + .badge {
+  .list-group-item > .badge + .badge, .card-header > .badge + .badge, .card-group-item > .badge + .badge {
     margin-right: 5px; }
   /* line 55, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_badges.scss */
   .nav-pills > li > a > .badge {
@@ -5609,12 +5609,12 @@ a.thumbnail.active {
   list-style: none; }
 
 /* line 10, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_list-group.scss */
-.list-group {
+.list-group, .card {
   margin-bottom: 20px;
   padding-left: 0; }
 
 /* line 21, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_list-group.scss */
-.list-group-item {
+.list-group-item, .card-header, .card-group-item {
   position: relative;
   display: block;
   padding: 10px 15px;
@@ -5622,55 +5622,85 @@ a.thumbnail.active {
   background-color: #fff;
   border: 1px solid #ddd; }
   /* line 31, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_list-group.scss */
-  .list-group-item:first-child {
+  .list-group-item:first-child, .card-header:first-child, .card-group-item:first-child {
     border-top-right-radius: 0;
     border-top-left-radius: 0; }
   /* line 34, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_list-group.scss */
-  .list-group-item:last-child {
+  .list-group-item:last-child, .card-header:last-child, .card-group-item:last-child {
     margin-bottom: 0;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0; }
 
 /* line 46, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_list-group.scss */
-a.list-group-item {
+a.list-group-item, a.card-header, a.card-group-item {
   color: #555; }
   /* line 49, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_list-group.scss */
-  a.list-group-item .list-group-item-heading {
+  a.list-group-item .list-group-item-heading, a.card-header .list-group-item-heading, a.card-group-item .list-group-item-heading, a.list-group-item .card-header-heading, a.card-header .card-header-heading, a.card-group-item .card-header-heading {
     color: #333; }
   /* line 54, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_list-group.scss */
-  a.list-group-item:hover, a.list-group-item:focus {
+  a.list-group-item:hover, a.card-header:hover, a.card-group-item:hover, a.list-group-item:focus, a.card-header:focus, a.card-group-item:focus {
     text-decoration: none;
     color: #555;
     background-color: #f5f5f5; }
 
 /* line 64, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_list-group.scss */
-.list-group-item.disabled, .list-group-item.disabled:hover, .list-group-item.disabled:focus {
+.list-group-item.disabled, .disabled.card-header, .disabled.card-group-item, .list-group-item.disabled:hover, .disabled.card-header:hover, .disabled.card-group-item:hover, .list-group-item.disabled:focus, .disabled.card-header:focus, .disabled.card-group-item:focus {
   background-color: #eeeeee;
   color: #777777;
   cursor: not-allowed; }
   /* line 72, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_list-group.scss */
-  .list-group-item.disabled .list-group-item-heading, .list-group-item.disabled:hover .list-group-item-heading, .list-group-item.disabled:focus .list-group-item-heading {
+  .list-group-item.disabled .list-group-item-heading, .disabled.card-header .list-group-item-heading, .disabled.card-group-item .list-group-item-heading, .list-group-item.disabled .card-header-heading, .disabled.card-header .card-header-heading, .disabled.card-group-item .card-header-heading, .list-group-item.disabled:hover .list-group-item-heading, .disabled.card-header:hover .list-group-item-heading, .disabled.card-group-item:hover .list-group-item-heading, .list-group-item.disabled:hover .card-header-heading, .disabled.card-header:hover .card-header-heading, .disabled.card-group-item:hover .card-header-heading, .list-group-item.disabled:focus .list-group-item-heading, .disabled.card-header:focus .list-group-item-heading, .disabled.card-group-item:focus .list-group-item-heading, .list-group-item.disabled:focus .card-header-heading, .disabled.card-header:focus .card-header-heading, .disabled.card-group-item:focus .card-header-heading {
     color: inherit; }
   /* line 75, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_list-group.scss */
-  .list-group-item.disabled .list-group-item-text, .list-group-item.disabled:hover .list-group-item-text, .list-group-item.disabled:focus .list-group-item-text {
+  .list-group-item.disabled .list-group-item-text, .disabled.card-header .list-group-item-text, .disabled.card-group-item .list-group-item-text, .list-group-item.disabled:hover .list-group-item-text, .disabled.card-header:hover .list-group-item-text, .disabled.card-group-item:hover .list-group-item-text, .list-group-item.disabled:focus .list-group-item-text, .disabled.card-header:focus .list-group-item-text, .disabled.card-group-item:focus .list-group-item-text {
     color: #777777; }
 /* line 81, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_list-group.scss */
-.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+.list-group-item.active, .active.card-header, .active.card-group-item, .list-group-item.active:hover, .active.card-header:hover, .active.card-group-item:hover, .list-group-item.active:focus, .active.card-header:focus, .active.card-group-item:focus {
   z-index: 2;
   color: #fff;
   background-color: #ed1c24;
   border-color: #ed1c24; }
   /* line 90, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_list-group.scss */
-  .list-group-item.active .list-group-item-heading,
+  .list-group-item.active .list-group-item-heading, .active.card-header .list-group-item-heading, .active.card-group-item .list-group-item-heading, .list-group-item.active .card-header-heading, .active.card-header .card-header-heading, .active.card-group-item .card-header-heading,
   .list-group-item.active .list-group-item-heading > small,
-  .list-group-item.active .list-group-item-heading > .small, .list-group-item.active:hover .list-group-item-heading,
+  .active.card-header .list-group-item-heading > small,
+  .active.card-group-item .list-group-item-heading > small,
+  .list-group-item.active .card-header-heading > small,
+  .active.card-header .card-header-heading > small,
+  .active.card-group-item .card-header-heading > small,
+  .list-group-item.active .list-group-item-heading > .small,
+  .active.card-header .list-group-item-heading > .small,
+  .active.card-group-item .list-group-item-heading > .small,
+  .list-group-item.active .card-header-heading > .small,
+  .active.card-header .card-header-heading > .small,
+  .active.card-group-item .card-header-heading > .small, .list-group-item.active:hover .list-group-item-heading, .active.card-header:hover .list-group-item-heading, .active.card-group-item:hover .list-group-item-heading, .list-group-item.active:hover .card-header-heading, .active.card-header:hover .card-header-heading, .active.card-group-item:hover .card-header-heading,
   .list-group-item.active:hover .list-group-item-heading > small,
-  .list-group-item.active:hover .list-group-item-heading > .small, .list-group-item.active:focus .list-group-item-heading,
+  .active.card-header:hover .list-group-item-heading > small,
+  .active.card-group-item:hover .list-group-item-heading > small,
+  .list-group-item.active:hover .card-header-heading > small,
+  .active.card-header:hover .card-header-heading > small,
+  .active.card-group-item:hover .card-header-heading > small,
+  .list-group-item.active:hover .list-group-item-heading > .small,
+  .active.card-header:hover .list-group-item-heading > .small,
+  .active.card-group-item:hover .list-group-item-heading > .small,
+  .list-group-item.active:hover .card-header-heading > .small,
+  .active.card-header:hover .card-header-heading > .small,
+  .active.card-group-item:hover .card-header-heading > .small, .list-group-item.active:focus .list-group-item-heading, .active.card-header:focus .list-group-item-heading, .active.card-group-item:focus .list-group-item-heading, .list-group-item.active:focus .card-header-heading, .active.card-header:focus .card-header-heading, .active.card-group-item:focus .card-header-heading,
   .list-group-item.active:focus .list-group-item-heading > small,
-  .list-group-item.active:focus .list-group-item-heading > .small {
+  .active.card-header:focus .list-group-item-heading > small,
+  .active.card-group-item:focus .list-group-item-heading > small,
+  .list-group-item.active:focus .card-header-heading > small,
+  .active.card-header:focus .card-header-heading > small,
+  .active.card-group-item:focus .card-header-heading > small,
+  .list-group-item.active:focus .list-group-item-heading > .small,
+  .active.card-header:focus .list-group-item-heading > .small,
+  .active.card-group-item:focus .list-group-item-heading > .small,
+  .list-group-item.active:focus .card-header-heading > .small,
+  .active.card-header:focus .card-header-heading > .small,
+  .active.card-group-item:focus .card-header-heading > .small {
     color: inherit; }
   /* line 95, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_list-group.scss */
-  .list-group-item.active .list-group-item-text, .list-group-item.active:hover .list-group-item-text, .list-group-item.active:focus .list-group-item-text {
+  .list-group-item.active .list-group-item-text, .active.card-header .list-group-item-text, .active.card-group-item .list-group-item-text, .list-group-item.active:hover .list-group-item-text, .active.card-header:hover .list-group-item-text, .active.card-group-item:hover .list-group-item-text, .list-group-item.active:focus .list-group-item-text, .active.card-header:focus .list-group-item-text, .active.card-group-item:focus .list-group-item-text {
     color: #fcd9da; }
 
 /* line 4, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_list-group.scss */
@@ -5682,7 +5712,7 @@ a.list-group-item {
 a.list-group-item-success {
   color: #3c763d; }
   /* line 14, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_list-group.scss */
-  a.list-group-item-success .list-group-item-heading {
+  a.list-group-item-success .list-group-item-heading, a.list-group-item-success .card-header-heading {
     color: inherit; }
   /* line 18, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_list-group.scss */
   a.list-group-item-success:hover, a.list-group-item-success:focus {
@@ -5703,7 +5733,7 @@ a.list-group-item-success {
 a.list-group-item-info {
   color: #31708f; }
   /* line 14, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_list-group.scss */
-  a.list-group-item-info .list-group-item-heading {
+  a.list-group-item-info .list-group-item-heading, a.list-group-item-info .card-header-heading {
     color: inherit; }
   /* line 18, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_list-group.scss */
   a.list-group-item-info:hover, a.list-group-item-info:focus {
@@ -5724,7 +5754,7 @@ a.list-group-item-info {
 a.list-group-item-warning {
   color: #8a6d3b; }
   /* line 14, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_list-group.scss */
-  a.list-group-item-warning .list-group-item-heading {
+  a.list-group-item-warning .list-group-item-heading, a.list-group-item-warning .card-header-heading {
     color: inherit; }
   /* line 18, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_list-group.scss */
   a.list-group-item-warning:hover, a.list-group-item-warning:focus {
@@ -5745,7 +5775,7 @@ a.list-group-item-warning {
 a.list-group-item-danger {
   color: #a94442; }
   /* line 14, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_list-group.scss */
-  a.list-group-item-danger .list-group-item-heading {
+  a.list-group-item-danger .list-group-item-heading, a.list-group-item-danger .card-header-heading {
     color: inherit; }
   /* line 18, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_list-group.scss */
   a.list-group-item-danger:hover, a.list-group-item-danger:focus {
@@ -5758,7 +5788,7 @@ a.list-group-item-danger {
     border-color: #a94442; }
 
 /* line 117, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_list-group.scss */
-.list-group-item-heading {
+.list-group-item-heading, .card-header-heading {
   margin-top: 0;
   margin-bottom: 5px; }
 
@@ -5768,7 +5798,7 @@ a.list-group-item-danger {
   line-height: 1.3; }
 
 /* line 7, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_panels.scss */
-.panel {
+.panel, .news-panel {
   margin-bottom: 20px;
   background-color: #fff;
   border: 1px solid transparent;
@@ -5820,174 +5850,291 @@ a.list-group-item-danger {
   border-bottom-left-radius: -1; }
 
 /* line 63, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_panels.scss */
-.panel > .list-group,
-.panel > .panel-collapse > .list-group {
+.panel > .list-group, .news-panel > .list-group, .panel > .card, .news-panel > .card,
+.panel > .panel-collapse > .list-group,
+.news-panel > .panel-collapse > .list-group,
+.panel > .panel-collapse > .card,
+.news-panel > .panel-collapse > .card {
   margin-bottom: 0; }
   /* line 67, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_panels.scss */
-  .panel > .list-group .list-group-item,
-  .panel > .panel-collapse > .list-group .list-group-item {
+  .panel > .list-group .list-group-item, .news-panel > .list-group .list-group-item, .panel > .card .list-group-item, .news-panel > .card .list-group-item, .panel > .list-group .card-header, .news-panel > .list-group .card-header, .panel > .card .card-header, .news-panel > .card .card-header, .panel > .list-group .card-group-item, .news-panel > .list-group .card-group-item, .panel > .card .card-group-item, .news-panel > .card .card-group-item,
+  .panel > .panel-collapse > .list-group .list-group-item,
+  .news-panel > .panel-collapse > .list-group .list-group-item,
+  .panel > .panel-collapse > .card .list-group-item,
+  .news-panel > .panel-collapse > .card .list-group-item,
+  .panel > .panel-collapse > .list-group .card-header,
+  .news-panel > .panel-collapse > .list-group .card-header,
+  .panel > .panel-collapse > .card .card-header,
+  .news-panel > .panel-collapse > .card .card-header,
+  .panel > .panel-collapse > .list-group .card-group-item,
+  .news-panel > .panel-collapse > .list-group .card-group-item,
+  .panel > .panel-collapse > .card .card-group-item,
+  .news-panel > .panel-collapse > .card .card-group-item {
     border-width: 1px 0;
     border-radius: 0; }
   /* line 74, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_panels.scss */
-  .panel > .list-group:first-child .list-group-item:first-child,
-  .panel > .panel-collapse > .list-group:first-child .list-group-item:first-child {
+  .panel > .list-group:first-child .list-group-item:first-child, .news-panel > .list-group:first-child .list-group-item:first-child, .panel > .card:first-child .list-group-item:first-child, .news-panel > .card:first-child .list-group-item:first-child, .panel > .list-group:first-child .card-header:first-child, .news-panel > .list-group:first-child .card-header:first-child, .panel > .card:first-child .card-header:first-child, .news-panel > .card:first-child .card-header:first-child, .panel > .list-group:first-child .card-group-item:first-child, .news-panel > .list-group:first-child .card-group-item:first-child, .panel > .card:first-child .card-group-item:first-child, .news-panel > .card:first-child .card-group-item:first-child,
+  .panel > .panel-collapse > .list-group:first-child .list-group-item:first-child,
+  .news-panel > .panel-collapse > .list-group:first-child .list-group-item:first-child,
+  .panel > .panel-collapse > .card:first-child .list-group-item:first-child,
+  .news-panel > .panel-collapse > .card:first-child .list-group-item:first-child,
+  .panel > .panel-collapse > .list-group:first-child .card-header:first-child,
+  .news-panel > .panel-collapse > .list-group:first-child .card-header:first-child,
+  .panel > .panel-collapse > .card:first-child .card-header:first-child,
+  .news-panel > .panel-collapse > .card:first-child .card-header:first-child,
+  .panel > .panel-collapse > .list-group:first-child .card-group-item:first-child,
+  .news-panel > .panel-collapse > .list-group:first-child .card-group-item:first-child,
+  .panel > .panel-collapse > .card:first-child .card-group-item:first-child,
+  .news-panel > .panel-collapse > .card:first-child .card-group-item:first-child {
     border-top: 0;
     border-top-right-radius: -1;
     border-top-left-radius: -1; }
   /* line 81, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_panels.scss */
-  .panel > .list-group:last-child .list-group-item:last-child,
-  .panel > .panel-collapse > .list-group:last-child .list-group-item:last-child {
+  .panel > .list-group:last-child .list-group-item:last-child, .news-panel > .list-group:last-child .list-group-item:last-child, .panel > .card:last-child .list-group-item:last-child, .news-panel > .card:last-child .list-group-item:last-child, .panel > .list-group:last-child .card-header:last-child, .news-panel > .list-group:last-child .card-header:last-child, .panel > .card:last-child .card-header:last-child, .news-panel > .card:last-child .card-header:last-child, .panel > .list-group:last-child .card-group-item:last-child, .news-panel > .list-group:last-child .card-group-item:last-child, .panel > .card:last-child .card-group-item:last-child, .news-panel > .card:last-child .card-group-item:last-child,
+  .panel > .panel-collapse > .list-group:last-child .list-group-item:last-child,
+  .news-panel > .panel-collapse > .list-group:last-child .list-group-item:last-child,
+  .panel > .panel-collapse > .card:last-child .list-group-item:last-child,
+  .news-panel > .panel-collapse > .card:last-child .list-group-item:last-child,
+  .panel > .panel-collapse > .list-group:last-child .card-header:last-child,
+  .news-panel > .panel-collapse > .list-group:last-child .card-header:last-child,
+  .panel > .panel-collapse > .card:last-child .card-header:last-child,
+  .news-panel > .panel-collapse > .card:last-child .card-header:last-child,
+  .panel > .panel-collapse > .list-group:last-child .card-group-item:last-child,
+  .news-panel > .panel-collapse > .list-group:last-child .card-group-item:last-child,
+  .panel > .panel-collapse > .card:last-child .card-group-item:last-child,
+  .news-panel > .panel-collapse > .card:last-child .card-group-item:last-child {
     border-bottom: 0;
     border-bottom-right-radius: -1;
     border-bottom-left-radius: -1; }
 
 /* line 90, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_panels.scss */
-.panel-heading + .list-group .list-group-item:first-child {
+.panel-heading + .list-group .list-group-item:first-child, .panel-heading + .card .list-group-item:first-child, .panel-heading + .list-group .card-header:first-child, .panel-heading + .card .card-header:first-child, .panel-heading + .list-group .card-group-item:first-child, .panel-heading + .card .card-group-item:first-child {
   border-top-width: 0; }
 
 /* line 94, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_panels.scss */
-.list-group + .panel-footer {
+.list-group + .panel-footer, .card + .panel-footer {
   border-top-width: 0; }
 
 /* line 104, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_panels.scss */
-.panel > .table,
+.panel > .table, .news-panel > .table,
 .panel > .table-responsive > .table,
-.panel > .panel-collapse > .table {
+.news-panel > .table-responsive > .table,
+.panel > .panel-collapse > .table,
+.news-panel > .panel-collapse > .table {
   margin-bottom: 0; }
   /* line 109, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_panels.scss */
-  .panel > .table caption,
+  .panel > .table caption, .news-panel > .table caption,
   .panel > .table-responsive > .table caption,
-  .panel > .panel-collapse > .table caption {
+  .news-panel > .table-responsive > .table caption,
+  .panel > .panel-collapse > .table caption,
+  .news-panel > .panel-collapse > .table caption {
     padding-left: 15px;
     padding-right: 15px; }
 /* line 115, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_panels.scss */
-.panel > .table:first-child,
-.panel > .table-responsive:first-child > .table:first-child {
+.panel > .table:first-child, .news-panel > .table:first-child,
+.panel > .table-responsive:first-child > .table:first-child,
+.news-panel > .table-responsive:first-child > .table:first-child {
   border-top-right-radius: -1;
   border-top-left-radius: -1; }
   /* line 121, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_panels.scss */
-  .panel > .table:first-child > thead:first-child > tr:first-child,
+  .panel > .table:first-child > thead:first-child > tr:first-child, .news-panel > .table:first-child > thead:first-child > tr:first-child,
   .panel > .table:first-child > tbody:first-child > tr:first-child,
+  .news-panel > .table:first-child > tbody:first-child > tr:first-child,
   .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child,
-  .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child {
+  .news-panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child,
+  .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child,
+  .news-panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child {
     border-top-left-radius: -1;
     border-top-right-radius: -1; }
     /* line 125, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_panels.scss */
-    .panel > .table:first-child > thead:first-child > tr:first-child td:first-child,
+    .panel > .table:first-child > thead:first-child > tr:first-child td:first-child, .news-panel > .table:first-child > thead:first-child > tr:first-child td:first-child,
     .panel > .table:first-child > thead:first-child > tr:first-child th:first-child,
+    .news-panel > .table:first-child > thead:first-child > tr:first-child th:first-child,
     .panel > .table:first-child > tbody:first-child > tr:first-child td:first-child,
+    .news-panel > .table:first-child > tbody:first-child > tr:first-child td:first-child,
     .panel > .table:first-child > tbody:first-child > tr:first-child th:first-child,
+    .news-panel > .table:first-child > tbody:first-child > tr:first-child th:first-child,
     .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
+    .news-panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
     .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
+    .news-panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
     .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
-    .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child {
+    .news-panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
+    .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child,
+    .news-panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child {
       border-top-left-radius: -1; }
     /* line 129, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_panels.scss */
-    .panel > .table:first-child > thead:first-child > tr:first-child td:last-child,
+    .panel > .table:first-child > thead:first-child > tr:first-child td:last-child, .news-panel > .table:first-child > thead:first-child > tr:first-child td:last-child,
     .panel > .table:first-child > thead:first-child > tr:first-child th:last-child,
+    .news-panel > .table:first-child > thead:first-child > tr:first-child th:last-child,
     .panel > .table:first-child > tbody:first-child > tr:first-child td:last-child,
+    .news-panel > .table:first-child > tbody:first-child > tr:first-child td:last-child,
     .panel > .table:first-child > tbody:first-child > tr:first-child th:last-child,
+    .news-panel > .table:first-child > tbody:first-child > tr:first-child th:last-child,
     .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
+    .news-panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
     .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
+    .news-panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
     .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
-    .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child {
+    .news-panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
+    .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child,
+    .news-panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child {
       border-top-right-radius: -1; }
 /* line 137, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_panels.scss */
-.panel > .table:last-child,
-.panel > .table-responsive:last-child > .table:last-child {
+.panel > .table:last-child, .news-panel > .table:last-child,
+.panel > .table-responsive:last-child > .table:last-child,
+.news-panel > .table-responsive:last-child > .table:last-child {
   border-bottom-right-radius: -1;
   border-bottom-left-radius: -1; }
   /* line 143, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_panels.scss */
-  .panel > .table:last-child > tbody:last-child > tr:last-child,
+  .panel > .table:last-child > tbody:last-child > tr:last-child, .news-panel > .table:last-child > tbody:last-child > tr:last-child,
   .panel > .table:last-child > tfoot:last-child > tr:last-child,
+  .news-panel > .table:last-child > tfoot:last-child > tr:last-child,
   .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child,
-  .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child {
+  .news-panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child,
+  .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child,
+  .news-panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child {
     border-bottom-left-radius: -1;
     border-bottom-right-radius: -1; }
     /* line 147, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_panels.scss */
-    .panel > .table:last-child > tbody:last-child > tr:last-child td:first-child,
+    .panel > .table:last-child > tbody:last-child > tr:last-child td:first-child, .news-panel > .table:last-child > tbody:last-child > tr:last-child td:first-child,
     .panel > .table:last-child > tbody:last-child > tr:last-child th:first-child,
+    .news-panel > .table:last-child > tbody:last-child > tr:last-child th:first-child,
     .panel > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
+    .news-panel > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
     .panel > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
+    .news-panel > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
     .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
+    .news-panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
     .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
+    .news-panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
     .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
-    .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child {
+    .news-panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
+    .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
+    .news-panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child {
       border-bottom-left-radius: -1; }
     /* line 151, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_panels.scss */
-    .panel > .table:last-child > tbody:last-child > tr:last-child td:last-child,
+    .panel > .table:last-child > tbody:last-child > tr:last-child td:last-child, .news-panel > .table:last-child > tbody:last-child > tr:last-child td:last-child,
     .panel > .table:last-child > tbody:last-child > tr:last-child th:last-child,
+    .news-panel > .table:last-child > tbody:last-child > tr:last-child th:last-child,
     .panel > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
+    .news-panel > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
     .panel > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
+    .news-panel > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
     .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
+    .news-panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
     .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
+    .news-panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
     .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
-    .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child {
+    .news-panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
+    .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
+    .news-panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child {
       border-bottom-right-radius: -1; }
 /* line 158, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_panels.scss */
-.panel > .panel-body + .table,
+.panel > .panel-body + .table, .news-panel > .panel-body + .table,
 .panel > .panel-body + .table-responsive,
+.news-panel > .panel-body + .table-responsive,
 .panel > .table + .panel-body,
-.panel > .table-responsive + .panel-body {
+.news-panel > .table + .panel-body,
+.panel > .table-responsive + .panel-body,
+.news-panel > .table-responsive + .panel-body {
   border-top: 1px solid #ddd; }
 /* line 164, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_panels.scss */
-.panel > .table > tbody:first-child > tr:first-child th,
-.panel > .table > tbody:first-child > tr:first-child td {
+.panel > .table > tbody:first-child > tr:first-child th, .news-panel > .table > tbody:first-child > tr:first-child th,
+.panel > .table > tbody:first-child > tr:first-child td,
+.news-panel > .table > tbody:first-child > tr:first-child td {
   border-top: 0; }
 /* line 168, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_panels.scss */
-.panel > .table-bordered,
-.panel > .table-responsive > .table-bordered {
+.panel > .table-bordered, .news-panel > .table-bordered,
+.panel > .table-responsive > .table-bordered,
+.news-panel > .table-responsive > .table-bordered {
   border: 0; }
   /* line 175, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_panels.scss */
-  .panel > .table-bordered > thead > tr > th:first-child,
+  .panel > .table-bordered > thead > tr > th:first-child, .news-panel > .table-bordered > thead > tr > th:first-child,
   .panel > .table-bordered > thead > tr > td:first-child,
+  .news-panel > .table-bordered > thead > tr > td:first-child,
   .panel > .table-bordered > tbody > tr > th:first-child,
+  .news-panel > .table-bordered > tbody > tr > th:first-child,
   .panel > .table-bordered > tbody > tr > td:first-child,
+  .news-panel > .table-bordered > tbody > tr > td:first-child,
   .panel > .table-bordered > tfoot > tr > th:first-child,
+  .news-panel > .table-bordered > tfoot > tr > th:first-child,
   .panel > .table-bordered > tfoot > tr > td:first-child,
+  .news-panel > .table-bordered > tfoot > tr > td:first-child,
   .panel > .table-responsive > .table-bordered > thead > tr > th:first-child,
+  .news-panel > .table-responsive > .table-bordered > thead > tr > th:first-child,
   .panel > .table-responsive > .table-bordered > thead > tr > td:first-child,
+  .news-panel > .table-responsive > .table-bordered > thead > tr > td:first-child,
   .panel > .table-responsive > .table-bordered > tbody > tr > th:first-child,
+  .news-panel > .table-responsive > .table-bordered > tbody > tr > th:first-child,
   .panel > .table-responsive > .table-bordered > tbody > tr > td:first-child,
+  .news-panel > .table-responsive > .table-bordered > tbody > tr > td:first-child,
   .panel > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
-  .panel > .table-responsive > .table-bordered > tfoot > tr > td:first-child {
+  .news-panel > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
+  .panel > .table-responsive > .table-bordered > tfoot > tr > td:first-child,
+  .news-panel > .table-responsive > .table-bordered > tfoot > tr > td:first-child {
     border-left: 0; }
   /* line 179, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_panels.scss */
-  .panel > .table-bordered > thead > tr > th:last-child,
+  .panel > .table-bordered > thead > tr > th:last-child, .news-panel > .table-bordered > thead > tr > th:last-child,
   .panel > .table-bordered > thead > tr > td:last-child,
+  .news-panel > .table-bordered > thead > tr > td:last-child,
   .panel > .table-bordered > tbody > tr > th:last-child,
+  .news-panel > .table-bordered > tbody > tr > th:last-child,
   .panel > .table-bordered > tbody > tr > td:last-child,
+  .news-panel > .table-bordered > tbody > tr > td:last-child,
   .panel > .table-bordered > tfoot > tr > th:last-child,
+  .news-panel > .table-bordered > tfoot > tr > th:last-child,
   .panel > .table-bordered > tfoot > tr > td:last-child,
+  .news-panel > .table-bordered > tfoot > tr > td:last-child,
   .panel > .table-responsive > .table-bordered > thead > tr > th:last-child,
+  .news-panel > .table-responsive > .table-bordered > thead > tr > th:last-child,
   .panel > .table-responsive > .table-bordered > thead > tr > td:last-child,
+  .news-panel > .table-responsive > .table-bordered > thead > tr > td:last-child,
   .panel > .table-responsive > .table-bordered > tbody > tr > th:last-child,
+  .news-panel > .table-responsive > .table-bordered > tbody > tr > th:last-child,
   .panel > .table-responsive > .table-bordered > tbody > tr > td:last-child,
+  .news-panel > .table-responsive > .table-bordered > tbody > tr > td:last-child,
   .panel > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
-  .panel > .table-responsive > .table-bordered > tfoot > tr > td:last-child {
+  .news-panel > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
+  .panel > .table-responsive > .table-bordered > tfoot > tr > td:last-child,
+  .news-panel > .table-responsive > .table-bordered > tfoot > tr > td:last-child {
     border-right: 0; }
   /* line 188, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_panels.scss */
-  .panel > .table-bordered > thead > tr:first-child > td,
+  .panel > .table-bordered > thead > tr:first-child > td, .news-panel > .table-bordered > thead > tr:first-child > td,
   .panel > .table-bordered > thead > tr:first-child > th,
+  .news-panel > .table-bordered > thead > tr:first-child > th,
   .panel > .table-bordered > tbody > tr:first-child > td,
+  .news-panel > .table-bordered > tbody > tr:first-child > td,
   .panel > .table-bordered > tbody > tr:first-child > th,
+  .news-panel > .table-bordered > tbody > tr:first-child > th,
   .panel > .table-responsive > .table-bordered > thead > tr:first-child > td,
+  .news-panel > .table-responsive > .table-bordered > thead > tr:first-child > td,
   .panel > .table-responsive > .table-bordered > thead > tr:first-child > th,
+  .news-panel > .table-responsive > .table-bordered > thead > tr:first-child > th,
   .panel > .table-responsive > .table-bordered > tbody > tr:first-child > td,
-  .panel > .table-responsive > .table-bordered > tbody > tr:first-child > th {
+  .news-panel > .table-responsive > .table-bordered > tbody > tr:first-child > td,
+  .panel > .table-responsive > .table-bordered > tbody > tr:first-child > th,
+  .news-panel > .table-responsive > .table-bordered > tbody > tr:first-child > th {
     border-bottom: 0; }
   /* line 197, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_panels.scss */
-  .panel > .table-bordered > tbody > tr:last-child > td,
+  .panel > .table-bordered > tbody > tr:last-child > td, .news-panel > .table-bordered > tbody > tr:last-child > td,
   .panel > .table-bordered > tbody > tr:last-child > th,
+  .news-panel > .table-bordered > tbody > tr:last-child > th,
   .panel > .table-bordered > tfoot > tr:last-child > td,
+  .news-panel > .table-bordered > tfoot > tr:last-child > td,
   .panel > .table-bordered > tfoot > tr:last-child > th,
+  .news-panel > .table-bordered > tfoot > tr:last-child > th,
   .panel > .table-responsive > .table-bordered > tbody > tr:last-child > td,
+  .news-panel > .table-responsive > .table-bordered > tbody > tr:last-child > td,
   .panel > .table-responsive > .table-bordered > tbody > tr:last-child > th,
+  .news-panel > .table-responsive > .table-bordered > tbody > tr:last-child > th,
   .panel > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
-  .panel > .table-responsive > .table-bordered > tfoot > tr:last-child > th {
+  .news-panel > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
+  .panel > .table-responsive > .table-bordered > tfoot > tr:last-child > th,
+  .news-panel > .table-responsive > .table-bordered > tfoot > tr:last-child > th {
     border-bottom: 0; }
 /* line 204, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_panels.scss */
-.panel > .table-responsive {
+.panel > .table-responsive, .news-panel > .table-responsive {
   border: 0;
   margin-bottom: 0; }
 
@@ -5995,18 +6142,19 @@ a.list-group-item-danger {
 .panel-group {
   margin-bottom: 20px; }
   /* line 220, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_panels.scss */
-  .panel-group .panel {
+  .panel-group .panel, .panel-group .news-panel {
     margin-bottom: 0;
     border-radius: 0; }
     /* line 224, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_panels.scss */
-    .panel-group .panel + .panel {
+    .panel-group .panel + .panel, .panel-group .news-panel + .panel, .panel-group .panel + .news-panel, .panel-group .news-panel + .news-panel {
       margin-top: 5px; }
   /* line 229, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_panels.scss */
   .panel-group .panel-heading {
     border-bottom: 0; }
     /* line 232, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_panels.scss */
     .panel-group .panel-heading + .panel-collapse > .panel-body,
-    .panel-group .panel-heading + .panel-collapse > .list-group {
+    .panel-group .panel-heading + .panel-collapse > .list-group,
+    .panel-group .panel-heading + .panel-collapse > .card {
       border-top: 1px solid #ddd; }
   /* line 238, ../../../../Ruby21/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_panels.scss */
   .panel-group .panel-footer {
@@ -7113,7 +7261,7 @@ button.close {
   box-shadow: 0 0 6px 0px rgba(0, 0, 0, 0.25); }
 
 /* line 79, ../_sass/styles.scss */
-.nav-icon, .global-nav-icon, .app-icons, .widget-icons, .widget-main-icons li {
+.nav-icon, .global-nav-icon, .app-icons, .card-icons, .card-main-icons li {
   background-repeat: no-repeat;
   background-image: url("../images/absa-sprites-01.png"); }
 
@@ -7127,50 +7275,38 @@ button.close {
   width: 30px;
   height: 30px; }
 
-/* line 97, ../_sass/styles.scss */
-.spotlight-text {
-  margin-top: 0;
-  margin-bottom: 30px;
-  color: white;
-  font-family: "Expert-Sans-Regular", Helvetica, Arial, sans-serif;
-  text-shadow: 0 0 10px rgba(237, 28, 36, 0.7); }
-
-/* line 105, ../_sass/styles.scss */
-h1, h2, h3, h4, h5 {
-  font-family: "Expert-Sans-Regular", Helvetica, Arial, sans-serif; }
-
-/* line 109, ../_sass/styles.scss */
+/* line 99, ../_sass/styles.scss */
 .lead {
   font-family: "Expert-Sans-Light", Helvetica, Arial, sans-serif; }
 
-/* line 113, ../_sass/styles.scss */
+/* line 103, ../_sass/styles.scss */
 .fake-carousel {
   color: white;
   position: absolute;
   right: 40px;
   font-size: 20px; }
 
-/* line 121, ../_sass/styles.scss */
+/* line 111, ../_sass/styles.scss */
 .fave-icon.icon-1 {
   background-position: 5px -204px; }
-  /* line 123, ../_sass/styles.scss */
+  /* line 113, ../_sass/styles.scss */
   .fave-icon.icon-1:hover {
     background-position: -56px -204px; }
-/* line 127, ../_sass/styles.scss */
+/* line 117, ../_sass/styles.scss */
 .fave-icon.icon-4 {
   background-position: 5px -353px; }
-  /* line 129, ../_sass/styles.scss */
+  /* line 119, ../_sass/styles.scss */
   .fave-icon.icon-4:hover {
     background-position: -56px -353px; }
-/* line 133, ../_sass/styles.scss */
+/* line 123, ../_sass/styles.scss */
 .fave-icon.icon-5 {
   background-position: 4px -403px; }
 
-/* line 141, ../_sass/styles.scss */
+/* line 131, ../_sass/styles.scss */
 .read-more {
   margin-top: 20px; }
 
-/* line 147, ../_sass/styles.scss */
+/* line 137, ../_sass/styles.scss */
 .navbar-form .top-search {
   background-color: white;
   border: 1px solid #eeeeee;
@@ -7179,59 +7315,63 @@ h1, h2, h3, h4, h5 {
   -webkit-transition: background-color 0.3s ease;
   -o-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease; }
-  /* line 153, ../_sass/styles.scss */
+  /* line 143, ../_sass/styles.scss */
   .navbar-form .top-search:focus {
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
     border: 1px solid #c8c8c8; }
 
-/* line 160, ../_sass/styles.scss */
+/* line 150, ../_sass/styles.scss */
 .btn {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px; }
 
-/* line 164, ../_sass/styles.scss */
+/* line 154, ../_sass/styles.scss */
 .btn-search {
   background-color: #f0f0f0;
   margin-left: -10px;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0; }
 
-/* line 171, ../_sass/styles.scss */
+/* line 161, ../_sass/styles.scss */
 .fave-divider {
   border-left: 1px solid #eeeeee; }
 
-/* line 175, ../_sass/styles.scss */
+/* line 165, ../_sass/styles.scss */
 .home-icon {
   background-position: 0 -106px; }
 
-/* line 182, ../_sass/styles.scss */
+/* line 172, ../_sass/styles.scss */
 .myapps-icon {
   background-position: 0 -58px; }
 
-/* line 189, ../_sass/styles.scss */
+/* line 179, ../_sass/styles.scss */
 .notifications-icon {
   background-position: -9px -1328px; }
 
-/* line 196, ../_sass/styles.scss */
+/* line 186, ../_sass/styles.scss */
 .user-icon {
   background-position: -9px -1363px; }
 
-/* line 203, ../_sass/styles.scss */
+/* line 193, ../_sass/styles.scss */
 .navbar-icon {
   padding-top: 7px !important;
   padding-bottom: 5px !important; }
 
-/* line 208, ../_sass/styles.scss */
+/* line 198, ../_sass/styles.scss */
 .global-navbar-icon {
   padding-top: 3px !important;
   padding-bottom: 3px !important; }
 
-/* line 213, ../_sass/styles.scss */
+/* line 203, ../_sass/styles.scss */
+h4 {
+  font-family: "Expert-Sans-Regular", Helvetica, Arial, sans-serif; }
+
+/* line 207, ../_sass/styles.scss */
 .apps-dropdown {
   width: 335px; }
-  /* line 215, ../_sass/styles.scss */
+  /* line 209, ../_sass/styles.scss */
   .apps-dropdown li {
     padding: 0;
     border: 1px solid transparent;
@@ -7240,10 +7380,10 @@ h1, h2, h3, h4, h5 {
     -webkit-transition: all, 0.3s, ease;
     -o-transition: all, 0.3s, ease;
     transition: all, 0.3s, ease; }
-    /* line 220, ../_sass/styles.scss */
+    /* line 214, ../_sass/styles.scss */
     .apps-dropdown li .app-icons {
       left: 10px; }
-    /* line 224, ../_sass/styles.scss */
+    /* line 218, ../_sass/styles.scss */
     .apps-dropdown li:hover {
       border: 1px solid #eeeeee;
       border: 1px solid rgba(237, 28, 36, 0.3);
@@ -7253,18 +7393,18 @@ h1, h2, h3, h4, h5 {
       -o-transition: all, 0.3s, ease;
       transition: all, 0.3s, ease; }
 
-/* line 234, ../_sass/styles.scss */
+/* line 228, ../_sass/styles.scss */
 .app-title {
   font-size: 12px; }
 
-/* line 238, ../_sass/styles.scss */
+/* line 232, ../_sass/styles.scss */
 .notifications-dropdown {
   width: 400px; }
-  /* line 240, ../_sass/styles.scss */
+  /* line 234, ../_sass/styles.scss */
   .notifications-dropdown .media {
     margin-top: 0;
     padding: 10px 10px 5px 5px; }
-    /* line 243, ../_sass/styles.scss */
+    /* line 237, ../_sass/styles.scss */
     .notifications-dropdown .media:hover {
       -webkit-transition: all, 0.2s;
       -o-transition: all, 0.2s;
@@ -7272,55 +7412,55 @@ h1, h2, h3, h4, h5 {
       background: rgba(237, 28, 36, 0.05);
       cursor: pointer; }
 
-/* line 251, ../_sass/styles.scss */
+/* line 245, ../_sass/styles.scss */
 .rotate90 {
   transform: rotate(90deg); }
 
-/* line 255, ../_sass/styles.scss */
-.time-aside {
+/* line 249, ../_sass/styles.scss */
+.card-group-item-byline {
   color: #777777;
   display: block;
   clear: both; }
-  /* line 259, ../_sass/styles.scss */
-  .time-aside span {
+  /* line 253, ../_sass/styles.scss */
+  .card-group-item-byline span {
     color: #222222; }
 
-/* line 264, ../_sass/styles.scss */
+/* line 258, ../_sass/styles.scss */
 .news-lead {
   font-size: 16px; }
 
-/* line 269, ../_sass/styles.scss */
+/* line 263, ../_sass/styles.scss */
 .dropdown-container {
   padding: 35px 30px 15px 30px; }
 
-/* line 273, ../_sass/styles.scss */
-.dropdown-more {
+/* line 267, ../_sass/styles.scss */
+.block-utility-link {
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   padding: 5px;
   display: block;
   font-size: 12px;
   cursor: pointer;
-  color: #ed1c24;
-  -webkit-transition: all, 0.3s;
-  -o-transition: all, 0.3s;
-  transition: all, 0.3s; }
-  /* line 282, ../_sass/styles.scss */
-  .dropdown-more:hover {
+  color: #ed1c24; }
+  /* line 276, ../_sass/styles.scss */
+  .block-utility-link:hover {
     background: #eee; }
 
-/* line 287, ../_sass/styles.scss */
-.dropdown-top-link {
+/* line 281, ../_sass/styles.scss */
+.block-utility-link-top {
   border-bottom: 1px solid #ddd;
   color: #777777;
   font-size: 14px;
   text-transform: none; }
 
-/* line 294, ../_sass/styles.scss */
-.dropdown-bottom-link {
+/* line 288, ../_sass/styles.scss */
+.block-utility-link-bottom {
   border-top: 1px solid #ddd; }
 
-/* line 301, ../_sass/styles.scss */
+/* line 295, ../_sass/styles.scss */
 .logo {
   background-image: url("../images/logo-absa.png");
   background-repeat: no-repeat;
@@ -7329,7 +7469,7 @@ h1, h2, h3, h4, h5 {
   margin: 14px 11px 8px;
   display: inline-block; }
 
-/* line 310, ../_sass/styles.scss */
+/* line 304, ../_sass/styles.scss */
 .app-icons {
   -webkit-transition: opacity, 0.2s, ease;
   -o-transition: opacity, 0.2s, ease;
@@ -7342,7 +7482,7 @@ h1, h2, h3, h4, h5 {
   z-index: 50;
   opacity: 1; }
 
-/* line 322, ../_sass/styles.scss */
+/* line 316, ../_sass/styles.scss */
 .app-title-hidden {
   -webkit-transition: all, 0.3s, ease;
   -o-transition: all, 0.3s, ease;
@@ -7358,44 +7498,44 @@ h1, h2, h3, h4, h5 {
   left: 6px;
   visibility: hidden; }
 
-/* line 336, ../_sass/styles.scss */
+/* line 330, ../_sass/styles.scss */
 .apps-dropdown-unique.fave-divider {
   background-color: white; }
 
-/* line 340, ../_sass/styles.scss */
+/* line 334, ../_sass/styles.scss */
 .navbar-global {
   margin-bottom: 0;
   min-height: 30px;
   -webkit-box-shadow: none;
   box-shadow: none; }
 
-/* line 346, ../_sass/styles.scss */
+/* line 340, ../_sass/styles.scss */
 .navbar-local {
   background-color: #00395d;
   border: white;
   background-color: white; }
 
-/* line 352, ../_sass/styles.scss */
+/* line 346, ../_sass/styles.scss */
 .navbar-dropdown {
   margin-top: 5px !important;
   padding: 0; }
-  /* line 355, ../_sass/styles.scss */
+  /* line 349, ../_sass/styles.scss */
   .navbar-dropdown .row {
     margin: 0; }
 
-/* line 360, ../_sass/styles.scss */
+/* line 354, ../_sass/styles.scss */
 .site-switcher {
   padding: 10px; }
 
-/* line 364, ../_sass/styles.scss */
+/* line 358, ../_sass/styles.scss */
 .site-switcher-links {
   color: white;
   margin-right: 40px;
   position: relative; }
-  /* line 368, ../_sass/styles.scss */
+  /* line 362, ../_sass/styles.scss */
   .site-switcher-links:hover {
     color: #f14b52; }
-  /* line 371, ../_sass/styles.scss */
+  /* line 365, ../_sass/styles.scss */
   .site-switcher-links.current:after {
     border-color: transparent transparent #fff;
     border-style: solid;
@@ -7409,13 +7549,13 @@ h1, h2, h3, h4, h5 {
     z-index: 1000;
     width: 0; }
 
-/* line 386, ../_sass/styles.scss */
+/* line 380, ../_sass/styles.scss */
 .main-headers {
   color: black;
   font-family: "Expert-Sans-Regular", Helvetica, Arial, sans-serif;
   margin-top: 5px; }
 
-/* line 394, ../_sass/styles.scss */
+/* line 388, ../_sass/styles.scss */
 .navbar-dropdown:after, .navbar-dropdown:before {
   bottom: 100%;
   border: solid transparent;
@@ -7425,74 +7565,77 @@ h1, h2, h3, h4, h5 {
   position: absolute;
   pointer-events: none; }
 
-/* line 404, ../_sass/styles.scss */
+/* line 398, ../_sass/styles.scss */
 .navbar-dropdown:after {
   border-color: rgba(255, 255, 255, 0);
   border-bottom-color: #fff;
   border-width: 10px;
   margin-left: -10px; }
 
-/* line 410, ../_sass/styles.scss */
+/* line 404, ../_sass/styles.scss */
 .navbar-dropdown:before {
   border-color: rgba(204, 204, 204, 0);
   border-bottom-color: #ccc;
   border-width: 11px;
   margin-left: -11px; }
 
-/* line 419, ../_sass/styles.scss */
+/* line 413, ../_sass/styles.scss */
 .navbar-default.navbar-local {
   background-color: white; }
 
-/* line 424, ../_sass/styles.scss */
+/* line 418, ../_sass/styles.scss */
 .apps-dropdown:after, .apps-dropdown:before {
   left: 88%; }
 
-/* line 428, ../_sass/styles.scss */
+/* line 422, ../_sass/styles.scss */
 .notifications-dropdown:after, .notifications-dropdown:before {
   left: 91%; }
 
-/* line 432, ../_sass/styles.scss */
+/* line 426, ../_sass/styles.scss */
 .user-dropdown:after, .user-dropdown:before {
   left: 81%; }
 
-/* line 436, ../_sass/styles.scss */
-.widget-dropdown:after, .widget-dropdown:before {
+/* line 430, ../_sass/styles.scss */
+.card-dropdown:after, .card-dropdown:before {
   left: -100%; }
 
-/* line 440, ../_sass/styles.scss */
-.widget-dropdown {
+/* line 434, ../_sass/styles.scss */
+.card-dropdown {
   margin-top: 0;
   box-shadow: none;
   min-width: 60px;
   padding: 0 0; }
-  /* line 446, ../_sass/styles.scss */
-  .widget-dropdown > li > a {
+  /* line 440, ../_sass/styles.scss */
+  .card-dropdown > li > a {
     padding: 5px 20px; }
 
-/* line 452, ../_sass/styles.scss */
+/* line 449, ../_sass/styles.scss */
 .jumbotron {
-  position: relative; }
+  position: relative;
+  margin-bottom: 20px; }
 
-/* line 456, ../_sass/styles.scss */
-.jumbotron-photobg {
+/* line 454, ../_sass/styles.scss */
+.jumbotron-cover {
   background-image: url("../images/three.jpg");
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
-  background-size: cover;
-  margin-bottom: 15px; }
+  background-size: cover; }
 
-/* line 462, ../_sass/styles.scss */
-.photobg-2 {
-  background-image: url("../images/photobg-2.jpg"); }
-
-/* line 466, ../_sass/styles.scss */
-.white-hero {
+/* line 459, ../_sass/styles.scss */
+.jumbotron-panel {
   background: white;
   padding: 10px 30px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px; }
+
+/* line 465, ../_sass/styles.scss */
+.jumbotron-caption {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: white;
+  text-shadow: 0 0 10px rgba(237, 28, 36, 0.7); }
 
 /* line 475, ../_sass/styles.scss */
 .btn-link-action:hover {
@@ -7605,7 +7748,7 @@ h1, h2, h3, h4, h5 {
   font-weight: bold; }
 
 /* line 503, ../_sass/styles.scss */
-.widget-icons {
+.card-icons {
   width: 28px;
   height: 22px;
   display: inline-block;
@@ -7613,98 +7756,112 @@ h1, h2, h3, h4, h5 {
   cursor: pointer; }
 
 /* line 512, ../_sass/styles.scss */
-.widget-icon-group, .respond-button {
+.card-icon-group, .respond-button {
   position: absolute;
   right: 0;
   background: rgba(255, 255, 255, 0.8);
   padding-left: 15px; }
 
 /* line 519, ../_sass/styles.scss */
-.widget-toolbar {
+.card-toolbar {
   margin-bottom: 10px; }
   /* line 521, ../_sass/styles.scss */
-  .widget-toolbar .circle, .widget-toolbar .inverse-circle {
+  .card-toolbar .circle, .card-toolbar .inverse-circle {
     cursor: pointer;
     height: 35px;
     width: 35px; }
     /* line 526, ../_sass/styles.scss */
-    .widget-toolbar .circle .icon-plus, .widget-toolbar .inverse-circle .icon-plus, .widget-toolbar .circle .icon-fast-forward, .widget-toolbar .inverse-circle .icon-fast-forward, .widget-toolbar .circle .icon-rewind, .widget-toolbar .inverse-circle .icon-rewind, .widget-toolbar .circle .icon-ellipsis, .widget-toolbar .inverse-circle .icon-ellipsis {
+    .card-toolbar .circle .icon-plus, .card-toolbar .inverse-circle .icon-plus, .card-toolbar .circle .icon-fast-forward, .card-toolbar .inverse-circle .icon-fast-forward, .card-toolbar .circle .icon-rewind, .card-toolbar .inverse-circle .icon-rewind, .card-toolbar .circle .icon-ellipsis, .card-toolbar .inverse-circle .icon-ellipsis {
       position: absolute;
       font-size: large;
       top: 7px;
       left: 8px; }
     /* line 532, ../_sass/styles.scss */
-    .widget-toolbar .circle .icon-fast-forward, .widget-toolbar .inverse-circle .icon-fast-forward {
+    .card-toolbar .circle .icon-fast-forward, .card-toolbar .inverse-circle .icon-fast-forward {
       left: 9px; }
     /* line 535, ../_sass/styles.scss */
-    .widget-toolbar .circle .icon-ellipsis, .widget-toolbar .inverse-circle .icon-ellipsis {
+    .card-toolbar .circle .icon-ellipsis, .card-toolbar .inverse-circle .icon-ellipsis {
       top: 8px;
       left: 9px; }
 
 /* line 542, ../_sass/styles.scss */
-.widget-main-icons {
+.card-main-icons {
   list-style-type: none; }
   /* line 544, ../_sass/styles.scss */
-  .widget-main-icons li {
+  .card-main-icons li {
     cursor: pointer;
     margin-bottom: 20px;
     width: 50px;
     height: 45px; }
     /* line 550, ../_sass/styles.scss */
-    .widget-main-icons li.workspaces-icon {
+    .card-main-icons li.workspaces-icon {
       background-position: -9px -1143px; }
     /* line 553, ../_sass/styles.scss */
-    .widget-main-icons li.mytasks-icon {
+    .card-main-icons li.mytasks-icon {
       background-position: -8px -1236px; }
     /* line 556, ../_sass/styles.scss */
-    .widget-main-icons li.myapprovals-icon {
+    .card-main-icons li.myapprovals-icon {
       background-position: -9px -1190px; }
     /* line 559, ../_sass/styles.scss */
-    .widget-main-icons li.uploadfile-icon {
+    .card-main-icons li.uploadfile-icon {
       background-position: -5px -791px; }
 
 /* line 565, ../_sass/styles.scss */
-.js-widget {
+.card {
   -webkit-backface-visibility: hidden; }
-  /* line 567, ../_sass/styles.scss */
-  .js-widget h4 {
+
+/* line 570, ../_sass/styles.scss */
+.card-header {
+  color: white;
+  background-color: #941612;
+  border: 1px solid #941612;
+  margin-bottom: 0; }
+
+/* line 578, ../_sass/styles.scss */
+.card-header-heading {
+  color: white;
+  cursor: pointer;
+  margin-bottom: 0; }
+
+/* line 589, ../_sass/styles.scss */
+.card-group-item-heading {
+  margin-top: 0;
+  margin-bottom: 5px; }
+  /* line 592, ../_sass/styles.scss */
+  .card-group-item-heading > a {
     color: black; }
-    /* line 569, ../_sass/styles.scss */
-    .js-widget h4 a {
-      color: black; }
+  /* line 595, ../_sass/styles.scss */
+  .card-group-item-heading > em {
+    color: #777777; }
 
-/* line 576, ../_sass/styles.scss */
-.sticky-widgets .js-widget-column {
-  right: 0; }
-
-/* line 581, ../_sass/styles.scss */
-.widget-column--heading {
+/* line 600, ../_sass/styles.scss */
+.column-heading {
   margin-top: 8px;
   margin-bottom: 0; }
 
-/* line 587, ../_sass/styles.scss */
+/* line 606, ../_sass/styles.scss */
 .js-main-content .media {
   padding: 15px;
   background-color: white;
   border-radius: 0; }
 
-/* line 594, ../_sass/styles.scss */
-.fat-news {
+/* line 613, ../_sass/styles.scss */
+.news-combo-component {
   height: 250px;
   position: relative;
   cursor: pointer; }
 
-/* line 600, ../_sass/styles.scss */
-.panel {
-  border: none;
+/* line 619, ../_sass/styles.scss */
+.news-panel {
   -webkit-transition: box-shadow, 0.3s, ease;
   -o-transition: box-shadow, 0.3s, ease;
-  transition: box-shadow, 0.3s, ease; }
-  /* line 603, ../_sass/styles.scss */
-  .panel:hover {
+  transition: box-shadow, 0.3s, ease;
+  border: none; }
+  /* line 623, ../_sass/styles.scss */
+  .news-panel:hover {
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.25); }
 
-/* line 608, ../_sass/styles.scss */
+/* line 628, ../_sass/styles.scss */
 .news-thumbnail-long {
   background-repeat: no-repeat;
   width: 100%;
@@ -7715,23 +7872,23 @@ h1, h2, h3, h4, h5 {
   border-bottom-left-radius: 4px;
   border-top-left-radius: 4px; }
 
-/* line 618, ../_sass/styles.scss */
+/* line 638, ../_sass/styles.scss */
 .news-image-thumbnail {
   padding: 0;
   position: relative; }
 
-/* line 623, ../_sass/styles.scss */
-.news-aside {
+/* line 643, ../_sass/styles.scss */
+.news-byline {
   color: #777777;
   font-family: "Expert-Sans-Regular", Helvetica, Arial, sans-serif;
   text-transform: uppercase; }
-  /* line 627, ../_sass/styles.scss */
-  .news-aside span {
+  /* line 647, ../_sass/styles.scss */
+  .news-byline span {
     margin-left: 5px;
     color: #b7b7b7; }
 
-/* line 634, ../_sass/styles.scss */
-.news-cat {
+/* line 654, ../_sass/styles.scss */
+.news-category {
   position: absolute;
   top: 0;
   left: 10px;
@@ -7740,36 +7897,31 @@ h1, h2, h3, h4, h5 {
   padding: 5px 7px 8px 5px;
   background-color: #ed1c24; }
 
-/* line 644, ../_sass/styles.scss */
+/* line 664, ../_sass/styles.scss */
 .news-text-content {
   padding: 15px 15px 0; }
 
-/* line 648, ../_sass/styles.scss */
-.remove-padding {
-  padding-left: 0;
-  padding-right: 0; }
-
-/* line 653, ../_sass/styles.scss */
-.news-image-bg {
+/* line 668, ../_sass/styles.scss */
+.news-image-overlay-component {
   height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
   position: relative;
   cursor: pointer; }
-  /* line 660, ../_sass/styles.scss */
-  .news-image-bg .news-heading {
+  /* line 675, ../_sass/styles.scss */
+  .news-image-overlay-component .news-heading {
     color: white; }
-  /* line 663, ../_sass/styles.scss */
-  .news-image-bg .news-aside {
+  /* line 678, ../_sass/styles.scss */
+  .news-image-overlay-component .news-byline {
     color: #eeeeee; }
 
-/* line 668, ../_sass/styles.scss */
+/* line 683, ../_sass/styles.scss */
 .news-heading {
   margin-top: 0;
   margin-bottom: 5px; }
 
-/* line 673, ../_sass/styles.scss */
+/* line 688, ../_sass/styles.scss */
 .news-text-overlay {
   position: absolute;
   bottom: 0;
@@ -7777,27 +7929,27 @@ h1, h2, h3, h4, h5 {
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%; }
 
-/* line 681, ../_sass/styles.scss */
+/* line 696, ../_sass/styles.scss */
 .image-news-1 {
   background-image: url("../images/media-1.jpg"); }
 
-/* line 685, ../_sass/styles.scss */
+/* line 700, ../_sass/styles.scss */
 .image-news-2 {
   background-image: url("../images/media-2.jpg"); }
 
-/* line 689, ../_sass/styles.scss */
+/* line 704, ../_sass/styles.scss */
 .image-news-3 {
   background-image: url("../images/media-3.jpg"); }
 
-/* line 693, ../_sass/styles.scss */
+/* line 708, ../_sass/styles.scss */
 .image-news-4 {
   background-image: url("../images/five.jpg"); }
 
-/* line 697, ../_sass/styles.scss */
+/* line 712, ../_sass/styles.scss */
 .image-news-5 {
   background-image: url("../images/news-photo.jpg"); }
 
-/* line 701, ../_sass/styles.scss */
+/* line 716, ../_sass/styles.scss */
 .play {
   background-image: url("../images/play-absa.png");
   position: absolute;
@@ -7806,3102 +7958,292 @@ h1, h2, h3, h4, h5 {
   width: 50px;
   height: 50px; }
 
-/* line 711, ../_sass/styles.scss */
-.js-tasks em {
-  color: #777777; }
-
-/* line 717, ../_sass/styles.scss */
+/* line 728, ../_sass/styles.scss */
 .popover {
   border: 1px solid #ed1c24 !important;
   border: #ed1c24; }
-  /* line 720, ../_sass/styles.scss */
+  /* line 731, ../_sass/styles.scss */
   .popover.left > .arrow {
     border-left-color: #ed1c24; }
-  /* line 723, ../_sass/styles.scss */
+  /* line 734, ../_sass/styles.scss */
   .popover.bottom > .arrow {
     border-bottom-color: #ed1c24; }
-  /* line 726, ../_sass/styles.scss */
+  /* line 737, ../_sass/styles.scss */
   .popover.top > .arrow {
     border-top-color: #ed1c24; }
-  /* line 729, ../_sass/styles.scss */
+  /* line 740, ../_sass/styles.scss */
   .popover.right > .arrow {
     border-top-color: #ed1c24; }
 
-/* line 734, ../_sass/styles.scss */
+/* line 745, ../_sass/styles.scss */
 .tasks-icon-group, .respond-button {
   top: 10px; }
 
-/* line 738, ../_sass/styles.scss */
+/* line 749, ../_sass/styles.scss */
 .respond-button {
   right: 10px; }
 
-/* line 744, ../_sass/styles.scss */
+/* line 755, ../_sass/styles.scss */
 .icon-participants {
   background-position: -8px -889px; }
-  /* line 744, ../_sass/styles.scss */
+  /* line 755, ../_sass/styles.scss */
   .icon-participants:hover {
     background-position: -68px -889px; }
 
-/* line 745, ../_sass/styles.scss */
+/* line 756, ../_sass/styles.scss */
 .icon-newfiles {
   background-position: -8px -863px; }
-  /* line 745, ../_sass/styles.scss */
+  /* line 756, ../_sass/styles.scss */
   .icon-newfiles:hover {
     background-position: -68px -863px; }
 
-/* line 746, ../_sass/styles.scss */
+/* line 757, ../_sass/styles.scss */
 .icon-newcomments {
   background-position: -8px -839px; }
-  /* line 746, ../_sass/styles.scss */
+  /* line 757, ../_sass/styles.scss */
   .icon-newcomments:hover {
     background-position: -68px -839px; }
 
-/* line 747, ../_sass/styles.scss */
+/* line 758, ../_sass/styles.scss */
 .icon-moreactions {
   background-position: -7px -908px; }
-  /* line 747, ../_sass/styles.scss */
+  /* line 758, ../_sass/styles.scss */
   .icon-moreactions:hover {
     background-position: -68px -908px; }
 
-/* line 748, ../_sass/styles.scss */
+/* line 759, ../_sass/styles.scss */
 .icon-remove {
   background-position: -7px -931px; }
-  /* line 748, ../_sass/styles.scss */
+  /* line 759, ../_sass/styles.scss */
   .icon-remove:hover {
     background-position: -67px -931px; }
 
-/* line 749, ../_sass/styles.scss */
+/* line 760, ../_sass/styles.scss */
 .icon-fileupload {
   background-position: -7px -954px; }
-  /* line 749, ../_sass/styles.scss */
+  /* line 760, ../_sass/styles.scss */
   .icon-fileupload:hover {
     background-position: -67px -954px; }
 
-/* line 750, ../_sass/styles.scss */
+/* line 761, ../_sass/styles.scss */
 .icon-starttask {
   background-position: -7px -1063px; }
-  /* line 750, ../_sass/styles.scss */
+  /* line 761, ../_sass/styles.scss */
   .icon-starttask:hover {
     background-position: -67px -1063px; }
 
-/* line 751, ../_sass/styles.scss */
+/* line 762, ../_sass/styles.scss */
 .icon-completetask {
   background-position: -7px -1038px; }
-  /* line 751, ../_sass/styles.scss */
+  /* line 762, ../_sass/styles.scss */
   .icon-completetask:hover {
     background-position: -67px -1038px; }
 
-/* line 752, ../_sass/styles.scss */
+/* line 763, ../_sass/styles.scss */
 .icon-edittask {
   background-position: -7px -1010px; }
-  /* line 752, ../_sass/styles.scss */
+  /* line 763, ../_sass/styles.scss */
   .icon-edittask:hover {
     background-position: -67px -1010px; }
 
-/* line 753, ../_sass/styles.scss */
+/* line 764, ../_sass/styles.scss */
 .icon-approvers {
   background-position: -9px -1088px; }
-  /* line 753, ../_sass/styles.scss */
+  /* line 764, ../_sass/styles.scss */
   .icon-approvers:hover {
     background-position: -69px -1088px; }
 
-/* line 754, ../_sass/styles.scss */
+/* line 765, ../_sass/styles.scss */
 .icon-downloadshare {
   background-position: -7px -1117px; }
-  /* line 754, ../_sass/styles.scss */
+  /* line 765, ../_sass/styles.scss */
   .icon-downloadshare:hover {
     background-position: -67px -1117px; }
 
-/* line 756, ../_sass/styles.scss */
+/* line 767, ../_sass/styles.scss */
 .icon-fast-forward, .icon-rewind {
   font-size: x-large; }
 
-/* line 760, ../_sass/styles.scss */
+/* line 771, ../_sass/styles.scss */
 .icon-mail, .icon-download {
   font-size: large; }
 
-/* line 765, ../_sass/styles.scss */
+/* line 776, ../_sass/styles.scss */
 .icon-move {
   font-size: larger;
   cursor: move;
   margin-right: 10px; }
 
-/* line 771, ../_sass/styles.scss */
+/* line 782, ../_sass/styles.scss */
 .icon-ellipsis {
   font-size: large;
   cursor: pointer; }
-  /* line 774, ../_sass/styles.scss */
+  /* line 785, ../_sass/styles.scss */
   .circle .icon-ellipsis, .inverse-circle .icon-ellipsis {
     position: absolute;
     left: 9px;
     top: 8px; }
 
-/* line 781, ../_sass/styles.scss */
+/* line 792, ../_sass/styles.scss */
 .icon-circle-plus {
   cursor: pointer;
   font-size: large;
   margin-right: 10px; }
 
-/* line 787, ../_sass/styles.scss */
-.widget-button-group {
-  max-height: 10px; }
-
-/* line 791, ../_sass/styles.scss */
-.list-group-item {
+/* line 798, ../_sass/styles.scss */
+.list-group-item, .card-header, .card-group-item {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0; }
-  /* line 793, ../_sass/styles.scss */
-  .list-group-item:first-child {
+  /* line 800, ../_sass/styles.scss */
+  .list-group-item:first-child, .card-header:first-child, .card-group-item:first-child {
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
     border-radius: 0; }
-  /* line 796, ../_sass/styles.scss */
-  .list-group-item .media, .list-group-item .media-body {
+  /* line 803, ../_sass/styles.scss */
+  .list-group-item .media, .card-header .media, .card-group-item .media, .list-group-item .media-body, .card-header .media-body, .card-group-item .media-body {
     overflow: visible; }
 
-/* line 802, ../_sass/styles.scss */
-h3.list-group-item-heading {
-  cursor: pointer; }
-
-/* line 806, ../_sass/styles.scss */
-h3.list-group-item-heading,
-.workspaces .list-group-item-heading,
-.project-heading .list-group-item-heading,
-.my-approvals .list-group-item-heading,
-.my-tasks .list-group-item-heading {
-  margin-bottom: 0; }
-
-/* line 814, ../_sass/styles.scss */
-.widget-heading-tab {
-  color: white;
-  background-color: #941612;
-  border: 1px solid #941612; }
-  /* line 818, ../_sass/styles.scss */
-  .widget-heading-tab h3 {
-    color: white; }
-
-/* line 825, ../_sass/styles.scss */
-.js-minimize .list-group-item:first-child {
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0; }
-
-/* line 830, ../_sass/styles.scss */
+/* line 808, ../_sass/styles.scss */
 .popover {
   border: none; }
 
-/* line 834, ../_sass/styles.scss */
+/* line 812, ../_sass/styles.scss */
 .popover-title {
   text-align: center;
   font-family: "Expert-Sans-Regular", Helvetica, Arial, sans-serif;
   border-bottom: 1px solid #eeeeee;
   border-bottom: 1px solid rgba(148, 22, 18, 0.3); }
 
-/* line 841, ../_sass/styles.scss */
+/* line 819, ../_sass/styles.scss */
 .project-heading {
   font-family: "Expert-Sans-Regular", Helvetica, Arial, sans-serif;
   border-left: 2px solid #ed1c24;
   background: rgba(237, 28, 36, 0.05);
   cursor: pointer; }
-  /* line 846, ../_sass/styles.scss */
+  /* line 824, ../_sass/styles.scss */
   .project-heading em {
     font-family: "Expert-Sans-Regular", Helvetica, Arial, sans-serif;
     color: #555555;
     font-style: normal; }
 
-/* line 853, ../_sass/styles.scss */
+/* line 831, ../_sass/styles.scss */
 .tour-center-start {
   position: absolute;
   top: 200px;
   left: 50%; }
 
-/* line 859, ../_sass/styles.scss */
+/* line 837, ../_sass/styles.scss */
 .approval-images {
   cursor: pointer; }
 
-/* line 863, ../_sass/styles.scss */
+/* line 841, ../_sass/styles.scss */
 .center-images {
   display: table;
   margin: auto;
   margin-top: 10px; }
-  /* line 867, ../_sass/styles.scss */
+  /* line 845, ../_sass/styles.scss */
   .center-images img {
     margin-right: 3px; }
-    /* line 869, ../_sass/styles.scss */
+    /* line 847, ../_sass/styles.scss */
     .center-images img:last-child {
       margin-right: 0; }
 
-/* line 874, ../_sass/styles.scss */
+/* line 852, ../_sass/styles.scss */
 .nav-tabs {
   margin-bottom: 15px; }
 
-/* line 879, ../_sass/styles.scss */
+/* line 857, ../_sass/styles.scss */
 .form-inline .form-group {
   margin-left: 15px; }
 
-/* line 885, ../_sass/styles.scss */
-.panel .list-group-item .badge {
+/* line 863, ../_sass/styles.scss */
+.panel .list-group-item .badge, .news-panel .list-group-item .badge, .panel .card-header .badge, .news-panel .card-header .badge, .panel .card-group-item .badge, .news-panel .card-group-item .badge {
   float: left;
   margin-right: 10px; }
-/* line 889, ../_sass/styles.scss */
+/* line 867, ../_sass/styles.scss */
 .panel-footer .badge {
   font-weight: normal; }
 
-/* line 894, ../_sass/styles.scss */
+/* line 872, ../_sass/styles.scss */
 .panel-heading {
   position: relative; }
 
-/* line 898, ../_sass/styles.scss */
+/* line 876, ../_sass/styles.scss */
 .share-image-border {
   border: 1px solid #eeeeee;
   margin-bottom: 12px; }
 
-/* line 903, ../_sass/styles.scss */
+/* line 881, ../_sass/styles.scss */
 .link-unstyled {
   color: #333; }
-  /* line 905, ../_sass/styles.scss */
+  /* line 883, ../_sass/styles.scss */
   .link-unstyled:hover {
     color: #333;
     text-decoration: none; }
 
-/* line 911, ../_sass/styles.scss */
+/* line 889, ../_sass/styles.scss */
 .share-comment, .share-with {
   width: 100%;
   border: none;
   outline: none;
   margin-bottom: 10px; }
 
-/* line 918, ../_sass/styles.scss */
+/* line 896, ../_sass/styles.scss */
 .share-with {
   padding-bottom: 10px;
   border-bottom: #eeeeee 1px solid; }
 
-/* line 925, ../_sass/styles.scss */
+/* line 903, ../_sass/styles.scss */
 .share-modal .img-solo {
   width: 100%; }
 
-/* line 931, ../_sass/styles.scss */
+/* line 909, ../_sass/styles.scss */
 .share-file-preview {
   margin-bottom: 10px; }
 
-/* line 935, ../_sass/styles.scss */
+/* line 913, ../_sass/styles.scss */
 .share-relative {
   position: absolute;
   right: 5px;
   bottom: 4px; }
 
-/* line 941, ../_sass/styles.scss */
+/* line 919, ../_sass/styles.scss */
 .modal-header {
   background: #ed1c24; }
-  /* line 943, ../_sass/styles.scss */
+  /* line 921, ../_sass/styles.scss */
   .modal-header h4.modal-title {
     color: white; }
-  /* line 946, ../_sass/styles.scss */
+  /* line 924, ../_sass/styles.scss */
   .modal-header .close {
     color: white;
     font-size: 20px;
     opacity: 1; }
 
-/* line 953, ../_sass/styles.scss */
+/* line 931, ../_sass/styles.scss */
 .modal-footer {
   background: rgba(237, 28, 36, 0.05); }
 
-/* line 957, ../_sass/styles.scss */
+/* line 935, ../_sass/styles.scss */
 .text-left {
   text-align: left !important; }
 
-/* line 961, ../_sass/styles.scss */
+/* line 939, ../_sass/styles.scss */
 .brandzone-heading {
   margin-top: 0;
   margin-bottom: 20px; }
 
-/* line 966, ../_sass/styles.scss */
+/* line 944, ../_sass/styles.scss */
 .image-library-container {
   margin-top: 20px; }
 
-/*!
- *  Font Awesome 4.4.0 by @davegandy - http://fontawesome.io - @fontawesome
- *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
- */
-/* FONT PATH
- * -------------------------- */
-@font-face {
-  font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.eot?v=4.4.0");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.4.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-/* line 4, ../_sass/bower_components/font-awesome/scss/_core.scss */
-.fa, .alt-checkbox {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-/* makes the font 33% larger relative to the icon container */
-/* line 5, ../_sass/bower_components/font-awesome/scss/_larger.scss */
-.fa-lg, .alt-checkbox {
-  font-size: 1.33333333em;
-  line-height: 0.75em;
-  vertical-align: -15%; }
-
-/* line 10, ../_sass/bower_components/font-awesome/scss/_larger.scss */
-.fa-2x {
-  font-size: 2em; }
-
-/* line 11, ../_sass/bower_components/font-awesome/scss/_larger.scss */
-.fa-3x {
-  font-size: 3em; }
-
-/* line 12, ../_sass/bower_components/font-awesome/scss/_larger.scss */
-.fa-4x {
-  font-size: 4em; }
-
-/* line 13, ../_sass/bower_components/font-awesome/scss/_larger.scss */
-.fa-5x {
-  font-size: 5em; }
-
-/* line 3, ../_sass/bower_components/font-awesome/scss/_fixed-width.scss */
-.fa-fw {
-  width: 1.28571429em;
-  text-align: center; }
-
-/* line 4, ../_sass/bower_components/font-awesome/scss/_list.scss */
-.fa-ul {
-  padding-left: 0;
-  margin-left: 2.14285714em;
-  list-style-type: none; }
-  /* line 8, ../_sass/bower_components/font-awesome/scss/_list.scss */
-  .fa-ul > li {
-    position: relative; }
-
-/* line 10, ../_sass/bower_components/font-awesome/scss/_list.scss */
-.fa-li {
-  position: absolute;
-  left: -2.14285714em;
-  width: 2.14285714em;
-  top: 0.14285714em;
-  text-align: center; }
-  /* line 16, ../_sass/bower_components/font-awesome/scss/_list.scss */
-  .fa-li.fa-lg, .fa-li.alt-checkbox {
-    left: -1.85714286em; }
-
-/* line 4, ../_sass/bower_components/font-awesome/scss/_bordered-pulled.scss */
-.fa-border {
-  padding: .2em .25em .15em;
-  border: solid 0.08em #eee;
-  border-radius: .1em; }
-
-/* line 10, ../_sass/bower_components/font-awesome/scss/_bordered-pulled.scss */
-.fa-pull-left {
-  float: left; }
-
-/* line 11, ../_sass/bower_components/font-awesome/scss/_bordered-pulled.scss */
-.fa-pull-right {
-  float: right; }
-
-/* line 14, ../_sass/bower_components/font-awesome/scss/_bordered-pulled.scss */
-.fa.fa-pull-left, .fa-pull-left.alt-checkbox {
-  margin-right: .3em; }
-/* line 15, ../_sass/bower_components/font-awesome/scss/_bordered-pulled.scss */
-.fa.fa-pull-right, .fa-pull-right.alt-checkbox {
-  margin-left: .3em; }
-
-/* Deprecated as of 4.4.0 */
-/* line 19, ../_sass/bower_components/font-awesome/scss/_bordered-pulled.scss */
-.pull-right {
-  float: right; }
-
-/* line 20, ../_sass/bower_components/font-awesome/scss/_bordered-pulled.scss */
-.pull-left {
-  float: left; }
-
-/* line 23, ../_sass/bower_components/font-awesome/scss/_bordered-pulled.scss */
-.fa.pull-left, .pull-left.alt-checkbox {
-  margin-right: .3em; }
-/* line 24, ../_sass/bower_components/font-awesome/scss/_bordered-pulled.scss */
-.fa.pull-right, .pull-right.alt-checkbox {
-  margin-left: .3em; }
-
-/* line 4, ../_sass/bower_components/font-awesome/scss/_animated.scss */
-.fa-spin {
-  -webkit-animation: fa-spin 2s infinite linear;
-  animation: fa-spin 2s infinite linear; }
-
-/* line 9, ../_sass/bower_components/font-awesome/scss/_animated.scss */
-.fa-pulse {
-  -webkit-animation: fa-spin 1s infinite steps(8);
-  animation: fa-spin 1s infinite steps(8); }
-
-@-webkit-keyframes fa-spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg); } }
-@keyframes fa-spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg); } }
-/* line 4, ../_sass/bower_components/font-awesome/scss/_rotated-flipped.scss */
-.fa-rotate-90 {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg); }
-
-/* line 5, ../_sass/bower_components/font-awesome/scss/_rotated-flipped.scss */
-.fa-rotate-180 {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg); }
-
-/* line 6, ../_sass/bower_components/font-awesome/scss/_rotated-flipped.scss */
-.fa-rotate-270 {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  -webkit-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  transform: rotate(270deg); }
-
-/* line 8, ../_sass/bower_components/font-awesome/scss/_rotated-flipped.scss */
-.fa-flip-horizontal {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
-  -webkit-transform: scale(-1, 1);
-  -ms-transform: scale(-1, 1);
-  transform: scale(-1, 1); }
-
-/* line 9, ../_sass/bower_components/font-awesome/scss/_rotated-flipped.scss */
-.fa-flip-vertical {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
-  -webkit-transform: scale(1, -1);
-  -ms-transform: scale(1, -1);
-  transform: scale(1, -1); }
-
-/* line 14, ../_sass/bower_components/font-awesome/scss/_rotated-flipped.scss */
-:root .fa-rotate-90,
-:root .fa-rotate-180,
-:root .fa-rotate-270,
-:root .fa-flip-horizontal,
-:root .fa-flip-vertical {
-  filter: none; }
-
-/* line 4, ../_sass/bower_components/font-awesome/scss/_stacked.scss */
-.fa-stack {
-  position: relative;
-  display: inline-block;
-  width: 2em;
-  height: 2em;
-  line-height: 2em;
-  vertical-align: middle; }
-
-/* line 12, ../_sass/bower_components/font-awesome/scss/_stacked.scss */
-.fa-stack-1x, .fa-stack-2x {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  text-align: center; }
-
-/* line 18, ../_sass/bower_components/font-awesome/scss/_stacked.scss */
-.fa-stack-1x {
-  line-height: inherit; }
-
-/* line 19, ../_sass/bower_components/font-awesome/scss/_stacked.scss */
-.fa-stack-2x {
-  font-size: 2em; }
-
-/* line 20, ../_sass/bower_components/font-awesome/scss/_stacked.scss */
-.fa-inverse {
-  color: #fff; }
-
-/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
-   readers do not read off random characters that represent icons */
-/* line 4, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-glass:before {
-  content: ""; }
-
-/* line 5, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-music:before {
-  content: ""; }
-
-/* line 6, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-search:before {
-  content: ""; }
-
-/* line 7, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-envelope-o:before {
-  content: ""; }
-
-/* line 8, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-heart:before {
-  content: ""; }
-
-/* line 9, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-star:before {
-  content: ""; }
-
-/* line 10, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-star-o:before {
-  content: ""; }
-
-/* line 11, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-user:before {
-  content: ""; }
-
-/* line 12, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-film:before {
-  content: ""; }
-
-/* line 13, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-th-large:before {
-  content: ""; }
-
-/* line 14, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-th:before {
-  content: ""; }
-
-/* line 15, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-th-list:before {
-  content: ""; }
-
-/* line 16, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-check:before {
-  content: ""; }
-
-/* line 17, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-remove:before,
-.fa-close:before,
-.fa-times:before {
-  content: ""; }
-
-/* line 20, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-search-plus:before {
-  content: ""; }
-
-/* line 21, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-search-minus:before {
-  content: ""; }
-
-/* line 22, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-power-off:before {
-  content: ""; }
-
-/* line 23, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-signal:before {
-  content: ""; }
-
-/* line 24, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-gear:before,
-.fa-cog:before {
-  content: ""; }
-
-/* line 26, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-trash-o:before {
-  content: ""; }
-
-/* line 27, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-home:before {
-  content: ""; }
-
-/* line 28, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-file-o:before {
-  content: ""; }
-
-/* line 29, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-clock-o:before {
-  content: ""; }
-
-/* line 30, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-road:before {
-  content: ""; }
-
-/* line 31, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-download:before {
-  content: ""; }
-
-/* line 32, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-arrow-circle-o-down:before {
-  content: ""; }
-
-/* line 33, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-arrow-circle-o-up:before {
-  content: ""; }
-
-/* line 34, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-inbox:before {
-  content: ""; }
-
-/* line 35, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-play-circle-o:before {
-  content: ""; }
-
-/* line 36, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-rotate-right:before,
-.fa-repeat:before {
-  content: ""; }
-
-/* line 38, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-refresh:before {
-  content: ""; }
-
-/* line 39, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-list-alt:before {
-  content: ""; }
-
-/* line 40, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-lock:before {
-  content: ""; }
-
-/* line 41, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-flag:before {
-  content: ""; }
-
-/* line 42, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-headphones:before {
-  content: ""; }
-
-/* line 43, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-volume-off:before {
-  content: ""; }
-
-/* line 44, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-volume-down:before {
-  content: ""; }
-
-/* line 45, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-volume-up:before {
-  content: ""; }
-
-/* line 46, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-qrcode:before {
-  content: ""; }
-
-/* line 47, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-barcode:before {
-  content: ""; }
-
-/* line 48, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-tag:before {
-  content: ""; }
-
-/* line 49, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-tags:before {
-  content: ""; }
-
-/* line 50, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-book:before {
-  content: ""; }
-
-/* line 51, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-bookmark:before {
-  content: ""; }
-
-/* line 52, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-print:before {
-  content: ""; }
-
-/* line 53, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-camera:before {
-  content: ""; }
-
-/* line 54, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-font:before {
-  content: ""; }
-
-/* line 55, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-bold:before {
-  content: ""; }
-
-/* line 56, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-italic:before {
-  content: ""; }
-
-/* line 57, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-text-height:before {
-  content: ""; }
-
-/* line 58, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-text-width:before {
-  content: ""; }
-
-/* line 59, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-align-left:before {
-  content: ""; }
-
-/* line 60, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-align-center:before {
-  content: ""; }
-
-/* line 61, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-align-right:before {
-  content: ""; }
-
-/* line 62, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-align-justify:before {
-  content: ""; }
-
-/* line 63, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-list:before {
-  content: ""; }
-
-/* line 64, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-dedent:before,
-.fa-outdent:before {
-  content: ""; }
-
-/* line 66, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-indent:before {
-  content: ""; }
-
-/* line 67, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-video-camera:before {
-  content: ""; }
-
-/* line 68, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-photo:before,
-.fa-image:before,
-.fa-picture-o:before {
-  content: ""; }
-
-/* line 71, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-pencil:before {
-  content: ""; }
-
-/* line 72, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-map-marker:before {
-  content: ""; }
-
-/* line 73, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-adjust:before {
-  content: ""; }
-
-/* line 74, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-tint:before {
-  content: ""; }
-
-/* line 75, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-edit:before,
-.fa-pencil-square-o:before {
-  content: ""; }
-
-/* line 77, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-share-square-o:before {
-  content: ""; }
-
-/* line 78, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-check-square-o:before, .alt-checkbox.checked:before {
-  content: ""; }
-
-/* line 79, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-arrows:before {
-  content: ""; }
-
-/* line 80, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-step-backward:before {
-  content: ""; }
-
-/* line 81, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-fast-backward:before {
-  content: ""; }
-
-/* line 82, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-backward:before {
-  content: ""; }
-
-/* line 83, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-play:before {
-  content: ""; }
-
-/* line 84, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-pause:before {
-  content: ""; }
-
-/* line 85, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-stop:before {
-  content: ""; }
-
-/* line 86, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-forward:before {
-  content: ""; }
-
-/* line 87, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-fast-forward:before {
-  content: ""; }
-
-/* line 88, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-step-forward:before {
-  content: ""; }
-
-/* line 89, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-eject:before {
-  content: ""; }
-
-/* line 90, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-chevron-left:before {
-  content: ""; }
-
-/* line 91, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-chevron-right:before {
-  content: ""; }
-
-/* line 92, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-plus-circle:before {
-  content: ""; }
-
-/* line 93, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-minus-circle:before {
-  content: ""; }
-
-/* line 94, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-times-circle:before {
-  content: ""; }
-
-/* line 95, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-check-circle:before {
-  content: ""; }
-
-/* line 96, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-question-circle:before {
-  content: ""; }
-
-/* line 97, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-info-circle:before {
-  content: ""; }
-
-/* line 98, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-crosshairs:before {
-  content: ""; }
-
-/* line 99, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-times-circle-o:before {
-  content: ""; }
-
-/* line 100, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-check-circle-o:before {
-  content: ""; }
-
-/* line 101, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-ban:before {
-  content: ""; }
-
-/* line 102, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-arrow-left:before {
-  content: ""; }
-
-/* line 103, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-arrow-right:before {
-  content: ""; }
-
-/* line 104, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-arrow-up:before {
-  content: ""; }
-
-/* line 105, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-arrow-down:before {
-  content: ""; }
-
-/* line 106, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-mail-forward:before,
-.fa-share:before {
-  content: ""; }
-
-/* line 108, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-expand:before {
-  content: ""; }
-
-/* line 109, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-compress:before {
-  content: ""; }
-
-/* line 110, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-plus:before {
-  content: ""; }
-
-/* line 111, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-minus:before {
-  content: ""; }
-
-/* line 112, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-asterisk:before {
-  content: ""; }
-
-/* line 113, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-exclamation-circle:before {
-  content: ""; }
-
-/* line 114, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-gift:before {
-  content: ""; }
-
-/* line 115, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-leaf:before {
-  content: ""; }
-
-/* line 116, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-fire:before {
-  content: ""; }
-
-/* line 117, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-eye:before {
-  content: ""; }
-
-/* line 118, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-eye-slash:before {
-  content: ""; }
-
-/* line 119, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-warning:before,
-.fa-exclamation-triangle:before {
-  content: ""; }
-
-/* line 121, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-plane:before {
-  content: ""; }
-
-/* line 122, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-calendar:before {
-  content: ""; }
-
-/* line 123, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-random:before {
-  content: ""; }
-
-/* line 124, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-comment:before {
-  content: ""; }
-
-/* line 125, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-magnet:before {
-  content: ""; }
-
-/* line 126, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-chevron-up:before {
-  content: ""; }
-
-/* line 127, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-chevron-down:before {
-  content: ""; }
-
-/* line 128, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-retweet:before {
-  content: ""; }
-
-/* line 129, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-shopping-cart:before {
-  content: ""; }
-
-/* line 130, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-folder:before {
-  content: ""; }
-
-/* line 131, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-folder-open:before {
-  content: ""; }
-
-/* line 132, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-arrows-v:before {
-  content: ""; }
-
-/* line 133, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-arrows-h:before {
-  content: ""; }
-
-/* line 134, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-bar-chart-o:before,
-.fa-bar-chart:before {
-  content: ""; }
-
-/* line 136, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-twitter-square:before {
-  content: ""; }
-
-/* line 137, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-facebook-square:before {
-  content: ""; }
-
-/* line 138, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-camera-retro:before {
-  content: ""; }
-
-/* line 139, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-key:before {
-  content: ""; }
-
-/* line 140, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-gears:before,
-.fa-cogs:before {
-  content: ""; }
-
-/* line 142, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-comments:before {
-  content: ""; }
-
-/* line 143, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-thumbs-o-up:before {
-  content: ""; }
-
-/* line 144, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-thumbs-o-down:before {
-  content: ""; }
-
-/* line 145, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-star-half:before {
-  content: ""; }
-
-/* line 146, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-heart-o:before {
-  content: ""; }
-
-/* line 147, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-sign-out:before {
-  content: ""; }
-
-/* line 148, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-linkedin-square:before {
-  content: ""; }
-
-/* line 149, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-thumb-tack:before {
-  content: ""; }
-
-/* line 150, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-external-link:before {
-  content: ""; }
-
-/* line 151, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-sign-in:before {
-  content: ""; }
-
-/* line 152, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-trophy:before {
-  content: ""; }
-
-/* line 153, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-github-square:before {
-  content: ""; }
-
-/* line 154, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-upload:before {
-  content: ""; }
-
-/* line 155, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-lemon-o:before {
-  content: ""; }
-
-/* line 156, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-phone:before {
-  content: ""; }
-
-/* line 157, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-square-o:before, .alt-checkbox:before {
-  content: ""; }
-
-/* line 158, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-bookmark-o:before {
-  content: ""; }
-
-/* line 159, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-phone-square:before {
-  content: ""; }
-
-/* line 160, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-twitter:before {
-  content: ""; }
-
-/* line 161, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-facebook-f:before,
-.fa-facebook:before {
-  content: ""; }
-
-/* line 163, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-github:before {
-  content: ""; }
-
-/* line 164, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-unlock:before {
-  content: ""; }
-
-/* line 165, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-credit-card:before {
-  content: ""; }
-
-/* line 166, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-feed:before,
-.fa-rss:before {
-  content: ""; }
-
-/* line 168, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-hdd-o:before {
-  content: ""; }
-
-/* line 169, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-bullhorn:before {
-  content: ""; }
-
-/* line 170, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-bell:before {
-  content: ""; }
-
-/* line 171, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-certificate:before {
-  content: ""; }
-
-/* line 172, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-hand-o-right:before {
-  content: ""; }
-
-/* line 173, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-hand-o-left:before {
-  content: ""; }
-
-/* line 174, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-hand-o-up:before {
-  content: ""; }
-
-/* line 175, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-hand-o-down:before {
-  content: ""; }
-
-/* line 176, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-arrow-circle-left:before {
-  content: ""; }
-
-/* line 177, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-arrow-circle-right:before {
-  content: ""; }
-
-/* line 178, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-arrow-circle-up:before {
-  content: ""; }
-
-/* line 179, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-arrow-circle-down:before {
-  content: ""; }
-
-/* line 180, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-globe:before {
-  content: ""; }
-
-/* line 181, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-wrench:before {
-  content: ""; }
-
-/* line 182, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-tasks:before {
-  content: ""; }
-
-/* line 183, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-filter:before {
-  content: ""; }
-
-/* line 184, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-briefcase:before {
-  content: ""; }
-
-/* line 185, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-arrows-alt:before {
-  content: ""; }
-
-/* line 186, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-group:before,
-.fa-users:before {
-  content: ""; }
-
-/* line 188, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-chain:before,
-.fa-link:before {
-  content: ""; }
-
-/* line 190, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-cloud:before {
-  content: ""; }
-
-/* line 191, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-flask:before {
-  content: ""; }
-
-/* line 192, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-cut:before,
-.fa-scissors:before {
-  content: ""; }
-
-/* line 194, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-copy:before,
-.fa-files-o:before {
-  content: ""; }
-
-/* line 196, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-paperclip:before {
-  content: ""; }
-
-/* line 197, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-save:before,
-.fa-floppy-o:before {
-  content: ""; }
-
-/* line 199, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-square:before {
-  content: ""; }
-
-/* line 200, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-navicon:before,
-.fa-reorder:before,
-.fa-bars:before {
-  content: ""; }
-
-/* line 203, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-list-ul:before {
-  content: ""; }
-
-/* line 204, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-list-ol:before {
-  content: ""; }
-
-/* line 205, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-strikethrough:before {
-  content: ""; }
-
-/* line 206, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-underline:before {
-  content: ""; }
-
-/* line 207, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-table:before {
-  content: ""; }
-
-/* line 208, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-magic:before {
-  content: ""; }
-
-/* line 209, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-truck:before {
-  content: ""; }
-
-/* line 210, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-pinterest:before {
-  content: ""; }
-
-/* line 211, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-pinterest-square:before {
-  content: ""; }
-
-/* line 212, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-google-plus-square:before {
-  content: ""; }
-
-/* line 213, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-google-plus:before {
-  content: ""; }
-
-/* line 214, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-money:before {
-  content: ""; }
-
-/* line 215, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-caret-down:before {
-  content: ""; }
-
-/* line 216, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-caret-up:before {
-  content: ""; }
-
-/* line 217, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-caret-left:before {
-  content: ""; }
-
-/* line 218, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-caret-right:before {
-  content: ""; }
-
-/* line 219, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-columns:before {
-  content: ""; }
-
-/* line 220, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-unsorted:before,
-.fa-sort:before {
-  content: ""; }
-
-/* line 222, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-sort-down:before,
-.fa-sort-desc:before {
-  content: ""; }
-
-/* line 224, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-sort-up:before,
-.fa-sort-asc:before {
-  content: ""; }
-
-/* line 226, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-envelope:before {
-  content: ""; }
-
-/* line 227, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-linkedin:before {
-  content: ""; }
-
-/* line 228, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-rotate-left:before,
-.fa-undo:before {
-  content: ""; }
-
-/* line 230, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-legal:before,
-.fa-gavel:before {
-  content: ""; }
-
-/* line 232, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-dashboard:before,
-.fa-tachometer:before {
-  content: ""; }
-
-/* line 234, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-comment-o:before {
-  content: ""; }
-
-/* line 235, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-comments-o:before {
-  content: ""; }
-
-/* line 236, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-flash:before,
-.fa-bolt:before {
-  content: ""; }
-
-/* line 238, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-sitemap:before {
-  content: ""; }
-
-/* line 239, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-umbrella:before {
-  content: ""; }
-
-/* line 240, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-paste:before,
-.fa-clipboard:before {
-  content: ""; }
-
-/* line 242, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-lightbulb-o:before {
-  content: ""; }
-
-/* line 243, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-exchange:before {
-  content: ""; }
-
-/* line 244, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-cloud-download:before {
-  content: ""; }
-
-/* line 245, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-cloud-upload:before {
-  content: ""; }
-
-/* line 246, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-user-md:before {
-  content: ""; }
-
-/* line 247, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-stethoscope:before {
-  content: ""; }
-
-/* line 248, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-suitcase:before {
-  content: ""; }
-
-/* line 249, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-bell-o:before {
-  content: ""; }
-
-/* line 250, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-coffee:before {
-  content: ""; }
-
-/* line 251, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-cutlery:before {
-  content: ""; }
-
-/* line 252, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-file-text-o:before {
-  content: ""; }
-
-/* line 253, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-building-o:before {
-  content: ""; }
-
-/* line 254, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-hospital-o:before {
-  content: ""; }
-
-/* line 255, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-ambulance:before {
-  content: ""; }
-
-/* line 256, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-medkit:before {
-  content: ""; }
-
-/* line 257, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-fighter-jet:before {
-  content: ""; }
-
-/* line 258, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-beer:before {
-  content: ""; }
-
-/* line 259, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-h-square:before {
-  content: ""; }
-
-/* line 260, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-plus-square:before {
-  content: ""; }
-
-/* line 261, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-angle-double-left:before {
-  content: ""; }
-
-/* line 262, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-angle-double-right:before {
-  content: ""; }
-
-/* line 263, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-angle-double-up:before {
-  content: ""; }
-
-/* line 264, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-angle-double-down:before {
-  content: ""; }
-
-/* line 265, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-angle-left:before {
-  content: ""; }
-
-/* line 266, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-angle-right:before {
-  content: ""; }
-
-/* line 267, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-angle-up:before {
-  content: ""; }
-
-/* line 268, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-angle-down:before {
-  content: ""; }
-
-/* line 269, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-desktop:before {
-  content: ""; }
-
-/* line 270, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-laptop:before {
-  content: ""; }
-
-/* line 271, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-tablet:before {
-  content: ""; }
-
-/* line 272, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-mobile-phone:before,
-.fa-mobile:before {
-  content: ""; }
-
-/* line 274, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-circle-o:before {
-  content: ""; }
-
-/* line 275, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-quote-left:before {
-  content: ""; }
-
-/* line 276, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-quote-right:before {
-  content: ""; }
-
-/* line 277, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-spinner:before {
-  content: ""; }
-
-/* line 278, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-circle:before {
-  content: ""; }
-
-/* line 279, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-mail-reply:before,
-.fa-reply:before {
-  content: ""; }
-
-/* line 281, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-github-alt:before {
-  content: ""; }
-
-/* line 282, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-folder-o:before {
-  content: ""; }
-
-/* line 283, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-folder-open-o:before {
-  content: ""; }
-
-/* line 284, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-smile-o:before {
-  content: ""; }
-
-/* line 285, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-frown-o:before {
-  content: ""; }
-
-/* line 286, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-meh-o:before {
-  content: ""; }
-
-/* line 287, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-gamepad:before {
-  content: ""; }
-
-/* line 288, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-keyboard-o:before {
-  content: ""; }
-
-/* line 289, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-flag-o:before {
-  content: ""; }
-
-/* line 290, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-flag-checkered:before {
-  content: ""; }
-
-/* line 291, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-terminal:before {
-  content: ""; }
-
-/* line 292, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-code:before {
-  content: ""; }
-
-/* line 293, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-mail-reply-all:before,
-.fa-reply-all:before {
-  content: ""; }
-
-/* line 295, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-star-half-empty:before,
-.fa-star-half-full:before,
-.fa-star-half-o:before {
-  content: ""; }
-
-/* line 298, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-location-arrow:before {
-  content: ""; }
-
-/* line 299, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-crop:before {
-  content: ""; }
-
-/* line 300, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-code-fork:before {
-  content: ""; }
-
-/* line 301, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-unlink:before,
-.fa-chain-broken:before {
-  content: ""; }
-
-/* line 303, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-question:before {
-  content: ""; }
-
-/* line 304, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-info:before {
-  content: ""; }
-
-/* line 305, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-exclamation:before {
-  content: ""; }
-
-/* line 306, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-superscript:before {
-  content: ""; }
-
-/* line 307, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-subscript:before {
-  content: ""; }
-
-/* line 308, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-eraser:before {
-  content: ""; }
-
-/* line 309, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-puzzle-piece:before {
-  content: ""; }
-
-/* line 310, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-microphone:before {
-  content: ""; }
-
-/* line 311, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-microphone-slash:before {
-  content: ""; }
-
-/* line 312, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-shield:before {
-  content: ""; }
-
-/* line 313, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-calendar-o:before {
-  content: ""; }
-
-/* line 314, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-fire-extinguisher:before {
-  content: ""; }
-
-/* line 315, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-rocket:before {
-  content: ""; }
-
-/* line 316, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-maxcdn:before {
-  content: ""; }
-
-/* line 317, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-chevron-circle-left:before {
-  content: ""; }
-
-/* line 318, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-chevron-circle-right:before {
-  content: ""; }
-
-/* line 319, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-chevron-circle-up:before {
-  content: ""; }
-
-/* line 320, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-chevron-circle-down:before {
-  content: ""; }
-
-/* line 321, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-html5:before {
-  content: ""; }
-
-/* line 322, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-css3:before {
-  content: ""; }
-
-/* line 323, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-anchor:before {
-  content: ""; }
-
-/* line 324, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-unlock-alt:before {
-  content: ""; }
-
-/* line 325, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-bullseye:before {
-  content: ""; }
-
-/* line 326, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-ellipsis-h:before {
-  content: ""; }
-
-/* line 327, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-ellipsis-v:before {
-  content: ""; }
-
-/* line 328, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-rss-square:before {
-  content: ""; }
-
-/* line 329, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-play-circle:before {
-  content: ""; }
-
-/* line 330, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-ticket:before {
-  content: ""; }
-
-/* line 331, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-minus-square:before {
-  content: ""; }
-
-/* line 332, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-minus-square-o:before {
-  content: ""; }
-
-/* line 333, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-level-up:before {
-  content: ""; }
-
-/* line 334, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-level-down:before {
-  content: ""; }
-
-/* line 335, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-check-square:before {
-  content: ""; }
-
-/* line 336, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-pencil-square:before {
-  content: ""; }
-
-/* line 337, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-external-link-square:before {
-  content: ""; }
-
-/* line 338, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-share-square:before {
-  content: ""; }
-
-/* line 339, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-compass:before {
-  content: ""; }
-
-/* line 340, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-toggle-down:before,
-.fa-caret-square-o-down:before {
-  content: ""; }
-
-/* line 342, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-toggle-up:before,
-.fa-caret-square-o-up:before {
-  content: ""; }
-
-/* line 344, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-toggle-right:before,
-.fa-caret-square-o-right:before {
-  content: ""; }
-
-/* line 346, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-euro:before,
-.fa-eur:before {
-  content: ""; }
-
-/* line 348, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-gbp:before {
-  content: ""; }
-
-/* line 349, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-dollar:before,
-.fa-usd:before {
-  content: ""; }
-
-/* line 351, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-rupee:before,
-.fa-inr:before {
-  content: ""; }
-
-/* line 353, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-cny:before,
-.fa-rmb:before,
-.fa-yen:before,
-.fa-jpy:before {
-  content: ""; }
-
-/* line 357, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-ruble:before,
-.fa-rouble:before,
-.fa-rub:before {
-  content: ""; }
-
-/* line 360, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-won:before,
-.fa-krw:before {
-  content: ""; }
-
-/* line 362, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-bitcoin:before,
-.fa-btc:before {
-  content: ""; }
-
-/* line 364, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-file:before {
-  content: ""; }
-
-/* line 365, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-file-text:before {
-  content: ""; }
-
-/* line 366, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-sort-alpha-asc:before {
-  content: ""; }
-
-/* line 367, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-sort-alpha-desc:before {
-  content: ""; }
-
-/* line 368, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-sort-amount-asc:before {
-  content: ""; }
-
-/* line 369, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-sort-amount-desc:before {
-  content: ""; }
-
-/* line 370, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-sort-numeric-asc:before {
-  content: ""; }
-
-/* line 371, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-sort-numeric-desc:before {
-  content: ""; }
-
-/* line 372, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-thumbs-up:before {
-  content: ""; }
-
-/* line 373, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-thumbs-down:before {
-  content: ""; }
-
-/* line 374, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-youtube-square:before {
-  content: ""; }
-
-/* line 375, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-youtube:before {
-  content: ""; }
-
-/* line 376, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-xing:before {
-  content: ""; }
-
-/* line 377, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-xing-square:before {
-  content: ""; }
-
-/* line 378, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-youtube-play:before {
-  content: ""; }
-
-/* line 379, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-dropbox:before {
-  content: ""; }
-
-/* line 380, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-stack-overflow:before {
-  content: ""; }
-
-/* line 381, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-instagram:before {
-  content: ""; }
-
-/* line 382, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-flickr:before {
-  content: ""; }
-
-/* line 383, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-adn:before {
-  content: ""; }
-
-/* line 384, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-bitbucket:before {
-  content: ""; }
-
-/* line 385, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-bitbucket-square:before {
-  content: ""; }
-
-/* line 386, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-tumblr:before {
-  content: ""; }
-
-/* line 387, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-tumblr-square:before {
-  content: ""; }
-
-/* line 388, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-long-arrow-down:before {
-  content: ""; }
-
-/* line 389, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-long-arrow-up:before {
-  content: ""; }
-
-/* line 390, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-long-arrow-left:before {
-  content: ""; }
-
-/* line 391, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-long-arrow-right:before {
-  content: ""; }
-
-/* line 392, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-apple:before {
-  content: ""; }
-
-/* line 393, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-windows:before {
-  content: ""; }
-
-/* line 394, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-android:before {
-  content: ""; }
-
-/* line 395, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-linux:before {
-  content: ""; }
-
-/* line 396, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-dribbble:before {
-  content: ""; }
-
-/* line 397, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-skype:before {
-  content: ""; }
-
-/* line 398, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-foursquare:before {
-  content: ""; }
-
-/* line 399, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-trello:before {
-  content: ""; }
-
-/* line 400, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-female:before {
-  content: ""; }
-
-/* line 401, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-male:before {
-  content: ""; }
-
-/* line 402, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-gittip:before,
-.fa-gratipay:before {
-  content: ""; }
-
-/* line 404, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-sun-o:before {
-  content: ""; }
-
-/* line 405, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-moon-o:before {
-  content: ""; }
-
-/* line 406, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-archive:before {
-  content: ""; }
-
-/* line 407, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-bug:before {
-  content: ""; }
-
-/* line 408, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-vk:before {
-  content: ""; }
-
-/* line 409, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-weibo:before {
-  content: ""; }
-
-/* line 410, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-renren:before {
-  content: ""; }
-
-/* line 411, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-pagelines:before {
-  content: ""; }
-
-/* line 412, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-stack-exchange:before {
-  content: ""; }
-
-/* line 413, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-arrow-circle-o-right:before {
-  content: ""; }
-
-/* line 414, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-arrow-circle-o-left:before {
-  content: ""; }
-
-/* line 415, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-toggle-left:before,
-.fa-caret-square-o-left:before {
-  content: ""; }
-
-/* line 417, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-dot-circle-o:before {
-  content: ""; }
-
-/* line 418, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-wheelchair:before {
-  content: ""; }
-
-/* line 419, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-vimeo-square:before {
-  content: ""; }
-
-/* line 420, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-turkish-lira:before,
-.fa-try:before {
-  content: ""; }
-
-/* line 422, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-plus-square-o:before {
-  content: ""; }
-
-/* line 423, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-space-shuttle:before {
-  content: ""; }
-
-/* line 424, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-slack:before {
-  content: ""; }
-
-/* line 425, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-envelope-square:before {
-  content: ""; }
-
-/* line 426, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-wordpress:before {
-  content: ""; }
-
-/* line 427, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-openid:before {
-  content: ""; }
-
-/* line 428, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-institution:before,
-.fa-bank:before,
-.fa-university:before {
-  content: ""; }
-
-/* line 431, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-mortar-board:before,
-.fa-graduation-cap:before {
-  content: ""; }
-
-/* line 433, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-yahoo:before {
-  content: ""; }
-
-/* line 434, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-google:before {
-  content: ""; }
-
-/* line 435, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-reddit:before {
-  content: ""; }
-
-/* line 436, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-reddit-square:before {
-  content: ""; }
-
-/* line 437, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-stumbleupon-circle:before {
-  content: ""; }
-
-/* line 438, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-stumbleupon:before {
-  content: ""; }
-
-/* line 439, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-delicious:before {
-  content: ""; }
-
-/* line 440, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-digg:before {
-  content: ""; }
-
-/* line 441, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-pied-piper:before {
-  content: ""; }
-
-/* line 442, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-pied-piper-alt:before {
-  content: ""; }
-
-/* line 443, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-drupal:before {
-  content: ""; }
-
-/* line 444, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-joomla:before {
-  content: ""; }
-
-/* line 445, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-language:before {
-  content: ""; }
-
-/* line 446, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-fax:before {
-  content: ""; }
-
-/* line 447, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-building:before {
-  content: ""; }
-
-/* line 448, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-child:before {
-  content: ""; }
-
-/* line 449, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-paw:before {
-  content: ""; }
-
-/* line 450, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-spoon:before {
-  content: ""; }
-
-/* line 451, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-cube:before {
-  content: ""; }
-
-/* line 452, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-cubes:before {
-  content: ""; }
-
-/* line 453, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-behance:before {
-  content: ""; }
-
-/* line 454, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-behance-square:before {
-  content: ""; }
-
-/* line 455, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-steam:before {
-  content: ""; }
-
-/* line 456, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-steam-square:before {
-  content: ""; }
-
-/* line 457, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-recycle:before {
-  content: ""; }
-
-/* line 458, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-automobile:before,
-.fa-car:before {
-  content: ""; }
-
-/* line 460, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-cab:before,
-.fa-taxi:before {
-  content: ""; }
-
-/* line 462, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-tree:before {
-  content: ""; }
-
-/* line 463, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-spotify:before {
-  content: ""; }
-
-/* line 464, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-deviantart:before {
-  content: ""; }
-
-/* line 465, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-soundcloud:before {
-  content: ""; }
-
-/* line 466, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-database:before {
-  content: ""; }
-
-/* line 467, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-file-pdf-o:before {
-  content: ""; }
-
-/* line 468, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-file-word-o:before {
-  content: ""; }
-
-/* line 469, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-file-excel-o:before {
-  content: ""; }
-
-/* line 470, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-file-powerpoint-o:before {
-  content: ""; }
-
-/* line 471, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-file-photo-o:before,
-.fa-file-picture-o:before,
-.fa-file-image-o:before {
-  content: ""; }
-
-/* line 474, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-file-zip-o:before,
-.fa-file-archive-o:before {
-  content: ""; }
-
-/* line 476, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-file-sound-o:before,
-.fa-file-audio-o:before {
-  content: ""; }
-
-/* line 478, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-file-movie-o:before,
-.fa-file-video-o:before {
-  content: ""; }
-
-/* line 480, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-file-code-o:before {
-  content: ""; }
-
-/* line 481, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-vine:before {
-  content: ""; }
-
-/* line 482, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-codepen:before {
-  content: ""; }
-
-/* line 483, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-jsfiddle:before {
-  content: ""; }
-
-/* line 484, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-life-bouy:before,
-.fa-life-buoy:before,
-.fa-life-saver:before,
-.fa-support:before,
-.fa-life-ring:before {
-  content: ""; }
-
-/* line 489, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-circle-o-notch:before {
-  content: ""; }
-
-/* line 490, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-ra:before,
-.fa-rebel:before {
-  content: ""; }
-
-/* line 492, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-ge:before,
-.fa-empire:before {
-  content: ""; }
-
-/* line 494, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-git-square:before {
-  content: ""; }
-
-/* line 495, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-git:before {
-  content: ""; }
-
-/* line 496, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-y-combinator-square:before,
-.fa-yc-square:before,
-.fa-hacker-news:before {
-  content: ""; }
-
-/* line 499, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-tencent-weibo:before {
-  content: ""; }
-
-/* line 500, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-qq:before {
-  content: ""; }
-
-/* line 501, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-wechat:before,
-.fa-weixin:before {
-  content: ""; }
-
-/* line 503, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-send:before,
-.fa-paper-plane:before {
-  content: ""; }
-
-/* line 505, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-send-o:before,
-.fa-paper-plane-o:before {
-  content: ""; }
-
-/* line 507, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-history:before {
-  content: ""; }
-
-/* line 508, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-circle-thin:before {
-  content: ""; }
-
-/* line 509, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-header:before {
-  content: ""; }
-
-/* line 510, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-paragraph:before {
-  content: ""; }
-
-/* line 511, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-sliders:before {
-  content: ""; }
-
-/* line 512, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-share-alt:before {
-  content: ""; }
-
-/* line 513, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-share-alt-square:before {
-  content: ""; }
-
-/* line 514, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-bomb:before {
-  content: ""; }
-
-/* line 515, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-soccer-ball-o:before,
-.fa-futbol-o:before {
-  content: ""; }
-
-/* line 517, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-tty:before {
-  content: ""; }
-
-/* line 518, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-binoculars:before {
-  content: ""; }
-
-/* line 519, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-plug:before {
-  content: ""; }
-
-/* line 520, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-slideshare:before {
-  content: ""; }
-
-/* line 521, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-twitch:before {
-  content: ""; }
-
-/* line 522, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-yelp:before {
-  content: ""; }
-
-/* line 523, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-newspaper-o:before {
-  content: ""; }
-
-/* line 524, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-wifi:before {
-  content: ""; }
-
-/* line 525, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-calculator:before {
-  content: ""; }
-
-/* line 526, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-paypal:before {
-  content: ""; }
-
-/* line 527, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-google-wallet:before {
-  content: ""; }
-
-/* line 528, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-cc-visa:before {
-  content: ""; }
-
-/* line 529, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-cc-mastercard:before {
-  content: ""; }
-
-/* line 530, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-cc-discover:before {
-  content: ""; }
-
-/* line 531, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-cc-amex:before {
-  content: ""; }
-
-/* line 532, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-cc-paypal:before {
-  content: ""; }
-
-/* line 533, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-cc-stripe:before {
-  content: ""; }
-
-/* line 534, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-bell-slash:before {
-  content: ""; }
-
-/* line 535, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-bell-slash-o:before {
-  content: ""; }
-
-/* line 536, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-trash:before {
-  content: ""; }
-
-/* line 537, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-copyright:before {
-  content: ""; }
-
-/* line 538, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-at:before {
-  content: ""; }
-
-/* line 539, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-eyedropper:before {
-  content: ""; }
-
-/* line 540, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-paint-brush:before {
-  content: ""; }
-
-/* line 541, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-birthday-cake:before {
-  content: ""; }
-
-/* line 542, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-area-chart:before {
-  content: ""; }
-
-/* line 543, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-pie-chart:before {
-  content: ""; }
-
-/* line 544, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-line-chart:before {
-  content: ""; }
-
-/* line 545, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-lastfm:before {
-  content: ""; }
-
-/* line 546, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-lastfm-square:before {
-  content: ""; }
-
-/* line 547, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-toggle-off:before {
-  content: ""; }
-
-/* line 548, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-toggle-on:before {
-  content: ""; }
-
-/* line 549, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-bicycle:before {
-  content: ""; }
-
-/* line 550, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-bus:before {
-  content: ""; }
-
-/* line 551, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-ioxhost:before {
-  content: ""; }
-
-/* line 552, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-angellist:before {
-  content: ""; }
-
-/* line 553, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-cc:before {
-  content: ""; }
-
-/* line 554, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-shekel:before,
-.fa-sheqel:before,
-.fa-ils:before {
-  content: ""; }
-
-/* line 557, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-meanpath:before {
-  content: ""; }
-
-/* line 558, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-buysellads:before {
-  content: ""; }
-
-/* line 559, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-connectdevelop:before {
-  content: ""; }
-
-/* line 560, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-dashcube:before {
-  content: ""; }
-
-/* line 561, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-forumbee:before {
-  content: ""; }
-
-/* line 562, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-leanpub:before {
-  content: ""; }
-
-/* line 563, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-sellsy:before {
-  content: ""; }
-
-/* line 564, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-shirtsinbulk:before {
-  content: ""; }
-
-/* line 565, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-simplybuilt:before {
-  content: ""; }
-
-/* line 566, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-skyatlas:before {
-  content: ""; }
-
-/* line 567, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-cart-plus:before {
-  content: ""; }
-
-/* line 568, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-cart-arrow-down:before {
-  content: ""; }
-
-/* line 569, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-diamond:before {
-  content: ""; }
-
-/* line 570, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-ship:before {
-  content: ""; }
-
-/* line 571, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-user-secret:before {
-  content: ""; }
-
-/* line 572, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-motorcycle:before {
-  content: ""; }
-
-/* line 573, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-street-view:before {
-  content: ""; }
-
-/* line 574, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-heartbeat:before {
-  content: ""; }
-
-/* line 575, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-venus:before {
-  content: ""; }
-
-/* line 576, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-mars:before {
-  content: ""; }
-
-/* line 577, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-mercury:before {
-  content: ""; }
-
-/* line 578, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-intersex:before,
-.fa-transgender:before {
-  content: ""; }
-
-/* line 580, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-transgender-alt:before {
-  content: ""; }
-
-/* line 581, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-venus-double:before {
-  content: ""; }
-
-/* line 582, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-mars-double:before {
-  content: ""; }
-
-/* line 583, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-venus-mars:before {
-  content: ""; }
-
-/* line 584, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-mars-stroke:before {
-  content: ""; }
-
-/* line 585, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-mars-stroke-v:before {
-  content: ""; }
-
-/* line 586, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-mars-stroke-h:before {
-  content: ""; }
-
-/* line 587, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-neuter:before {
-  content: ""; }
-
-/* line 588, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-genderless:before {
-  content: ""; }
-
-/* line 589, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-facebook-official:before {
-  content: ""; }
-
-/* line 590, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-pinterest-p:before {
-  content: ""; }
-
-/* line 591, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-whatsapp:before {
-  content: ""; }
-
-/* line 592, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-server:before {
-  content: ""; }
-
-/* line 593, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-user-plus:before {
-  content: ""; }
-
-/* line 594, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-user-times:before {
-  content: ""; }
-
-/* line 595, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-hotel:before,
-.fa-bed:before {
-  content: ""; }
-
-/* line 597, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-viacoin:before {
-  content: ""; }
-
-/* line 598, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-train:before {
-  content: ""; }
-
-/* line 599, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-subway:before {
-  content: ""; }
-
-/* line 600, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-medium:before {
-  content: ""; }
-
-/* line 601, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-yc:before,
-.fa-y-combinator:before {
-  content: ""; }
-
-/* line 603, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-optin-monster:before {
-  content: ""; }
-
-/* line 604, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-opencart:before {
-  content: ""; }
-
-/* line 605, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-expeditedssl:before {
-  content: ""; }
-
-/* line 606, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-battery-4:before,
-.fa-battery-full:before {
-  content: ""; }
-
-/* line 608, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-battery-3:before,
-.fa-battery-three-quarters:before {
-  content: ""; }
-
-/* line 610, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-battery-2:before,
-.fa-battery-half:before {
-  content: ""; }
-
-/* line 612, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-battery-1:before,
-.fa-battery-quarter:before {
-  content: ""; }
-
-/* line 614, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-battery-0:before,
-.fa-battery-empty:before {
-  content: ""; }
-
-/* line 616, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-mouse-pointer:before {
-  content: ""; }
-
-/* line 617, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-i-cursor:before {
-  content: ""; }
-
-/* line 618, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-object-group:before {
-  content: ""; }
-
-/* line 619, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-object-ungroup:before {
-  content: ""; }
-
-/* line 620, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-sticky-note:before {
-  content: ""; }
-
-/* line 621, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-sticky-note-o:before {
-  content: ""; }
-
-/* line 622, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-cc-jcb:before {
-  content: ""; }
-
-/* line 623, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-cc-diners-club:before {
-  content: ""; }
-
-/* line 624, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-clone:before {
-  content: ""; }
-
-/* line 625, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-balance-scale:before {
-  content: ""; }
-
-/* line 626, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-hourglass-o:before {
-  content: ""; }
-
-/* line 627, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-hourglass-1:before,
-.fa-hourglass-start:before {
-  content: ""; }
-
-/* line 629, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-hourglass-2:before,
-.fa-hourglass-half:before {
-  content: ""; }
-
-/* line 631, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-hourglass-3:before,
-.fa-hourglass-end:before {
-  content: ""; }
-
-/* line 633, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-hourglass:before {
-  content: ""; }
-
-/* line 634, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-hand-grab-o:before,
-.fa-hand-rock-o:before {
-  content: ""; }
-
-/* line 636, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-hand-stop-o:before,
-.fa-hand-paper-o:before {
-  content: ""; }
-
-/* line 638, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-hand-scissors-o:before {
-  content: ""; }
-
-/* line 639, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-hand-lizard-o:before {
-  content: ""; }
-
-/* line 640, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-hand-spock-o:before {
-  content: ""; }
-
-/* line 641, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-hand-pointer-o:before {
-  content: ""; }
-
-/* line 642, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-hand-peace-o:before {
-  content: ""; }
-
-/* line 643, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-trademark:before {
-  content: ""; }
-
-/* line 644, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-registered:before {
-  content: ""; }
-
-/* line 645, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-creative-commons:before {
-  content: ""; }
-
-/* line 646, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-gg:before {
-  content: ""; }
-
-/* line 647, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-gg-circle:before {
-  content: ""; }
-
-/* line 648, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-tripadvisor:before {
-  content: ""; }
-
-/* line 649, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-odnoklassniki:before {
-  content: ""; }
-
-/* line 650, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-odnoklassniki-square:before {
-  content: ""; }
-
-/* line 651, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-get-pocket:before {
-  content: ""; }
-
-/* line 652, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-wikipedia-w:before {
-  content: ""; }
-
-/* line 653, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-safari:before {
-  content: ""; }
-
-/* line 654, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-chrome:before {
-  content: ""; }
-
-/* line 655, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-firefox:before {
-  content: ""; }
-
-/* line 656, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-opera:before {
-  content: ""; }
-
-/* line 657, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-internet-explorer:before {
-  content: ""; }
-
-/* line 658, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-tv:before,
-.fa-television:before {
-  content: ""; }
-
-/* line 660, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-contao:before {
-  content: ""; }
-
-/* line 661, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-500px:before {
-  content: ""; }
-
-/* line 662, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-amazon:before {
-  content: ""; }
-
-/* line 663, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-calendar-plus-o:before {
-  content: ""; }
-
-/* line 664, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-calendar-minus-o:before {
-  content: ""; }
-
-/* line 665, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-calendar-times-o:before {
-  content: ""; }
-
-/* line 666, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-calendar-check-o:before {
-  content: ""; }
-
-/* line 667, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-industry:before {
-  content: ""; }
-
-/* line 668, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-map-pin:before {
-  content: ""; }
-
-/* line 669, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-map-signs:before {
-  content: ""; }
-
-/* line 670, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-map-o:before {
-  content: ""; }
-
-/* line 671, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-map:before {
-  content: ""; }
-
-/* line 672, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-commenting:before {
-  content: ""; }
-
-/* line 673, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-commenting-o:before {
-  content: ""; }
-
-/* line 674, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-houzz:before {
-  content: ""; }
-
-/* line 675, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-vimeo:before {
-  content: ""; }
-
-/* line 676, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-black-tie:before {
-  content: ""; }
-
-/* line 677, ../_sass/bower_components/font-awesome/scss/_icons.scss */
-.fa-fonticons:before {
-  content: ""; }
-
-/* line 22, ../_sass/_brand-center.scss */
-.alt-checkbox {
-  width: 15px; }
-  /* line 27, ../_sass/_brand-center.scss */
-  .alt-checkbox input {
-    display: none; }
-
-/* line 36, ../_sass/_brand-center.scss */
-.checkbox .alt-checkbox {
-  top: 2px;
-  position: absolute;
-  margin-left: -20px;
-  margin-top: 4px \9; }
-
-/*******************************
-    ASSET GRID COMPONENTS
-
- *******************************/
-/* line 51, ../_sass/_brand-center.scss */
-.grid-thumbnail {
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: border;
-  transition-property: border;
-  position: relative;
-  box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.15);
-  background-color: white; }
-  /* line 58, ../_sass/_brand-center.scss */
-  .grid-thumbnail .asset-checkbox-icon, .grid-thumbnail .asset-icon-right {
-    top: 13px;
-    right: 13px; }
-  /* line 63, ../_sass/_brand-center.scss */
-  .grid-thumbnail .asset-checkbox-icon:hover {
-    color: #ed1c24; }
-  /* line 66, ../_sass/_brand-center.scss */
-  .grid-thumbnail .asset-checkbox-icon .checked {
-    color: #ed1c24; }
-  /* line 70, ../_sass/_brand-center.scss */
-  .grid-thumbnail .asset-download-icon {
-    right: 13px;
-    bottom: 50px; }
-    /* line 73, ../_sass/_brand-center.scss */
-    .grid-thumbnail .asset-download-icon:hover {
-      color: #ed1c24; }
-  /* line 77, ../_sass/_brand-center.scss */
-  .grid-thumbnail .asset-preview-icon, .grid-thumbnail .asset-icon-left {
-    top: 13px;
-    left: 13px; }
-  /* line 81, ../_sass/_brand-center.scss */
-  .grid-thumbnail .label-container {
-    position: absolute;
-    bottom: 45px;
-    left: 13px; }
-  /* line 87, ../_sass/_brand-center.scss */
-  .grid-thumbnail a {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden; }
-  /* line 93, ../_sass/_brand-center.scss */
-  .grid-thumbnail .center-aspect {
-    height: 184.375px;
-    overflow: hidden;
-    background: #f6f6f6;
-    position: relative;
-    display: table;
-    width: 100%; }
-    /* line 101, ../_sass/_brand-center.scss */
-    #bulk_edit_wrapper .grid-thumbnail .center-aspect {
-      height: 100px; }
-      @media screen and (max-width: 700px) {
-        /* line 101, ../_sass/_brand-center.scss */
-        #bulk_edit_wrapper .grid-thumbnail .center-aspect {
-          height: 50px; } }
-  /* line 110, ../_sass/_brand-center.scss */
-  .grid-thumbnail .inner-square {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle; }
-    /* line 114, ../_sass/_brand-center.scss */
-    .grid-thumbnail .inner-square img {
-      max-width: 100%; }
-
-/* line 122, ../_sass/_brand-center.scss */
-.label {
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0; }
-
-/* line 154, ../_sass/_brand-center.scss */
-.asset-grid:hover {
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: border;
-  transition-property: border;
-  border: #b7b7b7 1px solid; }
-/* line 160, ../_sass/_brand-center.scss */
-.asset-grid.selected {
-  border: #ed1c24 1px solid; }
-
-/* line 166, ../_sass/_brand-center.scss */
-.asset-icon {
-  color: #919191;
-  position: absolute;
-  cursor: pointer;
-  z-index: 1; }
-
-/* line 173, ../_sass/_brand-center.scss */
-dl.asset-details {
-  padding: 15px;
-  margin: 0; }
-  /* line 176, ../_sass/_brand-center.scss */
-  dl.asset-details dd {
-    padding-left: 5px;
-    padding-bottom: 3px; }
-
-/* line 184, ../_sass/_brand-center.scss */
-.panel.asset-image {
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  background-color: #f6f6f6;
-  border: 1px solid #e9e9e9; }
-
-/* line 192, ../_sass/_brand-center.scss */
-.alt-checkbox.fa-stack-1x {
-  width: 100%;
-  font-size: 1em; }
-  /* line 195, ../_sass/_brand-center.scss */
-  .alt-checkbox.fa-stack-1x.checked {
-    margin-left: 1px; }
-
-/* line 206, ../_sass/_brand-center.scss */
-.fa-search-plus.fa-stack-1x {
-  top: -1px; }
-
-/* line 211, ../_sass/_brand-center.scss */
-#latest_basket_table {
-  padding-top: 7px;
-  padding-right: 7px; }
-
-/* line 972, ../_sass/styles.scss */
+/* line 948, ../_sass/styles.scss */
 .tour-backdrop {
   background-color: #002b3e;
   opacity: 0.7;
   filter: alpha(opacity=70); }
 
-/* line 979, ../_sass/styles.scss */
+/* line 955, ../_sass/styles.scss */
 #quick-access-sortable > li.col-xs-4.apps-dropdown-unique {
   width: auto !important;
   padding-left: 0;
@@ -10909,37 +8251,37 @@ dl.asset-details {
   float: left;
   position: relative;
   display: block; }
-  /* line 986, ../_sass/styles.scss */
+  /* line 962, ../_sass/styles.scss */
   #quick-access-sortable > li.col-xs-4.apps-dropdown-unique .link-unstyled {
     padding-top: 0;
     padding-bottom: 0; }
-  /* line 990, ../_sass/styles.scss */
+  /* line 966, ../_sass/styles.scss */
   #quick-access-sortable > li.col-xs-4.apps-dropdown-unique .app-title {
     display: none; }
 
-/* line 1011, ../_sass/styles.scss */
+/* line 987, ../_sass/styles.scss */
 .downloads .media-body {
   padding-top: 5px; }
 
-/* line 1016, ../_sass/styles.scss */
+/* line 992, ../_sass/styles.scss */
 .featured {
   position: relative; }
-  /* line 1018, ../_sass/styles.scss */
+  /* line 994, ../_sass/styles.scss */
   .featured .featured-label {
     position: absolute;
     padding: 3px 10px;
     background-color: #ed1c24;
     color: white; }
 
-/* line 1027, ../_sass/styles.scss */
+/* line 1003, ../_sass/styles.scss */
 .more-news:hover {
   text-decoration: none; }
-/* line 1030, ../_sass/styles.scss */
-.more-news .dropdown-more {
+/* line 1006, ../_sass/styles.scss */
+.more-news .block-utility-link {
   margin: 0 auto 15px;
   width: 25%; }
 
-/* line 1036, ../_sass/styles.scss */
+/* line 1012, ../_sass/styles.scss */
 .circle, .inverse-circle {
   background-color: #941612;
   padding: 5px 8px;
@@ -10952,109 +8294,110 @@ dl.asset-details {
   -webkit-transition: background-color, 0.4s, ease, transform, 0.4s, ease;
   -o-transition: background-color, 0.4s, ease, transform, 0.4s, ease;
   transition: background-color, 0.4s, ease, transform, 0.4s, ease; }
-  /* line 1044, ../_sass/styles.scss */
+  /* line 1020, ../_sass/styles.scss */
   .circle:hover, .inverse-circle:hover {
     background-color: #670f0c; }
 
-/* line 1049, ../_sass/styles.scss */
+/* line 1025, ../_sass/styles.scss */
 .inverse-circle {
   background-color: white;
   color: #941612;
   border: 1px solid transparent; }
-  /* line 1054, ../_sass/styles.scss */
+  /* line 1030, ../_sass/styles.scss */
   .inverse-circle:hover {
     background-color: white;
     border-color: #941612; }
 
-/* line 1063, ../_sass/styles.scss */
-.circles-container {
+/* line 1039, ../_sass/styles.scss */
+.dotty-utility-menu {
   position: relative; }
-  /* line 1066, ../_sass/styles.scss */
-  .circles-container:hover .fast-forward-anim {
+  /* line 1042, ../_sass/styles.scss */
+  .dotty-utility-menu:hover .fast-forward-anim {
     right: 45px;
     -moz-transform: rotate(-360deg);
     -ms-transform: rotate(-360deg);
     -webkit-transform: rotate(-360deg);
     transform: rotate(-360deg); }
-  /* line 1070, ../_sass/styles.scss */
-  .circles-container:hover .add-anim {
+  /* line 1046, ../_sass/styles.scss */
+  .dotty-utility-menu:hover .add-anim {
     right: 90px;
     -moz-transform: rotate(-360deg);
     -ms-transform: rotate(-360deg);
     -webkit-transform: rotate(-360deg);
     transform: rotate(-360deg); }
 
-/* line 1077, ../_sass/styles.scss */
+/* line 1053, ../_sass/styles.scss */
 .main-ellipsis {
   position: relative;
   z-index: 100; }
 
-/* line 1082, ../_sass/styles.scss */
+/* line 1058, ../_sass/styles.scss */
 .fast-forward-anim, .add-anim {
   position: absolute;
   top: 0;
   right: 0; }
 
-/* line 1088, ../_sass/styles.scss */
+/* line 1064, ../_sass/styles.scss */
 .fast-forward-anim {
   z-index: 11; }
 
-/* line 1092, ../_sass/styles.scss */
+/* line 1068, ../_sass/styles.scss */
 .add-anim {
   z-index: 12; }
 
-/* line 1096, ../_sass/styles.scss */
+/* line 1072, ../_sass/styles.scss */
 .status {
   font-weight: bold;
   font-size: x-large; }
-  /* line 1099, ../_sass/styles.scss */
+  /* line 1075, ../_sass/styles.scss */
   .media .status {
     padding-top: 10px; }
 
-/* line 1104, ../_sass/styles.scss */
+/* line 1080, ../_sass/styles.scss */
 .shares-container {
   padding: 0; }
 
-/* line 1108, ../_sass/styles.scss */
-.bz-tabs {
+/* line 1085, ../_sass/styles.scss */
+.tabs {
   text-decoration: none;
   list-style-type: none;
   font-size: larger;
   font-family: "Expert-Sans-Regular", Helvetica, Arial, sans-serif;
-  padding: 0; }
-  /* line 1114, ../_sass/styles.scss */
-  .bz-tabs li {
+  padding: 0;
+  margin-bottom: 0; }
+  /* line 1092, ../_sass/styles.scss */
+  .tabs li {
     display: inline-block;
     margin-right: 10px; }
-  /* line 1118, ../_sass/styles.scss */
-  .bz-tabs a {
+  /* line 1096, ../_sass/styles.scss */
+  .tabs a {
     @transition (color, 0.3s, ease);
     color: #919191; }
-    /* line 1122, ../_sass/styles.scss */
-    .bz-tabs a:hover {
+    /* line 1100, ../_sass/styles.scss */
+    .tabs a:hover {
       color: #444444;
       text-decoration: none; }
-  /* line 1128, ../_sass/styles.scss */
-  .bz-tabs .active a {
+  /* line 1106, ../_sass/styles.scss */
+  .tabs .active a {
     color: black;
     font-family: "Expert-Sans-Regular", Helvetica, Arial, sans-serif; }
 
-/* line 1135, ../_sass/styles.scss */
+/* line 1113, ../_sass/styles.scss */
 .media-body {
   position: relative; }
 
-/* line 1139, ../_sass/styles.scss */
-.list-group-item-button-bar {
+/* line 1117, ../_sass/styles.scss */
+.card-group-item-segment-right {
   position: absolute;
   right: 0;
   top: 0;
   background-color: rgba(255, 255, 255, 0.6); }
 
-/* line 1147, ../_sass/styles.scss */
+/* line 1125, ../_sass/styles.scss */
 .baskets h4 {
   padding-top: 6px; }
 
-/* line 1152, ../_sass/styles.scss */
+/* line 1130, ../_sass/styles.scss */
 .super-center {
   transform: translate(-50%, -50%);
   left: 50%;

@@ -1,12 +1,12 @@
 
 
-        <div class="jumbotron jumbotron-photobg">
+        <div class="jumbotron jumbotron-cover">
 
-        <h2 class="spotlight-text"><span class="icon-heart"></span> In the Spotlight</h2>
+        <h2 class="jumbotron-caption"><span class="icon-heart"></span> In the Spotlight</h2>
 
             <div class="row">
 
-                <div class="col-sm-10 col-md-10 col-lg-8 white-hero">
+                <div class="col-sm-10 col-md-10 col-lg-8 jumbotron-panel">
                 <h1>News from {{page.brand}}</h1>
                 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam esse ea consectetur, non commodi, aliquam omnis maxime impedit distinctio nisi est nobis. Distinctio quidem dolores animi optio repellendus, voluptatum reprehenderit!</p>
 
@@ -23,7 +23,7 @@
         <div class="row">
             <div class="col-md-12 infinite-scroll">
 
-                  <div class="clearfix panel fat-news">
+                  <div class="clearfix news-panel news-combo-component">
                         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 news-image-thumbnail">
                           <a class="news-thumbnail-long image-news-1" href="#"></a>
                         </div>
@@ -32,38 +32,37 @@
 
                           <p class="news-lead">Necessitatibus reprehenderit laborum nobis totam libero numquam accusantium quo quibusdam ipsum sed aliquid corporis explicabo Lorem ipsum dolor sit amet</p>
 
-                          <span class="news-aside">BigDog Agency // <span>29/11/15</span></span>
+                          <span class="news-byline">BigDog Agency // <span>29/11/15</span></span>
                         </div>
-                    <span class="icon-globe news-cat"></span>
+                    <span class="icon-globe news-category"></span>
                     </div>
 
                     <div class="row">
-                            <div class="col-md-12 remove-padding">
+
                         <div class="col-sm-6 col-md-6">
-                            <div class="clearfix panel news-image-bg image-news-2">
+                            <div class="clearfix news-panel news-image-overlay-component image-news-2">
                                 <div class="news-text-overlay">
                                   <h2 class="news-heading">{{page.news-heading-two}}</h2>
 
-                                  <span class="news-aside">{{ page.brand }} // <span>28/11/15</span></span>
+                                  <span class="news-byline">{{ page.brand }} // <span>28/11/15</span></span>
                                 </div>
-                            <span class="icon-star news-cat"></span>
+                            <span class="icon-star news-category"></span>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-6">
-                        <div class="clearfix panel news-image-bg image-news-3">
-                            <div class="news-text-overlay">
-                              <h2 class="news-heading">{{page.news-heading-three}}</h2>
+                            <div class="clearfix news-panel news-image-overlay-component image-news-3">
+                                <div class="news-text-overlay">
+                                  <h2 class="news-heading">{{page.news-heading-three}}</h2>
 
-                              <span class="news-aside">{{ page.brand }} Brand // <span>24/11/15</span></span>
+                                  <span class="news-byline">{{ page.brand }} Brand // <span>24/11/15</span></span>
+                                </div>
+                                <span class="icon-image news-category"></span>
                             </div>
-                            <span class="icon-image news-cat"></span>
                         </div>
-                        </div>
-                    </div>
                     </div>
 
 
-                    <div class="clearfix panel fat-news">
+                    <div class="clearfix news-panel news-combo-component">
                         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 news-image-thumbnail">
                           <a class="news-thumbnail-long image-news-4" href="#"></a>
                         </div>
@@ -72,21 +71,21 @@
 
                           <p class="news-lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, reiciendis. Non totam sequi eius.</p>
 
-                          <span class="news-aside">Another agency // <span>22/11/15</span></span>
+                          <span class="news-byline">Another agency // <span>22/11/15</span></span>
                         </div>
-                        <span class="icon-globe news-cat"></span>
+                        <span class="icon-globe news-category"></span>
                     </div>
 
                     <div class="row">
                             <div class="col-md-12">
-                        <div class="clearfix panel news-image-bg image-news-5">
+                        <div class="clearfix news-panel news-image-overlay-component image-news-5">
                             <div class="news-text-overlay">
                               <h2 class="news-heading">{{page.news-heading-five}}</h2>
 
-                              <span class="news-aside">{{ page.brand }} Brand // <span>20/11/15</span></span>
+                              <span class="news-byline">{{ page.brand }} Brand // <span>20/11/15</span></span>
                             </div>
                     <span class="play"></span>
-                        <span class="icon-video news-cat"></span>
+                        <span class="icon-video news-category"></span>
                         </div>
                     </div>
                     </div>
@@ -94,7 +93,7 @@
 
 
                      <a class="more-news" href="more-news.html">
-                     <span class="list-group-item dropdown-more dropdown-bottom-link text-center">View More News</span>
+                        <div class="card-group-item block-utility-link block-utility-link-bottom text-center">View More News</div>
                      </a>
 
             </div>

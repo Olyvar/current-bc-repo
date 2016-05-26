@@ -66,6 +66,8 @@ $font-size-h4:            ceil(($font-size-base * 1.1));// ~15px
 //* Unit-less `line-height` for use in components like buttons.
 // $line-height-base:        1.428571429 // 20/14
 //* Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+
+// Vertical Rhythm - this variable, line-height computed is applied to most components
 // $line-height-computed:    floor(($font-size-base * $line-height-base)) // ~20px
 
 //* By default, this inherits from the `<body>`.
@@ -648,8 +650,8 @@ $modal-md:                   500px !default;
 //
 //##
 
-$widget-heading-tab-bg: $brand-primary !default;
-$widget-heading-tab-border: $brand-primary !default;
+$card-header-bg: $brand-primary !default;
+$card-header-border: $brand-primary !default;
 //* Background color on `.list-group-item`
 // $list-group-bg:                 #fff
 //* `.list-group-item` border color

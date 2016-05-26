@@ -94,17 +94,7 @@
 	height: 30px;
 }
 
-.spotlight-text{
-	margin-top: 0;
-	margin-bottom: 30px;
-	color: white;
-	font-family: $font-family-headings;
-	@include text-shadow( 0 0 10px rgba($brand-primary, 0.7) );
-}
 
-h1,h2,h3,h4,h5{
-	font-family: $font-family-headings;
-}
 
 .lead{
 	font-family: $font-family-lead;
@@ -210,6 +200,10 @@ h1,h2,h3,h4,h5{
 	padding-bottom: 3px !important;
 }
 
+h4{
+	font-family: $font-family-headings;
+}
+
 .apps-dropdown{
 	width: 335px;
 	li{
@@ -252,7 +246,7 @@ h1,h2,h3,h4,h5{
 	transform: rotate(90deg);
 }
 
-.time-aside{
+.card-group-item-byline{
 	color: $gray-light;
 	display: block;
 	clear: both;
@@ -270,7 +264,8 @@ h1,h2,h3,h4,h5{
 	padding: 35px 30px 15px 30px;
 }
 
-.dropdown-more{
+.block-utility-link{
+	@include transition(all, 0.3s);
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
 	padding: 5px;
@@ -278,20 +273,19 @@ h1,h2,h3,h4,h5{
 	font-size: 12px;
 	cursor: pointer;
 	color: $brand-primary;
-	@include transition(all, 0.3s);
 	&:hover{
 		background: #eee;
 	}
 }
 
-.dropdown-top-link{
+.block-utility-link-top{
 	border-bottom: 1px solid #ddd;
 	color: $gray-light;
 	font-size: 14px;
 	text-transform: none;
 }
 
-.dropdown-bottom-link {
+.block-utility-link-bottom {
 	border-top: 1px solid #ddd;
 }
 
@@ -433,11 +427,11 @@ h1,h2,h3,h4,h5{
 	left: 81%;
 }
 
-.widget-dropdown:after, .widget-dropdown:before{
+.card-dropdown:after, .card-dropdown:before{
 	left:-100%;
 }
 
-.widget-dropdown{
+.card-dropdown{
 	margin-top: 0;
 	box-shadow: none;
 	min-width: 60px;
@@ -449,27 +443,33 @@ h1,h2,h3,h4,h5{
 	}
 }
 
+
+// JUMBOTRON COMPONENT
+
 .jumbotron{
 	position: relative;
+	margin-bottom: $line-height-computed;
 }
 
-.jumbotron-photobg{
+.jumbotron-cover{
 	background-image:url("../images/three.jpg");
 	@include background-size(cover);
-	margin-bottom: 15px;
 }
 
-.photobg-2{
-	background-image: url("../images/photobg-2.jpg");
-}
-
-.white-hero{
+.jumbotron-panel{
 	background: white;
 	padding: 10px 30px;
 	@include border-radius(4px)
 }
 
+.jumbotron-caption{
+	margin-top: 0;
+	margin-bottom: 30px;
+	color: white;
+	@include text-shadow( 0 0 10px rgba($brand-primary, 0.7) );
+}
 
+// JUMBOTRON COMPONENT
 
 .btn-link-action{
 	&:hover{
@@ -500,7 +500,7 @@ h1,h2,h3,h4,h5{
 
 
 
-.widget-icons{
+.card-icons{
 	@extend %sprite;
 	width: 28px;
 	height: 22px;
@@ -509,14 +509,14 @@ h1,h2,h3,h4,h5{
 	cursor: pointer;
 }
 
-.widget-icon-group{
+.card-icon-group{
 	position:absolute;
 	right: 0;
 	background: rgba(255,255,255,0.8);
 	padding-left: 15px;
 }
 
-.widget-toolbar {
+.card-toolbar {
 	margin-bottom: 10px;
 	.circle{
 		cursor: pointer;
@@ -539,7 +539,7 @@ h1,h2,h3,h4,h5{
 	}
 }
 
-.widget-main-icons{
+.card-main-icons{
 	list-style-type: none;
 	li{
 		cursor: pointer;
@@ -562,23 +562,42 @@ h1,h2,h3,h4,h5{
 	}
 }
 
-.js-widget{
+.card{
+	@extend .list-group;
 	-webkit-backface-visibility: hidden;
-	h4{
+}
+
+.card-header{
+	@extend .list-group-item;
+	color: white;
+	background-color: $card-header-bg;
+	border: 1px solid $card-header-border;
+	margin-bottom: 0;
+}
+
+.card-header-heading{
+	@extend .list-group-item-heading;
+	color: white;
+	cursor: pointer;
+	margin-bottom: 0;
+}
+
+.card-group-item {
+	@extend .list-group-item;
+}
+
+.card-group-item-heading{
+	margin-top: 0;
+	margin-bottom: 5px;
+	> a {
 		color: black;
-		a{
-			color: black;
-		}
+	}
+	> em {
+		color: $gray-light;
 	}
 }
 
-.sticky-widgets{
-	.js-widget-column{
-		right:0;
-	}
-}
-
-.widget-column--heading{
+.column-heading{
 	margin-top: 8px;
 	margin-bottom: 0;
 }
@@ -591,15 +610,16 @@ h1,h2,h3,h4,h5{
 	}
 }
 
-.fat-news{
+.news-combo-component{
 	height: 250px;
 	position: relative;
 	cursor: pointer;
 }
 
-.panel{
-	border: none;
+.news-panel{
+	@extend .panel;
 	@include transition(box-shadow, 0.3s, ease);
+	border: none;
 	&:hover{
 		box-shadow: 0 0 5px 1px rgba(0,0,0,.25);
 	}
@@ -620,7 +640,7 @@ h1,h2,h3,h4,h5{
 	position: relative;
 }
 
-.news-aside{
+.news-byline{
 	color: $gray-light;
 	font-family: $font-family-headings;
 	text-transform: uppercase;
@@ -631,7 +651,7 @@ h1,h2,h3,h4,h5{
 }
 
 
-.news-cat{
+.news-category{
 	position: absolute;
 	top: 0;
 	left: 10px;
@@ -645,12 +665,7 @@ h1,h2,h3,h4,h5{
 	padding: 15px 15px 0;
 }
 
-.remove-padding{
-	padding-left: 0;
-	padding-right: 0;
-}
-
-.news-image-bg{
+.news-image-overlay-component{
 	height: 300px;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -660,7 +675,7 @@ h1,h2,h3,h4,h5{
 	.news-heading{
 		color: white;
 	}
-	.news-aside{
+	.news-byline{
 		color: $gray-lighter;
 	}
 }
@@ -707,11 +722,7 @@ h1,h2,h3,h4,h5{
 	height: 50px;
 }
 
-.js-tasks{
-	em{
-	color: $gray-light;
-	}
-}
+
 
 
 .popover{
@@ -737,7 +748,7 @@ h1,h2,h3,h4,h5{
 
 .respond-button {
 	@extend .tasks-icon-group;
-	@extend .widget-icon-group;
+	@extend .card-icon-group;
 	right: 10px;
 }
 
@@ -784,10 +795,6 @@ h1,h2,h3,h4,h5{
 	margin-right: 10px;
 }
 
-.widget-button-group{
-	max-height: 10px;
-}
-
 .list-group-item{
 	@include border-radius(0);
 	&:first-child{
@@ -795,35 +802,6 @@ h1,h2,h3,h4,h5{
 	}
 	.media, .media-body{
 		overflow: visible;
-
-	}
-}
-
-h3.list-group-item-heading{
-	cursor:pointer;
-}
-
-h3.list-group-item-heading,
-.workspaces .list-group-item-heading,
-.project-heading .list-group-item-heading,
-.my-approvals .list-group-item-heading,
-.my-tasks .list-group-item-heading {
-	margin-bottom: 0;
-}
-
-.widget-heading-tab{
-	color: white;
-	background-color: $widget-heading-tab-bg;
-	border: 1px solid $widget-heading-tab-border;
-	h3{
-		color: white;
-	}
-}
-
-
-.js-minimize{
-	.list-group-item:first-child{
-		@include border-radius(0);
 	}
 }
 
@@ -967,8 +945,6 @@ h3.list-group-item-heading,
 	margin-top: 20px;
 }
 
-@import "brand-center";
-
 .tour-backdrop{
 	background-color: #002b3e;
 	opacity: 0.7;
@@ -1027,7 +1003,7 @@ h3.list-group-item-heading,
 	&:hover{
 		text-decoration: none;
 	}
-	.dropdown-more{
+	.block-utility-link{
 		margin: 0 auto 15px;
 		width: 25%;
 	}
@@ -1060,7 +1036,7 @@ h3.list-group-item-heading,
 
 
 
-.circles-container{
+.dotty-utility-menu{
 	position: relative;
 	&:hover{
 		.fast-forward-anim{
@@ -1105,12 +1081,14 @@ h3.list-group-item-heading,
 	padding: 0;
 }
 
-.bz-tabs{
+
+.tabs{
 	text-decoration: none;
 	list-style-type: none;
 	font-size: larger;
 	font-family: $font-family-headings;
 	padding: 0;
+	margin-bottom: 0;
 	li{
 		display: inline-block;
 		margin-right: 10px;
@@ -1136,7 +1114,7 @@ h3.list-group-item-heading,
 	position: relative;
 }
 
-.list-group-item-button-bar{
+.card-group-item-segment-right{
 	position: absolute;
 	right: 0;
 	top: 0;

@@ -84,17 +84,17 @@ $('#shareModal').on('show.bs.modal', function (event) {
 
 // Remove widget button
 
-var removeWidgetBtn = $(".js-remove-widget");
+var removecardBtn = $(".js-remove-card");
 
-removeWidgetBtn.on("click", function(e){
+removecardBtn.on("click", function(e){
   e.preventDefault();
-  $(this).closest(".js-widget").remove();
+  $(this).closest(".js-card").remove();
 });
 
-$(".list-group-item-heading").on("click", function(e){
+$(".card-header-heading").on("click", function(e){
   e.stopPropagation();
-  $(this).parents(".js-widget").find(".js-minimize").slideToggle(200);
-  $(this).parent(".widget-heading-tab").toggleClass("no-border-radius");
+  $(this).parents(".js-card").find(".js-minimize").slideToggle(200);
+  $(this).parent(".card-header").toggleClass("no-border-radius");
 });
 
 // The Tour!
@@ -143,9 +143,9 @@ var tour = new Tour({
   },
   {
     element: ".js-widget-column",
-    title: "My Widgets",
+    title: "My cards",
     backdrop: true,
-    content: "These are your widgets. Add a new one by lorem ipsum. Drag to rearrange them. Choose to hide them by clicking the arrows. Don't use a widget anymore? Drag it into the recyling bin",
+    content: "These are your cards. Add a new one by lorem ipsum. Drag to rearrange them. Choose to hide them by clicking the arrows. Don't use a card anymore? Drag it into the recyling bin",
     placement: "left"
   },
   {
@@ -185,37 +185,35 @@ $('.infinite-scroll').jscroll({
  });
 
 
-// Adding Widgets
+// Adding cards
 
-var widgetSelect = $("#widget-select"),
-      addWidgetBtn = $(".js-add-widget"),
-      widgetIcons = $(".js-widget-icons"),
-      widgetModal = $("#widgetModal");
+var cardSelect = $("#card-select"),
+      addcardBtn = $(".js-add-card"),
+      cardIcons = $(".js-card-icons"),
+      cardModal = $("#cardModal");
 
-addWidgetBtn.on("click", function(e){
+addcardBtn.on("click", function(e){
     e.stopPropagation();
-    $.get("/" + widgetSelect.val() + ".html", function(data) {
-      widgetIcons.after(data);
+    $.get("/" + cardSelect.val() + ".html", function(data) {
+      cardIcons.after(data);
     });
-  widgetModal.modal('hide');
+  cardModal.modal('hide');
 
 });
 
 
-// Hide  widget sidebar
-var widgetIcons = $(".js-widget-icons");
-widgetIcons.hide();
+// Hide card sidebar
+var cardIcons = $(".js-card-icons");
+cardIcons.hide();
 
-$(".js-close-widgets").on("click", function(e) {
+$(".js-close-cards").on("click", function(e) {
   var self = $(this);
-  widgetIcons.toggle();
-  $(".js-widget").toggle();
+  cardIcons.toggle();
+  $(".js-card").toggle();
   self.find("span").toggleClass("icon-fast-forward").toggleClass("icon-rewind");
   $(".js-widget-column").toggleClass("col-md-4").toggleClass("col-md-2");
   $(".js-widget-column").toggleClass("hidden-widget-column");
   $(".js-main-content").toggleClass("col-md-offset-2");
 });
-
-//$(".js-widget-column").height($(window).height());
-
+    
 });
